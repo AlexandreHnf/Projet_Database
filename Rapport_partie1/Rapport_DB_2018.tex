@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{nicefrac}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[export]{adjustbox}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{lstautogobble}		% Pour mettre à gauche le code
+\usepackage{listings}			% Pour afficher du code
+\usepackage{graphicx} 			% Pour l'affichage d'images
+\usepackage{titling} 			% Reduit l'espace au dessus du titre et auteurs
+\usepackage[left=20mm,top=10mm, right=18mm, bottom=10mm, includefoot]{geometry}
+\setlength{\droptitle}{-2em}   % Reduit l'espace au dessus du titre et auteurs
+
+\title{\textsc{[INFO-H-303] Bases de données - Rapport Projet:}\
+   "Ebay"}
+\author{Alexandre Heneffe - 000440761\\
+        Nicolas Jonas - 000}
+\date{Mars 2018}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+
+Ceci est le rapport du projet de base de données. Celui-ci contiendra le schéma entité-relationnel (et ses contraintes) de la future base de données ainsi que sa traduction en un modèle relationnel.
+
+\section{Modèle Entité-Relationnel}
+
+\subsection{Schéma}
+
+\begin{center}
+    \includegraphics[scale=0.45,left]{schemaEA}
+\end{center}
+
+\newpage
+
+\subsection{Contraintes}
+
+\begin{itemize} [label=\textbullet]
+	\item La date de vente d'un objet doit être > à la date de mise en vente de cet objet
+	\item Le prix proposé pour une proposition d'achat doit être >= au prix minimum de l'objet
+	\item Un administrateur ne peut pas se supprimer lui-même
+	\item L'évaluation d'un objet est faite que si cet objet est acheté depuis moins de 10 jours, c'est-à-dire que la date d'évaluation doit être < que la date de vente de l'objet+ 10
+	\item La date d'évaluation doit être > que la date de vente d'un objet
+	\item Le pseudo d'un utilisateur est unique (c'est ce qui permet de différencier les utilisateurs)
+	\item Le vendeur d'un objet ne peut pas être l'acheteur de cet objet
+	\item La date de naissance d'un vendeur doit être >= que 18
+	\item la date de naissance d'un vendeur doit être > que la date de mise en vente d'un objet qu'il vend
+	
+\end{itemize}
+
+\subsection{Hypothèses}
+
+\begin{itemize}[label=\textbullet]
+	\item Un objet appartient au minimum à 1 catégorie
+	\item Une catégorie peut exister sans objet y étant associée
+	\item Chaque objet est unique, il n'y a pas de notion de quantité
+	\item Un utilisateur doit être majeur afin d'acheter des objets
+
+\end{itemize}
+
+\subsection{Justifications}
+La généralisation (Utilisateur, vendeur et administrateur) dans le schéma, est partiel et couvrant.
+\begin{itemize}
+
+\item Partiel: Les vendeurs et administrateurs sont des types d'utilisateurs. Mais il y a aussi les utilisateurs classiques.
+
+\item Couvrant: Un utilisateur peut être à la fois vendeur et administrateur par exemple.
+
+\end{itemize}
+
+\newpage 
+
+\section{Modèle Relationnel}
+Dans cette section, nous traduisons le modèle entité-relationnel de la section précédente en un modèle relationnel et en ajoutant ses contraintes.
+
+\subsection{Modèle}
+
+\indent
+
+\paragraph{Objet} (\underline{Titre}, Description, DateMiseEnVente, PrixMin, Vendeur, DateVente, Acheteur, \underline{NumVendeur}, \underline{NumAdmin})\\
+\indent - Objet.NumVendeur référence Vendeur.Numéro\\
+\indent - Objet.NumAdmin référence Administrateur.Numéro
+
+
+\paragraph{Vendeur} (\underline{Numero}, Nom, Prénom, DateNaissance, Adresse, \underline{PseudoUser})\\
+\indent - Vendeur.PseudoUser référence Utilisateur.Pseudo
+
+
+\paragraph{Administrateur} (\underline{Numero}, \underline{PseudoUser})\\
+\indent - Administrateur.PseudoUser référence Utilisateur.Pseudo
+
+
+\paragraph{Utilisateur} (\underline{Pseudo}, AddresseMail, MotDePasse, 
+Description, \underline{NumAdmin})\\
+\indent - Utilisateur.NumAdmin référence Administrateur.Numéro
+
+
+\paragraph{PropositionAchat} (\underline{NuméroObjet}, \underline{Acheteur}, Prix, Etat, \underline{TitreObj}, \underline{PseudoUser})\\
+\indent - PropositionAchat.TitreObj référence Objet.Titre\\
+\indent - PropositionAchat.PseudoUser référence Utilisateur.Pseudo
+
+
+\paragraph{Evaluation} (\underline{Numéro}, Note, Date, Commentaire, \underline{TitreObj}, \underline{PseudoVendeur}, \underline{PseudoUser})\\
+\indent - Evaluation.TitreObj référence Objet.Titre\\
+\indent - Evaluation.PseudoVendeur référence Vendeur.Pseudo\\
+\indent - Evaluation.PseudoUser référence Utilisateur.Pseudo
+
+
+\paragraph{Catégorie} (\underline{Titre}, Description, \underline{NumAdmin})\\
+\indent - Catégorie.NumAdmin référence Administrateur.Numéro
+
+
+\paragraph{Appartenance} (\underline{TitreObj, TitreCatégorie})\\
+\indent - Appartenance.TitreObj référence Objet.Titre\\
+\indent - Appartenance.TitreCatégorie référence Catégorie.Titre
+
+
+\paragraph{Modifiation} (\underline{TitreCatégorie, NumAdmin})\\
+\indent - Modification.TitreCatégorie référence Catégorie.Titre\\
+\indent - Modification.NumAdmin référence Administrateur.Numéro
+
+
+\subsection{Contraintes}
+
+
+
+\end{document}
