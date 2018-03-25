@@ -32,11 +32,17 @@ Ceci est le rapport du projet de base de données. Celui-ci contiendra le schém
 
 \subsection{Hypothèses}
 
+<<<<<<< HEAD
 \begin{itemize}[label=\textbullet]
 	\item Un objet appartient au minimum à 1 catégorie
 	\item Une catégorie peut exister sans objet y étant associée
 	\item Chaque objet est unique, il n'y a pas de notion de quantité
 	\item Un utilisateur doit être majeur afin d'acheter des objets
+=======
+\begin{center}
+    \includegraphics[scale=0.45,left]{schemaEA}
+\end{center}
+>>>>>>> e076170ee2b518b834a2a50b56445f6a292f7d05
 
 \end{itemize}
 
@@ -100,13 +106,17 @@ Dans cette section, nous traduisons le modèle entité-association de la section
 \indent - Vendeur.PseudoUser référence Utilisateur.Pseudo
 
 
+<<<<<<< HEAD
 \paragraph{Administrateur} (\underline{Pseudo}, PseudoUser)\\
+=======
+\paragraph{Administrateur} (PseudoUser)\\
+>>>>>>> e076170ee2b518b834a2a50b56445f6a292f7d05
 \indent - Administrateur.PseudoUser référence Utilisateur.Pseudo
 
 
 \paragraph{Utilisateur} (\underline{Pseudo}, AddresseMail, MotDePasse, 
-Description, NumAdmin)\\
-\indent - Utilisateur.NumAdmin référence Administrateur.Numéro
+Description, PseudoAdmin)\\
+\indent - Utilisateur.PseudoAdmin référence Administrateur.Pseudo
 
 
 \paragraph{PropositionAchat} (\underline{NuméroObjet}, \underline{Acheteur}, Prix, Etat, TitreObj, PseudoUser)\\
@@ -120,8 +130,8 @@ Description, NumAdmin)\\
 \indent - Evaluation.PseudoUser référence Utilisateur.Pseudo
 
 
-\paragraph{Catégorie} (\underline{Titre}, Description, NumAdmin)\\
-\indent - Catégorie.NumAdmin référence Administrateur.Numéro
+\paragraph{Catégorie} (\underline{Titre}, Description, PseudoAdmin)\\
+\indent - Catégorie.PseudoAdmin référence Administrateur.Pseudo
 
 
 \paragraph{Appartenance} (\underline{TitreObj, TitreCatégorie})\\
@@ -129,18 +139,18 @@ Description, NumAdmin)\\
 \indent - Appartenance.TitreCatégorie référence Catégorie.Titre
 
 
-\paragraph{Modifiation} (\underline{TitreCatégorie, NumAdmin})\\
+\paragraph{Modifiation} (\underline{TitreCatégorie, PseudoAdmin})\\
 \indent - Modification.TitreCatégorie référence Catégorie.Titre\\
-\indent - Modification.NumAdmin référence Administrateur.Numéro
+\indent - Modification.PseudoAdmin référence Administrateur.Pseudo
 
 
 \subsection{Contraintes}
 
 \begin{itemize}
 \item Pour tout Objet.Titre, il existe au moins un Appartenance.TitreObj
-\item Pour un Objet, DateVente > DateMiseEnVente
+\item Pour un Objet, Objet.DateVente > Objet.DateMiseEnVente
 \item Pour un PropositionAchat, PropositionAchat.Prix >= Objet.PrixMin
-\item Pour un Utilisateur.NumAdmin, Administrateur.Pseudo != Utilisateur.Pseudo (un Administrateur ne peut pas se supprimer)
+\item Pour un Utilisateur, Administrateur.Pseudo != Utilisateur.Pseudo (un Administrateur ne peut pas se supprimer)
 \item Pour un Evaluation, Evaluation.Date < Objet.DateVente + 10
 \item Pour un Evaluation, Evaluation.Date > Objet.DateVente
 \item Pour un Vendeur, Vendeur.DateNaissance >= 18
