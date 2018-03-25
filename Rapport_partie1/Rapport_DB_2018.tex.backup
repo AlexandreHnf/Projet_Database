@@ -61,7 +61,7 @@ Ceci est le rapport du projet de base de données. Celui-ci contiendra le schém
 \subsection{Schéma}
 \begin{center}
   \begin{sidewaysfigure}
-    \includegraphics[width = 25cm]{schemaEA}
+    \includegraphics[width = 25cm, heigth = 18cm]{schemaEA}
   \end{sidewaysfigure}
 \end{center}
 
@@ -74,15 +74,10 @@ La généralisation (Utilisateur, vendeur et administrateur) dans le schéma, es
 \item Couvrant: Un utilisateur peut être à la fois vendeur et administrateur par exemple.
 \end{itemize}
 
-\textbf{Evaluations :} une évaluation a pour clef un Numéro (qui doit donc être unique) car ses autres attributs ne permettent pas de la
+Evaluations : une évaluation a pour clef un Numéro (qui doit donc être unique) car ses autres attributs ne permettent pas de la
 	      distinguer de manière unique (ex : deux évaluations peuvent avoir la même note et la même date).
 
-\textbf{Utilisateur :} un utilisateur quelque soit son statut (simple utilisateur, vendeur et/ou administrateur) reste toujours identifié
-par son Pseudo.
-
-\textbf{Proposition d'achat :} un proposition d'achat est identifiée à la fois par le Titre de l'objet concerné et par l'Acheteur potentiel,
-car on ne peut se baser uniquement sur le Titre de l'objet (il peut y avoir plusieurs propositions d'achat pour un même objet)
-ou sur le Pseudo de l'acheteur potentiel (un acheteur peut faire plusieurs propositions d'achats sur différenets Objets).
+Proposition d'achat
 
 \section{Modèle Relationnel}
 Dans cette section, nous traduisons le modèle entité-association de la section précédente en un modèle relationnel et en ajoutant ses contraintes.
@@ -96,11 +91,11 @@ Dans cette section, nous traduisons le modèle entité-association de la section
 \indent - Objet.NumAdmin référence Administrateur.Numéro
 
 
-\paragraph{Vendeur} (\underline{Pseudo}, Nom, Prénom, DateNaissance, Adresse, PseudoUser)\\
+\paragraph{Vendeur} (\underline{Numero}, Nom, Prénom, DateNaissance, Adresse, PseudoUser)\\
 \indent - Vendeur.PseudoUser référence Utilisateur.Pseudo
 
 
-\paragraph{Administrateur} (\underline{Pseudo}, PseudoUser)\\
+\paragraph{Administrateur} (\underline{Numero}, PseudoUser)\\
 \indent - Administrateur.PseudoUser référence Utilisateur.Pseudo
 
 
