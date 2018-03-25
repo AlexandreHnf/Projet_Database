@@ -20,7 +20,7 @@
 \title{\textsc{[INFO-H-303] Bases de données - Rapport Projet:}\
    "Ebay"}
 \author{Alexandre Heneffe - 000440761\\
-        Nicolas Jonas - 000}
+        Nicolas Jonas - 000442112}
 \date{Mars 2018}
 
 \begin{document}
@@ -34,7 +34,7 @@ Ceci est le rapport du projet de base de données. Celui-ci contiendra le schém
 \subsection{Schéma}
 
 \begin{center}
-    \includegraphics[scale=0.45,left]{schemaEA}
+    \includegraphics[scale=0.45,left]{Rapport_partie1/schemaEA}
 \end{center}
 
 \newpage
@@ -45,7 +45,7 @@ Ceci est le rapport du projet de base de données. Celui-ci contiendra le schém
 	\item La date de vente d'un objet doit être > à la date de mise en vente de cet objet
 	\item Le prix proposé pour une proposition d'achat doit être >= au prix minimum de l'objet
 	\item Un administrateur ne peut pas se supprimer lui-même
-	\item L'évaluation d'un objet est faite que si cet objet est acheté depuis moins de 10 jours, c'est-à-dire que la date d'évaluation doit être < que la date de vente de l'objet+ 10
+	\item L'évaluation d'un objet est faite que si cet objet est acheté depuis moins de 10 jours, c'est-à-dire que la date d'évaluation doit être < que la date de vente de l'objet + 10
 	\item La date d'évaluation doit être > que la date de vente d'un objet
 	\item Le pseudo d'un utilisateur est unique (c'est ce qui permet de différencier les utilisateurs)
 	\item Le vendeur d'un objet ne peut pas être l'acheteur de cet objet
@@ -83,36 +83,36 @@ Dans cette section, nous traduisons le modèle entité-relationnel de la section
 
 \indent
 
-\paragraph{Objet} (\underline{Titre}, Description, DateMiseEnVente, PrixMin, Vendeur, DateVente, Acheteur, \underline{NumVendeur}, \underline{NumAdmin})\\
+\paragraph{Objet} (\underline{Titre}, Description, DateMiseEnVente, PrixMin, Vendeur, DateVente, Acheteur, NumVendeur, NumAdmin)\\
 \indent - Objet.NumVendeur référence Vendeur.Numéro\\
 \indent - Objet.NumAdmin référence Administrateur.Numéro
 
 
-\paragraph{Vendeur} (\underline{Numero}, Nom, Prénom, DateNaissance, Adresse, \underline{PseudoUser})\\
+\paragraph{Vendeur} (\underline{Numero}, Nom, Prénom, DateNaissance, Adresse, PseudoUser)\\
 \indent - Vendeur.PseudoUser référence Utilisateur.Pseudo
 
 
-\paragraph{Administrateur} (\underline{Numero}, \underline{PseudoUser})\\
+\paragraph{Administrateur} (\underline{Numero}, PseudoUser)\\
 \indent - Administrateur.PseudoUser référence Utilisateur.Pseudo
 
 
 \paragraph{Utilisateur} (\underline{Pseudo}, AddresseMail, MotDePasse, 
-Description, \underline{NumAdmin})\\
+Description, NumAdmin)\\
 \indent - Utilisateur.NumAdmin référence Administrateur.Numéro
 
 
-\paragraph{PropositionAchat} (\underline{NuméroObjet}, \underline{Acheteur}, Prix, Etat, \underline{TitreObj}, \underline{PseudoUser})\\
+\paragraph{PropositionAchat} (\underline{NuméroObjet}, \underline{Acheteur}, Prix, Etat, TitreObj, PseudoUser)\\
 \indent - PropositionAchat.TitreObj référence Objet.Titre\\
 \indent - PropositionAchat.PseudoUser référence Utilisateur.Pseudo
 
 
-\paragraph{Evaluation} (\underline{Numéro}, Note, Date, Commentaire, \underline{TitreObj}, \underline{PseudoVendeur}, \underline{PseudoUser})\\
+\paragraph{Evaluation} (\underline{Numéro}, Note, Date, Commentaire, TitreObj, PseudoVendeur, PseudoUser)\\
 \indent - Evaluation.TitreObj référence Objet.Titre\\
 \indent - Evaluation.PseudoVendeur référence Vendeur.Pseudo\\
 \indent - Evaluation.PseudoUser référence Utilisateur.Pseudo
 
 
-\paragraph{Catégorie} (\underline{Titre}, Description, \underline{NumAdmin})\\
+\paragraph{Catégorie} (\underline{Titre}, Description, NumAdmin)\\
 \indent - Catégorie.NumAdmin référence Administrateur.Numéro
 
 
@@ -128,6 +128,18 @@ Description, \underline{NumAdmin})\\
 
 \subsection{Contraintes}
 
+\begin{itemize}
+\item Pour tout Objet.Titre, il existe au moins un Appartenance.TitreObj
+\item Pour un Objet, DateVente > DateMiseEnVente
+\item Pour un PropositionAchat, PropositionAchat.Prix >= Objet.PrixMin
+\item Pour un Utilisateur.NumAdmin, Administrateur.Pseudo != Utilisateur.Pseudo (un Administrateur ne peut pas se supprimer)
+\item Pour un Evaluation, Evaluation.Date < Objet.DateVente + 10
+\item Pour un Evaluation, Evaluation.Date > Objet.DateVente
+\item Pour un Vendeur, Vendeur.DateNaissance >= 18
+\item Pour un Vendeur, Vendeur.DateNaissance > Objet.DateMiseEnVente
+\item Pour un Objet, Objet.Vendeur != Objet.Acheteur
+\item 
+\end{itemize}
 
 
 \end{document}
