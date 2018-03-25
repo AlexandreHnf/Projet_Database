@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.17)  25 MAR 2018 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.17)  25 MAR 2018 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -822,16 +822,14 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Rapport_partie1/schemaEA.png, id=40, 1125.20375pt x 793.96625pt>
-File: Rapport_partie1/schemaEA.png Graphic file (type png)
-
-<use Rapport_partie1/schemaEA.png>
-Package pdftex.def Info: Rapport_partie1/schemaEA.png used on input line 37.
+<schemaEA.png, id=40, 1125.20375pt x 793.96625pt>
+File: schemaEA.png Graphic file (type png)
+ <use schemaEA.png>
+Package pdftex.def Info: schemaEA.png used on input line 37.
 (pdftex.def)             Requested size: 506.33702pt x 357.28151pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Rapport_partie1/schemaEA
-.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./schemaEA.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -852,8 +850,8 @@ Package rerunfilecheck Info: File `Rapport_DB_2018.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 9661 strings out of 494883
- 137271 string characters out of 6178692
+ 9660 strings out of 494883
+ 137191 string characters out of 6178692
  231011 words of memory out of 5000000
  12774 multiletter control sequences out of 15000+600000
  16048 words of font info for 48 fonts, out of 8000000 for 9000
@@ -867,7 +865,7 @@ exandre_hnf/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/alexa
 ndre_hnf/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/alexandr
 e_hnf/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Rapport_DB_2018.pdf (4 pages, 131328 bytes).
+Output written on Rapport_DB_2018.pdf (4 pages, 130466 bytes).
 PDF statistics:
  303 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream
