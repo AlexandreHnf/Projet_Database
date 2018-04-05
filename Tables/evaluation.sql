@@ -1,0 +1,14 @@
+SET NAMES utf8;
+
+DROP TABLE IF EXISTS Evaluation;
+
+CREATE TABLE Evaluation (
+    
+    Numero INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    Note SMALLINT NOT NULL,
+    Date_eval DATETIME NOT NULL,
+    Commentaire TEXT 
+    
+    PRIMARY KEY (Numero)
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
