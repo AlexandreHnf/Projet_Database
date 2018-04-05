@@ -4,11 +4,19 @@ DROP TABLE IF EXISTS PropositionAchat;
 
 CREATE TABLE PropositionAchat (
     
-    TitreObjet CHAR(30) NOT NULL,
+    TitreObjet CHAR(30) NOT NULL PRIMARY KEY, -- clé primaire
     AcheteurPotentiel VARCHAR(30),
     PrixPropose DECIMAL(6,2) NOT NULL,
     Etat TINYINT(1) NOT NULL
+    TitreObj CHAR(30) NOT NULL, -- foreign key
+    PseudoUser VARCHAR(30) NOT NULL -- foreign key
     
-    PRIMARY KEY (TitreObjet)
+    CONSTRAINT fk_objet            
+        FOREIGN KEY (TitreObj)         
+        REFERENCES Objet(Titre)
 
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+    CONSTRAINT fk_user            
+        FOREIGN KEY (PseudoUser)         
+        REFERENCES Utilisateur(Pseudo)
+
+) ENGINE=InnoDB;

@@ -4,9 +4,15 @@ DROP TABLE IF EXISTS Categorie;
 
 CREATE TABLE Categorie (
     
-    Titre VARCHAR(30) NOT NULL,
+    Titre VARCHAR(30) NOT NULL PRIMARY KEY, -- clé primaire
     Description_cat TEXT
+    PseudoAdmin VARCHAR(30) NOT NULL -- foreign key
 
-    PRIMARY KEY (Titre)
+    -- CONTRAINTES D'INTEGRITE
 
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+    CONSTRAINT fk_admin             
+        FOREIGN KEY (PseudoAdmin)         
+        REFERENCES Administrateur(Pseudo)
+    
+
+) ENGINE=InnoDB;
