@@ -10,10 +10,10 @@ CREATE TABLE Evaluation (
     Commentaire TEXT 
     TitreObj CHAR(30) NOT NULL, -- foreign key
     PseudoVendeur VARCHAR(30) NOT NULL, -- foreign key
-    PseudoUser VARCHAR(30) NOT NULL -- foreign key
+    PseudoUser VARCHAR(30) NOT NULL, -- foreign key
 
     -- CONTRAINTES D'INTEGRITE
-    
+
     CONSTRAINT fk_objet                  -- On donne un nom à notre clé
         FOREIGN KEY (TitreObj)           -- Colonne sur laquelle on crée la clé
         REFERENCES Objet(Titre)          -- Colonne de référence

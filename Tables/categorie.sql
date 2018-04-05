@@ -6,7 +6,7 @@ CREATE TABLE Categorie (
     
     Titre VARCHAR(30) NOT NULL PRIMARY KEY, -- clé primaire
     Description_cat TEXT
-    PseudoAdmin VARCHAR(30) NOT NULL -- foreign key
+    PseudoAdmin VARCHAR(30) NOT NULL, -- foreign key
 
     -- CONTRAINTES D'INTEGRITE
 

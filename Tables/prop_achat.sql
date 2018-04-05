@@ -9,7 +9,7 @@ CREATE TABLE PropositionAchat (
     PrixPropose DECIMAL(6,2) NOT NULL,
     Etat TINYINT(1) NOT NULL
     TitreObj CHAR(30) NOT NULL, -- foreign key
-    PseudoUser VARCHAR(30) NOT NULL -- foreign key
+    PseudoUser VARCHAR(30) NOT NULL, -- foreign key
     
     CONSTRAINT fk_objet            
         FOREIGN KEY (TitreObj)         

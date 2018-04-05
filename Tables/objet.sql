@@ -11,11 +11,11 @@ CREATE TABLE Objet (
     Vendeur VARCHAR(30),
     DateVente DATE,
     Acheteur VARCHAR(30),
-    PseudoVendeur VARCHAR(30) NOT NULL -- foreign key
+    PseudoVendeur VARCHAR(30) NOT NULL, -- foreign key
     --On stocke plus AdminPseudo du coup vu qu'on sauve pas les "supprime"
 
     -- CONTRAINTES D'INTEGRITE
-    
+
     CONSTRAINT fk_vendeur                 -- On donne un nom à notre clé
         FOREIGN KEY (PseudoVendeur)       -- Colonne sur laquelle on crée la clé
         REFERENCES Vendeur(Pseudo)        -- Colonne de référence

@@ -9,10 +9,10 @@ CREATE TABLE Vendeur (
     Prenom CHAR(30) NOT NULL,
     DateNaissance DATE NOT NULL,
     Adresse TEXT NOT NULL
-    PseudoUser VARCHAR(30) NOT NULL -- foreign key
+    PseudoUser VARCHAR(30) NOT NULL, -- foreign key
 
     -- CONTRAINTES D'INTEGRITE
-    
+
     CONSTRAINT fk_user                       -- On donne un nom à notre clé
         FOREIGN KEY (PseudoUser)             -- Colonne sur laquelle on crée la clé
         REFERENCES Utilisateur(Pseudo)       -- Colonne de référence
