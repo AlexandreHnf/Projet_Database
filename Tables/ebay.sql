@@ -6,30 +6,32 @@ USE Ebay;
 
 SET NAMES utf8;
 
+-- ============================ TABLE ADMIN ============================
+DROP TABLE IF EXISTS `Administrateur`;
 
--- ============================ TABLE OBJET ============================
-DROP TABLE IF EXISTS Objet;
-
-CREATE TABLE Objet (
+CREATE TABLE `Administrateur` (
     
-    Titre CHAR(30) NOT NULL PRIMARY KEY, -- clé primaire
-    Description_obj TEXT,
-    DateMiseEnVente DATE,
-    PrixMin DECIMAL(6,2) NOT NULL,
-    Vendeur VARCHAR(30),
-    DateVente DATE,
-    Acheteur VARCHAR(30),
-    PseudoVendeur VARCHAR(30) NOT NULL, -- foreign key
-    --On stocke plus AdminPseudo du coup vu qu'on sauve pas les "supprime"
-
-    -- CONTRAINTES D'INTEGRITE
-
-    CONSTRAINT fk_vendeur                 -- On donne un nom à notre clé
-        FOREIGN KEY (PseudoVendeur)       -- Colonne sur laquelle on crée la clé
-        REFERENCES Vendeur(Pseudo)        -- Colonne de référence
-
+    `Pseudo` VARCHAR(30) NOT NULL,
+    PRIMARY KEY (`Pseudo`)
 
 ) ENGINE=InnoDB;
+
+
+
+-- ============================ TABLE UTILISATEUR ============================
+DROP TABLE IF EXISTS Utilisateur;
+
+CREATE TABLE Utilisateur (
+    
+    Pseudo VARCHAR(30) NOT NULL PRIMARY KEY, -- clé primaire
+    AdresseMail VARCHAR(320) NOT NULL, -- 320 = 64 (avant @) + 1 (@) + 255 (apres @)
+    MotDePasse VARCHAR(30) NOT NULL,
+    Description_user TEXT,
+    -- pas de foreign key vers Admin car on stocke pas de "supprime"
+    
+
+) ENGINE=InnoDB;
+
 
 
 -- ============================ TABLE VENDEUR ============================
@@ -54,19 +56,31 @@ CREATE TABLE Vendeur (
 
 
 
--- ============================ TABLE UTILISATEUR ============================
-DROP TABLE IF EXISTS Utilisateur;
 
-CREATE TABLE Utilisateur (
+-- ============================ TABLE OBJET ============================
+DROP TABLE IF EXISTS Objet;
+
+CREATE TABLE Objet (
     
-    Pseudo VARCHAR(30) NOT NULL PRIMARY KEY, -- clé primaire
-    AdresseMail VARCHAR(320) NOT NULL, --320 = 64 (avant @) + 1 (@) + 255 (apres @)
-    MotDePasse VARCHAR(30) NOT NULL,
-    Description_user TEXT,
-    -- pas de foreign key vers Admin car on stocke pas de "supprime"
-    
+    Titre CHAR(30) NOT NULL PRIMARY KEY, -- clé primaire
+    Description_obj TEXT,
+    DateMiseEnVente DATE,
+    PrixMin DECIMAL(6,2) NOT NULL,
+    Vendeur VARCHAR(30),
+    DateVente DATE,
+    Acheteur VARCHAR(30),
+    PseudoVendeur VARCHAR(30) NOT NULL, -- foreign key
+    -- On stocke plus AdminPseudo du coup vu qu'on sauve pas les supprime
+
+    -- CONTRAINTES D'INTEGRITE
+
+    CONSTRAINT fk_vendeur                 -- On donne un nom à notre clé
+        FOREIGN KEY (PseudoVendeur)       -- Colonne sur laquelle on crée la clé
+        REFERENCES Vendeur(Pseudo)        -- Colonne de référence
+
 
 ) ENGINE=InnoDB;
+
 
 
 -- ============================ TABLE EVALUATION ============================
@@ -145,11 +159,3 @@ CREATE TABLE PropositionAchat (
 
 
 
--- ============================ TABLE ADMIN ============================
-DROP TABLE IF EXISTS Administrateur;
-
-CREATE TABLE Administrateur (
-    
-    Pseudo VARCHAR(30) NOT NULL PRIMARY KEY
-
-) ENGINE=InnoDB;
