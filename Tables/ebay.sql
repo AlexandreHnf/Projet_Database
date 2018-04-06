@@ -4,11 +4,13 @@ CREATE DATABASE Ebay; -- création de la base de données
 
 USE Ebay;
 
--- SET NAMES utf8;
+SET NAMES utf8;
 
+-- Pour importer données des fichiers XML: 
+-- https://stackoverflow.com/questions/5491056/how-to-import-xml-file-into-mysql-database-table-using-xml-load-function
 
 -- ============================ TABLE UTILISATEUR ============================
--- DROP TABLE IF EXISTS Utilisateur;
+DROP TABLE IF EXISTS Utilisateur;
 
 CREATE TABLE Utilisateur (
     
@@ -26,7 +28,7 @@ CREATE TABLE Utilisateur (
 
 
 -- ============================ TABLE ADMIN ============================
--- DROP TABLE IF EXISTS Administrateur;
+DROP TABLE IF EXISTS Administrateur;
 
 CREATE TABLE Administrateur (
     
@@ -43,7 +45,7 @@ CREATE TABLE Administrateur (
 
 
 -- ============================ TABLE VENDEUR ============================
--- DROP TABLE IF EXISTS Vendeur;
+DROP TABLE IF EXISTS Vendeur;
 
 CREATE TABLE Vendeur (
     
@@ -68,7 +70,7 @@ CREATE TABLE Vendeur (
 
 
 -- ============================ TABLE OBJET ============================
--- DROP TABLE IF EXISTS Objet;
+DROP TABLE IF EXISTS Objet;
 
 CREATE TABLE Objet (
     
@@ -94,7 +96,7 @@ CREATE TABLE Objet (
 
 
 -- ============================ TABLE EVALUATION ============================
--- DROP TABLE IF EXISTS Evaluation;
+DROP TABLE IF EXISTS Evaluation;
 
 CREATE TABLE Evaluation (
     
@@ -126,7 +128,7 @@ CREATE TABLE Evaluation (
 
 
 -- ============================ TABLE CATEGORIE ============================
--- DROP TABLE IF EXISTS Categorie;
+DROP TABLE IF EXISTS Categorie;
 
 CREATE TABLE Categorie (
     
@@ -148,7 +150,7 @@ CREATE TABLE Categorie (
 
 
 -- ============================ TABLE PROP ACHAT ============================
--- DROP TABLE IF EXISTS PropositionAchat;
+DROP TABLE IF EXISTS PropositionAchat;
 
 CREATE TABLE PropositionAchat (
     
@@ -171,5 +173,48 @@ CREATE TABLE PropositionAchat (
 
 );
 
+
+DROP TABLE IF EXISTS Modification; -- Un admin modifie (0,n) catégorie(s)
+
+CREATE TABLE Modification (
+
+    TitreCategorie VARCHAR(30) NOT NULL,
+    PseudoAdmin VARCHAR(30) NOT NULL, -- 2 foreign keys qui forment la clé primaire
+
+    PRIMARY KEY(TitreCategorie, PseudoAdmin),
+
+    CONSTRAINT fk_titre_cat
+        FOREIGN KEY (TitreCategorie)
+        REFERENCES Categorie(Titre),
+
+    CONSTRAINT fk_admin_modif
+        FOREIGN KEY (PseudoAdmin)
+        REFERENCES Administrateur(Pseudo)
+
+    
+);
+
+
+
+
+DROP TABLE IF EXISTS Appartenance; -- Un objet appartient a (1,n) catégorie(s)
+
+CREATE TABLE Appartenance (
+
+    TitreObj CHAR(30) NOT NULL,
+    TitreCategorie VARCHAR(30) NOT NULL, -- 2 foreign keys qui forment la clé primaire
+
+    PRIMARY KEY(TitreObj, TitreCategorie),
+
+    CONSTRAINT fk_titre_app
+        FOREIGN KEY (TitreObj)
+        REFERENCES Objet(Titre),
+
+    CONSTRAINT fk_cat_app
+        FOREIGN KEY (TitreCategorie)
+        REFERENCES Categorie(Titre)
+
+    
+);
 
 
