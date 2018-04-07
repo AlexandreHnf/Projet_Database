@@ -29,11 +29,6 @@
             echo '<p> Bonjour '. htmlspecialchars($_SESSION['pseudo']).'!</p>';
         }
 		?>
-        
-
-		<p>Si tu veux changer de pseudo, <a href="connexion.php">clique ici</a> 
-			pour revenir à la page de connexion <br />
-		</p>
 
         <p> <a href="deconnexion.php">Se déconnecter</a></p>
     </body>

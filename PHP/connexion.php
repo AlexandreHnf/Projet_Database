@@ -10,7 +10,7 @@
    </head>
 
    <body>
-		<h2>Ebay !</h2>
+		<h2>Connexion !</h2>
 
 		<p>
 			Ceci est la page de connexion du site Ebay.<br />
@@ -20,10 +20,16 @@
 		
 		<form action="accueil.php" method="post">
 			<p>
-				Pseudo:       <input type="text" name="pseudo" /> <br />
-				Mot de passe: <input type="password" name="motdepasse" /> <br />
+				Pseudo:<br>
+				<input type="text" name="pseudo" /> <br />
+				Mot de passe:<br>
+				<input type="password" name="motdepasse" /> <br />
 				<input type="submit" value="Se connecter" />
 			</p>
+
 		</form>
+
+		<p> <a href="main.php"> Retour </a></p>
+
    </body>
 </html>

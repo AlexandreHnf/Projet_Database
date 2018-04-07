@@ -24,7 +24,7 @@
             session_destroy(); // on détruit la session
         ?>
 
-        <p> <a href="connexion.php">Revenir au menu de connexion<a></p>
+        <p> <a href="main.php">Revenir au menu de base<a></p>
         
     </body>
 </html>
