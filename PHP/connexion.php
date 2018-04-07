@@ -1,8 +1,12 @@
+<?php 
+	session_start();  // On démarre la session
+?> 
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+<html>
    <head>
+       <meta charset="utf-8" />
        <title>Connexion</title>
-       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
    </head>
    <body>
 		<p>
@@ -10,10 +14,11 @@
 			Veuillez taper votre pseudo et votre mot de passe:
 		</p>
 		
+		
 		<form action="accueil.php" method="post">
 			<p>
-				<input type="text" name="pseudo" /> 
-				<input type="password" name="motdepasse" />
+				Pseudo:       <input type="text" name="pseudo" /> <br />
+				Mot de passe: <input type="password" name="motdepasse" /> <br />
 				<input type="submit" value="Se connecter" />
 			</p>
 		</form>
