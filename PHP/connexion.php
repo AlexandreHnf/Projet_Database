@@ -8,7 +8,10 @@
        <meta charset="utf-8" />
        <title>Connexion</title>
    </head>
+
    <body>
+		<h2>Ebay !</h2>
+
 		<p>
 			Ceci est la page de connexion du site Ebay.<br />
 			Veuillez taper votre pseudo et votre mot de passe:

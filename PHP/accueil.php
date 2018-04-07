@@ -10,12 +10,19 @@
     </head>
 
     <body>
-        
+        <h2>Accueil</h2>
+
         <?php
-		if (isset($_POST['pseudo']) and isset($_POST['motdepasse'])) {
+        if ((isset($_POST['pseudo']) and isset($_POST['motdepasse'])) 
+            and (!empty($_POST['pseudo']) and !empty($_POST['motdepasse']))) {
+
 			$_SESSION['pseudo'] = $_POST['pseudo']; // variable de session
                                                     // donc accessible partout
             
+        }
+
+        else { // si le pseudo ou le mot de passe n'est pas valide
+            header('location:connexion.php');
         }
 
         if (isset($_SESSION['pseudo'])) {
