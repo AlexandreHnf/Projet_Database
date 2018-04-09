@@ -1,0 +1,1507 @@
+17, Diego, Grewis, tete3723O, JustNodusNoSkill, 04-05-1988, Rue Jules Cocksstraat, diego.grewis@gmail.com
+33, Corinne, Deswarte, G0spel, TormentPvP, 18-02-1962, Keizerslaan, corinne.deswarte@gmail.com
+41, Jules, Jules, theJules, Julespassword, 01-01-1900, Rue de la Loi, TheOneAndOnlyJules@gmail.com
+45, Devyn, Navarro, nirvam0208, mist3r_creep, 27-09-1986, Rue Emile Lecomte - Emile Lecomtestraat, devyn.navarro@yahoo.fr
+66, Chantal, Desmets, MimicGaming, Gataka3004, 21-03-1958, Rue des Pyrèthres - Pyretrumstraat, chantal.desmets@gmail.com
+73, Gérard, Van Pée, RehabOholic, pouetpouet, 29-07-1973, Cipresstraat, gérard.vanpée@gmail.com
+85, Esteban, Small, xXNico45Xx, Cyriboul, 10-08-1958, Avenue du Sacré-Coeur - Heilig-Hartlaan, esteban.small@gmail.com
+94, Diego, Janhes, Krovy200CZ, GeniCat, 03-08-1956, De Pomp, diego.janhes@gmail.com
+102, Angelique, De Markgraef, Daxel2002, caninos1, 29-05-1977, Place de la Beauté - Schoonheidsplein, angelique.demarkgraef@gmail.com
+116, Amir, Thomas, Trakwold, meta6489, 19-01-1990, Rue de la Violette - Violetstraat, amir.thomas@gmail.com
+125, Robert, Chestay, Willi_Wuller, jojo38230, 10-04-1954, Rue du Dobbelenberg - Dobbelenbergstraat, robert.chestay@gmail.com
+142, Hope, Boyd, vinny161, kiwi20122000, 17-11-1968, Rue de la Tannerie - Huidevetterijstraat, hope.boyd@gmail.com
+156, Edward, Buchanan, coco212, Thefluffkey246, 23-08-1995, Rue Léon Frédéric - Léon Frédéricstraat, edward.buchanan@gmail.com
+170, Lilliana, Barry, Xadaa_, xNEMIGHER, 20-07-1978, Champ du Tilleul - Lindeveld, lilliana.barry@hotmail.com
+182, Julie, Deramaix, Its_Vital, Kazz97, 13-04-1955, Rue de la Molignée - Molignéestraat, julie.deramaix@hotmail.com
+186, Pauline, Thijs, thebiggoliath, Arthien, 22-12-1952, Rue de l&#39;Escadron - Eskadronstraat, pauline.thijs@yahoo.fr
+199, Catherine, Vlemincks, ImARobot135, Drsjacob2714, 28-10-1957, Rue Général Tombeur - Generaal Tombeurstraat, catherine.vlemincks@gmail.com
+207, Angelina, Arimont, XxSiproxX, ComradeRJ, 12-03-1966, Avenue du Front - Frontlaan, angelina.arimont@gmail.com
+216, Pascal, Gaudisseu, Tominski3171, Flouffyy, 13-03-1981, Rue d&#39;Accolay, pascal.gaudisseu@gmail.com
+225, Saniyah, Foster, xcordongeek, Haartroxx, 04-04-1985, Place Albert Leemans - Albert Leemansplein, saniyah.foster@gmail.com
+237, Joelle, Van de Slycke, PokeLego, TimemiT, 15-07-1967, Rue Doyen Boone - Deken Boonestraat, joelle.vandeslycke@hotmail.be
+253, Cierra, Bray, samuysii, emperorchirpy, 14-08-1966, Rue Communale - Gemeentestraat, cierra.bray@hotmail.com
+267, Pierre, Beckers, illusionn, link97438, 18-02-1961, Rue du Chœur - Koorstraat, pierre.beckers@gmail.com
+275, Matteo, De Praeter, chicken_151, ARNAU_GOKU, 10-08-1994, Rue Capouillet - Capouilletstraat, matteo.depraeter@gmail.com
+285, Virginie, Stine, Vignalshugo, daloi, 09-06-1981, Allée des Novateurs - Vernieuwersdreef, virginie.stine@gmail.com
+294, Vanessa, De Munck, Micha220_Lv2, SwIzz_Poluxe, 18-04-1951, Avenue des Croix du Feu - Vuurkruisenlaan, vanessa.demunck@gmail.com
+305, Karine, Monceau, Vape2Kalitay, eparent, 18-12-1960, Rue du Cloître - Kloosterstraat, karine.monceau@hotmail.be
+319, Lucie, Dondenne, Gasmer, mrubins, 17-10-1954, Rue de la Colline - Heuvelstraat, lucie.dondenne@gmail.com
+328, Jovani, Lynch, Yuru_Yuri, Audric0609, 14-12-1969, Square Lainé - Lainésquare, jovani.lynch@gmail.com
+336, Arnaud, Burgmeester, SugarKat, amie789, 17-05-1987, Boulevard Théo Lambert - Théo Lambertlaan, arnaud.burgmeester@gmail.com
+349, Desiree, Hamilton, Dr_Alobe, Misteraxel1, 20-07-1994, Rue de la Tulipe - Tulpstraat, desiree.hamilton@ulb.ac.be
+360, Ines, Van der Brug, crazy_pepite, UnK_Amaterasu, 02-08-1987, Rue de Trèves - Trierstraat, ines.vanderbrug@yahoo.fr
+369, Keegan, Schneider, deadwingblock99, JedsKiki, 10-06-2003, Rue du Rouleau - Rolstraat, keegan.schneider@gmail.com
+382, Kara, Ross, Marose21, gab371, 25-01-1962, Rue de la Roche Fatale - Noodlottige Rotsstraat, kara.ross@yahoo.fr
+393, Severine, Tumson, mathis88220, Victorcamposji, 15-07-1975, Rue de l&#39;Inquisition - Inquisitiestraat, severine.tumson@gmail.com
+410, Maximus, Castro, manolokinhoo, Dychko, 16-07-1983, Rue de Biestebroeck - Biestebroekstraat, maximus.castro@gmail.com
+419, Charlie, Wilkinson, Wazzah, RoumainPasCommun, 11-02-1978, Rue des Echelles, charlie.wilkinson@gmail.com
+427, Damon, Terrell, XxEpiiicWiNn, iTzLeFruuty, 28-09-1961, Rue des Moines - Monnikenstraat, damon.terrell@gmail.com
+434, Miracle, Mcgee, tomXDtom57660, Jnzrgvl_, 14-06-1950, Rue du Dries - Driesstraat, miracle.mcgee@yahoo.fr
+450, Zoe, Crespel, Jenma1230_GC, ArezGames_, 10-10-1966, Rue Saint-Géry, zoe.crespel@gmail.com
+457, Audrey, Dawance, XxhpivorzaxX, adlude, 15-05-1969, Rue Romanie Van Dyck - Romanie Van Dyckstraat, audrey.dawance@yahoo.fr
+472, Athena, May, mathisdu45200, Hugooomoii28, 28-08-1973, Rue Delaunoy - Delaunoystraat, athena.may@hotmail.be
+488, Mélanie, Timmermans, MmiguelMC, Neijou, 25-03-1987, Rue du Lama - Lamastraat, mélanie.timmermans@hotmail.be
+503, Maia, Christian, DproggamerYT, xXxjojoxXx, 16-09-2002, Bezemstraat, maia.christian@gmail.com
+515, Théo, Rousseau, tsubasakaito, Cryfy_, 25-11-1976, Avenue du Comté de Jette - Graafschap Jettelaan, théo.rousseau@gmail.com
+528, Phillip, Pollard, ShergiokGamer, slinck, 26-10-1995, Rue Philomène - Philomènestraat, phillip.pollard@gmail.com
+540, Émilie, Walle, TRG_Hower07, Fanatiiiko, 15-02-1978, Rue Fontainas - Fontainasstraat, émilie.walle@gmail.com
+554, Zoe, Delhotte, Wolfer45, IchliebeAmy, 29-11-1959, Rue d&#39;Attique - Atticastraat, zoe.delhotte@gmail.com
+567, Florence, Stievens, _KrosTled_, Ov3rG4ming, 26-02-1969, Rue Le Corrège - Correggiostraat, florence.stievens@ulb.ac.be
+580, Romain, Desandrouins, Sevn_Alias, Doctor_Whyyy, 08-08-1989, Rue du Ciel Bleu - Blauwe Hemelstraat, romain.desandrouins@gmail.com
+585, Kyra, Melton, Fibre06, MamzelleFun, 12-01-1992, Allée L. Van den Plas, kyra.melton@ulb.ac.be
+598, Adelyn, Travis, Zylcun, Chazanova, 09-08-1993, Avenue du Roi - Koningslaan, adelyn.travis@gmail.com
+604, Valentin, Verschueren, SRX_JStarck, Cubix35, 10-08-1985, Clos Joseph Otten - Joseph Ottengaarde, valentin.verschueren@gmail.com
+615, Françoise, Istasse, Crono2021, Jontinho, 25-11-2001, Rue Léon Jouret - Léon Jouretstraat, françoise.istasse@gmail.com
+625, Eva, Luyten, douoo, TheTroller83, 31-08-1968, Rue Félix Waefelaer - Félix Waefelaerstraat, eva.luyten@gmail.com
+638, Zachary, Savage, _SwiftWolf_, Neekzou, 20-04-1955, Avenue du V-Day - V-Daylaan, zachary.savage@gmail.com
+649, Hailie, Rocha, tatin1998, Merlys1220, 06-05-1987, Avenue Louis De Brouckère - Louis De Brouckèrelaan, hailie.rocha@hotmail.be
+661, David, Lemounie, Mineloco356, Fredalfredo, 27-08-1971, Rue Louis Marcx - Louis Marcxstraat, david.lemounie@gmail.com
+677, Chelsea, Rice, MisterLuquitaX, Uno264, 11-04-1991, Rue des Trois Pertuis - Driegatenstraat, chelsea.rice@yahoo.fr
+691, Stéphane, Piet, creepercapatin9, thebab1997, 25-05-1958, Rue Georges Garnir - Georges Garnirstraat, stéphane.piet@gmail.com
+703, Chloe, Kiecken, TheAlex01170, Netus154, 23-10-1999, Rue des Garennes - Konijnenwarandestraat, chloe.kiecken@gmail.com
+714, Macey, Moyer, JRB23, kendrole, 24-03-1981, Rue des Augustines - Augustijnernonnenstraat, macey.moyer@yahoo.fr
+724, Daniel, Blankaert, Juviva, Xavi2015, 22-06-1996, Rue du Métal - Metaalstraat, daniel.blankaert@yahoo.fr
+737, Olivier, Plaats, dabeal, starseeker358, 02-04-1955, Rue Max Waller - Max Wallerstraat, olivier.plaats@gmail.com
+748, Claudine, Doolaegue, Dileidys, Lunard34, 20-07-1967, Montagne de la Gare - Stationsberg, claudine.doolaegue@hotmail.be
+764, Marius, Hardy, trickini, Prof_DrSpy, 15-03-1981, Avenue de Rusatira - Rusatiralaan, marius.hardy@yahoo.fr
+776, Justus, Fox, nykkau, nicolas131, 07-11-1961, Doornikstraat, justus.fox@yahoo.fr
+787, Muriel, Felix, xKyZoo, capuprogeek, 14-12-1968, Rue Jules Bouillon - Jules Bouillonstraat, muriel.felix@gmail.com
+802, Juliet, Case, Rikimosfi, GTX_DarkPower57, 30-09-1993, Rue Thomas Vinçotte - Thomas Vinçottestraat, juliet.case@gmail.com
+809, Mareli, Haynes, Malxii, DrCamX, 11-09-1955, rue Belliard, mareli.haynes@gmail.com
+818, Grégory, Herten, Fripouille, Zenopsys_, 25-11-1965, Avenue Guillaume Gilbert - Guillaume Gilbertlaan, grégory.herten@gmail.com
+827, Sylvain, Cappelaere, Kiage, MisterNoob06, 22-05-1958, Rue Dubois-Thorn - Dubois-Thornstraat, sylvain.cappelaere@gmail.com
+836, Roberto, Braun, al328classe, Dantalle, 05-12-1968, Rue Deschampheleer - Deschampheleerstraat, roberto.braun@gmail.com
+844, Daniel, Lénel, elrikmineria, TufTy_, 17-04-1984, Anderlechtsesteenweg, daniel.lénel@gmail.com
+854, Sylvain, Lorfèvre, bobi69, Blobfish_King, 06-10-2003, Rue Baron Dhanis - Baron Dhanisstraat, sylvain.lorfèvre@gmail.com
+860, Anthony, Goethals, opicK, Tartrex2591, 30-01-1962, Rue Coenraets - Coenraetsstraat, anthony.goethals@gmail.com
+875, Emerson, Rowland, KaEroV, OalexfairyO, 29-10-1977, Rue de la Forêt d&#39;Houthulst, emerson.rowland@ulb.ac.be
+885, Rex, Castillo, StiliMonsterPVP, DanuelGG, 27-10-2002, Place Stéphanie, rex.castillo@gmail.com
+892, Amelie, Claus, ArathByGamer, RockyGamerPvP, 12-01-1967, Avenue des Ablettes - Witvissenlaan, amelie.claus@gmail.com
+902, Tyrese, Cobb, Dixyon_Air, MathieuAR, 22-08-1978, Rue du Mont-Blanc - Witte-Bergstraat, tyrese.cobb@gmail.com
+912, Shiloh, Owen, RGSPro, lolgalcraft, 01-04-1994, Montagne de Sable, shiloh.owen@gmail.com
+922, Guillaume, Van Vleuten, Elypsia, Manon007, 18-10-1975, Rue De Praetere - De Praeterestraat, guillaume.vanvleuten@ulb.ac.be
+930, Phoenix, Roth, Adalrick, Recm4n, 03-10-1990, Groot Eiland, phoenix.roth@hotmail.com
+941, Anna, Holemans, DarkEnder64, MrTheRomainX9, 21-12-1985, Rue Rouppe - Rouppestraat, anna.holemans@yahoo.fr
+952, Clark, Richardson, CouilleBleu, MissChocoVanille, 06-04-1979, Square Elsa Frison - Elsa Frisonsquare, clark.richardson@gmail.com
+968, Genevieve, Van der Slycke, Eriwa, dvdfamer, 18-05-1966, Rue du Petit Rempart - Vestje, genevieve.vanderslycke@yahoo.fr
+978, Elliana, Carey, leirbaag, Mewan, 13-05-1974, Square de l&#39;Aviation - Luchtvaartsquare, elliana.carey@gmail.com
+997, Zackary, Ho, mysisterme, SuZuHD, 04-07-1992, Rue Ducale - Hertogsstraat, zackary.ho@gmail.com
+1008, Patrice, Quesne, _Vyrox, LeoAjaccio, 18-08-1950, Rue de Boetendael - Boetendaelstraat, patrice.quesne@gmail.com
+1021, Frédéric, Van Escht, jeanmarielebg, ziza2300, 12-11-1999, Avenue Jean Sobieski - Jan Sobieskilaan, frédéric.vanescht@gmail.com
+1032, Nicole, Mergeai, rosjim, CAVENATI, 04-05-1993, Rue Verhulst - Verhulststraat, nicole.mergeai@gmail.com
+1050, Alice, Eeckeman, Zeole, Kibane, 02-03-1974, Rue du Viaduc - Viaductstraat, alice.eeckeman@hotmail.be
+1062, Kailyn, Barnes, Destroyer011001, Gorliond, 19-06-1996, Avenue Secrétin - Secrétinlaan, kailyn.barnes@gmail.com
+1072, Luciana, Ritter, Pazteque, remi63410, 25-04-1970, Rue Léopold Demesmaeker - Léopold Demesmaekerstraat, luciana.ritter@gmail.com
+1087, Amandine, Urbain, BlockWarrior89, Just2QC, 16-03-1981, Place des Bienfaiteurs - Weldoenersplein, amandine.urbain@hotmail.be
+1103, Pascal, Blaas, tMac720, BlackCombo_, 19-12-2001, Avenue Seghers - Segherslaan, pascal.blaas@gmail.com
+1115, Helen, Nunez, Harcos_Eros, DreamKiller71, 21-11-1986, Avenue Notre-Dame - Onze Lieve Vrouwlaan, helen.nunez@gmail.com
+1126, Kenna, Bass, redheness, thomastel, 08-04-1990, Rue des Minimes - Minimenstraat, kenna.bass@ulb.ac.be
+1138, Julie, De Pannemaecker, 1_1_1_o_1_1_1, Aquila17, 15-12-1966, Rue des Tournesols - Zonnebloemenstraat, julie.depannemaecker@yahoo.fr
+1147, Marion, Thomas, alban_f, nico4521, 22-07-1977, Chaussée de Ninove - Ninoofsesteenweg;Chaussée de Ninove - Ninoofse Steenweg, marion.thomas@yahoo.fr
+1165, Audrina, Spence, Wixo_PvP, zAmboy09, 20-01-1994, Rue François Delcoigne - François Delcoignestraat, audrina.spence@gmail.com
+1174, Heather, Raymond, _Wasilaz_, Mr_Crabe, 05-07-1992, Rue du Pays de Liège - Land van Luikstraatje, heather.raymond@ulb.ac.be
+1188, Clarissa, Meza, SwardGard, trimixworld, 31-01-1955, Finisterraestraat, clarissa.meza@yahoo.fr
+1195, Jayleen, Maldonado, Alexrider114, Ishuro_, 10-03-1996, Greepstraat, jayleen.maldonado@gmail.com
+1207, Jérôme, Poyon, alenieves, KRhuFTeuKRAFT, 19-10-1968, Grootgodshuisstraat, jérôme.poyon@ulb.ac.be
+1213, Lou, Bruggesman, GrimakaBast, xxRILESO_37xx, 19-06-1951, Rue Haute - Hoogstraat, lou.bruggesman@gmail.com
+1229, Jean-Marc, Deneyer, JeanMariLePen_HD, AlexLubin, 25-07-1998, Rue Stroobants - Stroobantsstraat, jeanmarc.deneyer@gmail.com
+1237, Quentin, Verhage, TheJoshy01, iTzQuimYT, 30-04-1966, Rue du Fossé - Grachtstraat, quentin.verhage@gmail.com
+1252, Alison, Greer, coquiile, yassdu68, 22-06-1960, Rue Edouard Van Muylders - Edouard Van Muyldersstraat, alison.greer@gmail.com
+1264, Nicolas, De Schepper, Pipo3000, Kenaydi, 23-11-1995, Avenue Paul Hymans - Paul Hymanslaan, nicolas.deschepper@gmail.com
+1277, Hervé, Greggs, iCatLiX_, JulioGamer_PvP_, 09-12-2001, Rue des Colonies - Koloniënstraat, hervé.greggs@hotmail.be
+1290, Mélanie, De Cock, Gold_PvP, MarioElNooBZ, 14-06-2000, Avenue Marius Renard - Marius Renardlaan, mélanie.decock@hotmail.com
+1304, Sienna, Haas, Azadror_, Mine_BouBou, 25-07-1983, Place du Musée - Museumplein, sienna.haas@ulb.ac.be
+1313, Morgan, Demeyer, iSwazHD, vervex11, 03-11-2001, Rue des Quatre Vents, morgan.demeyer@hotmail.be
+1326, Charlotte, De Haese, Last_Chibi, BananaSpl_it, 03-08-1979, Marché aux Herbes - Grasmarkt, charlotte.dehaese@hotmail.be
+1343, Lee, Ashley, cassepierre, quent4444, 14-08-1959, Chaussee de Zelik, lee.ashley@gmail.com
+1355, Yahir, Humphrey, thatguy23412345, Titga92, 05-02-1981, Avenue Molière - Molièrelaan, yahir.humphrey@yahoo.fr
+1372, Antoine, De Rovéréaz, Powniz, RageInGame, 23-11-1957, Rue du Repos - Ruststraat, antoine.derovéréaz@gmail.com
+1392, Avery, Downs, kittylover505, BurningGod, 27-08-1959, Rue des Loups - Wolvenstraat, avery.downs@gmail.com
+1405, Agnes, De Meyer, iRedDream, Panaman2545xD, 10-02-1962, Rue du Ramier - Bosduifstraat, agnes.demeyer@yahoo.fr
+1416, Sonia, De Muynke, DarkChicken08, Oxysew721, 31-10-1950, Parc du Cinquantenaire - Jubelpark, sonia.demuynke@hotmail.com
+1428, Clément, Dekimpe, Frizer, Skyfect, 15-07-1955, Rue du Frontispice - Frontispiesstraat, clément.dekimpe@yahoo.fr
+1442, Louis, Hardat, Samgaz, ByNetix, 19-03-1952, Rue Alfred Cluysenaar - Alfred Cluysenaarstraat, louis.hardat@gmail.com
+1456, Amelie, Clébant, Solitaire52, iLushon, 17-09-1964, Avenue Georges Petre - Georges Petrelaan, amelie.clébant@yahoo.fr
+1468, Mireille, Etienne, TaD_KozH, manuchats, 13-10-1969, Avenue du Roi-Soldat - Koning-Soldaatlaan, mireille.etienne@gmail.com
+1478, Angelica, Duncan, envel147, soulgamer_777, 20-05-1976, Rue d&#39;Anderlecht - Anderlechtsesteenweg, angelica.duncan@hotmail.com
+1496, Louis, Maes, tiroge10, Simerios, 14-08-1952, Negende Linielaan - Boulevard du Neuvième de Ligne, louis.maes@gmail.com
+1511, Bailey, Phillips, wuza737, Hqcking_, 25-03-1962, Place Joseph Wauters, bailey.phillips@yahoo.fr
+1520, Lola, Briggs, Kenji_, ByKeviinCALABAZA, 18-03-1980, Place Joseph Wauters - Joseph Wautersplein, lola.briggs@hotmail.be
+1531, Angelina, Yu, TheLangos69, Anjinsen, 24-04-1955, Place Poelaert - Poelaertplein, angelina.yu@gmail.com
+1544, Lucie, Tuin, ELROBAS, OmairXCraft, 02-05-2000, Rue Gustave Huberti - Gustave Hubertistraat, lucie.tuin@yahoo.fr
+1553, Tia, Cohen, Napletron, NeverMe_, 03-08-1995, Rue Jean Massart - Jean Massartstraat, tia.cohen@gmail.com
+1560, Atticus, Colon, Boom_Jas, jujudarkken, 18-04-1986, Clos Jecta - Jectagaarde, atticus.colon@gmail.com
+1572, Francis, Hendrickx, Hakouatix_, Rochdur, 05-12-1999, Rue de la Fiancée, francis.hendrickx@gmail.com
+1582, Camille, Daems, MisterFarga, tHz_StormFire, 29-07-1959, woluwe dal, camille.daems@gmail.com
+1590, Raphael, Hinton, Wolfs48, _Romannn_, 05-05-1954, Rue des Petits Carmes - Karmelietenstraat, raphael.hinton@yahoo.fr
+1607, Sarah, Neel, LaBelleMiss52, Myaii, 26-04-1972, Rue de la Gaîté - Blijdschapsstraat, sarah.neel@gmail.com
+1618, Juan, Velazquez, thomasbenigni, paulpeinado, 07-12-1991, Avenue Albert Lancaster - Albert Lancasterlaan, juan.velazquez@gmail.com
+1628, Nathan, Martins, tylerjokes, mars211, 14-11-1956, Rue Emile Idiers - Emile Idiersstraat, nathan.martins@ulb.ac.be
+1641, Riley, Alvarez, dooble45, ZozoKop, 29-07-2003, Rue Corneille De Clercq - Corneille De Clercqstraat, riley.alvarez@yahoo.fr
+1655, Mireille, Laenen, KynZay, Spylox, 09-07-1982, Rue Geleytsbeek - Geleytsbeekstraat, mireille.laenen@yahoo.fr
+1664, Lukas, Garcia, FuZion_PrOoFy, Etincelle, 26-09-1955, Avenue Groelstveld - Groelstveldlaan, lukas.garcia@gmail.com
+1677, Christine, Smet, lucashlz, BigWig07, 21-08-1957, Rue Saint-Josse - Sint-Jooststraat, christine.smet@ulb.ac.be
+1689, Carole, De Frankrijker, hami0u11, DarkWhite101, 27-04-1990, Rue Van Schoor - Van Schoorstraat, carole.defrankrijker@yahoo.fr
+1705, Théo, Cavard, AzuuSama, Wolfcraftgamer, 25-06-2003, Avenue du Prince d&#39;Orange - Prins van Oranjelaan, théo.cavard@yahoo.fr
+1715, Genevieve, Stevens, Adcpeda, Manu2355, 26-09-1967, Rue Hoogeleest - Hogeleeststraat, genevieve.stevens@gmail.com
+1725, Vincent, Priesse, Silopan, Demeuz, 07-03-1966, Rue des Moucherons, vincent.priesse@gmail.com
+1746, Alice, Doorne, eaucruche, Luxio_37, 28-09-1988, Buda Steenweg, alice.doorne@gmail.com
+1756, Janelle, Herrera, iTzDargasPvP, PGM_iRzZ, 02-03-1985, Rue Auguste Snieders - Auguste Sniedersstraat, janelle.herrera@hotmail.be
+1767, Kylan, Conner, SaverioSlmt, GamerLine_YT, 18-03-2001, Avenue Everard - Everardlaan, kylan.conner@gmail.com
+1776, Patrick, De Saert, Luceus, MauriiGamer2000, 03-11-1994, Parvis Saint-Gilles - Sint-Gillisvoorplein, patrick.desaert@ulb.ac.be
+1789, Hervé, Calbert, kyoukan00, Elypsio, 06-05-1978, Place Aimé Dandoy - Aimé Dandoyplein, hervé.calbert@hotmail.be
+1800, Daniel, Piette, s0hr0n, SrNahuel, 15-11-1995, Rue du Parnasse - Parnassusstraat, daniel.piette@ulb.ac.be
+1811, Ana, Mayo, easix, feunnec22, 06-12-1975, Avenue du Pesage - Waaglaan, ana.mayo@gmail.com
+1819, Georges, Depoortere, TheBuzzster, Roxiie, 13-07-1968, Esplanade - Esplanade, georges.depoortere@gmail.com
+1832, Brylee, Hancock, Skyb0x, raphibodet, 06-10-1982, Rue de Belgrade - Belgradostraat, brylee.hancock@hotmail.com
+1841, Amina, Mata, z3eem_4ever, pitibaba22, 23-08-1985, Boulevard Louis Schmidt - Louis Schmidtlaan, amina.mata@gmail.com
+1855, Hélène, Dapvril, 17bryce17, mrdracogaming, 10-01-1954, Rue des Tisserands - Weversstraat, hélène.dapvril@gmail.com
+1863, Edgar, Kaufman, XzYnAn, Mr_PandaChatta, 06-04-1955, Boulevard de l&#39;Empereur - Keizerslaan, edgar.kaufman@ulb.ac.be
+1873, Yannick, Depelseneer, TheEvilGame08, EviloBscure, 02-03-2003, Rue Brunard - Brunardstraat, yannick.depelseneer@gmail.com
+1883, Morgan, Dewyse, brayden7070, zMacooh, 21-07-1985, Rue des Moineaux, morgan.dewyse@gmail.com
+1896, Elisabeth, Dondenne, Neo_pikmen, Exillis, 16-02-2000, Avenue Van Volxem - Van Volxemlaan, elisabeth.dondenne@gmail.com
+1910, Jeffery, Wall, Furty78, warcraft2008, 17-03-2003, Avenue du Mont Kemmel - Kemmelberglaan, jeffery.wall@gmail.com
+1914, Dayami, Peterson, xXfromdeadXx, BlackAvenger2, 11-01-1985, Avenue Britsiers - Britsierslaan, dayami.peterson@gmail.com
+1929, Bernard, Leprette, Jedimaster57, _LoLa_, 22-06-1990, Rue de la Chasse Royale - Koninklijke Jachtstraat, bernard.leprette@gmail.com
+1944, Pierre, Lefèvre, Knovovo, 5Matrixx227, 04-03-1987, Rue des Roses - Rozenstraat, pierre.lefèvre@hotmail.com
+1955, Jeremy, Jonet, Z3rtoxHD, zlTefisuroelanoa, 05-01-1992, Place François Bossuet - François Bossuetplein, jeremy.jonet@gmail.com
+1969, Madyson, Harrington, M4ciYT, flosensei, 02-09-1950, Carrefour de l&#39;Europe, madyson.harrington@yahoo.fr
+1979, Isabell, Huber, superhakmoun, MIRKO1449, 11-04-1973, Rue de la Vieillesse Heureuse - Gelukkige Grijsheidstraat, isabell.huber@hotmail.com
+1989, Denis, Gourdet, Hemix76, Herofy, 08-01-2003, Avenue du Chant d&#39;Oiseau - Vogelzanglaan, denis.gourdet@yahoo.fr
+1999, Robert, Deneyer, licornemane, CrashReam, 07-08-1955, Rue du Congrès - Congresstraat, robert.deneyer@ulb.ac.be
+2017, Vincent, Lesoille, fifouko64, JunkayElGato, 12-04-1956, Rue des Métaux - Metalenstraat, vincent.lesoille@ulb.ac.be
+2027, Manon, Wattiau, _Thorondor_, leo200413, 03-05-1998, Rue Général Leman - Generaal Lemanstraat, manon.wattiau@ulb.ac.be
+2039, Elisabeth, Moreau, Mikanate, SirRango, 07-05-1990, Rue Médori - Médoristraat, elisabeth.moreau@hotmail.be
+2054, Agnes, Lacroix, Norgeaa, litlecube, 08-06-1967, Rue Ketels - Ketelsstraat, agnes.lacroix@gmail.com
+2064, Kaley, Gray, BurstVixen, maxboo3000, 29-04-1986, Rue Louis Thys - Louis Thysstraat, kaley.gray@gmail.com
+2078, Melanie, Franzman, Melon_Wizard, DENIX7800, 16-05-1954, Rue Marcel Grüner - Marcel Grünerstraat, melanie.franzman@gmail.com
+2090, Mireille, De Molder, FrostyFreeze33, Startoniomdr, 26-10-1996, Rue du Curé - Pastoorstraat, mireille.demolder@ulb.ac.be
+2102, Yannick, Depannemaecker, _xEaZyT, TheoriaMC, 15-12-1960, Rue René Henry - René Henrystraat, yannick.depannemaecker@gmail.com
+2114, Antoine, Declercq, DadaGamingYT, imTornado, 01-09-1977, Avenue Franz Guillaume - Franz Guillaumelaan, antoine.declercq@gmail.com
+2131, Guy, Losset, Miss_Soso, ferdi9999, 02-01-1981, Rue Van Artevelde - Arteveldestraat, guy.losset@gmail.com
+2144, Abbigail, Martin, linirio, Mr_Vintage, 22-08-1997, Avenue d&#39;Orbaix - D&#39;Orbaixlaan, abbigail.martin@hotmail.be
+2152, Xavier, Schoenman, johan3146, mrvuur, 21-01-1951, Quai aux Barques, xavier.schoenman@yahoo.fr
+2169, Michèle, Kaisin, ElGirls, littlePereZz, 31-08-1966, Place de Dinant - Dinantplein, michèle.kaisin@ulb.ac.be
+2187, Jon, Bird, dapwner777, Zx_Scorpion, 19-08-2003, Rue Chair et Pain, jon.bird@gmail.com
+2198, Amelie, Eyck, alvrexcraft, LifeAfterDeath, 11-05-1966, Rue Adolphe Marbotin - Adolphe Marbotinstraat, amelie.eyck@hotmail.be
+2206, David, Van Hoof, HoFlyz, XxXGodxyXxX, 09-08-1951, Rue de la Fontaine, david.vanhoof@hotmail.com
+2218, Luca, Horton, _Aphelion, Gadgo57, 03-10-1955, Avenue Thomson - Thomsonlaan, luca.horton@ulb.ac.be
+2229, Darwin, Vazquez, iTz_JustG_PvP, ENEITOR100, 24-06-1965, Avenue Roger Hainaut - Roger Hainautlaan, darwin.vazquez@hotmail.com
+2243, Ashtyn, Avery, TelloRex, Balkhrod_, 02-02-1952, Rue Belliard - Belliardstraat, ashtyn.avery@gmail.com
+2252, Stéphane, Fransolet, LeakyHeart, Nixonnn, 18-09-1989, Rue de la Comète - Staartsterstraat, stéphane.fransolet@hotmail.be
+2267, Fabian, Macdonald, bfenrique, ID25_, 23-01-1979, Avenue Beethoven - Beethovenlaan, fabian.macdonald@hotmail.be
+2277, Asher, Powell, Alexandre12, redleader1313, 23-07-1972, Rue d&#39;Aa - Aastraat, asher.powell@gmail.com
+2289, Monica, Blair, CuitoGames, Timix13, 12-10-1992, Rue du Witloof - Witloofstraat, monica.blair@gmail.com
+2293, Vincent, Jeuniaux, SrTomiCai, Crezia83, 19-10-1957, Rue du Chapitre - Kapittelstraat, vincent.jeuniaux@ulb.ac.be
+2299, Nehemiah, Sawyer, annekin2401, Raams_OO, 11-02-1995, Square des Vétérans Coloniaux - Koloniale-Veteranensquare, nehemiah.sawyer@gmail.com
+2313, Makena, Day, RayZzeRx, STUPjvtv, 01-07-1950, Rue Verwée - Verwéestraat, makena.day@gmail.com
+2325, Aisha, Valentine, xXSrMaxi32Xx, iMakeMilkFlow, 09-05-1982, Avenue Valduchesse - Hertoginnedal, aisha.valentine@gmail.com
+2339, Frédéric, Lemaire, t1375, MrLuther1008, 01-03-1998, Avenue Victor Olivier - Victor Olivierlaan, frédéric.lemaire@yahoo.fr
+2358, Kenneth, Moon, Rxstiz, ElMatadorDu92, 14-12-1964, Rue Gustave Defnet - Gustave Defnetstraat, kenneth.moon@gmail.com
+2365, Giuliana, Cunningham, Mout312, Seb220503, 25-01-1993, Rue Sombre - Donkerstraat, giuliana.cunningham@gmail.com
+2377, Siena, Cross, ThePower3210, zP4ndYT, 04-06-1959, Chemin Laurence Olivier - Laurence Oliviergaarde, siena.cross@gmail.com
+2394, Raphaël, Hermann, Alepima, SyWox, 08-09-1983, Rue des Grèbes - Futenstraat, raphaël.hermann@hotmail.com
+2407, Faith, Vargas, redweapond, arthurval, 08-06-1957, Avenue Charles Schaller - Charles Schallerlaan, faith.vargas@hotmail.be
+2422, Daniel, Gabriels, axelda75, Korosiif, 15-01-1963, Rue du Page - Edelknaapstraat, daniel.gabriels@gmail.com
+2437, Clément, Raussin, strem82, Radulf, 03-05-2002, Avenue Philippe Thomas - Philippe Thomaslaan, clément.raussin@gmail.com
+2447, Warren, Hancock, BenTheGamer11, Louka16, 18-12-1983, Square des Privilèges - Privilegiënsquare, warren.hancock@gmail.com
+2461, Erwan, De Cock, Therainbow2811, iTomii_PvP, 22-10-1959, Place du Luxembourg. Luxemburgplein, erwan.decock@yahoo.fr
+2471, Chris, Braun, azeralone, ChecoJR21, 17-06-1992, H. Theresialaan, chris.braun@gmail.com
+2487, Alice, Maca, zTWillian1XD, madcraft25, 21-08-1980, Rue du Marché au Charbon - Kolenmarkt, alice.maca@hotmail.com
+2500, Micah, Avila, MasterKioshy, KretzEU, 19-11-1972, Chaussée de Buda - Budasesteenweg, micah.avila@hotmail.be
+2511, Lionel, Marchal, raph15, eloak, 23-06-1979, Rue de la Loyauté - Rechtschapenheidsstraat, lionel.marchal@gmail.com
+2529, Annick, Klerk, murdorking, UchroniK, 25-01-1989, Rue d&#39;Octobre - Oktoberstraat, annick.klerk@hotmail.com
+2543, Katelyn, Shepard, yugazue, heynico, 07-02-1952, Rue de Douvres - Doverstraat, katelyn.shepard@ulb.ac.be
+2554, Eliana, Mckenzie, oul1999, barkaos36, 12-06-1971, Rue du Bien-Etre - Welzijnstraat, eliana.mckenzie@ulb.ac.be
+2564, Taniyah, Rios, poupi_rouge, mattix01, 14-02-1989, Rue des Gardénias - Gardeniastraat, taniyah.rios@gmail.com
+2579, Autumn, Edwards, XOKeiChanOX, KohinaSenpai, 09-12-1986, Rue François Desmedt - François Desmedtstraat, autumn.edwards@gmail.com
+2596, Alexis, Delgat, tintin44g, Mr_gamer28, 18-09-1989, Drève du Renard - Vosdreef, alexis.delgat@ulb.ac.be
+2614, Pascal, Blondeel, selujg, Polo75_, 09-11-1962, Rue des Harengs - Haringstraat, pascal.blondeel@gmail.com
+2625, Yves, Cappelaire, ElSuaj, _LightningStar_, 27-09-1992, Carré Meert - Meertblok, yves.cappelaire@hotmail.com
+2645, Cécile, Swart, logan59330, Ricardo_Pinto, 11-03-1990, Rue du Paruck - Paruckstraat, cécile.swart@gmail.com
+2665, Renee, Rowe, Eidorian, _Leaping, 25-01-1990, Steenkoolkaai, renee.rowe@hotmail.be
+2680, Amelie, Collin, DAKITI, Boubibourdon, 17-02-1969, Rue des Touristes - Toeristenstraat, amelie.collin@yahoo.fr
+2694, Camille, Watteaux, LegoStarfury, WhoIamYouDontKno, 28-05-1988, Rue des Liégeois - Luikenaarsstraat, camille.watteaux@ulb.ac.be
+2708, Nathanael, Durham, TNF_NicoZ, Poca31, 23-06-1955, Rue Léon Cuissez - Léon Cuissezstraat, nathanael.durham@hotmail.com
+2720, Julia, Saunders, crafto22, GantaiKade, 03-03-1963, Rue John Waterloo Wilson - John Waterloo Wilsonstraat, julia.saunders@hotmail.be
+2728, Bridger, Huynh, Chantalsuisse, Mr_Bacchus, 17-07-1967, Avenue du Dirigeable - Luchtschiplaan, bridger.huynh@hotmail.be
+2739, Philippe, Van der Slycke, Rafa380, Dracoluc58, 02-06-1999, Rue Renkin - Renkinstraat, philippe.vanderslycke@hotmail.be
+2753, Marie-christine, Pauss, ringo3011, MrDenzel_, 27-02-1968, Rue Pierre Marchant - Pierre Marchantstraat, mariechristine.pauss@hotmail.be
+2769, Alfred, Bennett, Alexou2003, Jan_Tim, 21-05-1995, Place Victor Horta - Victor Hortaplein, alfred.bennett@ulb.ac.be
+2779, Loïc, Ceulemans, DesXBOOM, MrPouding, 25-07-1968, Rue du Finistère - Finisterraestraat, loïc.ceulemans@gmail.com
+2800, Martine, Mauchamp, william74500, NaphiR91, 31-01-1972, Rue Guillaume Dekelver - Guillaume Dekelverstraat, martine.mauchamp@hotmail.be
+2817, Isis, Cervantes, _Krnage, Misakko, 13-12-1957, Rue Sainte-Catherine - Sint-Katelijnestraat, isis.cervantes@hotmail.be
+2835, Julien, Mayeur, Qyru, AZOTE_TAZ, 28-01-1997, Rue de la Verdure - Loofstraat, julien.mayeur@gmail.com
+2843, Elaina, Walters, caslu2003, CPC_StormZ, 31-12-1961, Rue Braemt - Braemtstraat, elaina.walters@gmail.com
+2853, Thomas, Van Pée, SheetCore, jujuslm, 31-03-1965, Rue des Boers - Boerenstraat, thomas.vanpée@ulb.ac.be
+2858, Mira, Hogan, oliking01, Amloy, 29-05-1985, Rue Mommaerts - Mommaertsstraat, mira.hogan@gmail.com
+2872, Anika, Medina, Suiluj_Lekam, NerCraft, 27-01-1995, Avenue Guillaume Crock - Guillaume Crocklaan, anika.medina@hotmail.be
+2881, Cory, Miller, SamKouff39, kidiun, 04-10-1980, Rue du Progrès - Vooruitgangstraat, cory.miller@gmail.com
+2896, Anne, Meeus, MrTronc, LukystonePvP, 08-08-1960, Petite rue des Bouchers - Korte Beenhouwersstraat, anne.meeus@ulb.ac.be
+2905, Will, Moody, StunTsky, mikethekid170, 07-04-1978, Robert Dansaertlaan, will.moody@gmail.com
+2913, Michaël, Schnock, Rigy_Gaming, loulou03, 12-07-1974, Rue Vilain XIIII - Vilain XIIII-straat, michaël.schnock@ulb.ac.be
+2922, Salvatore, Cross, ttyo222111, Borkatator, 05-10-1998, Rue Bodenbroek - Bodenbroekstraat, salvatore.cross@gmail.com
+2929, Francesca, Mata, RazKaos, Be_Careful_, 25-11-1989, Rue du Musée - Museumstraat, francesca.mata@gmail.com
+2943, Daniela, Meyers, xWhiskers, Gt456, 13-08-1964, Rue Godecharle - Godecharlestraat, daniela.meyers@gmail.com
+2957, Brenden, Ford, puddingsnow, Vheron, 16-04-1952, Rue des Guildes - Gildenstraat, brenden.ford@gmail.com
+2974, Virginie, Jongers, Hopeitse, MasterKafei, 16-11-1973, Place Émile Bockstael - Emile Bockstaelplein, virginie.jongers@gmail.com
+2988, Caroline, Danis, MGT87, nchevrier, 01-08-1957, Rue Léopold Courouble - Léopold Couroublestraat, caroline.danis@gmail.com
+2997, Brittany, Park, JdLoza, loicdurandlolo54, 20-06-1988, Avenue des Capucines - Kapucijnbloemenlaan, brittany.park@yahoo.fr
+3012, Elsie, Guzman, Deltatrack, skillnoz, 22-10-1971, Rue de l&#39;Église, elsie.guzman@gmail.com
+3018, Andres, Barajas, PJoke1, Eagleye_PvP, 14-04-1952, Rue des Châlets - Lusthuizenstraat, andres.barajas@yahoo.fr
+3037, Matteo, De Smeytere, MangaCraft_YT, etie64, 23-04-1997, Rue de la Cité - Woonwijkstraat, matteo.desmeytere@gmail.com
+3056, Diego, Kaisin, D4rkFun, Gautagi, 29-03-1997, Avenue Albert - Albertlaan, diego.kaisin@yahoo.fr
+3072, Alice, Tran, anto337, JULESGM1, 24-12-1970, Rue Félix Hap - Félix Hapstraat, alice.tran@hotmail.be
+3085, Genevieve, Arteman, Lescouds, Patate__Douce, 21-04-1975, Rue Walcourt - Walcourtstraat, genevieve.arteman@gmail.com
+3097, Paul, Combs, meaniniXme, Yorihiko, 20-07-1995, Rue de l&#39;Enclume - Aanbeeldstraat, paul.combs@gmail.com
+3107, Carole, Tweelinckx, kinkin67000, scoobidoo03, 06-01-1981, Avenue du Pont de Luttre - Luttrebruglaan, carole.tweelinckx@gmail.com
+3126, Giada, Gordon, LucaElKapoo, CapSweg, 08-06-1997, Bloemenhofplein - Place du Jardin aux Fleurs, giada.gordon@hotmail.be
+3135, Yves, Lorphêvre, TheTohme, _NinjaKiller_, 11-07-1977, Steenstraat, yves.lorphêvre@ulb.ac.be
+3147, Janiya, Dyer, zzeenn, Sniper_Ducky, 18-05-1978, Rue de l&#39;Arc - Boogstraat, janiya.dyer@gmail.com
+3162, Stéphane, De Voghels, iPaulo21, FofoHD, 09-01-1966, Place du jeu de balle, stéphane.devoghels@hotmail.com
+3181, Travis, Ramirez, Best_Diana_CONGO, Haribo_Pik, 16-02-1968, Rue de la Bourse - Beursstraat, travis.ramirez@hotmail.com
+3188, Sandrine, Coudyser, DrCreepRed, Veltor1, 04-01-1987, Rue du Brillant - Briljantstraat, sandrine.coudyser@gmail.com
+3197, Elliott, Sullivan, AntarfPvP, Straught, 28-04-1950, Place de Saint-Job - Sint-Jobsplein, elliott.sullivan@gmail.com
+3210, Sandra, Natus, Basouuu, MasonDoesPvp, 03-08-1952, Avenue de la Forêt - Woudlaan, sandra.natus@gmail.com
+3215, Maxim, Ramirez, thomaskyly, zDeLtA_, 04-10-1991, Avenue René Comhaire - René Comhairelaan, maxim.ramirez@gmail.com
+3231, Londyn, Dorsey, Juambi, BePancake, 11-06-1981, Avenue Emile Van Ermengem - Emile Van Ermengemlaan, londyn.dorsey@ulb.ac.be
+3243, Samuel, Herbrand, MrcLeEzY13, yunase, 15-12-1963, Rue Malibran - Malibranstraat, samuel.herbrand@hotmail.be
+3258, Philip, Moody, panam0076, Frigyu, 03-05-2003, Rue de la Bourse, philip.moody@hotmail.com
+3272, Jaelyn, Banks, Shaka3R, Roromaurice, 17-11-1990, De Bruyckerweg, jaelyn.banks@gmail.com
+3279, Éric, De Stracke, Bmaster123456, LOUANE34, 19-07-1955, Rue Bosquet - Bosquetstraat, éric.destracke@gmail.com
+3287, Kaya, Goodwin, niteroc98, KotaroInugamie, 16-01-1962, Allée Jean de La Fontaine - Jean de La Fontainelaan, kaya.goodwin@ulb.ac.be
+3296, Fisher, Black, Theo1312, xxfither500xx, 03-05-1986, Clos &#39;t Jaegerke - &#39;t Jaegerke, fisher.black@gmail.com
+3312, Brigitte, Janssen, Kilox666, Salex_Brown123, 18-04-1981, Avenue Emile Duray - Emile Duraylaan, brigitte.janssen@hotmail.be
+3326, Dexter, Manning, gabel305, AndresGamer16YT, 06-04-1960, Boulevard Lambermont - Lambermontlaan, dexter.manning@gmail.com
+3333, Chantal, Vossen, MrLink937, Quu_malaria, 28-01-1960, Linthoutstraat, chantal.vossen@yahoo.fr
+3349, Dexter, Ingram, sinnermarley, PHIL911811, 24-12-2003, Avenue Léon Mahillon - Léon Mahillonlaan, dexter.ingram@gmail.com
+3362, Austin, Pittman, Valval264, Zerkan, 06-04-1964, Rue des Genévriers - Jeneverbomenstraat, austin.pittman@gmail.com
+3368, Théo, Demeyer, MissMinette62, Flavien, 09-03-1999, Rue des Princes - Prinsenstraat, théo.demeyer@hotmail.be
+3382, Olivia, Hinck, Neohippy, Unterfield, 26-06-1965, Impasse Schuddeveld - Schuddeveldgang, olivia.hinck@gmail.com
+3397, Ansley, Hahn, PUSHO, waterboss, 03-11-1972, Chemin du Croquet - Croquetweg, ansley.hahn@gmail.com
+3411, Ray, Frye, supercocker, redcrews2, 18-12-1968, Rue Ferdinand Lenoir - Ferdinand Lenoirstraat, ray.frye@gmail.com
+3423, Drew, Leonard, JiiGs75, Zermis, 30-03-1973, Rue de Livourne - Livornostraat, drew.leonard@gmail.com
+3435, Bernard, Van Pede, angaturama, elmaca38, 10-06-1965, Avenue Minerve - Minervalaan, bernard.vanpede@gmail.com
+3445, Maren, Douglas, The_Golden_Menn, TangBang, 23-01-1971, Antwerpselaan, maren.douglas@hotmail.com
+3458, Mckenna, Davenport, Desodux, Punki1921, 13-04-1951, Rue Baron de Castro - Baron de Castrostraat, mckenna.davenport@gmail.com
+3473, Christelle, Damard, Gonnet, Synthify, 03-07-1961, Square Armand Steurs - Armand Steurssquare, christelle.damard@yahoo.fr
+3487, Melanie, Huig, Rumpus1663, WardLord_1503, 16-08-1960, Rue du Peuplier, melanie.huig@gmail.com
+3503, Sophie, Istasse, Thomas71, McShaDoWs, 27-09-1990, Rue Arthur Maes - Arthur Maesstraat, sophie.istasse@gmail.com
+3518, Caroline, Deswarte, mxj96t, Jellaxe, 14-01-2000, Boulevard Adolphe Max, caroline.deswarte@gmail.com
+3534, Lionel, Scuvie, CrazyRoad3, sspivakk, 28-12-1968, Rue de la Perche - Wipstraat, lionel.scuvie@yahoo.fr
+3545, Brenda, Bradford, ImRem, Clem34170, 21-05-1979, Rue François Vander Elst - François Vander Elststraat, brenda.bradford@gmail.com
+3554, Corinne, Stefaans, marc_master, Henry99Tico, 23-01-1991, Rue Royale, corinne.stefaans@hotmail.com
+3560, Jazlyn, Mendez, NeyKoz, fantaisylou1, 29-03-1969, Rue du Zéphyr - Westenwindstraat, jazlyn.mendez@gmail.com
+3575, Jane, Bennett, Zeref93, alban0906, 09-02-2000, Rue du Souvenir - Gedachtenisstraat, jane.bennett@ulb.ac.be
+3588, Delaney, Hunter, Enoriel59, MomoLaRousse, 15-10-1988, Place Raymond Blyckaerts - Raymond Blyckaertsplein, delaney.hunter@yahoo.fr
+3598, Kellen, Riggs, kev57990, Shaker_Ice, 30-05-1963, Place Henri Conscience - Hendrik Conscienceplein, kellen.riggs@gmail.com
+3615, Valerie, Frey, Tiny_Sat_Sat, Zak0yA, 23-08-1991, Avenue Mathieu De Jonge - Mathieu De Jongelaan, valerie.frey@gmail.com
+3624, Charlotte, Kleynen, agnologuexD, Jokertrain, 24-12-1965, Rue des Secours - Hulpstraat, charlotte.kleynen@yahoo.fr
+3632, Sandrine, Maurits, TiChaton59, LucatronkYT421, 08-09-1986, Rue De Wand - De Wandstraat, sandrine.maurits@gmail.com
+3640, Lena, Cauvet, Neerpon, Ohnezahn101, 13-09-1982, Rue César Depaepe - César Depaepestraat, lena.cauvet@gmail.com
+3652, Shannon, Bowen, TitanT73, Esteban_Le_BG, 03-04-1958, Avenue Paul De Merten - Paul De Mertenlaan, shannon.bowen@yahoo.fr
+3662, Miriam, Aguirre, Firetiger72, alemura, 06-08-1958, Fontainasplein, miriam.aguirre@gmail.com
+3671, Janiya, Stone, C0b0ll, MinecraftFrenzy, 23-07-1974, Rue de l&#39;Égalité - Gelijkheidstraat, janiya.stone@gmail.com
+3683, Sandrine, Huig, EuduardoYT, Killernight38, 29-06-1960, Rue du Brochet - Snoekstraat, sandrine.huig@hotmail.be
+3695, Rebecca, Brown, dowod31, Iron_Craft13, 27-06-1986, Avenue Lloyd George - Lloyd Georgelaan, rebecca.brown@hotmail.com
+3704, Erin, Odom, dani188, xKaya, 23-06-1956, Rue Van Bergen - Van Bergenstraat, erin.odom@gmail.com
+3713, Monique, Merchié, Miss_sueegirl, residence34, 03-05-1958, Avenue de l&#39;Aéroplane - Vliegtuiglaan, monique.merchié@ulb.ac.be
+3724, Genevieve, De Ridere, TomiJaimes, DerpsForQs, 03-12-1965, Avenue des Arts - Kunstlaan, genevieve.deridere@gmail.com
+3742, Braedon, Marquez, XxCurse137xX, karljett, 17-08-1981, Mail - Malieplein, braedon.marquez@gmail.com
+3748, Arnaud, Dekoch, iTzFrank999_eZ, CrispyPAPA, 20-02-1964, Place De Brouckère, arnaud.dekoch@hotmail.com
+3759, Olivia, Herbrandt, ZenoPlayYT, vicdestructor, 24-06-1960, Rue du Coq - Haanstraat, olivia.herbrandt@gmail.com
+3767, Magali, Pas, Estro_, Jimmo1990, 24-11-1985, Place Marie-José - Marie-Joséplein, magali.pas@gmail.com
+3776, Aspen, Sweeney, TyT_SkilLreKS, SkullRock_YT, 23-12-1954, Rue de l&#39;Aqueduc - Waterleidingsstraat, aspen.sweeney@ulb.ac.be
+3792, Madeline, Dennis, CaptainAdblock, M4tt772, 29-11-1985, Barchonstraat, madeline.dennis@ulb.ac.be
+3801, Jaylen, Noble, ValerieDenisBAE, JeAzBzo, 02-08-1955, Rue Armand de Saulnier - Armand de Saulnierstraat, jaylen.noble@hotmail.be
+3819, Estelle, Leenhart, _Zephyro_, xMansterx, 31-10-1979, Rue Vandernoot - Vandernootstraat, estelle.leenhart@gmail.com
+3833, Thierry, Van Noÿe, _BosTay_, zelon63, 30-04-1964, Cour Saint-Lazare - Sint-Lazarushof, thierry.vannoÿe@gmail.com
+3843, Olivia, Horlin, DanoxMaster, vincentmuriel32, 18-04-1962, Rue de Malines - Mechelsestraat, olivia.horlin@gmail.com
+3853, Armani, Weeks, MaxxterPvP, Bakageta_San, 31-07-1969, Place Reine Astrid - Koningin Astrid Plein, armani.weeks@gmail.com
+3864, Jimmy, Morgan, REGGAECAT, Superchoco28, 06-12-1982, Rue du Croissant - Halvemaanstraat, jimmy.morgan@gmail.com
+3876, Kaila, Higgins, tinoucadot, enzostlo, 02-03-1996, Clos Albert Crommelynck - Albert Crommelynckgaarde, kaila.higgins@hotmail.com
+3892, Zoe, Doolaeg(h)e, benjilacour88, JostRick2K, 22-06-1987, Rue des Gloxinias - Gloxiniastraat, zoe.doolaeg(h)e@gmail.com
+3907, Timéo, Linglet, misslea704, manumalo, 12-03-1964, Oud Korenhuis - Place de la Vieille Halle aux Blés, timéo.linglet@gmail.com
+3915, Jean-Paul, Vlaemynck, Th3Gam3rYT88, OooMrBabbelooO, 11-05-1958, Rue Général Gratry - Generaal Gratrystraat, jeanpaul.vlaemynck@gmail.com
+3929, Samuel, Dubois, Elosiu_, Sinon_Asada, 04-10-1987, Arteveldestraat, samuel.dubois@gmail.com
+3942, Noah, Lopez, damienandrey, Dqqhrk, 05-02-1972, Witherendreef, noah.lopez@ulb.ac.be
+3955, Benoît, Verhagen, iNada_, furien841, 28-12-1990, Place Princesse Elisabeth - Prinses Elisabethplein, benoît.verhagen@gmail.com
+3972, Darwin, Cherry, ZIKOEF, MAKJUAREZ, 28-05-1960, Rue de la Rivière - Rivierstraat, darwin.cherry@yahoo.fr
+3984, Karine, Thiry, DarkCubious, ZerkaGames10, 21-02-1981, Heilige Dominicuslaan - Avenue Saint-Dominique, karine.thiry@gmail.com
+4002, Gilles, Brouck, Mignon2003, NK_JoseVic, 20-02-2003, Rue Louis Titz - Louis Titzstraat, gilles.brouck@yahoo.fr
+4015, David, Van Hoorenbeeck, kenpataz21, OnSenFou, 18-05-1998, Boulevard du Régent - Regentlaan, david.vanhoorenbeeck@hotmail.be
+4033, Christelle, Sterckmans, PixelRockGamer, bryanlirac, 03-04-1975, Rue de la Bonté - Goedheidstraat, christelle.sterckmans@ulb.ac.be
+4049, Genevieve, Leenhard, nonocraft120, Dhugo, 07-11-1967, Rue d&#39;Artois, genevieve.leenhard@hotmail.be
+4063, Matteo, Dewever, romancin26, morgan1998x, 17-06-1972, Avenue Montgolfier - Montgolfierlaan, matteo.dewever@hotmail.com
+4078, Marcus, Atkinson, Kebino, JayyMurphhhh, 11-02-1969, Place Masui - Masuiplein, marcus.atkinson@gmail.com
+4092, Claire, Moiling, andreacaccia, TeddiX_HD, 27-12-2000, Rue des Paysagistes, claire.moiling@gmail.com
+4099, Patrick, Pelser, Ronano1270, TheFaster, 18-08-2000, Rue Twyeninck - Twyeninckstraat, patrick.pelser@gmail.com
+4116, Leonardo, French, victor21266, ReflumHuahwi1337, 25-05-2002, Rue Armand Campenhout - Armand Campenhoutstraat, leonardo.french@gmail.com
+4132, Jérémy, Quesney, Mih9wk, Polo_777, 20-08-1956, Avenue Henri Hollevoet - Henri Hollevoetlaan, jérémy.quesney@gmail.com
+4146, Leslie, Hatfield, Leon52_, Cyclone082015, 26-09-1990, Rue Steppé - Steppéstraat, leslie.hatfield@gmail.com
+4158, Lawson, Meadows, Spokzow, Jack5Lantern, 22-02-1988, Place du Grand Sablon - Grote Zavel, lawson.meadows@gmail.com
+4171, Bruno, Pottié, ADlion, CernaGames69, 12-05-1993, Avenue des Pins Noirs - Zwarte Dennenlaan, bruno.pottié@hotmail.com
+4181, Jeremy, Floche, Shinnygan, vazaoz, 12-12-1998, Rue Père de Deken - Pater de Dekenstraat, jeremy.floche@gmail.com
+4194, Sarah, Stiers, Mickool, YanAkaGod, 15-02-1951, Rue du Dahlia - Dahliastraat, sarah.stiers@gmail.com
+4203, Sandrine, Corring, IReakoz, kiosuke13, 01-01-1984, Avenue Tolstoï - Tolstoïlaan, sandrine.corring@gmail.com
+4216, Antoine, Dekoch, Youliix, ImPaolaAdventure, 24-02-1953, Rue du Transvaal - Transvaalstraat, antoine.dekoch@hotmail.com
+4222, Claudine, De Doncker, Nemenighst, Hugman_76, 30-01-2001, Rue Eugène Toussaint - Eugène Toussaintstraat, claudine.dedoncker@gmail.com
+4235, Jacques, Praat, tmbk, Alefteau, 02-12-2000, Rue René Declercq - René Declercqstraat, jacques.praat@hotmail.com
+4248, Agathe, Després, Jiesse, ibrajp4, 29-06-1966, Rue Abbé Paul Le Roux - Priester Paul Le Rouxstraat, agathe.després@gmail.com
+4260, Jessica, Arteman, Ahrion, MiguelAlexTP, 16-09-1965, Rue Peter Benoit - Peter Benoitstraat, jessica.arteman@hotmail.be
+4272, Kévin, Liétard, SkiSard, paolomendes, 07-02-1955, Stefaniaplein, kévin.liétard@yahoo.fr
+4279, Ashley, Coleman, Xtreme_albator, wolfhound63YTB, 03-02-1973, Avenue Chapelle-aux-Champs - Veldkapellaan, ashley.coleman@yahoo.fr
+4284, Devon, Sampson, CaeYT, Joaquin_Aim, 22-08-1962, Drève du Château - Kasteeldreef, devon.sampson@ulb.ac.be
+4300, Stacy, Maldonado, Morumole, ender_mystery, 22-03-1957, Woudlaan - Avenue de la Fôret, stacy.maldonado@gmail.com
+4315, Fanny, Faweux, Mushwaybola, Zorams, 02-08-1981, Rue Gustave Van Huynegem - Gustave Van Huynegemstraat, fanny.faweux@gmail.com
+4326, Chloe, Monsay, JOYA12, DarckDeath21, 16-07-1997, Rue du Cirque, chloe.monsay@gmail.com
+4337, Hugo, Liphout, Triso_0_o, PineappleGrits17, 03-02-1954, Rue Broyère - Broyèrestraat, hugo.liphout@gmail.com
+4345, Ernest, Maxwell, Jimmy_Stealer, Skynox11, 14-11-1989, Rue des Riches Claires - Rijkeklarenstraat, ernest.maxwell@hotmail.be
+4359, Hector, Mcmahon, Rugratboy, lumin0u, 05-04-1991, Place du Petit Sablon - Kleine Zavel, hector.mcmahon@yahoo.fr
+4370, Zoe, De Bosscher, DieguinPG_YT, SkaLye, 25-09-1957, Avenue Herrmann Debroux - Herrmann Debrouxlaan, zoe.debosscher@gmail.com
+4381, Julie, Desmytter, MagicBlok947, Gouigoui, 01-06-2003, Rue James Ensor - James Ensorstraat, julie.desmytter@hotmail.com
+4389, Zoé, Lieseborghs, CHRIStian332001, predatorspawn19, 06-10-1960, Rue Saint-Lambert - Sint-Lambrechtsstraat, zoé.lieseborghs@gmail.com
+4401, Sydnee, Leon, NightNever, iBlurrr, 29-07-1985, Rue Antoine Clesse - Antoine Clessestraat, sydnee.leon@yahoo.fr
+4407, Amandine, Kuipers, Prescher, pie555, 14-06-1983, Avenue Vital Riethuisen - Vital Riethuisenlaan, amandine.kuipers@gmail.com
+4419, Christine, Vleminx, sabado14, Fredbear_Night, 01-09-1978, Avenue des Passereaux - Zangvogelslaan, christine.vleminx@ulb.ac.be
+4427, Fabienne, Doolaegue, Lasair97, flo35, 08-09-1993, Place Félix Govaert - Félix Govaertplein, fabienne.doolaegue@gmail.com
+4438, Bruno, Proost, Dovah_Craft, Malnilion, 26-04-1951, Impasse du Coq, bruno.proost@gmail.com
+4450, Agathe, De Pelsemaeker, Lynyrdwer, darcluffy, 23-01-1970, Place de Bethléem - Bethlehemplein, agathe.depelsemaeker@hotmail.be
+4465, Marc, Declercq, IDrakGaming, karlosU, 20-02-1959, Boulevard Joseph Bracops - Josef Bracopslaan, marc.declercq@gmail.com
+4475, Marcelo, Bird, primastail, KyleIsOG, 27-11-1984, Rue de l&#39;Avocette - Kluitstraat, marcelo.bird@ulb.ac.be
+4490, Lucas, Delacuvellerie, boulangerj, Wirnig, 24-05-1958, Place du Nouveau Marché aux Grains, lucas.delacuvellerie@hotmail.com
+4505, Louis, Halasi, GreenMaterZz, jupiter15hd, 31-10-1964, Rue Van Dyck - Van Dyckstraat, louis.halasi@gmail.com
+4522, Michaël, Denis, vox74, guimauve234, 10-10-1961, Rue de l&#39;Oiselet - Nestelingstraat, michaël.denis@gmail.com
+4533, Rémi, Sijmen, Az3Piks, Airacl, 11-08-1990, Avenue du Frêne - Eslaan, rémi.sijmen@gmail.com
+4547, Mickaël, Cappellier, Wikay_maki, AuraFenix, 09-10-1996, Tomberg - Tomberg, mickaël.cappellier@gmail.com
+4554, Julien, Blanquaert, Obno57, YMikasa, 16-01-1996, Loofstraat, julien.blanquaert@ulb.ac.be
+4561, Karine, Timmerman, EmeraldGamer14, Belmorzan, 16-05-1972, Avenue du Loriot - Wielewaallaan, karine.timmerman@gmail.com
+4577, Sonny, Ayers, KEYSTAR20, Custodioprz, 17-04-1970, Rue du Brillant - Brijantstraat, sonny.ayers@hotmail.com
+4592, Amber, Copeland, WiFilan, Ziilver147, 12-02-1983, Rue Maximilien - Maximilienstraat, amber.copeland@gmail.com
+4605, Maximillian, Villegas, zVoid_, Moimoimoi, 31-05-1958, Rue du Serpentin - Spiraalbuisstraat, maximillian.villegas@hotmail.be
+4618, Vincent, Heymans, TeemoTheDemon, picpus, 03-02-2000, Boulevard de l&#39;Humanité, vincent.heymans@gmail.com
+4632, Julie, Desmit, mat_du_13, Scratch_alex, 30-04-1966, Avenue Hof ten Berg - Hof ten Berglaan, julie.desmit@gmail.com
+4640, Amelie, Cools, dutintin87, Bart0unz, 13-02-1985, Avenue des Faons - Reebokjeslaan, amelie.cools@gmail.com
+4656, Pascale, Neel, ShadowW_YT, Mr_Spider_YT, 24-09-1993, Avenue de la Brise - Brieslaan, pascale.neel@gmail.com
+4667, Zoé, Kleinman, AppartDeJawad, Lucash68, 23-09-1998, Avenue Charles Madoux - Charles Madouxlaan, zoé.kleinman@gmail.com
+4686, Brigitte, Desmidts, ElMackHD_PvP, Bongaa, 24-01-2002, Place De Moor - De Moorplein, brigitte.desmidts@gmail.com
+4692, Olivier, De Wilde, smallbob20, XXI_TeFrozy_IXX, 24-07-1984, Quai de Veeweyde - Veeweidekaai, olivier.dewilde@gmail.com
+4705, Clément, Goudman, Swift_Willy, Crysis999, 19-07-1988, Rue Prosper Préser - Prosper Préserstraat, clément.goudman@gmail.com
+4714, Théo, Merchier, Bob_Spork, MauriGamerMV, 04-04-1980, Rue du Siphon - Duikerstraat, théo.merchier@gmail.com
+4725, Matthieu, Hinckel, Ben_LoncleGeek, ImRebbex, 21-01-1970, Rue du Miroir - Spiegelstraat, matthieu.hinckel@gmail.com
+4735, Stephany, Dalton, Dash203, xXLeonSpieltXx, 26-06-1958, Rue du Cyprès, stephany.dalton@hotmail.com
+4747, Malaki, Harding, mayor320, GlutekioKalxx21, 16-03-1992, Rue de l&#39;Ecole Moderne - Moderne-Schoolstraat, malaki.harding@gmail.com
+4757, Jazlyn, Roberson, Crystal_Player, Paandaaa, 24-10-1953, Rue Montagne de la Cour, jazlyn.roberson@gmail.com
+4774, Lorenzo, Burton, BadBoys19etNoah1, RVCgamer, 06-05-1964, Blankenheimlaan, lorenzo.burton@hotmail.be
+4789, Jérémy, Burger, Underkeep, MoneyFire, 10-02-1970, Varkensmarkt, jérémy.burger@gmail.com
+4800, Annabella, Prince, Hawk9607, Junros, 03-05-2000, Rue François Gay - François Gaystraat, annabella.prince@ulb.ac.be
+4811, Jean-Michel, Slagmolder, AriPlaysMC_, mathmath290, 06-09-1978, Rue Fourmois - Fourmoisstraat, jeanmichel.slagmolder@hotmail.com
+4824, Grégory, Denayer, SuperCanard2000, LOGANKILLERS, 05-07-2002, Rue du Pontonnier - Pontonnierstraat, grégory.denayer@gmail.com
+4829, Chaz, Swanson, pite56, Xalinda, 20-11-1980, Rue de la Royauté - Koningschapsstraat, chaz.swanson@gmail.com
+4841, Enzo, Marcus, Jazoux, EscalopeDePorc, 27-11-1987, Rue Heyvaert - Heyvaertstraat, enzo.marcus@ulb.ac.be
+4849, Mathilde, Klingeleers, Mrnixus44, Juggernutt120, 30-03-1967, Rue du Meiboom - Meiboomstraat, mathilde.klingeleers@hotmail.com
+4866, Claude, Vandenbussche, Evrashka, Pentre49, 06-04-1969, Rue des Glands - Eikelstraat, claude.vandenbussche@ulb.ac.be
+4885, Quentin, Delobbe, riobusor66, TheWappie, 02-01-1966, Rue du Heysel - Heizelstraat, quentin.delobbe@hotmail.be
+4902, Raven, Swanson, slazen59, Sachanakin, 05-05-1961, Rue Kinsendael - Kinsendaelstraat, raven.swanson@gmail.com
+4915, Zoe, Deboschere, Fereenc, Edubob01, 02-03-1968, Rue du Maroquin - Marokijnstraat, zoe.deboschere@gmail.com
+4929, Selah, Hardy, hjdu69, sesseb, 17-09-1972, Rue De Bonne - De Bonnestraat, selah.hardy@hotmail.com
+4944, Estelle, Petersen, RAF4le, dimiwlad2destiny, 07-09-1965, Avenue Vincent Van Gogh - Vincent Van Goghlaan, estelle.petersen@hotmail.com
+4957, Liana, Durham, smwanamaker, LetsFranz, 08-10-1976, Rue Hubert Heymans - Hubert Heymansstraat, liana.durham@gmail.com
+4967, Théo, Paindavaine, ShootBlouse, BabaHappy, 19-09-1970, Avenue des Quatre-vingts Hêtres - Tachtigbeukenlaan, théo.paindavaine@gmail.com
+4973, Matthieu, Colinus, littlecerise95, Faze_Natsou, 20-06-1977, Avenue Isidore Gérard - Isidore Gérardlaan, matthieu.colinus@gmail.com
+4981, Jean-Pierre, Glazeman, Steinfus, TheKnowGamer, 13-12-1956, Bruparck, jeanpierre.glazeman@gmail.com
+4994, Noemi, Ponce, Makanat, chwendydy, 23-07-1989, Rue Stuyvenbergh - Stuivenbergstraat, noemi.ponce@hotmail.com
+5010, Béatrice, Kenes, wxlou, GukuX19, 26-07-1981, Rue Docteur Roux - Dokter Rouxstraat, béatrice.kenes@gmail.com
+5016, 586, De Pelsemaeker, fleufi, olfagrim, 24-03-1979, Rue de Ruysbroeck - Ruisbroekstraat, 586.depelsemaeker@yahoo.fr
+5031, Monique, Crispeel, Gsanatos, TARZANDU42, 09-11-1989, Avenue Jean Volders - Jean Volderslaan, monique.crispeel@gmail.com
+5044, Beau, Schaefer, Mitsododa, skrymox87, 28-03-1952, Place du Logis - Logisplein, beau.schaefer@hotmail.be
+5059, Rowan, Rosario, Titanium_Hales, lorisloris2003, 27-11-1986, Quai au Bois de Construction, rowan.rosario@gmail.com
+5069, Zaiden, Warren, Fiiorre, Thuthur234, 05-02-1996, Rue du Boulet, zaiden.warren@ulb.ac.be
+5076, Melanie, Delhoste, CookieLuck, Gurre03, 09-11-1992, Chaussée de Charleroi - Charleroise Steenweg, melanie.delhoste@gmail.com
+5095, Sandrine, Desmet, Mathieudu83, akendo, 16-01-1956, Rue des Dominicains - Predikherenstraat, sandrine.desmet@gmail.com
+5105, Rhianna, Spencer, Bluskyer, PsyChroNome, 19-10-1971, Avenue du Frioul - Friulilaan, rhianna.spencer@gmail.com
+5117, Bernadette, Nuttin, MrDfeat, Anthoataque, 08-02-1974, Square Valère-Gille - Valère-Gillesquare, bernadette.nuttin@gmail.com
+5125, Emmanuelle, De Muynek, KNDR_Surprise, AFatFrench, 23-09-1978, Avenue Coloniale - Kolonialelaan, emmanuelle.demuynek@gmail.com
+5136, Hervé, Delafosse, FaMily_FuSiOn, MrCryp3r, 16-09-1969, Rue Stijn Streuvels - Stijn Streuvelsstraat, hervé.delafosse@gmail.com
+5147, Christine, Istace, Wattouat76, Lejim_one975, 04-12-1971, Rue du Berceau - Prieelstraat, christine.istace@gmail.com
+5157, Deangelo, Webster, Aarchitector, lionelc5, 03-07-1971, Avenue des Biches - Hindenlaan, deangelo.webster@yahoo.fr
+5175, Jean, Van der Slijke, THEGIANT2GAME, Ignitor10301, 05-02-1976, Rue Henri Caron - Henri Caronstraat, jean.vanderslijke@gmail.com
+5186, Nicole, Mclaughlin, spitfall, Seya_gamer, 05-05-1997, Quai aux Briques - Baksteenkaai, nicole.mclaughlin@gmail.com
+5204, Stéphane, Van Hoorebeke, Froste150, toastaupoussin, 19-08-1990, Avenue de la Salubrité - Heilzaamheidslaan, stéphane.vanhoorebeke@yahoo.fr
+5215, Alec, Mahoney, gutilbe, LeamII, 09-03-1972, Chaussée de Saint-Job, alec.mahoney@ulb.ac.be
+5229, Anthony, Daniels, SchokoEis_, sanra97, 21-02-1981, Rue de l&#39;École - Schoolstraat, anthony.daniels@yahoo.fr
+5236, Nathan, Smets, e_cuarzo, TiaGamesYT, 26-07-1993, Rue du Marché aux Fromages - Kaasmarkt, nathan.smets@gmail.com
+5250, Eva, Lemaire, xPhqntom, auxencehenry, 20-10-1980, Gulden-Vlieslaan, eva.lemaire@ulb.ac.be
+5259, Adrienne, Barber, Lobo45, faucon1, 12-01-1980, Rue Mathieu Pauwels - Mathieu Pauwelsstraat, adrienne.barber@hotmail.com
+5269, Emmanuel, Lugens, loumigame, Dinam0, 10-09-1972, Rue Eeckelaers - Eeckelaersstraat, emmanuel.lugens@gmail.com
+5284, Julien, Gadisseux, Nbdyprod, tucobad02, 29-05-1979, Place Communale - Gemeenteplaats, julien.gadisseux@hotmail.be
+5300, Frédéric, Bietmé, BonePlayzMc, Kinepak, 03-07-1970, Rue des Phlox - Floxenstraat, frédéric.bietmé@gmail.com
+5312, Philippe, Lecocq, ZevoxYu, Nyammata, 03-02-1955, Place Lehon - Lehonplein, philippe.lecocq@yahoo.fr
+5324, Francisco, Mendez, Tmorte, Sirius_Black7, 07-09-1990, Rue de l&#39;Étoile - Sterstraat, francisco.mendez@yahoo.fr
+5331, Rene, Hudson, nojo333, kira45, 10-05-1985, Avenue de Mercure - Mercuriuslaan, rene.hudson@ulb.ac.be
+5345, Antoine, Crama, RockiestOrchid, ChaosInFear69, 27-02-1950, Rue de Vergnies - de Vergniesstraat, antoine.crama@gmail.com
+5361, Yasmine, Lutz, ohShadow, AK_TheDead_12, 14-02-1986, Impasse des Boeufs, yasmine.lutz@gmail.com
+5372, Alexandra, De Kimpe, thedarkaria, PixelCraft17, 17-02-1987, Avenue Guillaume Herinckx - Guillaume Herinckxlaan, alexandra.dekimpe@gmail.com
+5391, Christian, Franzman, Farfuri, BaByJaSuS, 26-07-1970, Korte Linkebeekstraat, christian.franzman@gmail.com
+5405, Ludovic, Camby, bedaluma, Mei_tan, 15-03-2001, Rue de Gênes - Genuastraat, ludovic.camby@gmail.com
+5414, Christiane, De Boeck, xAczino, Panchito7, 23-10-1960, Avenue Houba-de Strooper - Houba-de Strooperlaan, christiane.deboeck@gmail.com
+5425, Clément, Quesnoy, Sr_Alfonso_Swag, Izwyr, 05-12-1959, Rue Joseph Kelchtermans - Joseph Kelchtermansstraat, clément.quesnoy@ulb.ac.be
+5433, Jean-Marc, Schoone, deadstroic595, BrorackBrobama9, 18-04-1999, Rue de l&#39;Aqueduc - Aquaductstraat, jeanmarc.schoone@yahoo.fr
+5444, Skyler, Parker, Castorameur, CeKeTuVe, 03-04-1967, Rue Schmitz - Schmitzstraat, skyler.parker@gmail.com
+5464, Jadyn, Patel, POL_PVP, DarKzZ_, 10-08-1959, Rue Edouard Branly - Edouard Branlystraat, jadyn.patel@gmail.com
+5476, Alice, Heerbrant, _MrKong, ByGoldenGods, 27-05-1984, Place du Samedi, alice.heerbrant@ulb.ac.be
+5488, Melissa, Hawkins, Blixiw, LiloOrigins, 19-12-1985, Rue Mathieu Desmaré - Mathieu Desmaréstraat, melissa.hawkins@hotmail.be
+5502, Jean-François, Sanctorum, MrShark67, iMetaXThree, 19-08-1977, Place Surlet de Chokier - Surlet de Chokierplein, jeanfrançois.sanctorum@gmail.com
+5514, Clément, Vecq, tony68720, iFashionPvP, 06-09-1957, Avenue du Laerbeek - Laarbeeklaan, clément.vecq@hotmail.be
+5530, Patrice, Burger, Matix33, KandyPlayz, 15-09-1980, Place de la Reine Paola - Koningin Paolaplein, patrice.burger@gmail.com
+5543, Rodrigo, Hill, gohunot87, louis560, 31-07-1965, Rue de la Rhétorique - Retoricastraat, rodrigo.hill@gmail.com
+5555, Mathis, Olyff, Tzaza, amazing_bacca, 13-05-2002, Rue de la Rasière - Sistervatstraat, mathis.olyff@gmail.com
+5562, Olivia, Kesteloot, Linbeuk, Sharkalypse, 18-06-1982, Rue Moretus - Moretusstraat, olivia.kesteloot@gmail.com
+5571, Mariela, Warren, vickytank, xiro83, 22-06-1950, Chaussée de Wavre - Steenweg op Waver, mariela.warren@gmail.com
+5581, Bella, Arias, Firaya26, fetyx957, 10-01-1962, Rue Henri Marichal - Henri Marichalstraat, bella.arias@gmail.com
+5595, Kristopher, James, siemka_256, MiniCarmelito, 12-11-2003, Avenue des Prisonniers Politiques - Politieke Gevangenenlaan, kristopher.james@gmail.com
+5605, Evan, Mathis, cintros, nynytos, 16-07-1964, Avenue De Béjar - De Béjarlaan, evan.mathis@gmail.com
+5615, Nadia, Appelbaum, DJ_Keyla01, CLN95870, 10-02-1978, Avenue des Liserons - Haagwindenlaan, nadia.appelbaum@gmail.com
+5630, Jessica, Kerr, 0ver_Dose, Binbin692, 10-03-1955, Engelandlaan, jessica.kerr@gmail.com
+5645, Emma, De Groote, isidoris2, Monpetitflocon, 03-02-1965, Rue Emile Steeno - Emile Steenostraat, emma.degroote@hotmail.com
+5660, Kendra, Mertz, Melbius, Ruyks, 13-07-1966, Avenue de l&#39;Astronomie - Sterrenkundelaan, kendra.mertz@gmail.com
+5672, Armando, Wolf, gysory, The_Baptzor, 22-08-1956, Petite rue au Beurre, armando.wolf@gmail.com
+5677, Raphaël, Mahieu, Nissart85, reinedepik, 07-07-1987, Rue Potaarde - Potaardestraat, raphaël.mahieu@ulb.ac.be
+5691, Ayden, Brandt, Max_2000_cmoi, CrazyPandaO1, 19-05-1989, Avenue de l&#39;Idéal - Ideaallaan, ayden.brandt@gmail.com
+5703, Aurélien, Depooter, Arion531, zPierre175, 18-08-1955, Rue Kinet - Kinetstraat, aurélien.depooter@ulb.ac.be
+5720, Alexis, Lowie, MakyNa_Cz, iValerie, 22-07-1975, Rue des Quatre Fils Aymon - Vierheemskinderenstraat, alexis.lowie@yahoo.fr
+5735, Cyril, Claessens, oceane1, sa_va, 21-02-1956, Rue des Scilles - Scillastraat, cyril.claessens@gmail.com
+5746, Luz, Williams, FumbleCrafter, WipeGames, 02-02-1954, Rue Vanderlinden - Vanderlindenstraat, luz.williams@gmail.com
+5757, Annick, Zegers, _Palaoss_, Emiiliia, 02-01-1991, Boulevard du Midi, annick.zegers@gmail.com
+5766, Laurel, Watkins, Locky302, Atysse, 04-04-1963, Avenue Ernest Masoin - Ernest Masoinlaan, laurel.watkins@hotmail.com
+5779, Luciano, Wu, mineboy110502, matyar2309, 25-01-1995, Rue de l&#39;Hôpital, luciano.wu@yahoo.fr
+5787, Magali, Le Provost, JustKing, Eytox, 27-04-1967, Rue Reper-Vreven - Reper-Vrevenstraat, magali.leprovost@gmail.com
+5795, Romain, Devis, DayZen_, ArthurGuadagnoli, 19-02-1992, Rue du Fort - Fortstraat, romain.devis@yahoo.fr
+5804, Jacques, Debosscher, maxcrafting500, ZMCGAMIN, 24-02-1999, Place du Samedi - Zaterdagplein, jacques.debosscher@gmail.com
+5822, Camille, Despret, Melaniux, KySixx, 12-05-1998, Frankrijklaan, camille.despret@yahoo.fr
+5829, Derick, Hart, Nabil_Fekir, Bapp51, 03-01-1991, Rue des Éperonniers - Spoormakersstraat, derick.hart@gmail.com
+5835, Braedon, Kelley, Bernas, ScreewedUP, 16-05-1952, Rue de l&#39;Hôtel des Monnaies, braedon.kelley@hotmail.com
+5849, Nicolas, Van Dorpe, Kasbil, _Zulio_, 09-10-1991, Rue de la Montagne - Bergstraat, nicolas.vandorpe@gmail.com
+5866, Alexandre, De Winter, TheLoukiCraft, suneo13, 01-10-1989, Rue François Beeckmans - François Beeckmansstraat, alexandre.dewinter@ulb.ac.be
+5880, Pascal, De Sueter, iMarlins, OweeOwee, 06-12-1954, Avenue des Neuf Provinces - Negen Provincieslaan, pascal.desueter@gmail.com
+5898, Serge, Vandevelde, EadesPvP, zOzziePrincess_, 20-08-2000, Avenue Winston Churchill - Winston Churchilllaan, serge.vandevelde@gmail.com
+5912, Maëlys, Luyer, Most_Bloody, Redsoccer7, 25-11-1999, Rue des Deux Maisons - Twee Huizenstraat, maëlys.luyer@gmail.com
+5922, Darryl, Good, theojsp2001, darckgolem, 04-10-1966, Rue Leekaerts - Leekaertsstraat, darryl.good@yahoo.fr
+5933, Rylie, Elliott, Gohanssj2ist, sethrulz2002, 26-02-1965, Place Reine Astrid - Koningin Astridplein, rylie.elliott@gmail.com
+5940, Muriel, De Ridere, SpektrumM, Sakil_Serratus, 21-07-1993, Olympische Dreef, muriel.deridere@gmail.com
+5952, Adrien, Demoor, croquette82, s0hr0n, 19-08-1964, Avenue de la Chevalerie - Ridderschaplaan, adrien.demoor@ulb.ac.be
+5962, Frédéric, Frans, Biesinger, remyx07, 04-11-1984, Avenue Stiénon - Stiénonlaan, frédéric.frans@gmail.com
+5972, André, Lievevrouw, Fuinemax, kyw504100, 05-07-1966, Rue Ropsy Chaudron - Ropsy Chaudronstraat, andré.lievevrouw@hotmail.com
+5987, Kenzie, Blevins, JustBaz, Luis0078, 15-06-1960, Rue de Genève - Genèvestraat, kenzie.blevins@gmail.com
+5994, Randy, Neal, SpaceKiiro, zKravitz, 17-11-1973, Léon Lepagestraat, randy.neal@yahoo.fr
+6006, Cory, Mejia, marnickie054, YtDu78, 20-02-1984, Rue du Chêne, cory.mejia@gmail.com
+6021, Darius, Moore, SzazKirR, DrachenRitterMlt, 12-04-1978, Petite Rue Sainte-Anne - Kleine Sint-Annastraat, darius.moore@gmail.com
+6028, Elisabeth, De Cruyenaere, Kaulgar, silenced_, 31-08-1964, Rue du Chasseur - Jagerstraat, elisabeth.decruyenaere@gmail.com
+6044, Christiane, Kenens, FiasKo86, _ItsAPvPGuy_, 01-07-2001, Rue Audrey Hepburn - Audrey Hepburnstraat, christiane.kenens@ulb.ac.be
+6056, Samuel, Franken, Bane34_42, lucie240701, 01-03-2002, Quai du Batelage - Schipperijkaai, samuel.franken@gmail.com
+6065, Sean, Moreno, Fist_77, TheCoco24, 19-07-1994, Barthélémylaan, sean.moreno@gmail.com
+6077, Alissa, Whitney, deja123, MatiGreppi_PvP, 11-12-1983, Rue de Woeringen - Woeringenstraat, alissa.whitney@gmail.com
+6089, Anthony, Broucke, CT_Demon, Plozion, 27-03-1998, Chaussée de Jette - Jetsesteenweg;Boulevard Léopold II - Leopold II-laan, anthony.broucke@yahoo.fr
+6100, Cullen, Ryan, Anaway, Aragwir, 23-10-1995, Rue Brederode - Brederodestraat, cullen.ryan@yahoo.fr
+6113, Justice, Sheppard, MaGiiKzToinou, Gelise_Craft542, 30-08-1974, Rue Bonaventure - Bonaventurestraat, justice.sheppard@ulb.ac.be
+6129, Danielle, Wuyts, Isostyper, Freez_Man71, 01-01-1962, Rue de l&#39;Athénée - Atheneumstraat, danielle.wuyts@hotmail.be
+6139, Cyril, Hermans, Dehame44, Ihabosss, 09-02-1994, Avenue Emile Zola - Emile Zolalaan, cyril.hermans@hotmail.com
+6152, Felicity, Stephens, _Natanx_, Narod67, 13-02-1953, Place des Coopérateurs - Samenwerkersplein, felicity.stephens@hotmail.be
+6163, Grady, Ware, darkdark2424, Baracuda03, 14-04-1982, Place du Confort - Komfortplein, grady.ware@gmail.com
+6181, Muriel, Applaer, Sushi7, bestiom, 25-07-1961, Rue du Houblon - Hopstraat, muriel.applaer@ulb.ac.be
+6197, David, Bietmé, Arive11, Sysy080_YT, 19-09-1967, Rue de la Bienvenue - Verwelkomingsstraat, david.bietmé@gmail.com
+6211, Antoine, Vandendorpe, nevyy117, WRUNG_TRILL, 04-12-1984, Rue Scholle - Schollestraat, antoine.vandendorpe@gmail.com
+6226, Alexandra, Adriaenssen, Helzars, Raybanbleu, 01-08-1993, Rue Dieudonné Lefèvre - Dieudonné Lefèvrestraat, alexandra.adriaenssen@gmail.com
+6234, Christelle, Jonnet, Sepciz, sachack, 04-01-1961, Dédale du Campanile - Campaniledoolgang, christelle.jonnet@gmail.com
+6245, Weston, Jennings, Kedrys79, airzilla, 21-01-1998, Rue de Witte de Haelen - De Witte de Haelenstraat, weston.jennings@gmail.com
+6258, Monique, Stercken, ormageden, V1A_FrankiAng, 17-05-1957, Avenue Charles Plisnier - Charles Plisnierlaan, monique.stercken@hotmail.com
+6270, Josh, Benitez, Ianftanaka, TomGK1213, 27-06-1953, Rue aux Fleurs - Bloemenstraat, josh.benitez@hotmail.com
+6284, Françoise, Vlemynckx, TheFinagler, Artiqe, 30-06-1980, Rue Lieutenant Lippens - Luitenant Lippensstraat, françoise.vlemynckx@hotmail.com
+6295, Camille, Masson, Idareya, iRatoYT, 14-03-1987, Rue Fernand Bernier - Fernand Bernierstraat, camille.masson@gmail.com
+6304, Clarissa, Hurley, Axelino7, SkyperMC, 02-02-1996, Rue de Ganshoren - Ganshorenstraat, clarissa.hurley@hotmail.com
+6319, Ines, De Pester, Pandor_Heaven, Banzterlix, 02-10-2003, Rue du Magasin, ines.depester@ulb.ac.be
+6330, Gabriella, Decker, FoZy_EveR_DrEamZ, M1k312YT, 20-02-1957, Camuselstraat, gabriella.decker@gmail.com
+6343, Nelson, Ali, sacha75, AlzokFR, 05-06-1967, Avenue des Celtes - Keltenlaan, nelson.ali@hotmail.com
+6358, Jesus, Humphrey, antogreco2002, Swaflo, 21-02-1982, Avenue de Février - Februarilaan, jesus.humphrey@hotmail.be
+6371, Ciara, Flowers, Delf_32RuS, Gow61, 26-08-1982, Rue de Bordeaux - Bordeauxstraat, ciara.flowers@gmail.com
+6387, Timéo, Moeyaert, DerKoz_, JulienRysman, 03-07-1955, Place de la Nation, timéo.moeyaert@yahoo.fr
+6391, Hugo, Sosa, nono1087, Thibault_gaming, 16-04-1987, Rue Joseph Mertens - Joseph Mertensstraat, hugo.sosa@hotmail.com
+6402, Yadiel, Campbell, taillieu, Mr_Vache, 19-01-1994, Joseph Plateaustraat, yadiel.campbell@gmail.com
+6422, Franck, Decock, Alafen83, Zircle, 04-07-2003, Rue Louis De Gunst - Louis De Gunststraat, franck.decock@gmail.com
+6439, Josiane, De Molder, XKewGHOSTV06, Islqw, 17-11-1986, Rue d&#39;Evere - Eversestraat, josiane.demolder@hotmail.com
+6450, Loïc, Demoore, Yolo_Swag_72, Jay_Garricks, 28-01-1982, Rue de la Braie, loïc.demoore@hotmail.com
+6462, René, Verstraete, Celtic_Wizard, Holl0wZ, 16-02-1977, Rue Pampoel - Pampoelstraat, rené.verstraete@hotmail.com
+6471, Aaron, Aerens, BatuBOYAR, tetelenne, 28-02-1973, Avenue des Jardins - Bloemtuinenlaan, aaron.aerens@hotmail.be
+6480, Melanie, Keetels, Le_Ptit_Champi, Yolo91, 03-04-1986, Rue de Suède - Zwedenstraat, melanie.keetels@hotmail.be
+6494, Seamus, Mcneil, Roctose, Corguimur, 02-05-1968, Rue Philippe le Bon - Filips de Goedestraat, seamus.mcneil@gmail.com
+6503, Carole, Doolaeg(h)e, ELyess02, Yakos, 01-11-1968, Rue Capitaine Crespel - Kapitein Crespelstraat, carole.doolaeg(h)e@hotmail.com
+6519, Julie, Stassar, Wezzy76, BrightBurner, 08-10-1960, Rue Zeecrabbe - Zeecrabbestraat, julie.stassar@hotmail.be
+6538, Laurence, Mergeay, Terrazed, Nishem, 30-04-1956, Rue du Ruisseau - Beekstraat, laurence.mergeay@ulb.ac.be
+6554, Théo, Laseure, ritro7, Synokze, 24-05-1979, Rue Grisar - Grisarstraat, théo.laseure@gmail.com
+6568, Evelyne, De Cuyper, Matus824, nanawelle, 14-09-1988, Avenue du Roi Chevalier - Ridder Koninglaan, evelyne.decuyper@yahoo.fr
+6581, Agnes, Aelterman, infravert, ImaTrix350, 01-01-2000, Avenue du Gui - Maretaklaan, agnes.aelterman@hotmail.be
+6594, Jamiya, Hurley, Kamiloosl, SebXavBen, 03-07-1955, Avenue Jean Monnet - Jean Monnetlaan, jamiya.hurley@hotmail.com
+6606, Joe, Wright, Maxlecouw_, Zakar999, 03-09-2001, Avenue Adolphe Buyl - Adolphe Buyllaan, joe.wright@gmail.com
+6613, Norah, Gibbs, Sr_ArchitectYT, Fire_Light, 11-05-1971, Avenue Sleeckx - Sleeckxlaan, norah.gibbs@ulb.ac.be
+6629, Diego, Fransolet, Cohaku07, Tomydu50, 10-11-1988, Rue Crocq - Crocqstraat, diego.fransolet@ulb.ac.be
+6642, Sandrine, Volkaerts, Mistery_Om, MrTroll_TM, 05-09-1966, Rue de la Perle - Parelstraat, sandrine.volkaerts@gmail.com
+6654, Baptiste, Maria, SweetyCherry, XxManimesGamerxX, 16-10-1983, Rue Jean-Baptiste Janssen - Jean-Baptiste Janssenstraat, baptiste.maria@hotmail.com
+6670, Yannick, Scuvie, Avlofly, iJuk33, 19-02-1989, Rue Sylvain Denayer - Sylvain Denayerstraat, yannick.scuvie@yahoo.fr
+6680, Claudia, Yates, Martitix_2006, Itz_Miky_ProPvP, 29-06-2002, Rue Docteur De Meersman - Dokter De Meersmanstraat, claudia.yates@gmail.com
+6695, Dayton, Guerrero, MrPavoshko, LuisMarioGamer, 08-02-1985, Avenue Auguste Oleffe - Auguste Oleffelaan, dayton.guerrero@gmail.com
+6716, Anne, Crabbe, skyrit33, Bikonn, 29-07-2001, Seringenstraat, anne.crabbe@ulb.ac.be
+6729, Patrice, Gomardt, maximilus2, KebabBrother, 25-04-1975, Place Saint-Jean - Sint-Jansplein, patrice.gomardt@gmail.com
+6735, Anthony, Proust, Kyoushy, Bluecraft_73, 04-01-1983, Arduinkaai, anthony.proust@yahoo.fr
+6742, Tyler, Harding, ItzMike_Pingero, TehBeaf, 16-06-1982, Leopold II-Laan, tyler.harding@ulb.ac.be
+6759, Shirley, Webb, ZoxteyShot, Mr_Catastrophe, 12-03-1965, Place des Barricades - Barricadenplein, shirley.webb@gmail.com
+6768, Michèle, Wattelle, PoWerOfficiel, arzaksultime, 20-10-1992, Avenue Jan Olieslagers - Jan Olieslagerslaan, michèle.wattelle@gmail.com
+6781, Leandro, Weiss, Rahman73, Sitham, 02-02-1975, Nieuwpoortlaan, leandro.weiss@yahoo.fr
+6799, Alannah, Crawford, Flash0530, Veyron92, 10-11-1978, Marcqstraat, alannah.crawford@gmail.com
+6812, Maelle, Herman, PriDe720, zouk33, 08-04-1977, Rue de l&#39;Hygiène - Hygiënestraat, maelle.herman@gmail.com
+6827, Véronique, Volkaerts, Flay04, Bruno1529269, 04-09-1988, Kerselaarstraat, véronique.volkaerts@gmail.com
+6843, Jean-Claude, Callebaut, Coccinelles, Galbatueur, 10-05-1991, Avenue Edmond Galoppin, jeanclaude.callebaut@hotmail.com
+6861, Lucas, Maertens, Laurya, Drange_minecraft, 05-11-1964, Rue du Midi - Zuidstraat, lucas.maertens@gmail.com
+6865, Clément, Laurent, TheStarKauzie, Franzkill01, 01-07-1960, Chaussée d&#39;Alsemberg - Alsembergsesteenweg, clément.laurent@hotmail.be
+6876, Jakayla, Austin, Ongaga, YaKoFR, 24-04-1960, Avenue Nouvelle - Nieuwelaan, jakayla.austin@gmail.com
+6890, Léa, Dany, SilverHawk59, Lmc91, 01-03-1975, Avenue de l&#39;Émeraude - Smaragdlaan, léa.dany@gmail.com
+6901, Jérôme, Debuyst, PattyNuggets123, Alweis, 06-07-1977, Tulpenhof, jérôme.debuyst@gmail.com
+6909, Isabella, Petty, AsTanK, Rguti27, 25-07-1993, Avenue Henri Pauwels - Henri Pauwelslaan, isabella.petty@gmail.com
+6917, Théo, Schoone, WorWard, mika1410, 13-12-1990, Mont du Cinquantenaire - Jubelberg, théo.schoone@ulb.ac.be
+6931, Virginie, Mertes, Ionix97, Tsuyoshi_, 02-09-1956, Meiklokjeslaan - Avenue des Muguets, virginie.mertes@gmail.com
+6936, Jovanni, Thornton, Deblende1973, Kalvash, 15-05-1966, Boulevard Saint-Michel - Sint-Michielslaan, jovanni.thornton@gmail.com
+6943, Amandine, Duquesnoy, Arnaud06670, QwarkKeyy, 18-11-1996, Rue de la Ferme - Hoevestraat, amandine.duquesnoy@gmail.com
+6958, Benjamin, Benitez, nolhann53, Spaiy, 30-10-1962, Rue des Halles, benjamin.benitez@ulb.ac.be
+6975, Fabienne, Kleineman, ignatios2001, Friskiller, 22-03-1965, Rue Grégoire Leroy - Grégoire Leroystraat, fabienne.kleineman@yahoo.fr
+6984, Jean-Paul, Honnay, MissTigerZ, thelgendes, 30-12-1993, Avenue des Taillis - Hakhoutlaan, jeanpaul.honnay@gmail.com
+6991, Laurence, Waghon, MordeCoolGamer, RiKil, 29-01-1953, Rue Jules Francqui - Jules Francquistraat, laurence.waghon@hotmail.com
+7003, Keith, Mccann, zTumblr, ComboDerp, 09-02-1988, Rue des Aduatiques - Aduatiekersstraat, keith.mccann@gmail.com
+7018, Françoise, Volckaert, RET_MatiCombos, ostromer, 17-02-1950, Avenue Général de Longueville - Generaal de Longuevillelaan, françoise.volckaert@gmail.com
+7029, Hugo, Schmitz, OMGZEUS, Ransora, 15-04-2001, Avenue des Héros - Heldenlaan, hugo.schmitz@ulb.ac.be
+7046, Evelin, Benjamin, maelouan, PotPvP_Kill_, 09-06-1976, Avenue des Casernes - Kazernenlaan, evelin.benjamin@hotmail.be
+7059, Fanny, De Pannemaecker, minemaxime22300, DarkMage13, 07-01-1996, Kruitmolenstraat, fanny.depannemaecker@gmail.com
+7069, Dominique, Statius, pistachefilou, AronDingemanse, 13-12-1997, Rue Wauwermans - Wauwermansstraat, dominique.statius@gmail.com
+7081, Morgan, Debecker, Adrakil, AlMaZ__LiKe_YT, 27-03-1955, Avenue Brigade Piron - Brigade Pironlaan, morgan.debecker@gmail.com
+7094, Audrey, Michaux, TheERW85, RenaultKangoo73, 25-12-1967, Rue Cayershuis - Cayershuisstraat, audrey.michaux@gmail.com
+7110, Tom, Aelter, Enoxam, Gaut_Mine, 03-03-1970, Avenue Victor Tahon - Victor Tahonlaan, tom.aelter@gmail.com
+7124, Carlee, Hobbs, __K10, enfR_Skyrad, 18-01-1987, Avenue de la Renaissance - Renaissancelaan, carlee.hobbs@gmail.com
+7137, Nicolas, François, skywords, RyZine, 19-01-1991, Avenue Andromède - Andromedalaan, nicolas.françois@yahoo.fr
+7151, Eden, Bridges, JuaanGZ, Mrstixk012, 17-06-1990, Rue Verte - Groenstraat, eden.bridges@gmail.com
+7166, Marius, Evrat, Deltas35, MyMOnkeY29, 24-11-1993, Rue Adolphe Lavallée - Adolphe Lavalléestraat, marius.evrat@gmail.com
+7176, Marie-christine, Antoine, NaysS, SOS_Gaming, 13-04-1982, Rue Alfred Dubois - Alfred Duboisstraat, mariechristine.antoine@hotmail.com
+7187, Alexandra, Duquesne, nahui_9947, Alpha_Ace, 14-02-1959, Venelle aux Coins de Terre - Moestuinsteeg, alexandra.duquesne@yahoo.fr
+7201, Joël, Vanpée, dbdbdbdb, LouLouEtBoutin, 07-09-1958, Rue du Cornet - Hoornstraat, joël.vanpée@hotmail.be
+7207, Julien, Linglay, TheKamilow, Internex01, 02-04-1956, Rue Jean d&#39;Ardenne - Jean d&#39;Ardennestraat, julien.linglay@gmail.com
+7217, Bernadette, Aerts, StoepselGaminLP, ZzerKow, 24-12-1974, Rue Haeck - Haeckstraat, bernadette.aerts@ulb.ac.be
+7231, Zoé, Ludovicus, ozerskyyy, iKilianCrafter, 14-11-1970, Rue de la Dignité - Waardigheidsstraat, zoé.ludovicus@hotmail.be
+7243, Dakota, Cole, xXDrago555Xx, NRJ91450, 25-01-1983, Rue Jean-Baptiste Dumoulin - Jean-Baptiste Dumoulinstraat, dakota.cole@gmail.com
+7257, Florence, Dapvril, DesKwam, bob2010, 20-04-1950, Rue de Bretagne - Bretagnestraat, florence.dapvril@gmail.com
+7272, Jeremy, Frans, Copernica, Sharpn3r, 01-01-1996, Rue Eugène Hubert - Eugène Hubertstraat, jeremy.frans@gmail.com
+7282, David, Andries, Diopsy04, thehobbitwarrior, 04-05-1952, Taborastraat, david.andries@gmail.com
+7297, Jazmyn, Chase, Danael45, misterjoe88, 18-10-1971, Rue Marcel Mariën - Marcel Mariënstraat, jazmyn.chase@hotmail.com
+7309, Charlotte, De Groot, vavie, iSnouzZy_, 12-04-1954, Avenue Firmin Lecharlier - Firmin Lecharlierlaan, charlotte.degroot@gmail.com
+7317, Clément, Burtont, GHeallion, icegaming67, 03-05-1963, Avenue Louis Lepoutre - Louis Lepoutrelaan, clément.burtont@gmail.com
+7326, Alice, Gidts, Elytes, jdog101087, 29-09-1995, Rue des Pétunias - Petuniastraat, alice.gidts@gmail.com
+7337, Muriel, Arquin, Idalissky, mama155, 16-12-1985, Rue Auguste De Boeck - Auguste De Boeckstraat, muriel.arquin@gmail.com
+7350, Daniella, Dominguez, zRedWarrior777, Dant4h, 09-08-1975, Rue du Devoir - Plichtstraat, daniella.dominguez@yahoo.fr
+7357, Giovani, Hampton, MatiasURU, Overlate_Hawk, 10-03-2001, Avenue de la Chapelle - Kapellaan, giovani.hampton@ulb.ac.be
+7369, Amelie, Corin, SEXIGAMER, DarKeagle77, 31-08-1967, Grand-Place - Grote Markt, amelie.corin@hotmail.com
+7383, Matthieu, Depercenaire, JokThree, hank8876, 09-01-1962, Avenue Auguste Vermeylen - Auguste Vermeylenlaan, matthieu.depercenaire@gmail.com
+7393, Anthony, Degroote, FerLoca, ElFercaah, 26-04-1989, Avenue de l&#39;Hippodrome - Renbaanlaan, anthony.degroote@gmail.com
+7410, Marie, Horlin, GriFou, HoratiuSin, 12-04-1950, Avenue du Cognassier - Kweepereboomlaan, marie.horlin@hotmail.com
+7425, Vicente, Perry, tomledragon, TousChezRectale, 11-05-1951, Avenue Commandant Lothaire - Kommandant Lothairelaan, vicente.perry@gmail.com
+7433, Louise, Lowie, Julhd25, twixy33, 26-01-1992, Carré Capouillet - Capouilletblok, louise.lowie@hotmail.be
+7438, Léa, Watteaux, Orwent, xTrZoRtEX, 28-05-1955, Rue Anglaise - Engelsestraat, léa.watteaux@gmail.com
+7446, Brianna, Mcclure, tomi4444, DoriCZE, 09-04-1980, Avenue Henri Jaspar - Henri Jasparlaan, brianna.mcclure@ulb.ac.be
+7453, Jean-Pierre, Giets, jujutec, Xxterminator_pvp, 04-03-1978, Rue Henri Vandermaelen - Henri Vandermaelenstraat, jeanpierre.giets@hotmail.com
+7467, Damien, Remy, ImExotiCkPvP, Rundus12, 17-08-2002, Schaarbeeklei, damien.remy@gmail.com
+7480, Guillaume, Gerlaxhe, actaay, 7MoodKSA_U, 13-02-1986, Rue Willebrord Van Perck - Willebrord Van Perckstraat, guillaume.gerlaxhe@gmail.com
+7489, Xavier, Demunck, PandAtchoum, laladridri, 28-01-1959, Rue Joseph Aernaut - Joseph Aernautstraat, xavier.demunck@gmail.com
+7498, Kennedy, Mcgee, X8funhug8X, Arthurchaman44, 28-11-1996, Rue des Mérisiers - Kriekebomenstraat, kennedy.mcgee@gmail.com
+7515, Savannah, George, Mr_Lol7, BS_Dark68, 23-04-1973, Rue du Saint-Esprit - Heilige Geeststraat, savannah.george@gmail.com
+7528, Augustus, Davis, AK3R8, sandzOLOLz, 03-08-1966, Availles-Limousinelaan, augustus.davis@gmail.com
+7543, Raquel, Gilbert, Pendouille, Lennox1995, 04-02-1956, Postweg, raquel.gilbert@yahoo.fr
+7559, Michel, De Sachte, leleo88, Zodrex, 24-02-2002, Rue Léon Mignon - Léon Mignonstraat, michel.desachte@hotmail.com
+7572, Nadine, Weers, jasondu02, ChungAe, 17-10-1993, Rue de l&#39;Athénée Royal - Koninklijk Atheneumstraat, nadine.weers@hotmail.com
+7584, François, Debled, toisondediams, DeefCeeper, 06-11-1997, Drève de Bonne Odeur - Willeriekendreef, françois.debled@yahoo.fr
+7592, Kévin, Brasseur, pyrus261998, FatKat2005, 10-09-1993, Avenue Guillaume Van Leeuw - Willem Van Leeuwlaan, kévin.brasseur@hotmail.com
+7605, Sonia, Peters, MrTopo, MrFire47, 18-03-1952, Venelle de l&#39;Alchimiste - Alchemiststeeg, sonia.peters@gmail.com
+7622, Adele, De Guchteneere, Quentin_89, Fire4Teen, 27-11-1992, Rue des Courlis - Wulpenstraat, adele.deguchteneere@gmail.com
+7632, Alice, Grotaers, TadaShi_Apple, freeglos, 01-04-1993, Rue Linné - Linnéstraat, alice.grotaers@hotmail.be
+7645, Véronique, Deschepper, MeGa_CraFter83, slimerapper, 19-09-1995, Boulevard Joseph Bracops - Joseph Bracopslaan, véronique.deschepper@gmail.com
+7658, Clayton, Eaton, artydevil37, maxfando, 17-08-2001, Rue des Déportés Anderlechtois - Anderlechtse-Weggevoerdestraat, clayton.eaton@gmail.com
+7670, Sebastian, Ellison, datdudeba5, TheLuxe, 17-07-1964, Bloemenhofplein, sebastian.ellison@hotmail.be
+7680, Genevieve, Fraigneux, _FanatIIk37_, benedou, 20-02-1988, Louis Dehouxlaan, genevieve.fraigneux@hotmail.com
+7692, Lennon, Johnson, Wizpixel, octave23, 13-07-1973, Avenue Impératrice Charlotte - Keizerin Charlottelaan, lennon.johnson@gmail.com
+7712, Camille, Desmeytere, JmRoxor, SayMyNames, 16-10-2000, Rue de l&#39;Application - Vlijtstraat, camille.desmeytere@ulb.ac.be
+7723, Uriah, Gomez, SamCulrossx, HaPpYcOw20, 13-12-1988, Rue Neerveld - Neerveldstraat, uriah.gomez@yahoo.fr
+7734, Jean-Claude, Delcorps, SBB_Bubuche, ImChromating, 29-07-1973, Rue du Collecteur - Hoofdrioolstraat, jeanclaude.delcorps@gmail.com
+7751, Joël, Vecq, Bowlnoodles, Jiessel, 21-09-1965, Rue de l&#39;Eglise Saint-Gilles - Sint-Gilliskerkstraat, joël.vecq@gmail.com
+7756, Chloé, Maréchal, poupou0076, _MrDelavega_, 03-09-1977, Chaussée Romaine - Romeinsesteenweg, chloé.maréchal@gmail.com
+7765, Anna, Joire, 9aZ18, ZeratorHd, 26-05-1970, Boulevard de Dixmude - Diksmuidelaan, anna.joire@hotmail.com
+7775, Sandra, Dresselaers, MiaFenikkusu, BIueFox, 21-05-1989, Rue Louis De Smet - Louis De Smetstraat, sandra.dresselaers@gmail.com
+7781, Paul, Burtont, xNoStReSs42, Yagikoo, 28-02-1998, Spaarstraat, paul.burtont@hotmail.com
+7788, Marine, Doolaeg(h)e, raulviciao, 0ssirisse93, 07-03-1968, Avenue des Fougères - Varenlaan, marine.doolaeg(h)e@gmail.com
+7803, Hélène, Jurgen, OhhGozyy, Anna67, 01-03-1985, Rue Frère-Orban - Frère-Orbanstraat, hélène.jurgen@gmail.com
+7822, Sophie, Desmedt, XC553, canoseries, 01-04-1972, Avenue Paul Janson - Paul Jansonlaan, sophie.desmedt@ulb.ac.be
+7836, Jonathan, Rooseels, Ivalionl, versco, 28-11-1974, Avenue Mutsaard - Mutsaardlaan, jonathan.rooseels@hotmail.be
+7847, Jamya, Robinson, lucagtafun, LT_SWAGY_OREO_50, 25-09-1977, Avenue Lambeau - Lambeaulaan, jamya.robinson@yahoo.fr
+7859, Manon, Devriend, boys_du25, mathysvouziers, 30-12-1979, Boulevard de la Grande Ceinture - Grote-Ringlaan, manon.devriend@gmail.com
+7875, Juliette, Arquin, Tocoland, LePoteAStordiix, 05-02-1976, Rue Emmanuel Hiel - Emmanuel Hielstraat, juliette.arquin@gmail.com
+7887, Genevieve, Bartholomeeus, mightycows, Seba9820, 26-03-1992, Rue de la Fraîcheur - Frisheidstraat, genevieve.bartholomeeus@gmail.com
+7898, Monique, Stassard, Empereur_onyx, Zantiago, 10-12-2002, Avenue des Loisirs - Vrijetijdslaan, monique.stassard@gmail.com
+7915, Nicole, Sterckx, ndam500, Virusanonyme, 16-12-1971, Rue du Monténégro - Montenegrostraat, nicole.sterckx@gmail.com
+7924, Josiane, Erk, xISpiderMan__, AlanGamer_PVP, 16-06-1955, Avenue des Ormeaux - Olmpjeslaan, josiane.erk@gmail.com
+7938, Brylee, Nolan, Germo02, logannes57, 05-04-1990, Avenue de l&#39;Hôpital Français - Frans Gasthuislaan, brylee.nolan@ulb.ac.be
+7947, Claire, D'Haeyer, ZygeneLeMosh, DrOn3rHD, 07-04-1969, Rue du Tournoi - Steekspelstraat, claire.d'haeyer@hotmail.com
+7960, Donovan, Donovan, ninikill, Rxflection_99, 12-12-1972, Clos Jean Mermoz - Jean Mermozgaarde, donovan.donovan@yahoo.fr
+7971, Brogan, Knapp, louiwiton, TeteRey, 27-07-2003, Rue Van Gulick - Van Gulickstraat, brogan.knapp@gmail.com
+7977, René, Claes, edusur98, Paaqos, 11-10-2003, Place du Droit - Rechtsplein, rené.claes@gmail.com
+7993, Kayla, Rose, Blotch, remi_2005, 11-03-1953, Place de la Vaillance, kayla.rose@gmail.com
+8009, Perla, Khan, sorioz22, UnderWaterRoarko, 22-05-1969, Rue des Capucins - Kapucijnenstraat, perla.khan@hotmail.com
+8015, Estelle, De Saedeleer, F4nta_94, xXEnderGamerHDXx, 22-11-2002, Parvis Saint-Henri - Sint-Hendriksvoorplein, estelle.desaedeleer@hotmail.be
+8022, Jonathan, Schnock, manolokinhoo, momosisigusch, 30-09-1952, Rue du Constructeur - Bouwerstraat, jonathan.schnock@yahoo.fr
+8040, Vanessa, De Muynek, Sirocco417, Dezerzh238, 23-11-1964, Chaussée de Boondael, vanessa.demuynek@gmail.com
+8049, Naima, Schmidt, Kooka16, limadese, 16-01-1984, Rue Langeveld - Langeveldstraat, naima.schmidt@hotmail.be
+8060, Camille, De Griek, Dr_Caubalth, Juankitroll16, 04-08-1977, Jagerslaan - Avenue des Chasseurs, camille.degriek@gmail.com
+8072, Kyla, Wall, xX_darkjulhd_Xx, salutcsiphanolol, 10-04-1985, Rue Léopold Peret - Leopold Peretstraat, kyla.wall@gmail.com
+8085, Valérie, Jaak, Voldvix, AlexTheGamer27, 19-08-1994, Square des Vétérans Coloniaux - Coloniale Veteranen Square, valérie.jaak@hotmail.be
+8100, Erwan, De Potter, sofi4973tenner, cloe520, 05-04-1977, Rue Philippe Piermez - Philippe Piermezstraat, erwan.depotter@gmail.com
+8120, Justine, Bartholomeeus, Tucoloco, Vulk4n0, 05-04-1976, Rijkeklarenstraat, justine.bartholomeeus@gmail.com
+8133, Pierre, Pirard, minouche666, Bytifruit, 05-11-1986, Rue Emile Wauters - Emile Wautersstraat, pierre.pirard@gmail.com
+8154, Quintin, Dean, Jerkzy, SwfMat, 21-10-1987, Avenue des Cerisiers - Kerselarenlaan, quintin.dean@gmail.com
+8170, Olivia, Ghiste, AcEx_ShArK, Mecalodon, 20-04-1959, Avenue des Mésanges - Mezenlaan, olivia.ghiste@hotmail.be
+8181, Theresa, Wang, loicst, Tyctak, 29-09-1958, Avenue de Busleyden - de Busleydenlaan, theresa.wang@hotmail.com
+8192, Marine, De Coster, tazouka, FroZenTerror, 27-12-2003, Großer Markt, marine.decoster@hotmail.com
+8200, Mathilde, Urting, SiberiKaru, MrStenix, 06-10-1961, Rue de Fierlant - de Fierlantstraat, mathilde.urting@yahoo.fr
+8212, Denisse, Valenzuela, basti_2412, Bayzeloxx, 06-02-1981, Place Marguerite d&#39;Autriche - Margaretha van Oostenrijkplein, denisse.valenzuela@gmail.com
+8224, Pranav, Whitney, cheeseface5000, zHazeZeRoO, 27-08-1968, Avenue Thomas Frissen - Thomas Frissenlaan, pranav.whitney@hotmail.com
+8235, Destinee, Huff, YASS77, LifeStyleX, 05-11-2000, Rue Antoine Gautier - Antoine Gautierstraat, destinee.huff@gmail.com
+8244, Julie, Jacquet, TuTyyGames, HABLIASgaimer, 21-12-1970, Clos du Bergoje - Bergage, julie.jacquet@gmail.com
+8257, Tyshawn, Brock, TequiilaHeineken, shienombre, 21-06-1993, Rue du Jardin Rompu - Gebrokenhofstraat, tyshawn.brock@gmail.com
+8272, Anthony, Gidts, NewGT, Runage, 09-04-1958, Pachthoevestraat, anthony.gidts@gmail.com
+8278, Patrice, Rauscent, RieZzNRV, tototommy852, 25-03-1953, Rue de Moorslede - Moorsledestraat, patrice.rauscent@gmail.com
+8288, Annie, Wagon, PumpKing2, KingNuty, 12-01-1958, Rue de l&#39;Ecuelle - Napstraat, annie.wagon@hotmail.com
+8309, Monique, Jan, kockodan, Kyosushie, 31-12-1956, Chaussée d&#39;Alsemberg - Alsembergse Steenweg, monique.jan@hotmail.be
+8319, Litzy, Pope, MegaCraft, sacha6, 18-05-1964, Ninoofseplein - Place de Ninove, litzy.pope@gmail.com
+8331, Sonia, Lafontaine, fabthom, calamityti, 13-02-1984, Chaussée de Vleurgat - Vleurgatse Steenweg, sonia.lafontaine@yahoo.fr
+8344, Oceane, Evrat, Xigel07, Erwan59400, 20-05-1953, Avenue du Bourget, oceane.evrat@ulb.ac.be
+8355, Florian, Robert, TomDark, pvponnais51, 22-07-1993, Slachthuisstraat, florian.robert@gmail.com
+8370, Josiane, Nicolaus, Kilinator_xXx, drackest, 06-08-1953, Place Van Meyel - Van Meyelplein, josiane.nicolaus@hotmail.be
+8380, Jeremy, Euvrard, Hoheibutai, HeartFragment, 28-06-1966, Vaartstraat, jeremy.euvrard@hotmail.be
+8393, Soren, Stein, SM1TH9820, Dilan0922, 16-03-1984, Rue Ernest Laude - Ernest Laudestraat, soren.stein@gmail.com
+8408, Bernadette, Evrard, Puukii, K8_TheWerk, 31-05-1973, Rue Général Mac Arthur - Generaal Mac Arthurstraat, bernadette.evrard@gmail.com
+8414, Mila, Cruz, jeresonic, Diaamond, 13-11-1972, Rue Camusel - Camuselstraat, mila.cruz@hotmail.be
+8431, Benoît, Halazy, CoBrA_133, FreZz_GaMerZz_59, 09-08-1979, Rue du Soleil - Zonnestraat, benoît.halazy@gmail.com
+8442, Jacqueline, Toussaint, biglolo0303, Thevexios, 26-01-1966, Avenue des Archères - Boogschutterinnenlaan, jacqueline.toussaint@gmail.com
+8451, Harper, Strong, almin1524, Pheonix_5797, 15-08-1971, Avenue Docteur Zamenhof - Dokter Zamenhoflaan, harper.strong@gmail.com
+8466, Delphine, Terreur, Akakurt, emmachoupette, 23-02-1984, Avenue de la Métrologie - Metrologielaan, delphine.terreur@gmail.com
+8477, Kameron, Kane, Aleksa2211, iTzTuGFa_PVP, 01-10-1955, Rue Saint-Norbert - Sint-Norbertusstraat, kameron.kane@gmail.com
+8493, Quinten, Duarte, SamWarez, KATIMOKITO, 18-09-1954, Rue Georges Remy - Georges Remystraat, quinten.duarte@gmail.com
+8501, Marisa, Stephens, TreeManCZ, TheDylanGamer_HD, 12-04-1954, Avenue Jupiter - Jupiterlaan, marisa.stephens@hotmail.com
+8507, Zoe, Demunck, Maxis38, leon_67, 10-07-2001, Rue de la Vierge Noire, zoe.demunck@gmail.com
+8524, Patricia, Crépez, Fresh_style, mja2211, 02-09-1982, Chaussée de Merchtem - Steenweg op Merchtem, patricia.crépez@hotmail.com
+8536, Alexis, Halazy, leon841, MamyTuc, 10-11-1972, Avenue Victor Jacobs - Victor Jacobslaan, alexis.halazy@hotmail.com
+8546, Kaylah, Mcpherson, ondoff, DarkMarno, 31-05-2000, Avenue de la Croix-Rouge - Rode Kruislaan, kaylah.mcpherson@hotmail.be
+8558, Florence, Devriend, jjjert, NegiBravo, 06-03-1984, Rue du Tir - Schietbaanstraat, florence.devriend@gmail.com
+8570, Aarav, Daugherty, BLueGamEr74, Teboi, 10-07-1981, Galerie de Waterloo - Waterloogalerij, aarav.daugherty@ulb.ac.be
+8584, Marie, Masson, VenusMonkey, HatsuneMikuMC, 05-06-1983, Rue des Plantes - Plantenstraat, marie.masson@gmail.com
+8595, Jorge, Bates, NidaSlime, Hunter_16, 12-01-1984, Oudijzergang - Impasse de la Ferraille, jorge.bates@gmail.com
+8609, Augustin, Bouxin, LeiylaKawaii, MatGaymerPro7OMG, 25-03-1982, Rue Armand de Roo - Armand de Roostraat, augustin.bouxin@gmail.com
+8623, Léa, Joris, ROMath25, Sir_Dramis, 23-08-1985, Rue de la Philanthropie - Menslievendheidsstraat, léa.joris@gmail.com
+8634, Hugo, Caudron, ninja35x, Mc_Jacky, 03-04-1961, Eburonenstraat, hugo.caudron@hotmail.com
+8643, Marc, Gits, IxNaWaF_, darkouioui21, 11-09-1999, Rue du Bois de Linthout - Linthoutbosstraat, marc.gits@gmail.com
+8658, Elsa, Lloyd, tremiste, frino_21, 26-02-1958, Boulevard de l&#39;Impératrice - Keizerinlaan, elsa.lloyd@gmail.com
+8669, Sylvie, Cornelis, 0ecoz0, MrKilleurDu57, 02-01-1978, Rozendaal - Impasse du Val des Roses, sylvie.cornelis@gmail.com
+8688, Cécile, Mochamps, Juvi4Lockser, simon1000, 10-12-1959, Vierwindenstraat, cécile.mochamps@gmail.com
+8698, Jérémy, Dekale, Theofury, RaiinBow2Fun, 09-04-2003, Rue de la Stratégie - Krijgskundestraat, jérémy.dekale@gmail.com
+8715, Amelie, Lauffer, frugalspore252, Jelastkiller, 04-06-1954, Rue de Locht - de Lochtstraat, amelie.lauffer@yahoo.fr
+8724, Georges, Simoens, ItsK14, Gael_10, 30-10-2000, Heidekruidlaan - Avenue des Bruyères, georges.simoens@hotmail.com
+8735, Annick, Tuiliaux, Tweetys_Engel, ABR512, 06-11-1980, Rue du Rempart des Moines, annick.tuiliaux@hotmail.com
+8747, Christine, Corring, Mister_Vodka, DxWaX, 01-07-1984, Avenue Gounod - Gounodlaan, christine.corring@gmail.com
+8760, Mathieu, Goud, tonystardu55, FreeHero, 04-05-1984, Rue Princesse Clémentine - Prinses Clementinastraat, mathieu.goud@hotmail.com
+8770, Ryleigh, Odom, Vince48, bart44951, 23-06-1970, Rue de l&#39;Orphelinat - Weeshuisstraat, ryleigh.odom@gmail.com
+8780, Ashleigh, Palmer, Warner72, CraazyRocks_, 23-12-1995, Alsembergsesteenweg, ashleigh.palmer@ulb.ac.be
+8789, Madalyn, Deleon, masters_baba, XenatorCZ, 30-09-1997, Avenue des Pléiades - Plejadenlaan, madalyn.deleon@gmail.com
+8798, Bradyn, Werner, tyta17, matteodebsn, 19-06-1981, Square de Noville - Novillesquare, bradyn.werner@gmail.com
+8814, Alexandre, Blondoo, obi22, sotex94, 17-10-1960, Rue du Dam, alexandre.blondoo@gmail.com
+8834, Pierre, Van Esch, Snowberry76, 26Chandler, 25-03-1996, Rue Defacqz - Defacqzstraat, pierre.vanesch@hotmail.be
+8845, Kristina, Dawson, marie_laure95, furywhite, 09-05-1971, Avenue des Communautés - Gemeenschappenlaan, kristina.dawson@hotmail.com
+8860, Clément, Losseau, julienbonnet, SquaaShiiit, 28-12-1974, Avenue Géo Bernier - Géo Bernierlaan, clément.losseau@gmail.com
+8868, Leon, Hayes, chevaucheur2000, Scuale, 12-05-1954, Rue Georges Matheus - Georges Matheusstraat, leon.hayes@gmail.com
+8880, Julien, Moens, noa733, Chokofran, 05-04-1954, Rue Ronsard - Ronsardstraat, julien.moens@hotmail.be
+8888, Asa, Koch, tug39, Raptoe, 29-04-1965, Pastoor Vendelmansstraat, asa.koch@ulb.ac.be
+8902, Marco, Miranda, Cheese_Wafflez, Blondbro, 01-10-1967, Rue de la Roue, marco.miranda@gmail.com
+8918, Nadia, De Potter, kinylucky, dopebreeze, 01-11-1973, Henegouwenkaai, nadia.depotter@hotmail.com
+8925, Elisa, Charles, Dylan644, Fyxei, 25-03-1961, Place Henri Vanhuffel - Henri Vanhuffelplein, elisa.charles@ulb.ac.be
+8937, Adrien, Chêneboit, _Mat56, iRozzSM, 29-10-1954, Rue du Vindictive - Vindictivestraat, adrien.chêneboit@gmail.com
+8951, Carole, Klein, ElRichar_Mc, dragongamer2003, 23-11-1999, Rue de la Pépinière - Boomkwekerijstraat, carole.klein@hotmail.com
+8967, Lucie, Timmerman, carnotauro1, Khaynez, 09-11-1952, Gustave Gibonstraat, lucie.timmerman@hotmail.com
+8982, Julie, Janssens, HellBird9, youdou, 06-04-1983, Rue Égide Van Ophem - Égide Van Ophemstraat, julie.janssens@gmail.com
+8990, Baptiste, Hinck, rubik37, Maxime57, 22-04-1997, Petite rue de l&#39;Eglise - Kleine Kerkstraat, baptiste.hinck@gmail.com
+9005, Yannis, Heynemans, Schizof, Topaggerique, 16-02-1975, Avenue Boileau - Boileaulaan, yannis.heynemans@gmail.com
+9012, Serge, Vandorpe, Narucars, Searcher01, 04-07-1950, Avenue Charles Thielemans - Charles Thielemanslaan, serge.vandorpe@ulb.ac.be
+9024, Camille, Meunier, ItzBenja_PvP, matthebuilder06, 12-08-1993, Square de la Madelon - Madelonsquare, camille.meunier@gmail.com
+9034, Yann, Claes, Frozon073, Dave_TVCZ, 05-09-1956, Rue du Buis - Buksboomstraat, yann.claes@gmail.com
+9055, Cristofer, Burnett, Goupille, nicodu28100, 04-03-1992, Avenue Fonsny - Fonsnylaan, cristofer.burnett@hotmail.com
+9069, Sarah, Danys, croixfadas, Icefr, 06-03-1998, Rue des Trois Ponts - Driebruggenstraat, sarah.danys@gmail.com
+9079, Émilie, Stassinet, Savetherock, Saaw_, 10-02-1953, Avenue du Hérisson - Egellaan, émilie.stassinet@hotmail.com
+9086, Zion, Sloan, alpha210, xhoneyx, 13-10-1982, Rue de l&#39;Epée - Zwaardstraat, zion.sloan@hotmail.com
+9097, Phoenix, Montoya, D0RaiideN, DrScythe77, 22-12-1971, Rue des Bogards, phoenix.montoya@ulb.ac.be
+9111, Mohammed, Munoz, daryldixon3, MrCorsikHD, 29-11-1998, Rue du Roseau - Rietstraat, mohammed.munoz@gmail.com
+9117, Adele, Declercq, maximee49, _TheDoctor77_, 29-07-2000, Rue Victor Oudart - Victor Oudartstraat, adele.declercq@gmail.com
+9124, Lionel, Vette, Shqzer, timiverson, 19-06-1965, Rue au Beurre - Boterstraat, lionel.vette@gmail.com
+9136, Shyanne, Hoffman, ludo0404, Redemonio, 10-05-1989, Chaussée de Louvain - Leuvense Steenweg, shyanne.hoffman@hotmail.be
+9147, Ashlynn, Bowers, roulio2004, toad45, 09-05-1978, Rue Bois des Îles - Eilandenhoutstraat, ashlynn.bowers@hotmail.com
+9164, Catherine, Deroosse, PandaAtrophier, armasss, 12-09-1953, Rue d&#39;Idalie - Idaliestraat, catherine.deroosse@yahoo.fr
+9172, Vanessa, Van den Bergh, MrDIEGOXDLOL, Xxbotar_xX, 05-04-1974, Passendalestraat, vanessa.vandenbergh@gmail.com
+9182, Jaiden, Salas, xNiroMx, darksoleracer, 23-01-1981, Rue des Chrysanthèmes - Chrysantenstraat, jaiden.salas@yahoo.fr
+9191, Bruno, Debosschere, Milllou, yoyofafel, 13-10-1963, Avenue de la Tenderie - Vogelvangstlaan, bruno.debosschere@yahoo.fr
+9203, Audrey, Danys, Redcorner_, titidu0203, 29-04-1988, Avenue du Ramier - Bosduiflaan, audrey.danys@yahoo.fr
+9212, Chloé, Leclerc, Mrkill_HD, DemonWeasel, 02-01-1974, Rue Van Hoegaerde - Van Hoegaerdestraat, chloé.leclerc@gmail.com
+9225, Jean-Luc, Delobbe, Jungelgirl123, Kill4Kiss, 16-01-1982, Drève de Lorraine - Lorreinendreef, jeanluc.delobbe@gmail.com
+9235, Laurence, Despretz, kayleighbear328, RoiDesZombie, 24-06-1970, Square des Nations - Natiënsquare, laurence.despretz@gmail.com
+9243, Severine, De Guchteneere, funmani, xXNexofXx, 27-02-1950, Rue du Bon Accueil - Goede Bejegeningstraat, severine.deguchteneere@gmail.com
+9255, Dennis, Ewing, MrXxLordTheOnexX, Deeonex, 08-10-2002, Rue de la Cigogne - Ooievaarsstraat, dennis.ewing@gmail.com
+9269, Annick, De Griek, iAiwick_, youm591, 13-05-1977, Rue Edmond Van Cauwenbergh - Edmond Van Cauwenberghstraat, annick.degriek@gmail.com
+9287, Malik, Patton, athaelran, ESTRADA_01, 15-12-1954, Rue des Trois Arbres - Drie Bomenstraat, malik.patton@gmail.com
+9294, André, Broucque, AXAS93, _KaZaK, 27-02-1964, Rue du Chimiste - Scheikundigestraat, andré.broucque@gmail.com
+9310, Shania, Nash, CandyMan_eu, MrLuky, 03-09-1960, Rue Paul Michiels - Paul Michielsstraat, shania.nash@gmail.com
+9318, Josiane, De Meester, valoudu84, Gamerz31, 31-07-1951, Place Cardinal Mercier - Kardinaal Mercierplein, josiane.demeester@yahoo.fr
+9329, Julie, Deur, UltraSoaker, xSynapse, 05-03-2001, Broekstraat, julie.deur@ulb.ac.be
+9345, Brigitte, Crama, Sarolight, leirbaag, 02-07-1993, Chaussée de Tervuren - Tervuursesteenweg, brigitte.crama@gmail.com
+9361, Delphine, Molemans, davidmanuel123, Creepy_345, 15-03-1980, Rue Camille Coquilhat - Camille Coquilhatstraat, delphine.molemans@yahoo.fr
+9373, Landon, Newton, Erxon, Darkoss33, 25-01-1997, Kerktorenstraat, landon.newton@gmail.com
+9382, Dominique, Lesoile, Minecubic30, ItsBreizh, 20-09-1957, Rue d&#39;Huart - d&#39;Huartstraat, dominique.lesoile@gmail.com
+9396, Gregory, Sexton, NeonPvP_, Pantral, 29-08-1991, Avenue de la Porte de Hal - Hallepoortlaan, gregory.sexton@gmail.com
+9405, Emmanuel, Delobe, MicroMelon, FeriousHunter, 13-10-1998, Rue Félix De Keuster - Félix De Keusterstraat, emmanuel.delobe@ulb.ac.be
+9417, Paola, Wise, gussdx01, mojn112, 03-10-1985, Avenue du Fort-Jaco - Fort-Jacolaan, paola.wise@ulb.ac.be
+9426, Davis, Copeland, xVictoriaPvP, VenomDemoniaque, 02-04-1973, Rue Meyers-Hennau - Meyers-Hennaustraat, davis.copeland@gmail.com
+9432, Baptiste, Hinkens, GRAND_PAPA, hacknotch452, 09-03-1998, Rue de Flessingue - Vlissingenstraat, baptiste.hinkens@ulb.ac.be
+9442, Léa, Jonné, Venooon, Dexirh, 11-08-1982, Rue de la Caserne, léa.jonné@ulb.ac.be
+9455, Weston, Rollins, Verfal178, JusteDrole, 27-06-1998, Rue Alphonse et Maurice Hellinckx - Alphonse en Maurice Hellinckxstraat, weston.rollins@gmail.com
+9466, Léa, Damard, TroudBallus, Salfay101, 15-06-2001, Rue Isidoor Teirlinck - Isidoor Teirlinckstraat, léa.damard@gmail.com
+9470, Jasper, Ayala, achowat, GBD_Oni3, 13-11-1984, Rue Verheyden - Verheydenstraat, jasper.ayala@hotmail.com
+9479, René, Heyrman, LukeIsLittle, PedroPsicopata, 24-01-2003, Rue Vandeweyer - Vandeweyerstraat, rené.heyrman@gmail.com
+9489, Elliana, Bolton, xxxxxKEVINxxxxx, Maxow234, 28-07-1977, Rue Joseph Van Camp - Joseph Van Campstraat, elliana.bolton@gmail.com
+9504, Amelie, Cléban, Paper75, Huatkii, 10-09-1986, Rue de l&#39;Ancien Presbytère - Oude Pastoriestraat, amelie.cléban@gmail.com
+9515, Kendra, Klerk, Whitepencil1, JarnoGamer102, 28-06-1960, Rue Sneessens - Sneessensstraat, kendra.klerk@ulb.ac.be
+9524, Manon, Camby, loxipop, fatzil56, 30-10-1962, Avenue d&#39;Auderghem - Oudergemselaan, manon.camby@gmail.com
+9536, Cameron, Galloway, Smart_Princess11, bigzo77, 29-12-2002, Rue Bodeghem, cameron.galloway@gmail.com
+9549, Vanessa, Aerts, jipitou, Matboss, 15-08-1995, Rue des Ursulines - Ursulinenstraat, vanessa.aerts@gmail.com
+9564, Kévin, Decruyenaere, Marcos_Pimienta, quesito_lol, 18-12-1962, Rue de l&#39;Église Saint-Martin - Sint-Martinuskerkstraat, kévin.decruyenaere@gmail.com
+9573, Tate, Henderson, BeGodlike666, TheXTerminator64, 06-03-2003, Indringingsweg, tate.henderson@gmail.com
+9586, Alain, Peeters, bastheo, Grisou, 03-03-2000, Rue Jean-Baptiste Colyns - Jean-Baptiste Colynsstraat, alain.peeters@ulb.ac.be
+9598, Annie, Stier, BeJIuKuu, gugslefun, 19-03-1966, Rue Henri Werrie - Henri Werriestraat, annie.stier@gmail.com
+9609, Tristan, Doorneman, _Kxio27, peurpleBlack, 16-02-1966, Treurenberg - Treurenberg, tristan.doorneman@gmail.com
+9617, Danika, Patterson, zlatanator, minystevie, 31-05-2001, Rue Sander Pierron - Sander Pierronstraat, danika.patterson@gmail.com
+9630, Françoise, Hoyois, Drygor_EC, 0IIieGamerz, 30-09-1954, Hanegang - Impasse du Coq, françoise.hoyois@gmail.com
+9641, Mireille, Aelters, Kell0ggs, Trekiplayer, 03-11-1966, Rue de Strasbourg - Straatsburgstraat, mireille.aelters@hotmail.com
+9654, Rodolfo, Schroeder, BobaLeFlexible, Devilmax500, 09-01-1999, Prudent Bolslaan, rodolfo.schroeder@hotmail.be
+9665, Louna, Michaël, LuigiPro12, NaSmicc, 24-10-1961, Avenue Léon Houyoux - Léon Houyouxlaan, louna.michaël@hotmail.be
+9674, Heloise, Jenot, paizgo, MrPayot2000, 23-06-1989, Rue Fonson - Fonsonstraat, heloise.jenot@gmail.com
+9685, Harper, Floyd, Dioxx26, Yo4n84, 23-07-1952, Avenue Charbo - Charbolaan, harper.floyd@hotmail.com
+9699, Myriam, Van Damme, Punjoke, OlekProo, 18-09-1959, Clos Edgard Neuberger - Edgard Neubergergaarde, myriam.vandamme@yahoo.fr
+9708, Annabel, Gilmore, HH_Kaneki, sacha2008, 09-12-1971, Rue de la Sérénade - Serenadestraat, annabel.gilmore@gmail.com
+9723, Zechariah, Shelton, The_X_Bigdragon, Daels, 05-05-1985, Predikherenstraat, zechariah.shelton@yahoo.fr
+9730, Manon, Stordeur, Frost_GLP, kinders007, 26-05-1990, Avenue du Préau - Pandhoflaan, manon.stordeur@gmail.com
+9739, Raphaël, Den Ouste, RainerAragorn, fito185, 31-08-1981, Rue du Finistère, raphaël.denouste@ulb.ac.be
+9754, Alexis, Roland, cjpe, scottdu26cata, 11-02-1968, Rue des Passiflores - Passiebloemenstraat, alexis.roland@gmail.com
+9764, Clara, Lemonnier, Arkub, MnMSwanson, 01-08-2000, Rue du Maquis - Maquisstraat, clara.lemonnier@gmail.com
+9776, Agnes, Erkens, Enzozeboss2, TioMarco_, 10-12-1974, Rue de Hollande - Hollandstraat, agnes.erkens@gmail.com
+9787, Alice, Kenens, BroknSight, JustNaii, 26-01-1988, Rue Ernest Allard - Ernest Allardstraat, alice.kenens@gmail.com
+9805, Alex, Adriaensen, KainArce, Farcevolt, 13-10-1992, Rue des Bouchers - Beenhouwersstraat, alex.adriaensen@ulb.ac.be
+9820, Yann, Cauvin, PJLEF84, DiewdSkyMoooD, 01-07-1989, Rue du Taciturne - Willem de Zwijgerstraat, yann.cauvin@ulb.ac.be
+9833, Marine, Wouters, thehunter2711, superanimalman, 04-02-1961, Rue Vondel - Vondelstraat, marine.wouters@gmail.com
+9847, Ashton, Chambers, fantasticfoley, FeedMeNOW10, 01-05-1999, Alfons De Cockplein, ashton.chambers@gmail.com
+9860, Eduardo, Rogers, ATMxminux86, c4listo, 26-03-1973, Avenue de Jette - Jetselaan, eduardo.rogers@ulb.ac.be
+9871, Émilie, Merjay, davidtillo, JuMisterr33, 10-11-2001, Rue Renier Chalon - Renier Chalonstraat, émilie.merjay@gmail.com
+9885, Marley, Bruce, Cubbixx, FrZ_ImpaZ3, 19-06-1999, Rue de la Grande Ile, marley.bruce@gmail.com
+9891, Madeline, Rocha, Tashiro, MouetteVolante, 09-03-1956, Rue De Crayer - De Crayerstraat, madeline.rocha@gmail.com
+9899, Romain, Crispeel, rexare, catblack144, 21-01-1988, Avenue Edmond Parmentier - Edmond Parmentierlaan, romain.crispeel@hotmail.com
+9912, Dakota, Garrison, Gekos, _Alichat_, 24-06-1950, Rue des Fripiers - Kleerkopersstraat, dakota.garrison@hotmail.be
+9924, Martine, Corrin, Spacial_, Zharkos, 23-06-1989, Rue de la Pastorale - Herdersliedstraat, martine.corrin@hotmail.com
+9935, Kaelyn, Lin, yf16, Nutocka, 03-10-1993, Rue Sainte-Elisabeth - Sint-Elisabethstraat, kaelyn.lin@gmail.com
+9946, Tia, Hunt, kcentin2, Axen_tea, 19-12-1996, Boulevard Félix Paulsen - Félix Paulsenlaan, tia.hunt@hotmail.com
+9952, Marion, De Coninck, 9tom2004, TacojBZH29, 18-02-1952, Avenue des Millepertuis - Sint-Janskruidlaan, marion.deconinck@ulb.ac.be
+9960, Laura, Gardner, Qcbailey, WazePvP, 04-09-1967, Rue du Collège - Collegestraat, laura.gardner@ulb.ac.be
+9974, Amirah, Clarke, profileur45, Scalope_Noob, 03-05-1973, Clos Alberto Santos Dumont - Alberto Santos Dumontgaarde, amirah.clarke@hotmail.com
+9989, Damaris, Chen, maxxeos, GrosinatorSK, 09-02-1953, Rue du Donjon - Wachttorenstraat, damaris.chen@gmail.com
+10000, Jérôme, Vanbattel, xNono, Destargamer, 11-03-1956, Rue des Pigeons - Duivenstraat, jérôme.vanbattel@hotmail.be
+10018, Raphaël, Molenaers, Mini_Creepy, Dr_Skarix, 27-07-1966, Rond-Point de la Cité Jardin - Tuinwijkplein, raphaël.molenaers@hotmail.be
+10025, Patrick, Bauwens, vito1, FrenchCoffeeTime, 30-06-1974, Rue Charles Hanssens - Charles Hanssensstraat, patrick.bauwens@gmail.com
+10035, Abdiel, Lee, Drywe, Rixon_Dank, 21-07-1974, Rue Egide Winteroy - Egide Winteroystraat, abdiel.lee@ulb.ac.be
+10051, Tomas, Klein, Rubyred2220, Vatar, 29-12-1958, Rue Joseph Buedts - Joseph Buedtsstraat, tomas.klein@hotmail.be
+10067, Michèle, Stoutmans, RoSimon, Ninorina, 12-09-1984, Chaussée de Gand - Steenweg op Gent/Gentsesteenweg, michèle.stoutmans@gmail.com
+10078, Jean-Luc, Robbert, 16thDoctor, FRNeZoX, 10-10-1975, Avenue Broustin - Broustinlaan, jeanluc.robbert@gmail.com
+10088, Jensen, Gill, Eloedan, Scorpion_SyS, 04-12-1969, Place de l&#39;Altitude Cent - Hoogte Honderdplein, jensen.gill@hotmail.com
+10101, Teagan, Gonzalez, SpY781990, SurefirePoppy, 24-02-1991, Avenue Adolphe Lacomblé - Adolphe Lacomblélaan, teagan.gonzalez@gmail.com
+10113, Erwan, Delplace, Baracoudastyle, DocRainbow38, 07-03-1997, Place du Repos - Rustplein, erwan.delplace@hotmail.com
+10128, Isabella, Marks, Gaga241, marcutixelmejur, 01-08-1958, Rue Blaes - Blaesstraat, isabella.marks@gmail.com
+10139, Pauline, Kennis, narkos63, legato51430, 10-03-1999, Boulevard Maurice Lemonnier - Maurice Lemonnierlaan, pauline.kennis@gmail.com
+10152, Tom, Locrelle, lesagnool2917, iGalex, 04-08-1999, Rue du Cadran - Uurplaatstraat, tom.locrelle@gmail.com
+10169, Melanie, Crépez, Wildsx3, Pokinho07, 02-01-1990, Rue Stepman - Stepmanstraat, melanie.crépez@ulb.ac.be
+10178, Sandra, Kobus, Nekros84, MFbond1, 08-11-1980, Rue du Mont Saint-Alban - Sint-Albaansbergstraat, sandra.kobus@gmail.com
+10186, Daniel, Geerts, matheodevendee, _AsphixiA_, 12-10-1952, Place du Colibri - Kolibrieplein, daniel.geerts@gmail.com
+10197, Camille, Spencer, Jules85ch, MrSkyFail, 04-01-1990, Jan Dilsstraat, camille.spencer@gmail.com
+10215, Matthieu, Vieuxtemps, adamtueur, jm20000, 02-09-1979, Rue Rosalie Uyttenhove - Rosalie Uyttenhovestraat, matthieu.vieuxtemps@gmail.com
+10227, Enzo, Clerx, poisonbull12, Keyzer, 23-11-1965, Hanegang, enzo.clerx@hotmail.be
+10243, Dwayne, Conway, kikival35340, TP1501, 15-02-1964, Rue Capronnier - Capronnierstraat, dwayne.conway@gmail.com
+10260, Jayvion, Hale, 5creeperman5, MoyeGamer, 13-06-1971, Allée Christian de Duve - Christian de Duve Dreef, jayvion.hale@yahoo.fr
+10269, Meghan, Baldwin, JyeReks, milanoforever, 06-12-1985, Rue de la Hulotte - Bosuilstraat, meghan.baldwin@gmail.com
+10278, Philippe, De Rudere, Rankath, MrUsss, 07-11-1960, Rue de la Chancellerie - Kanselarijstraat, philippe.derudere@hotmail.com
+10291, Charlotte, Van Berckel, Orangina_, x_3NED_501, 13-09-1976, Avenue de la Héronnière - Reigerboslaan, charlotte.vanberckel@gmail.com
+10306, Jean-Michel, Clébant, DalekRattlesnake, Lord_Pheonix_Qc, 06-06-1951, Rue du Grand-Serment - Grootsermentstraat, jeanmichel.clébant@gmail.com
+10323, Billy, Reilly, chocatac97, AtomiikDesign, 16-07-1972, Rue de Florence - Florencestraat, billy.reilly@hotmail.be
+10335, Jaida, Hooper, monmon87, Serginho, 05-09-1981, Rue Mignot Delstanche - Mignot Delstanchestraat, jaida.hooper@yahoo.fr
+10346, Leland, Short, Niiked, TheEmiiPvP, 10-06-1982, Rue Polydore Moerman - Polydore Moermanstraat, leland.short@hotmail.be
+10357, Jeremy, Gilles, JakeLavery, Zedixfinity, 19-05-1970, Rue de Calevoet - Calevoetstraat, jeremy.gilles@yahoo.fr
+10375, Carsen, Hooper, icescream7, Retty772, 03-08-1997, Rue Honoré Longtin, carsen.hooper@hotmail.be
+10382, Dorian, Tanner, MrDavoh, HelmutLeSheitan_, 14-03-1993, Place Henri De Smet - Henri De Smetplein, dorian.tanner@gmail.com
+10394, Simon, Hickman, LadyArabelle, carlo2653, 02-06-2001, Carré Pauwels - Pauwelsblok, simon.hickman@gmail.com
+10409, Maryse, Van den Camp, ResiGame, almi02, 30-01-1992, Avenue Émile de Beco - Émile de Becolaan, maryse.vandencamp@gmail.com
+10416, Alain, Franken, Kiruko13, Kerobero, 25-11-1978, Rue Lebeau - Lebeaustraat, alain.franken@gmail.com
+10428, Sarai, Robertson, Quentgouboss, TempereddRahim, 28-11-1959, Rue du Gruyer - Bosrechterstraat, sarai.robertson@hotmail.be
+10439, Jaylynn, Archer, Baal2731, sugarcraft, 08-10-1961, Rue Courtois - Courtoisstraat, jaylynn.archer@ulb.ac.be
+10456, Sabrina, Tweelinckx, Cat__59, genelle12, 09-04-1995, Rue Edmond de Grimberghe - Edmond de Grimberghestraat, sabrina.tweelinckx@ulb.ac.be
+10471, Nicole, Crispel, Anyelux, TarTine_O_Nutela, 29-01-1966, Rue d&#39;Enghien - Edingenstraat, nicole.crispel@yahoo.fr
+10483, Louna, Lyphoudt, shasam688, DELABY, 10-02-1978, Rue des Déportés - Weggevoerdenstraat, louna.lyphoudt@yahoo.fr
+10494, Mckenna, Valencia, dumez, lohendrig, 28-03-2001, Rue Thérésienne - Theresianenstraat, mckenna.valencia@ulb.ac.be
+10506, Evangeline, Osborne, skydeath02, pietjuh999, 08-08-1960, Place Louis Morichar - Louis Moricharplein, evangeline.osborne@gmail.com
+10525, Caroline, Swart, FlashStorme_, aceblack, 17-03-1976, Rue du Melkriek - Melkriekstraat, caroline.swart@hotmail.com
+10541, Kolton, Rubio, homer350, Chupe1703, 17-08-2002, Rue de la Charette - Karrestraat, kolton.rubio@ulb.ac.be
+10557, Orlando, Quinn, LeoneBB, arnaud00, 24-12-1958, Rue Maurice Xhoneux - Maurice Xhoneuxstraat, orlando.quinn@hotmail.com
+10566, Annika, Wyatt, Judgmentlord, JDK175, 15-02-1994, Place Jef Mennekens - Jef Mennekensplaats, annika.wyatt@hotmail.be
+10576, Matilda, Jacobson, gruudrud, SpaceNate, 07-11-1979, Rue Godefroid Guffens - Godefroid Guffensstraat, matilda.jacobson@gmail.com
+10589, Kaiden, Rivera, jonath702, MaxEdGab, 27-10-1960, Avenue de l&#39;Horizon - Horizonlaan, kaiden.rivera@yahoo.fr
+10605, Phoenix, Hardin, Pandaw_, berazu, 10-07-1966, Rampe Lambermont - Lambermontoprit, phoenix.hardin@gmail.com
+10612, Jean-Paul, Deporter, By_sTaxX, TheG4meur_53, 23-09-1954, Rue Gray - Graystraat, jeanpaul.deporter@gmail.com
+10626, Leandro, Pennington, ThearSuhl, Escuiquirin, 01-03-1996, Rue du Disque - Schijfstraat, leandro.pennington@gmail.com
+10634, Joe, Oconnell, Mad_Lukas, DemonFantome, 31-05-1965, Boulevard du Souverain - Vorstlaan, joe.oconnell@gmail.com
+10645, Catherine, Vleminx, dominicjaquot343, tevilog, 29-05-1987, Rue Père Eudore Devroye - Pater Eudore Devroyestraat, catherine.vleminx@gmail.com
+10654, Marion, Ketelsmit, ProtectBird, Nick0s, 04-10-1976, Rue du Bon Pasteur - Goede Herderstraat, marion.ketelsmit@ulb.ac.be
+10667, Lionel, Hertogue, Stylehax, Kashu25, 31-07-1950, Rue des Hiboux - Uilenstraat, lionel.hertogue@ulb.ac.be
+10682, Christine, Mauchamps, sasa60, TheTeiiCk232, 20-04-1966, Rue Juste Lipse - Justus Lipsusstraat, christine.mauchamps@hotmail.be
+10694, Gina, Armstrong, Sn0Wolf_, nico8103, 09-04-1956, Avenue Joseph Lemaire - Joseph Lemairelaan, gina.armstrong@gmail.com
+10704, Thierry, Debaere, Meykra, W_SlidekawaiYT_W, 07-10-1972, Avenue Jean Laudy - Jean Laudylaan, thierry.debaere@yahoo.fr
+10711, Vincent, Gasthuys, Dydy2007, vadoum, 07-11-1953, Rue de la Teinturerie - Ververijstraat, vincent.gasthuys@hotmail.com
+10725, Amelie, Corain, Dj4Skool58, MXWorthyHD, 28-08-1965, Drève du Long Bonnier - Langbunderdreef, amelie.corain@yahoo.fr
+10730, André, Goethals, chlupatejpes, IamEros, 10-08-1971, Rue Allard - Allardstraat, andré.goethals@gmail.com
+10738, Victoria, Hunt, skydon, Madchine59, 21-03-1963, Avenue de l&#39;Eglise Saint-Julien - Sint-Juliaanskerklaan, victoria.hunt@gmail.com
+10747, Harry, Becker, NovaGame, LeFauconNoirs, 05-12-1981, Rue Masui - Masuistraat, harry.becker@ulb.ac.be
+10762, René, Hertogs, theekiller59, Lekiliiibre, 23-12-1992, Place Léon Vanderkindere - Léon Vanderkindereplein, rené.hertogs@gmail.com
+10777, Jenny, Middleton, Pogonas11, Antoinebg10, 21-12-1972, Chaussée de Gand - Steenweg op Gent, jenny.middleton@gmail.com
+10783, Amelie, Bruynseel, paulm51, Couttseh, 09-11-1960, Rue de Birmingham - Birminghamstraat, amelie.bruynseel@gmail.com
+10800, Jean-Marc, Sijmen, TOMk4, iArflex, 16-09-1988, Cuerensstraat, jeanmarc.sijmen@yahoo.fr
+10816, Nathan, Olivier, Adri_lego05, sebastien16, 12-03-1992, Rue de Menin - Menenstraat, nathan.olivier@gmail.com
+10830, Julien, Lennel, SSS_DogeWafflols, FainFlinn, 30-03-1950, Avenue Norbert Gille - Norbert Gillelaan, julien.lennel@yahoo.fr
+10844, Lucas, Callebert, rosalyx51, PastSkys, 19-10-1972, Boulevard Léopold III - Leopold III-laan, lucas.callebert@ulb.ac.be
+10857, Conner, Shepherd, Fidel211407, ClypsonYT, 12-10-1984, Rue Emmanuel Van Driessche - Emmanuel Van Driesschestraat, conner.shepherd@ulb.ac.be
+10873, Elle, Neal, Jules___, h3llrid3r, 22-04-1987, Quai du Hainaut - Henegouwenkaai, elle.neal@gmail.com
+10889, Sarah, Devos, superfeuille, droide666, 06-07-1955, Getrouwheidsgang, sarah.devos@gmail.com
+10904, Terrence, Vargas, Fpscraft, toulongamersix, 14-12-1970, Bessenveldstraat, terrence.vargas@gmail.com
+10916, Marius, Hinkens, UndefinedMacro, WoRXy, 15-08-1964, Rue de Hennin - de Henninstraat, marius.hinkens@gmail.com
+10923, Valérie, Vogels, Nehutre_, Hyriole, 17-04-1958, Venelle aux Jeux - Speeltuindreveken, valérie.vogels@gmail.com
+10927, Zoe, Damard, JesusG33kDoesMC, nonothebest, 09-08-1959, Rue d&#39;Aragon - Aragonstraat, zoe.damard@gmail.com
+10944, Todd, Best, estradovic, scottiducati, 17-06-1973, Rue Saint-Lambert - Sint-Lambertusstraat, todd.best@gmail.com
+10959, Reginald, Mitchell, yodakiller666, xXYamnaXx_YT, 21-04-1965, Place Jean Vander Elst - Jean Vander Elstplein, reginald.mitchell@ulb.ac.be
+10975, Jean, Bastin, ran_001, abimelecxX, 03-09-1999, Rue Lieutenant Jérôme Becker - Luitenant Jérôme Beckerstraat, jean.bastin@hotmail.com
+10991, Béatrice, Wattieaux, Roiteck, WitherGamerYT, 14-11-1996, Rue Jules Broeren - Jules Broerenstraat, béatrice.wattieaux@gmail.com
+10998, Jasiah, Terry, Crowblanc, Blinq_, 12-09-1953, Avenue Benjamin Jansen - Benjamin Jansenlaan, jasiah.terry@gmail.com
+11012, Matteo, Depoortere, JeJe_Disney, Starkzy, 14-07-1954, Rue de Venise - Venetiëstraat, matteo.depoortere@gmail.com
+11029, Kade, Choi, D4rTh_PleX, ranger7500, 27-10-1972, Rue Anneessens, kade.choi@yahoo.fr
+11040, Dominique, Mertens, Deaven_, Borjamp, 17-09-1977, Rue Jean Noté - Jean Notéstraat, dominique.mertens@gmail.com
+11053, Camille, Doeraene, Yorunosuta, Joox1000ms, 19-05-1969, Square Marguerite - Margaretasquare, camille.doeraene@gmail.com
+11064, Christelle, Daels, Vico51700, spiro90, 06-10-1978, Rue de la Forge - Smidsestraat, christelle.daels@hotmail.com
+11072, Dominique, Stievens, ghoostback, FurieMinecraft14, 23-12-1956, Avenue de Selliers de Moranville - de Selliers de Moranvillelaan, dominique.stievens@ulb.ac.be
+11088, Catherine, Huig, ImNexy_, Morel352, 05-06-1976, Rue Vanderhaegen - Vanderhaegenstraat, catherine.huig@ulb.ac.be
+11099, Tamara, Huber, norther_hawk, Gryad, 26-10-1956, Rue de la Briqueterie - Steenbakkerijstraat, tamara.huber@hotmail.be
+11108, Romain, Claessens, K3k3tribe, McGamer_TR, 17-08-1986, Rue Ernest Blerot - Ernest Blerotstraat, romain.claessens@gmail.com
+11118, Amari, Curtis, ryanewing, Skymarchal_Tv, 01-04-2003, Rue des Arbalétriers - Kruisboogschuttersstraat, amari.curtis@gmail.com
+11128, Tom, Mangon, davadinyoESP, smeetsh, 14-05-1951, Rue des Clématites - Clématisstraat, tom.mangon@gmail.com
+11144, Jeremy, Grégoire, NappYPlay, MRGamer37, 19-06-1974, Rue Franz Merjay - Franz Merjaystraat, jeremy.grégoire@gmail.com
+11160, Melanie, Debled, FlashMan57, ItsSpiny, 25-08-1986, Chemin des Tigelles - Stengeltjesweg, melanie.debled@ulb.ac.be
+11174, Catherine, Smal, stalanbar, BibOx, 06-06-2000, Rue de l&#39;Elégie - Elegiestraat, catherine.smal@gmail.com
+11189, Guillaume, Libert, gastuer, MonsieurAurelien, 12-07-1961, Place du Béguinage - Begijnhof, guillaume.libert@hotmail.be
+11201, Anthony, Liétar, byOtronYT, HideShadow10, 25-10-1964, Square Maréchal Montgomery - Maarschalk Montgomeryplein, anthony.liétar@hotmail.be
+11219, Hugo, Roland, chgilo, Fugitif, 25-11-1962, Rue Berthelot - Berthelotstraat, hugo.roland@gmail.com
+11231, Jazlene, Mosley, Aptykan, XaveuX, 04-06-1963, Bovenberg - Bovenberg, jazlene.mosley@gmail.com
+11239, Jamar, Avila, NeoGaming68, syrianwarrior0, 22-06-1996, Avenue des Alezans - Vossenlaan, jamar.avila@yahoo.fr
+11255, Vanessa, Aelterman, Elisio_, nuringa, 24-02-1991, Place Eugène Flagey - Eugène Flageyplein, vanessa.aelterman@gmail.com
+11268, Ricardo, Travis, elYuranis35, Damstyle, 02-03-1977, Avenue Jean Colin - Jean Colinlaan, ricardo.travis@hotmail.be
+11286, François, Levecq, Xxaurelien, iguessimfrench, 24-07-1964, Rue Saint-Michel, françois.levecq@hotmail.be
+11294, Kole, Sellers, Macha_theCat, JaviMx, 24-07-1970, Vieille Rue du Moulin - Oude Molenstraat, kole.sellers@yahoo.fr
+11307, Dustin, Gonzales, Settys, malik988, 15-10-1956, Avenue Mostinck - Mostincklaan, dustin.gonzales@gmail.com
+11318, Dane, Dawson, sinnaynetlew, Sakee_Neko, 21-01-1979, Clos de la Carène - Carinagaarde, dane.dawson@gmail.com
+11328, Thierry, Blondeeuw, steph432, Arnaud1801, 03-03-2002, Rue Ruysdael - Ruysdaelstraat, thierry.blondeeuw@yahoo.fr
+11336, Guillaume, Van Steerteghen, Bobaque, oulalala, 02-10-1962, Rue des Fabriques - Fabrieksstraat, guillaume.vansteerteghen@gmail.com
+11347, René, Vervoort, ZoneXkiller, Deimoski, 08-11-1965, Rue Kelle - Kellestraat, rené.vervoort@gmail.com
+11361, Jagger, Todd, Adrielktmata, TwiKxy, 09-05-2000, Berensheide, jagger.todd@gmail.com
+11367, Agnes, Lambrechts, MrRedBlaze, TaikoPlays, 22-07-1954, Rue de l&#39;Angle Jaune - Gele Hoekstraat, agnes.lambrechts@yahoo.fr
+11380, Marius, Jonnet, Quiorame, IceTropical, 10-03-1960, Rue de la Délivrance - Verlossingsstraat, marius.jonnet@hotmail.be
+11389, Allisson, Davis, iMaikyOne, math222, 02-12-1960, Oscar Van Goidtsnovenlaan, allisson.davis@yahoo.fr
+11401, Camille, De Muynek, Tony_Truand, Matador64, 03-11-1992, Drève de Carloo - Carloodreef, camille.demuynek@gmail.com
+11415, Benjamin, Liévrouw, Zileann, Onimix, 11-02-2001, Rue Jean Gérard Eggericx - Jean Gérard Eggericxstraat, benjamin.liévrouw@gmail.com
+11421, Juliette, Beckers, Antho_Kfc, Sn1k3, 25-06-1988, Rue de la Carpe - Karperstraat, juliette.beckers@hotmail.be
+11424, Agnes, Aelter, d3struct3ur4X, Syn_LouAnNe, 14-05-1997, Rue François Dons - François Donsstraat, agnes.aelter@yahoo.fr
+11439, Yannis, Viatour, ManuBuu, Iceabyssal, 22-07-1967, Avenue d&#39;Hougoumont - Hougoumontlaan, yannis.viatour@hotmail.be
+11452, Carole, Klerk, fouxer1, LibeFlySH, 13-08-1977, Rue du Roetaert - Roetaertstraat, carole.klerk@gmail.com
+11471, Leonel, Brewer, ProxitoelGamer, T_REM, 17-03-1992, Rue Guy-Jean Verachtert - Guy-Jean Verachtertstraat, leonel.brewer@ulb.ac.be
+11478, Regan, Harrison, GunnyJones, VanessaGamerYT, 07-08-1963, Rue de la Cité Moderne - Moderne-Wijkstraat, regan.harrison@gmail.com
+11491, Severine, Kobus, _MoutonLaineux_, Iron_PatoZ, 21-07-1972, Rue de Percke - de Perckestraat, severine.kobus@gmail.com
+11502, Lou, Charlier, Assasin_Bot, icosolYT, 05-04-1980, Rue de l&#39;Ourthe - Ourthestraat, lou.charlier@gmail.com
+11508, Denis, Veldmann, maitrecube, MrRediger, 29-09-1985, Rue de l&#39;Industrie - Nijverheidsstraat, denis.veldmann@hotmail.be
+11521, Slade, Michael, Hyper_Quick39, Kotra97, 13-06-1984, Place du Tarin - Sijsjesplein, slade.michael@yahoo.fr
+11531, April, Luna, Macks35, BlueSky_Is_Love, 04-05-1964, Rue de Ligne - de Lignestraat, april.luna@gmail.com
+11540, Sage, Mills, Styner, galaad0403, 24-08-1993, Rue des Spirées - Spireastraat, sage.mills@gmail.com
+11555, Melody, Stout, KissCool, zGooGz, 17-01-1985, Rue Docteur Huet - Dokter Huetstraat, melody.stout@hotmail.com
+11570, Arturo, Escobar, Pict34, iTz_ArKeTcH, 14-12-1964, Avenue Louis Berlaimont - Louis Berlaimontlaan, arturo.escobar@gmail.com
+11584, Sara, Velez, KELIMAS, xShelves, 12-02-1982, Clos des Bouleaux - Berkenhof, sara.velez@gmail.com
+11599, Laurel, Casey, iWes, quentinr2003, 09-10-1985, Rue Blanche - Blanchestraat, laurel.casey@gmail.com
+11616, Adele, De Backer, KiwiApteryx, vangard1442, 09-09-1965, Avenue Général Dossin de Saint-Georges - Generaal Dossin de Saint-Georgeslaan, adele.debacker@hotmail.be
+11627, Louis, Ricard, IamHuGo, Masaucisse, 12-03-1960, Rue aux Laines - Wolstraat, louis.ricard@ulb.ac.be
+11639, Mckinley, Morales, firefly55100, alejo_voltaje2, 12-09-1988, Boulevard du Souverain, mckinley.morales@gmail.com
+11649, Steven, Bruce, _Valky_, Refrosquis, 21-02-1998, Avenue Tempérance - Matigheidslaan, steven.bruce@gmail.com
+11655, Lina, Mewis, EG734, ridder_kasper, 26-06-1974, Rue Juliette Wytsman - Juliette Wytsmanstraat, lina.mewis@gmail.com
+11665, Vanessa, Erk, Malefik30, fredoumou, 10-01-1971, Rue de la Linière - Vlasfabriekstraat, vanessa.erk@gmail.com
+11677, Adam, Moreau, Teoarminator, Golbarck, 22-09-1950, Avenue Ariane - Arianelaan, adam.moreau@gmail.com
+11688, Ingrid, Harrison, banzaigamer1, MrLilio, 27-07-1987, Place de Helmet - Helmetseplein, ingrid.harrison@ulb.ac.be
+11701, Marius, Goud, MonsieurPoulpe, FatyBiebs, 10-03-2003, Rue du Bois Sauvage - Wildewoudstraat, marius.goud@gmail.com
+11710, Bernadette, Van de Loo, AntoiineS, The_Mithyx, 22-03-1981, Geschenkengang, bernadette.vandeloo@gmail.com
+11727, Bernard, Van Noÿe, TheCuber83, rickthecookie, 05-01-1975, Chaussée de Haecht - Haachtsesteenweg, bernard.vannoÿe@yahoo.fr
+11747, Jayden, Villa, IsamuMiyoji, WardLord_1503, 21-08-2001, Place Léopold Wiener - Léopold Wienerplein, jayden.villa@ulb.ac.be
+11756, Haleigh, Mcintyre, Dou22, MarsEthan, 03-11-1975, Place de l&#39;Yser - IJzerplein, haleigh.mcintyre@yahoo.fr
+11767, Kyan, Richmond, Vcom_88, Trotirider59910, 29-11-1986, Rue Willem Kuhnen - Willem Kuhnenstraat, kyan.richmond@ulb.ac.be
+11777, Ari, Bentley, AZY_Modz, rem272, 03-03-1967, Avenue Roger Vandendriessche - Roger Vandendriesschelaan, ari.bentley@gmail.com
+11791, Cade, Hensley, TneckNiv, jesuisuncochon, 10-01-1981, Avenue Eugène Baie - Eugène Baielaan, cade.hensley@hotmail.be
+11807, Agathe, Crispeels, Eiennezender, Frako, 06-11-1997, Drève des Gendarmes - Gendarmendreef, agathe.crispeels@ulb.ac.be
+11825, Sullivan, Robles, Moly38, jagadu13, 30-09-1972, Plattesteen, sullivan.robles@ulb.ac.be
+11830, Angelique, Adriencense, EyTek, Mathis_08170, 04-04-1955, Rue Neuve, angelique.adriencense@gmail.com
+11846, Kaylah, Taylor, darkdragon477, Ethan0079, 07-07-1963, Bodegemstraat, kaylah.taylor@ulb.ac.be
+11860, Chelsea, Stark, Rikaro, Tata_Evil, 12-06-1952, Rue des Foulons - Voldersstraat, chelsea.stark@gmail.com
+11869, 586, Fawat, romano1710, thombel, 06-08-1959, Avenue J.R. Collon - J.R. Collonlaan, 586.fawat@yahoo.fr
+11878, Grayson, Huang, narwhal_luver72, iSprintHax_, 02-10-1985, Rue Fernand Pire - Fernand Pirestraat, grayson.huang@ulb.ac.be
+11893, Enzo, Sinnesaël, TheBlackBari, Filly12, 02-05-1977, Rue Fineau - Fineaustraat, enzo.sinnesaël@gmail.com
+11912, Maxwell, Bernard, carmus92, Dokkos, 06-01-1970, Boulevard Léopold II - Leopold II laan, maxwell.bernard@gmail.com
+11925, Anna, Haesevoets, OhFoyle, Linklian, 17-01-2002, Drève des Équipages - Jachtstoetdreef, anna.haesevoets@gmail.com
+11934, Caroline, Stevens, letsplayeurs76, Dalkio, 15-02-1996, Vieux Chemin - Oude Weg, caroline.stevens@hotmail.be
+11948, Marisol, Gilbert, PabloKing, the_miner630, 08-11-1962, Rue des Amaryllis - Amaryllissenstraat, marisol.gilbert@ulb.ac.be
+11963, Miracle, Boone, Nekouchi, esprit07, 09-06-1993, Avenue Franklin Roosevelt - Franklin Rooseveltlaan, miracle.boone@gmail.com
+11970, Jazlene, Olson, Mamadouuu, NokeTsu, 31-05-1951, Rue des Chapeliers - Hoedenmakersstraat, jazlene.olson@ulb.ac.be
+11977, Alice, Gabriels, Rezzus, Liptonikz, 10-03-1952, Rue Verboeckhaven - Verboeckhavenstraat, alice.gabriels@gmail.com
+11988, Nathalie, Hoefnagel, Pigouse, pleymobibope, 13-09-1955, Putterie - Putterij, nathalie.hoefnagel@gmail.com
+11998, Justine, Bietmé, Cieber6, DarthRadar, 04-08-1951, Rue Baron Lambert - Baron Lambertstraat, justine.bietmé@gmail.com
+12005, Zechariah, Montes, marussia42, Judol, 05-05-1974, Square Félix Vande Sande - Félix Vande Sandesquare, zechariah.montes@gmail.com
+12020, Yasmin, Shea, crezycalibri_, trhpeanut, 02-06-1997, Rue d&#39;Espagne - Spanjestraat, yasmin.shea@gmail.com
+12030, Miya, Callahan, azgord11, IAlexandru_, 04-02-1998, Square Vergote - Vergoteplein, miya.callahan@gmail.com
+12034, Laetitia, Jordaens, XM_Titizgame, Vrakfall, 03-11-1970, Olivetenhof, laetitia.jordaens@ulb.ac.be
+12040, Malachi, Shields, Fortunie, Rockiboul, 21-05-2000, Rue des Cannas - Cannastraat, malachi.shields@ulb.ac.be
+12044, Marie, Sinnesal, Sportdude08, toushikiba, 17-08-1972, Place du Sacré-Coeur - Heilig-Hartplein, marie.sinnesal@gmail.com
+12058, Izaiah, Murphy, _dylan500_, Bassy_Boi, 29-09-1951, Rue Vergote - Vergotestraat, izaiah.murphy@gmail.com
+12072, Esteban, Boeck, gregarth, c0in_76, 07-08-1994, Rue de la Sapinière - Dennebosstraat, esteban.boeck@yahoo.fr
+12083, Carolina, Mueller, YoshiGo67, JHONIX_YT, 28-11-1961, Rue de la Cambre - Ter Kamerenstraat, carolina.mueller@hotmail.be
+12091, Louis, Lénel, LEO75, Lushenproxd, 19-08-1978, Rue de la Grosse Tour - Wollendriestorenstraat, louis.lénel@gmail.com
+12105, Chloé, Merjai, ugobouilla, Rwild, 16-05-1981, Laddersstraat, chloé.merjai@hotmail.be
+12118, Benoît, Lustig, seb1305, Albukii, 21-11-1993, Rue du Busselenberg - Busselenbergstraat, benoît.lustig@hotmail.com
+12121, Clément, Delacuvellerie, ZixCZ, ALAbbas, 23-08-1961, Tenbosch - Tenbos, clément.delacuvellerie@gmail.com
+12132, Francis, Cauvet, sebastian13579, xXBabweyXx, 01-06-1970, Rue de l&#39;Ancienne Cure - Oude Pastoriestraat, francis.cauvet@gmail.com
+12145, Heidy, Jenkins, cedricguerre450, Chairs98, 15-06-1950, Clos Joseph Hanse - Joseph Hanse hof, heidy.jenkins@gmail.com
+12157, Yannis, Sinnesal, Garcodi, SamOfMC, 02-07-1973, Avenue des Chênes - Eikenlaan, yannis.sinnesal@ulb.ac.be
+12176, Joy, Carter, Megalovania__, Voldecraft, 17-11-1959, Rue Alphonse Renard - Alphonse Renardstraat, joy.carter@gmail.com
+12191, Erika, James, ewPvP, FewBadDays, 27-03-1991, Rue de l&#39;Eglise Sainte-Anne - Sint-Annakerkstraat, erika.james@gmail.com
+12198, Jayleen, Stout, Firemasque, DanyPower34, 24-08-1971, Avenue des Missionnaires - Missionarissenlaan, jayleen.stout@hotmail.com
+12210, Tristan, Geets, JulienNorthRoom6, made_in_USA24, 21-12-1999, Rue des Alouettes - Leeuwerikenstraat, tristan.geets@gmail.com
+12216, Samuel, Jone, pouloupoulou28, thomiax69, 05-09-1998, Rond-Point Robert Schuman - Robert Schumanplein, samuel.jone@gmail.com
+12231, Christian, Franken, Hedai, FR_Player_2, 11-11-1983, Rue des Deux Ponts - Tweebruggenstraat, christian.franken@hotmail.com
+12244, Isaiah, Burgess, TheAkuru3400, GetRekt59, 10-04-1957, Rue Jean Wellens - Jean Wellensstraat, isaiah.burgess@ulb.ac.be
+12256, Maxime, Ghiste, mrgame_am_a_fox, OpiumSama, 17-02-2002, Avenue des Statuaires - Beeldhouwerslaan, maxime.ghiste@gmail.com
+12272, Romeo, Olson, cash80, MissChatons, 15-02-2000, Avenue du Pennon - Riddervaanlaan, romeo.olson@hotmail.be
+12282, Sylvain, Ricaert, MaskedKirito, D4rkPwnd, 02-08-1964, Rue du Midi, sylvain.ricaert@gmail.com
+12294, Pascale, Kleinman, coco_4000, Kirito911_, 21-03-1971, Avenue du Jeu de Paume - Kaatsspellaan, pascale.kleinman@gmail.com
+12307, Joël, Raussain, matheussamadello, Darkcyan, 07-08-1990, Rue de Fiennes - de Fiennesstraat, joël.raussain@hotmail.be
+12327, Vincent, Francon, feyous, adamojo31, 02-08-1997, Impasse Saint-Nicolas, vincent.francon@hotmail.be
+12345, Matthieu, Mark, Nutylla, Humbrikz, 17-10-1980, Mechelsesteenweg - Chaussée de Malines, matthieu.mark@gmail.com
+12349, Lucas, Verbeeck, 56guigui, TheGuyUnknown, 21-08-1994, Rouppestraat, lucas.verbeeck@gmail.com
+12360, Maëlys, Liétar, timot73, ArnaudCC, 04-12-1986, Boulevard Baudouin - Boudewijnlaan, maëlys.liétar@hotmail.com
+12376, Hélène, Watteel, LockedLife, Nitix, 14-01-2003, Avenue Louis Vander Swaelmen - Louis Vander Swaelmenlaan, hélène.watteel@gmail.com
+12393, Guy, Cappeliez, tovery, Alexismfy, 16-11-1984, Rue Jean-Baptiste Vandendriesch - Jean Baptiste Vandendrieschstraat, guy.cappeliez@gmail.com
+12402, Maryse, André, Stevenson_, Neos1097, 06-08-1994, Rue des Palais Outre-Ponts - Paleizenstraat over de Bruggen, maryse.andré@gmail.com
+12415, Louna, Neurot, Oppeloppe, Badcamp68, 16-02-2000, Chaussée de Waterloo - Waterlose Steenweg, louna.neurot@yahoo.fr
+12428, Vicente, Roth, ScrasherYT, HyperKhaler, 20-06-1968, Avenue de la Bugrane - Stalkruidlaan, vicente.roth@hotmail.com
+12440, Martine, Horlin, Nemesis_Gmg, nonbinaryseb, 28-12-1979, Parvis Notre-Dame - Onze-Lieve-Vrouwvoorplein, martine.horlin@gmail.com
+12448, Yannick, Claeys, Pendejos, Danecek_V, 12-10-1973, Avenue Victor Gilsoul - Victor Gilsoullaan, yannick.claeys@gmail.com
+12460, Zion, Whitaker, Dutcher2002, Nolife171, 24-02-1999, Rue des Croisades - Kruisvaartenstraat, zion.whitaker@hotmail.be
+12473, Finley, Bauer, iFliiX, TheDerpyGuy2299, 24-10-1950, Van Helmontstraat, finley.bauer@hotmail.com
+12485, Rémi, Vinchent, BoIIyBoy, Alavia, 10-11-1996, Rue de la Mutualité - Onderlinge Bijstandstraat, rémi.vinchent@hotmail.com
+12496, Kareem, Hanna, minecrafteur20, Gorak_LB, 02-05-1971, Avenue de Wezembeek - Wezembeeklaan, kareem.hanna@gmail.com
+12506, Aydan, Gillespie, Bubul69, riton002, 05-08-1993, Boulevard Emile Jacqmain, aydan.gillespie@gmail.com
+12519, Tom, Caudron, Jambute, Anais_Jenifer, 25-04-1976, Zaventemsesteenweg, tom.caudron@gmail.com
+12530, Nicole, Desmyttere, SWOn0rK, EnzoCR, 09-03-1974, Boulevard Léopold II - Leopold II-Laan, nicole.desmyttere@gmail.com
+12546, Pascale, Koeck, JuJuLaBerlu44, Meli34, 13-01-1982, Rue de Jérusalem - Jerusalemstraat, pascale.koeck@ulb.ac.be
+12558, Anne-marie, De Pannemacker, JeMangeDuCastor, iLinkXtaz, 10-05-1977, Rue de la Courtoisie - Hoffelijkheidsstraat, annemarie.depannemacker@hotmail.com
+12571, Patricia, Desmeytere, Odin1914xl, Hecatris, 27-03-1964, Galerie de la Reine, patricia.desmeytere@gmail.com
+12581, Sabrina, Neurot, TotoFire3, DyoxiD_ShaDoW, 06-12-1991, Avenue Joseph Chaudron - Joseph Chaudronlaan, sabrina.neurot@gmail.com
+12595, Aryan, Bradley, SweetClem, NathiGamer, 12-10-1992, Rue des Pluviers - Pluvierstraat, aryan.bradley@hotmail.be
+12608, Zoe, De Doncker, jotijoti, bijeyvellon, 29-01-1955, Rue Meyerbeer - Meyerbeerstraat, zoe.dedoncker@gmail.com
+12618, Enzo, Vieutemps, Croye, SoundCraft, 11-04-1985, Quai aux Briques, enzo.vieutemps@gmail.com
+12630, Laurence, Joire, DuntHunter, rockym85, 19-09-1975, Avenue Denayer - Denayerlaan, laurence.joire@gmail.com
+12647, Joël, Quesnel, Damyan666, H3athcliff, 02-07-1964, Rue Jourdan - Jourdanstraat, joël.quesnel@hotmail.com
+12657, Sabrina, De Haese, Dodgeh1080p, AfroNinja468, 07-12-1988, Avenue Eudore Pirmez - Eudore Pirmezlaan, sabrina.dehaese@gmail.com
+12669, Jaqueline, Mcdonald, DyonPvP, Extrayer41, 27-12-1956, Ensemble Jean Christophe - Ensemble Jean Christophe, jaqueline.mcdonald@gmail.com
+12679, Savanna, Kent, Elystus, br1c388, 03-12-1994, Rue du Péloponnèse - Peloponnesosstraat, savanna.kent@hotmail.com
+12696, Angelique, Van de Poel, Chocobo463, Synned, 06-01-1991, Rue Van Gaver - Van Gaverstraat, angelique.vandepoel@hotmail.com
+12704, Clément, Burghgraeve, reizyy, solalisis, 30-09-2003, Plattesteen - Plattesteen, clément.burghgraeve@hotmail.com
+12713, Jeremy, De Pauss, Glix11, skweebi, 11-10-1985, Rue des Funkias - Funkiastraat, jeremy.depauss@hotmail.com
+12722, Jerry, Osborn, Maxou3522, Foartripel, 02-09-1953, Rue du Stade - Stadionstraat, jerry.osborn@ulb.ac.be
+12732, Noel, Crawford, EL_Jeryto, Hugo11000, 08-11-1956, Avenue du Manoir d&#39;Anjou - Manoir d&#39;Anjoulaan, noel.crawford@gmail.com
+12740, Amara, Knox, PreMitte, nahalbeurd, 27-07-1958, Rue de la Luzerne - Luzernestraat, amara.knox@ulb.ac.be
+12748, Carlie, Pineda, FenixHD_, Yumeshi, 09-07-1959, Rue du Chantier - Werfstraat, carlie.pineda@gmail.com
+12761, Valentina, Orozco, wardol, gear3du62, 13-12-2000, Ferdinand Kinnenstraat - Rue Ferdinand Kinnen, valentina.orozco@hotmail.com
+12769, Heloise, Hendrickx, Tarkus, SentinelIe, 17-07-1976, Rue Otlet - Otletstraat, heloise.hendrickx@gmail.com
+12789, Anthony, Vandeputte, tutxps, 18064454382, 02-09-1994, Rue de Soignies - Zinnikstraat, anthony.vandeputte@gmail.com
+12799, Alyssa, Ponce, Reyron, IDCyber, 19-06-1962, Avenue des Dames Blanches - Witte Vrouwenlaan, alyssa.ponce@gmail.com
+12809, Jeremy, Gomaert, DeclanATO, commer1234, 08-09-1978, Rue Van Kalck - Van Kalckstraat, jeremy.gomaert@hotmail.be
+12826, Céline, Couhysder, GdOoRy_010, Noctizzz, 09-10-1951, Rue Leys - Leysstraat, céline.couhysder@gmail.com
+12839, Laetitia, Watteel, GeoxYT, DudesonsGaymer1, 21-12-1996, Boulevard de la Woluwe - Woluwelaan, laetitia.watteel@hotmail.com
+12852, Yadira, Hahn, _ZouxiS_, A7FLNC, 21-07-1969, Rue De Geneffe - De Geneffestraat, yadira.hahn@gmail.com
+12866, Elisabeth, Thuiliaux, SunnyySingh, Utyque, 27-08-1997, Rue de l&#39;Arrosoir - Gieterstraat, elisabeth.thuiliaux@ulb.ac.be
+12876, Sidney, Mcclure, Fmarcang, julien540, 17-03-1994, Drève du Prieuré - Priorijdreef, sidney.mcclure@gmail.com
+12885, Laurent, Bernard, MinecraftFree1, NetrixMC, 22-06-1980, Rue Saint-Joseph - Sint-Jozefstraat, laurent.bernard@ulb.ac.be
+12895, Esmeralda, Clark, momolabrick, xb360, 23-04-1978, Rue Joseph Cuylits - Joseph Cuylitsstraat, esmeralda.clark@hotmail.be
+12905, Anne, Vossen, Xx_GeZzMoO_xX, lousim, 15-05-1978, Avenue de la Reine - Koninginnelaan, anne.vossen@gmail.com
+12916, Patrice, Lievrow, ToxicoCraft, TheKarolinaZjr, 23-11-2001, Place Van Hoegaerde - Van Hoegaerdeplein, patrice.lievrow@gmail.com
+12932, Junior, Leblanc, math_e, javipega2002, 22-05-1983, Place Eugène Keym - Eugène Keymplein, junior.leblanc@gmail.com
+12938, Karine, Kesteloot, SoGoTa, babal14, 28-08-1981, Rue Hélène Ryckmans - Hélène Ryckmansstraat, karine.kesteloot@hotmail.be
+12950, Céline, Stassiaux, Manthykore, blockbuster_2005, 27-01-1980, Rue du Facteur - Briefdragerstraat, céline.stassiaux@hotmail.be
+12957, Monique, Desmyter, XDarkeusX, Milenario1000, 03-01-1960, Avenue Adolphe Buyl, monique.desmyter@gmail.com
+12967, Michel, Van Dorp, redneckhawkeye, Craft_Games573, 22-09-1961, Rue de Moscou - Moskoustraat, michel.vandorp@hotmail.com
+12978, Céline, Desmet, CptClem, povpov, 20-08-1952, Clos Fleuri - Bloemenoord, céline.desmet@gmail.com
+12992, Rebekah, Mcclain, minecraftgame39, Banjo3006, 06-05-1959, Rue de l&#39;Etuve - Stoofstraat, rebekah.mcclain@gmail.com
+13005, 586, Flamenck, MrJesters, iDarkGhoul, 16-07-1963, Place de la Croix-Rouge - Rode-Kruisplein, 586.flamenck@hotmail.be
+13014, Carson, Mcbride, Snow_Happy, elranel, 05-09-1952, Rue Paul Devigne - Paul Devignestraat, carson.mcbride@hotmail.be
+13024, Carolyn, Bentley, KingOfThePvP, alex31500v, 22-07-1998, Rond-point Winston Churchill - Winston Churchillplein, carolyn.bentley@gmail.com
+13039, Jeremy, De Meester, Mojit_, TutyFruty, 12-04-1997, Avenue des Courses - Wedrennenlaan, jeremy.demeester@gmail.com
+13046, Jeremy, De Saert, tevboy, ange_blanc, 02-07-1998, Rue Melsens, jeremy.desaert@gmail.com
+13057, Finn, Gross, Red_woon, MrMarcGamer, 27-12-1970, Rue Théodore De Cuyper - Théodore De Cuyperstraat, finn.gross@gmail.com
+13066, Emma, Korring, GBS003, The_Ravage357, 24-08-2001, Rue Joseph Verhasselt - Joseph Verhasseltstraat, emma.korring@gmail.com
+13079, Caroline, Watteau, CptTomaz, camicase22, 14-07-1950, Oude Graanmarkt, caroline.watteau@hotmail.com
+13088, Kévin, Dehoorne, AlphaWan, anvire, 24-04-1989, Rue de la Gouttière - Gootstraat, kévin.dehoorne@gmail.com
+13100, Cécile, Thomas, arth51, FizzyBear777, 25-08-1983, Rue des Alexiens, cécile.thomas@gmail.com
+13108, Mathilde, Kleiner, aurelXD7, Pelfrek, 06-02-1970, Place de Dinant, mathilde.kleiner@gmail.com
+13114, Tatiana, Munoz, Exuuu, GameOvaire, 18-04-2003, Rue t&#39;Serclaes - t&#39;Serclaesstraat, tatiana.munoz@gmail.com
+13128, Raphaël, Meester, sixela1408, Hzone, 26-11-1966, Rue Ernest Havaux - Ernest Havauxstraat, raphaël.meester@yahoo.fr
+13140, Camille, Delobes, Cargloush, maxouland, 11-08-2002, Bloemenlaan - Avenue des Fleurs, camille.delobes@yahoo.fr
+13148, Corinne, Stoffel, Nadisable, LM3012, 28-02-1974, Rue du Pays de Liège - Land-van-Luikstraatje, corinne.stoffel@gmail.com
+13159, Hélène, Michel, Sipha_leau, Ratix777, 01-01-1981, Rue d&#39;Albanie - Albaniëstraat, hélène.michel@gmail.com
+13168, David, Blanquaert, victorfg78, Furby_Nerd, 03-06-1987, Rue de l&#39;Eventail - Waaierstraat, david.blanquaert@gmail.com
+13183, Elise, Cook, Wylin, RushofGold, 01-08-1977, Rue Jean-Baptiste Decock - Jean-Baptiste Decockstraat, elise.cook@hotmail.be
+13194, Françoise, Maurichon, zipsaw09, zapadidou, 14-05-1982, Rue de la Rive - Oeverstraat, françoise.maurichon@yahoo.fr
+13210, Camille, Depireux, wardwera, Kekeldeo, 06-10-1958, Rue Fontaine d&#39;Amour - Minnebronstraat, camille.depireux@ulb.ac.be
+13216, Martin, Stokes, XxZeraCxX64, pirana665, 04-06-1993, Rue des Pâquerettes - Madeliefjesstraat, martin.stokes@hotmail.com
+13229, Genevieve, Van den Dael, Holly833, crinate37, 14-09-1951, Square de Meeûs - de Meeûssquare, genevieve.vandendael@yahoo.fr
+13240, Loïc, Roosengardt, bap910, ALTRIMAN, 26-02-1953, Rue Voot - Vootstraat, loïc.roosengardt@gmail.com
+13252, Ray, Garza, nickzon13, WarKonFR, 03-06-1952, Rue Jenatzy - Jenatzystraat, ray.garza@gmail.com
+13259, Bo, Pineda, Moroa09, kekette49, 05-06-1988, Quai à la Houille - Steenkoolkaai, bo.pineda@hotmail.be
+13269, Catherine, Deportere, kingjdw, GreenDemon_, 17-03-1954, Rue des Échevins - Schepenenstraat, catherine.deportere@gmail.com
+13287, Hélène, Joris, Durszlak, BlAzRoD, 23-03-1983, Rue Victor Rauter - Victor Rauterstraat, hélène.joris@gmail.com
+13297, Gérard, Lescohy, LeCubeKilleur, drawingpia1999_, 08-12-1954, Rue Philippe de Champagne - Philippe de Champagnestraat, gérard.lescohy@gmail.com
+13308, Anne, Jacobs, theozelda, EL_INVITADO_MC, 30-03-1983, Petite Rue Malibran - Korte Malibranstraat, anne.jacobs@gmail.com
+13322, Aurélie, Vrolyck, Grolorito, Lazer59, 04-02-1975, Rue Nothomb - Nothombstraat, aurélie.vrolyck@yahoo.fr
+13333, Mathilde, Doolage, RPGniv100, Skylare, 18-03-1963, Quai des Usines - Werkhuizenkaai, mathilde.doolage@ulb.ac.be
+13343, Cécile, Wattieaux, codNathan, Wiboy_CZE, 12-05-1975, Rue Alphonse De Witte - Alphonse De Wittestraat, cécile.wattieaux@hotmail.be
+13352, Yannis, Depelsemaeker, Melvinou, Riksson, 02-11-2001, Adolphe Maxlaan, yannis.depelsemaeker@gmail.com
+13361, Marc, Vandamme, Lt_Crusader, BananoCanarioPvP, 14-03-1968, Leopoldstraat, marc.vandamme@gmail.com
+13378, Bernadette, Lapayre, Kraack, Drachenboy, 17-09-1986, Steenweg op Brussel - Chaussée de Bruxelles, bernadette.lapayre@hotmail.be
+13391, Hugo, Cauvin, Sim3VD, marcsupercraft, 11-07-1962, Avenue des Arums - Aronskelkenlaan, hugo.cauvin@hotmail.com
+13402, Nicolas, Pelsmaeker, Yakalesbuter, Maykell_N, 03-07-1965, Kruipweg - Kruipweg, nicolas.pelsmaeker@ulb.ac.be
+13408, Alexander, Leach, _InfernoBoy_, VICTERREUR, 24-08-1966, Stalingradlaan, alexander.leach@yahoo.fr
+13424, Cristal, Hopkins, ManuSG16, Bowkerbou, 01-09-1961, Rue Maurice Van Rolleghem - Maurice Van Rolleghemstraat, cristal.hopkins@gmail.com
+13434, Amelie, Olyff, Sofrano_, NeKaToR9, 20-08-1978, Rue des Trois Rois - Drie Koningenstraat, amelie.olyff@yahoo.fr
+13444, Émilie, Waghon, Kanek_i, 7angozoulou, 07-01-1984, Rue du Molenblok - Molenblokstraat, émilie.waghon@yahoo.fr
+13459, Romain, Delahaye, Treekoninjaward, _ItGeY_, 29-11-1962, avenue Guillaume gilbert, romain.delahaye@gmail.com
+13476, Agathe, Dehorne, NeoKoZ_, Will_Curly, 22-11-1973, Avenue Bel-Air - Schoon Uitzichtlaan, agathe.dehorne@hotmail.com
+13490, Bethany, Mullen, AlExX11CRAFT, NRgyser_nV, 08-12-1962, Rue Jacques Hoton - Jacques Hotonstraat, bethany.mullen@hotmail.com
+13501, Jace, Church, samupi17, Xylear, 08-12-1970, Rue Crickx - Crickxstraat, jace.church@hotmail.be
+13521, Quentin, Haesen, rorocraft, staralix, 18-11-1981, Square du Manège - Rijschoolplein, quentin.haesen@gmail.com
+13530, Corinne, Parrish, Ossajora, maxcraft64, 08-04-1982, Val Maria - Mariëndaal, corinne.parrish@yahoo.fr
+13542, Jessica, De Rovéréaz, MrChavalon, BurnFlyer, 17-07-1956, Rue Fridtjof Nansen - Fridtjof Nansenstraat, jessica.derovéréaz@gmail.com
+13556, Arnav, Walsh, KayMss, perenoellevrai, 09-02-1976, Avenue des Campanules - Klokjeslaan, arnav.walsh@hotmail.be
+13569, Manon, Lecocq, Zevros, Griftox, 06-06-1969, Rue des Papillons - Vlindersstraat, manon.lecocq@gmail.com
+13579, Heloise, Heylen, Monsterkrik, Nick_FaTJr, 26-07-1980, Avenue du Maréchal - Maarschalklaan, heloise.heylen@gmail.com
+13587, Camille, Lustig, xleo88, Skyze, 28-10-1977, Rue Pierre Vandevoorde - Pierre Vandevoordestraat, camille.lustig@gmail.com
+13593, Alexis, Delmare, ScrathTv_, ItsLayth, 30-03-1977, Place Royale - Koningsplein, alexis.delmare@gmail.com
+13607, Brynn, Fletcher, Olaf, melkior63, 13-07-1968, Rue Albert de Latour - Albert de Latourstraat, brynn.fletcher@gmail.com
+13618, Marie-christine, Van den Tuin, SirSwagMast3r, Syroko34, 03-02-1992, Chemin du Gymnase - Gymnasiumweg, mariechristine.vandentuin@hotmail.be
+13634, Irvin, Mccormick, SonAltesseTicule, Mektonet, 27-05-1998, Artesiëstraat, irvin.mccormick@hotmail.com
+13645, Rémi, Smal, ThePendam, lumelane, 19-09-1958, Rue de la Cambre - Terkamerenstraat, rémi.smal@gmail.com
+13655, Alessandro, Aguilar, fantapierrot2003, EmmaChocolait, 07-02-1954, Square de l&#39;Accueil - Onthaalsquare, alessandro.aguilar@ulb.ac.be
+13668, Brendon, Lawrence, SP6MENS, Kiler1198, 24-09-1987, Rue du Pont de la Carpe, brendon.lawrence@gmail.com
+13676, Tom, Chrispeels, Dizox, LegendIsBackkk, 05-05-1988, Rue Yvonne Jospa, tom.chrispeels@hotmail.be
+13691, Raphaël, Locreille, Stewartz, jope501, 27-08-1955, Rue Rouge - Rodestraat, raphaël.locreille@gmail.com
+13704, Alisa, Carey, Ultime4315, LuLucraft19, 10-12-1976, Carré Peeters - Peetersblok, alisa.carey@ulb.ac.be
+13722, Annick, Dubois, Azzerty_G, Ranox_pvp, 30-04-1978, Paviastraat, annick.dubois@gmail.com
+13729, Marques, Acosta, Niner64, _Nb12, 13-06-1995, Avenue Pénélope - Penelopelaan, marques.acosta@hotmail.be
+13744, Camille, De Bisschop, Bitoul, saout89, 29-10-1985, Clos &#39;t Hof ten Berg - &#39;t Hof ten Berg, camille.debisschop@gmail.com
+13753, Jade, Merjay, Gagane2702, Massi0726, 09-04-1975, Rue des Béguinettes - Piepelingenstraat, jade.merjay@hotmail.be
+13764, Jagger, Johns, titoine54, EnderSlime1234, 09-05-1989, Rue de la Victoire - Overwinningstraat, jagger.johns@gmail.com
+13780, Melanie, Evras, SPARDA0514, GabrielgMonteiro, 10-08-2000, Koningin Astrid - Reine Astrid, melanie.evras@hotmail.com
+13789, Michaël, Hertogue, Stunk974, Croma_, 26-05-1973, Rue des Merisiers - Kriekenbomenstraat, michaël.hertogue@hotmail.be
+13796, Rosemary, Kerr, WTF_LoL067, draguator, 13-01-1983, Place de la Grotte - Grotplein, rosemary.kerr@gmail.com
+13812, Baptiste, Servais, epicbama2491, victorthekiller, 19-09-1990, Rue des Chandeliers - Kandelaarsstraat, baptiste.servais@yahoo.fr
+13821, Nadia, Leclercq, blockdestoyer, Archi_Build, 08-03-2001, Rue Docteur Elie Lambotte - Dokter Elie Lambottestraat, nadia.leclercq@hotmail.com
+13836, Michèle, Wattiaux, ZazaLuvsRPG, Zealiss, 07-09-1998, Rue des Deux Églises - Tweekerkenstraat, michèle.wattiaux@gmail.com
+13842, Joelle, Aelters, xaiion151293, Ocanilo, 12-07-1957, Rue du Sillon - Voorstraat, joelle.aelters@gmail.com
+13854, Sandrine, Smolders, MonkeyGladiator, noclone67, 27-05-1998, Rue de l&#39;Économie - Zuinigheidsstraat, sandrine.smolders@hotmail.be
+13866, André, Dejong, vinmor, Furibarbe, 01-05-1953, Rue des Déménageurs - Verhuizersstraat, andré.dejong@gmail.com
+13876, Timéo, Nicolus, SkyloGam3r, DivinityOrigin, 30-12-1983, Rue du Prévôt, timéo.nicolus@gmail.com
+13886, Annick, Van Belle, tequitous, Ketrick, 27-12-1986, Rue du Chantier, annick.vanbelle@gmail.com
+13900, Arnaud, Veld, YETI_3000, Elixys, 16-12-1953, Avenue Raymond Vander Bruggen - Raymond Vander Bruggenlaan, arnaud.veld@hotmail.com
+13912, Christophe, Lefebvre, loredebatty, Payl57, 15-07-1962, Kapucijnenbos, christophe.lefebvre@gmail.com
+13926, Albert, Bright, _Ezephir_, Wisarhec115, 29-10-1987, Rue de l&#39;Ermitage - Kluisstraat, albert.bright@hotmail.be
+13933, Claudine, Mullenders, dukeduchess13, iDzFk0tZ, 01-09-1956, Rue de Grand-Bigard - Groot-Bijgaardenstraat, claudine.mullenders@gmail.com
+13937, Jaylin, Barron, german_junior, SX_Absys, 22-07-1953, Rue du Magasin - Pakhuisstraat, jaylin.barron@gmail.com
+13943, Zayden, Rivers, WhatsMikaka, bizbille007, 23-08-1952, Rue Charles Bernaerts - Charles Bernaertsstraat, zayden.rivers@yahoo.fr
+13960, Dominick, Phelps, BlueMinecraftHD, natedog0805, 15-05-1950, Rue Marcq, dominick.phelps@gmail.com
+13973, Caden, Newman, Shiroo_SK, RodrixX_YT, 15-11-1995, Rue du Méridien - Middaglijnstraat, caden.newman@hotmail.com
+13989, Marine, Dondaine, NaeRoZ, MrFrozzen09, 23-06-1998, Rue Edouard Faes - Edouard Faesstraat, marine.dondaine@hotmail.com
+14006, Yann, Bosmans, CenturyZ, AzE_KiNg01, 03-10-1999, Kattenberg - Kattenberg, yann.bosmans@gmail.com
+14018, Jeremy, Hamers, SuperToto18, Okigamer835, 01-10-1996, Sint-Jan Nepomucenusstraat, jeremy.hamers@hotmail.be
+14030, Charlotte, Simmons, neimad13, matteo_leang, 02-08-1981, Rue d&#39;Andenne - Andennestraat, charlotte.simmons@gmail.com
+14039, Reed, Santiago, DrewMarthick, Mr_Dogy, 07-11-1995, Rue des Ibis - Ibissenstraat, reed.santiago@gmail.com
+14050, Timéo, Léonard, Dreams_YT, BigSud3r, 27-05-1957, Rue Saint-Vincent - Sint-Vincentiusstraat, timéo.léonard@gmail.com
+14066, Romain, Bouchhout, DJmouthoom, EpicOut, 08-02-1952, Drève du Duc - Hertogendreef, romain.bouchhout@gmail.com
+14079, Malcolm, York, Augusti_X, domdom3008, 28-06-1989, Rue des Prés Communs - Gemenebeemdenstraat, malcolm.york@gmail.com
+14093, Théo, Vermeulen, nacedro, Jeel_, 17-01-1982, Rue Pierre-Victor Jacobs - Pierre-Victor Jacobsstraat, théo.vermeulen@gmail.com
+14102, Romain, De Frankrijker, s4dixx, Orager_Jaquette, 02-05-1993, Dominicanessenlaan - Avenue des Dominicaines, romain.defrankrijker@yahoo.fr
+14117, Antoine, Deswart, _DAN1GAMING_, adeiab, 20-09-1961, Rue de l&#39;Emulation - Wedijverstraat, antoine.deswart@gmail.com
+14130, Chaya, Khan, flocon2b, BrahianMC, 08-07-1954, Rue Félix Sterckx - Félix Sterckxstraat, chaya.khan@ulb.ac.be
+14139, Sylvain, Delahayes, kira0269, Freel3x, 23-05-1990, Avenue Camille Vaneukem - Camille Vaneukemlaan, sylvain.delahayes@gmail.com
+14157, Lucas, Grewis, mortel30, Cromus25, 13-10-1950, Cours Saint Guidon - Sint-Guidocorso, lucas.grewis@gmail.com
+14170, Jean-Paul, Sinnesaël, TheIkeEffect1990, Arekzzz, 09-07-1965, Rue Berré - Berréstraat, jeanpaul.sinnesaël@gmail.com
+14189, Sophie, Volkart, Maquinaraw, XxCheelusTummyxX, 12-08-1975, Rue de Namur - Naamsestraat, sophie.volkart@gmail.com
+14204, Guy, Delhaye, fivetygame, ElWnPro, 12-03-2002, Boulevard Brand Whitlock - Brand Whitlocklaan, guy.delhaye@gmail.com
+14215, Nick, Le, Ascalonne, zagan10, 15-03-1975, Pontbeekstraat, nick.le@ulb.ac.be
+14224, Philippe, Baugnet, azMrDRIPx9, wladiboss60, 27-01-2003, Rue Fernand Neuray - Fernand Neuraystraat, philippe.baugnet@gmail.com
+14234, Jaslene, Walton, Syming, Chaorain, 26-02-1960, Rue des Résédas - Resedastraat, jaslene.walton@ulb.ac.be
+14251, Jason, Duran, lxSweeDxl, FurogamerYT, 17-02-1995, T&#39;Kintstraat, jason.duran@yahoo.fr
+14263, Benoît, Verhelst, ElectroCraft62, lois83, 04-09-1958, Avenue de la Libre Académie - Vrije-Academielaan, benoît.verhelst@gmail.com
+14280, Paul, Dekyndt, SkyFreezEnHD, the_thugboy, 26-11-1991, Rue de Formanoir - de Formanoirstraat, paul.dekyndt@gmail.com
+14294, Laetitia, Dewever, SANTI2354, MrTomahawkTurtle, 18-02-1990, Rue du Céleri - Selderijstraat, laetitia.dewever@gmail.com
+14306, Muriel, Van der Pas, Sp3ctros, ItsLoko, 09-01-2000, Rue de Lusambo - Lusambostraat, muriel.vanderpas@gmail.com
+14317, Jean-Michel, Depelsenaire, MinecrafterLAL, Lekten, 04-10-1984, Tennislaan, jeanmichel.depelsenaire@gmail.com
+14324, Angelique, Nicolas, justinboss007, XxrastaxX83, 04-08-1960, Rue Antoine Bréart - Antoine Bréartstraat, angelique.nicolas@ulb.ac.be
+14334, Gary, Herman, YosPin, icegaming67, 18-03-1952, Rue de la Fourche - Greepstraat, gary.herman@ulb.ac.be
+14347, Erwan, Coudyser, FreeGum1, B_abouche0602, 14-07-1960, Rue du Vignoble - Wijngaardstraat, erwan.coudyser@hotmail.be
+14355, Christelle, Watteau, Kelric1208, DKJuggernaut, 20-11-1981, Rue du Nom de Jésus - Naam Jezusstraat, christelle.watteau@hotmail.com
+14368, Cameron, Cannon, akamaru2526, bryan49, 11-03-1975, Promenade Hippolyte Rolin - Hippolyte Rolinpromenade, cameron.cannon@hotmail.be
+14381, Sergio, Reeves, DicePlayer, Dock27, 04-09-1993, Rue de la Serrure, sergio.reeves@hotmail.be
+14387, Ryder, Malone, magicien39, nenonie37, 14-06-1990, Avenue de Haveskercke - de Haveskerckelaan, ryder.malone@gmail.com
+14399, Madeleine, Morales, MatyLuxik25, Muskugaming18, 09-09-1972, Avenue de la Charmille - Haagbeukenlaan, madeleine.morales@ulb.ac.be
+14411, Hugo, Moiling, EH2608, MangaCraft_YT, 29-09-1986, Avenue de Diane - Dianalaan, hugo.moiling@ulb.ac.be
+14421, Michèle, D'Haeyer, Sombres_Heroes, racingboy909, 23-07-1976, Rue de la Charité - Liefdadigheidsstraat, michèle.d'haeyer@gmail.com
+14431, Carlo, Gibson, WESHPATATE, Blistprod, 10-07-1967, Rue Champ du Roi - Koningsveldstraat, carlo.gibson@gmail.com
+14446, Kiana, Farrell, mateobg15, Mokky20, 26-12-1988, Avenue Marguerite Yourcenar - Marguerite Yourcenarlaan, kiana.farrell@ulb.ac.be
+14455, Karen, Golden, Thomac18, mr_craft_ctc, 31-03-1981, Rue de la Fourche, karen.golden@gmail.com
+14473, Jacqueline, Willock, NecoVenomZ, adrien974, 15-08-1971, Rue des Moutons - Schapenstraat, jacqueline.willock@gmail.com
+14477, Lillie, Morrow, Nekotooh234HD, MAVERIC_TOPGUN, 20-06-1999, Kruidtuinlaan, lillie.morrow@gmail.com
+14490, Cécile, Julianus, iTz_Seresa, peutiot, 11-06-1986, Rue du Planeur - Zweefvliegtuigstraat, cécile.julianus@gmail.com
+14505, Oceane, Euvrard, BatondeBerger29, jeansl10, 28-03-1985, Honnekinberg, oceane.euvrard@gmail.com
+14516, Eva, Mathy, KrinDovahkiin_, Juugoh, 04-11-1952, Rue Scarron - Scarronstraat, eva.mathy@gmail.com
+14535, Jeffery, Webster, davyne123, dman773, 04-08-1985, Rue Émile Banning - Émile Banningstraat, jeffery.webster@hotmail.com
+14546, Annie, Merjai, IronLuck, IDaniel314, 01-02-1953, Rue Gustave Jean Leclercq - Gustave Jean Leclercqstraat, annie.merjai@gmail.com
+14559, Mattie, Garner, biloucraftout72, Vanther, 25-02-1970, Rue Fritz Toussaint - Fritz Toussaintstraat, mattie.garner@gmail.com
+14569, Christophe, Peschon, Itachi_zim, titou313, 22-05-1967, Abbaye - Abdij, christophe.peschon@gmail.com
+14582, Jessica, Van den Camp, Justiceiro11, ArkDesh, 15-03-1958, Rue Marie-Henriette - Maria-Hendrikastraat, jessica.vandencamp@gmail.com
+14592, Fabrice, Bruynseel, Poulpyforce, CJoRn, 25-11-1950, Vlees-en-Broodstraat, fabrice.bruynseel@gmail.com
+14597, Laetitia, Daufresne, SpinningCloud, tamaz971, 13-07-1973, Avenue Charle-Albert - Charle-Albertlaan, laetitia.daufresne@gmail.com
+14605, Maya, Wheeler, Marlf, ferrox6, 27-08-1986, Rue de Manchester - Manchesterstraat, maya.wheeler@yahoo.fr
+14618, Jessie, Orr, vincentdu89470, iBryde_, 07-08-2003, Impasse de la Fidélité - Getrouwheidsgang, jessie.orr@gmail.com
+14625, Tyrone, Rose, Math3600, Sangriia, 21-02-1996, Bloemenstraat, tyrone.rose@gmail.com
+14639, Arthur, Moinil, Mme_BuenOO, Billi03, 06-02-1951, Rue du Labeur - Arbeidsstraat, arthur.moinil@gmail.com
+14650, Maelle, Gillet, 5_TheKing_3, Ice_cream15, 01-12-1993, Rue Eugène Laermans - Eugène Laermansstraat, maelle.gillet@gmail.com
+14670, Damien, Porter, Lilouni26, astroplayer750, 02-12-1967, Avenue Baron A. d&#39;Huart - Baron A. d&#39;Huartlaan, damien.porter@gmail.com
+14677, Rayne, Farrell, Simbad999, BEBEL06, 21-07-1959, Avenue du Roi Soldat - Koning Soldaatlaan, rayne.farrell@gmail.com
+14689, Bianca, Mercer, CaptainRehab, filou, 06-08-1951, Rue Pangaert - Pangaertstraat, bianca.mercer@gmail.com
+14702, Aiden, Stephenson, Risatorp, DH_Northeim, 03-01-1983, Avenue du Pois de Senteur - Pronkerwtlaan, aiden.stephenson@gmail.com
+14715, Emma, Lauwers, Rukioh_, ashito1, 09-05-1952, Avenue Hamoir - Hamoirlaan, emma.lauwers@yahoo.fr
+14731, Tori, Hull, Amazingboy25, DepredatorReexx, 28-03-1996, Boulevard de Berlaimont - de Berlaimontlaan, tori.hull@gmail.com
+14743, Xavier, Cauvin, Neopique, MrGaming08, 20-01-1959, Impasse du Cheval - Paardgang, xavier.cauvin@gmail.com
+14757, Ainsley, Owen, cyberfonso, Khoryan, 10-08-1953, Rue au Bois, ainsley.owen@gmail.com
+14770, Aaron, Bauwens, Pellini, UsRambaud, 01-01-1985, Rue Théophile Vander Elst - Théophile Vander Elststraat, aaron.bauwens@hotmail.be
+14781, Tate, Carter, soud_HD, NasserxIPro, 14-04-1994, Galerie du Parlement - Parlementsgalerij, tate.carter@ulb.ac.be
+14790, Kaila, Bates, kyle_killer_118, Xeyos_280, 03-09-1974, Rue du Pélican, kaila.bates@yahoo.fr
+14798, Olivier, Van Noye, GruubKiller, Tmerloutte, 18-05-1953, Avenue Auguste Rodin - Auguste Rodinlaan, olivier.vannoye@ulb.ac.be
+14810, Jennifer, Hoover, So_Keex, Xx_JuminePvP_xX, 18-07-1958, Rue de Moranville - de Moranvillestraat, jennifer.hoover@gmail.com
+14821, Quincy, Keith, firebadwolf68, mycose, 18-06-1958, Wezembeeklaan - Avenue de Wezembeek, quincy.keith@gmail.com
+14835, Kaleigh, Macdonald, GS_Zen, aaroxgamer, 12-03-1998, Rue Ulens - Ulensstraat, kaleigh.macdonald@gmail.com
+14845, Agathe, De Meyer, akito8, ManiiA_, 28-02-2002, Rue Clémentine - Clementinestraat, agathe.demeyer@gmail.com
+14860, Émilie, Stiers, handre1, Shazo0o97, 07-09-1978, Val de la Futaie - Hogebomendaal, émilie.stiers@gmail.com
+14865, Josue, Liu, Rapheuz, Doudouminator, 12-05-1974, Hugo Clausstraat, josue.liu@gmail.com
+14872, Johnny, Novak, Skully_Jenaleca, iTsAdri_PVP, 13-11-1965, Chemin de la Truite - Forelweg, johnny.novak@hotmail.be
+14882, Bruno, Borsut, Armeya, Fluzee, 10-11-1960, Avenue de la Verrerie - Glasblazerijlaan, bruno.borsut@gmail.com
+14895, Karla, Gordon, Simon_DJ, arthur13190, 11-07-1990, Voldersstraat, karla.gordon@ulb.ac.be
+14910, Oscar, Mays, Xx_swagmen_xX, MrNinjaPatato, 04-02-1950, Place Stéphanie - Stefaniaplein, oscar.mays@ulb.ac.be
+14919, Fanny, De Pelsemaeker, 10661999, Maverick7477, 08-11-1998, Avenue Armand Huysmans - Armand Huysmanslaan, fanny.depelsemaeker@gmail.com
+14935, Delphine, Weerts, freydack62, butxa, 09-03-1973, Avenue des Mille Mètres - Duizend Meterlaan, delphine.weerts@gmail.com
+14946, Quentin, Verhaeghen, Staged, Bubuz, 02-11-1964, Clos du Nadir - Nadirgaarde, quentin.verhaeghen@gmail.com
+14954, Loïc, Demain, Fiducia_, goldencreep, 18-11-1958, Avenue de Saint-Job - Sint-Jobselaan, loïc.demain@gmail.com
+14958, 586, Pauwels, Job_58, Xxkiller004xX, 06-10-1995, Rue des Braves - Dapperenstraat, 586.pauwels@gmail.com
+14971, Carla, Daniel, Rubennz, AchusTheCat, 09-04-2003, Rue du Gentilhomme - Jonkersstraat, carla.daniel@gmail.com
+14983, Dylan, Frederick, MexVod_Play, Thivarane, 16-03-1967, Emile Bockstaellaan, dylan.frederick@gmail.com
+14994, Olivier, Gaudisseu, theo2450, MrMonkey_Luffy, 21-04-1961, Avenue des Troubadours - Troubadourslaan, olivier.gaudisseu@gmail.com
+15002, Diego, Fontaine, boys60, Vermount, 30-05-1956, Avenue de la Héronnière - Reigersboslaan, diego.fontaine@gmail.com
+15012, Jacqueline, Scott, The_Wolfy, PURvortex, 26-09-1982, Avenue de Madrid - Madridlaan, jacqueline.scott@gmail.com
+15024, Julie, Doolaegue, JeezhAkaTheJew, noorba123, 29-10-1994, Rue de la Cigale - Krekelenberg, julie.doolaegue@gmail.com
+15037, Michel, Baugniet, Kun43, DraZeR76, 26-01-1960, Rue de Tervaete - Tervaetestraat, michel.baugniet@gmail.com
+15044, Jean-Marc, Depelsemacker, ByTraYerS, falco0108, 08-08-2002, Mont Saint-Lambert - Sint-Lambertusberg, jeanmarc.depelsemacker@yahoo.fr
+15057, Sébastien, Geiregat, Aykiu, OctaVideosYT, 04-09-1983, Promenade de l&#39;Alma - Almawandeling, sébastien.geiregat@gmail.com
+15070, Oceane, Antoine, ZyDarkChaddy, iSkylight, 30-04-1960, Avenue Brugmann - Brugmannlaan, oceane.antoine@gmail.com
+15080, Chaya, Moran, jeandalph, FreaqqShow, 15-02-1957, Rue David Van Bever - David Van Beverstraat, chaya.moran@gmail.com
+15092, Estelle, De Rovéréaz, didi74, Nicoternet, 02-03-1994, Rue des Tritomas - Tritomastraat, estelle.derovéréaz@yahoo.fr
+15106, Agathe, De Buyle, Super_Awwent, ElZeroh7w7, 21-10-1987, Rue Houzeau de Lehaie - Houzeau de Lehaiestraat, agathe.debuyle@gmail.com
+15119, Maelle, Fransman, didiru78, Maxime17000, 23-05-1968, Beursstraat, maelle.fransman@yahoo.fr
+15128, Claire, D'hoolaege, Eido_Rian, thetiger59, 11-07-1977, Rue de Ter Plast - Terplaststraat, claire.d'hoolaege@yahoo.fr
+15142, Tony, Chapman, Draktax, XinExodar, 06-11-1998, Avenue des Bouleaux - Berkenlaan, tony.chapman@gmail.com
+15149, Melanie, Genot, Aemyra, TheTeKsa, 17-08-1997, Rue de la Flèche - Pijlstraat, melanie.genot@gmail.com
+15161, Aurélie, Stassart, maxoucoco, risiokugane, 24-09-1990, Avenue Henry Dunant - Henry Dunantlaan, aurélie.stassart@gmail.com
+15171, Omar, Graves, Salamouche, Cocotte_Amaziing, 02-10-1975, Rue Victor Lowet - Victor Lowetstraat, omar.graves@gmail.com
+15183, Lillianna, Rosales, DerpyFoxMan_, Tiff64, 03-12-2003, Avenue Pierre Vander Biest - Pierre Vander Biestlaan, lillianna.rosales@gmail.com
+15191, Jessica, Lecomte, MargauxCool16, DieuSurEpicube, 29-04-1996, Rue de la Grande Haie - Grote Haagstraat, jessica.lecomte@yahoo.fr
+15206, Ariella, Vazquez, Nooniz, Kodaky, 20-07-1994, Borgval, ariella.vazquez@gmail.com
+15226, Florian, Ravignat, saycher, Xtasium, 05-02-1997, Akenkaai, florian.ravignat@gmail.com
+15236, Heloise, Draier, LeSpoler, HiiTplayZz, 07-08-1981, Avenue des Cyclistes - Wielrijderslaan, heloise.draier@gmail.com
+15254, Isai, Schaefer, Max4theMaxmax, coco_lunette, 08-06-1986, Quai aux Barques - Schuitenkaai, isai.schaefer@ulb.ac.be
+15263, Jean-Michel, Seppen, shadow15014, Felioxo, 21-04-1977, Avenue d&#39;Août - Augustuslaan, jeanmichel.seppen@yahoo.fr
+15277, Camille, Sterckx, Mesho_SA, jpeg08, 16-03-1994, Berkenlaan - Avenue des Bouleaux, camille.sterckx@yahoo.fr
+15285, Maryse, Van de Slycke, nonolobo, SinaDair, 24-12-1959, Rue Jacques Rayé - Jacques Rayéstraat, maryse.vandeslycke@ulb.ac.be
+15298, Justin, Hansen, Steedriel, ZeeloxGames, 23-06-1964, Rue Souveraine - Opperstraat, justin.hansen@yahoo.fr
+15311, Véronique, Coryn, M0RE_, Proze, 04-08-1955, Avenue Constant Permeke - Constant Permekelaan, véronique.coryn@hotmail.be
+15323, Itzel, Graves, TheNekhoSenpai, LesDroitsDuChien, 06-06-1966, Rue Delwart - Delwartstraat, itzel.graves@ulb.ac.be
+15334, Camille, Devos, TMG_JR, iDuckPvPz, 02-01-1985, Hoogte Honderdplein, camille.devos@gmail.com
+15348, Valérie, Desmedt, terence52000, SD_WirZ, 29-11-1951, Sint-Goriksplein, valérie.desmedt@gmail.com
+15353, Cassandra, Adriaenssens, Black_Mamba_Cock, DenizhanKr, 30-05-1988, Avenue de Stalingrad - Stalingradlaan, cassandra.adriaenssens@gmail.com
+15366, Lilyana, Levy, AlGrios, Licorne_Douce, 28-11-2003, Rue Royale-Sainte-Marie - Koninklijke Sinte-Mariastraat, lilyana.levy@hotmail.com
+15384, Kenya, Freeman, XxAquaPowerxX, slickmove19, 02-07-1995, Rue Quinaux - Quinauxstraat, kenya.freeman@gmail.com
+15399, Pascal, Pietersen, ElNenek, Nicolas_13, 04-04-1996, Boulevard du Jardin Botanique - Kruidtuinlaan, pascal.pietersen@gmail.com
+15411, Manon, Daufresne, ABEL5102001, EatTheJambon, 06-09-1984, Rue Émile Claus - Émile Clausstraat, manon.daufresne@hotmail.com
+15422, Cole, Cantu, Hugo24games, Turvain, 16-07-1980, Rue Frédéric Basse - Frédéric Bassestraat, cole.cantu@yahoo.fr
+15433, Christophe, Fransman, leguide86, NetyxCZE, 20-03-2001, Rue de l&#39;Église - Kerkstraat, christophe.fransman@ulb.ac.be
+15447, Cynthia, Pugh, pralloux, xX_JacksPazz_Xx, 20-07-1993, Rue du Chêne - Eikstraat, cynthia.pugh@ulb.ac.be
+15457, Damari, Hendrix, MrBae, eSki0f, 10-04-1963, Rue François Van Meulecom - François Van Meulecomstraat, damari.hendrix@yahoo.fr
+15465, Ethan, Molemans, _NarVath, Alreh_, 25-09-2000, Boulevard d&#39;Anvers - Antwerpselaan, ethan.molemans@hotmail.be
+15477, Mathis, Monsay, smesy62, Underskelton, 04-01-1988, Rue des Teinturiers, mathis.monsay@gmail.com
+15492, Landon, Mcgrath, Pixelias10, AlanRitchie, 22-07-1963, Square Frère-Orban - Frère-Orbansquare, landon.mcgrath@ulb.ac.be
+15507, Pascale, Doorne, Elsx, EdoxPlay_, 21-12-1982, Avenue du Mistral - Mistrallaan, pascale.doorne@gmail.com
+15519, Vincent, Dresselaers, Fr4zeR, AnthoLach, 17-05-1963, Rue Fernand Léger - Fernand Légerstraat, vincent.dresselaers@yahoo.fr
+15533, Laetitia, Devis, Ourazi, M4thy, 29-01-1999, Allée de la Minerva - Minervalei, laetitia.devis@gmail.com
+15550, Camille, Debusschere, valentin3131, Threecric, 13-10-1996, Rue Mareyde - Mareydestraat, camille.debusschere@gmail.com
+15561, Vincent, Deboskre, The_Lunick, Xfalcon14, 28-06-1966, Rue Charles Buls - Karel Bulsstraat, vincent.deboskre@gmail.com
+15577, Theresa, Warner, Mimidori25, billes6789, 06-10-1995, Rue Timmermans - Timmermansstraat, theresa.warner@gmail.com
+15589, Melanie, Dondeyne, Gwenamy, Botmancraft974, 24-08-1960, Rue des Coquelicots - Kollebloemenstraat, melanie.dondeyne@gmail.com
+15608, Louis, Carlier, valmax72, Hestoos, 11-09-1951, Avenue de Laeken - Lakense Laan, louis.carlier@gmail.com
+15617, Deven, Underwood, MrCrazy52, _RayblitzXSD_, 22-05-1974, Avenue des Mûres - Braambeziënlaan, deven.underwood@gmail.com
+15627, Kylie, Nichols, Sofyan02, agustin_YT, 28-06-1961, Rue de l&#39;Abbaye - Abdijstraat, kylie.nichols@gmail.com
+15634, Thierry, Van Lierde, Leosh10, Aesgeroth, 28-12-1958, Avenue Georges Rodenbach - Georges Rodenbachlaan, thierry.vanlierde@gmail.com
+15651, Maryse, Alsteen, SamHd62, derpaderp13, 22-03-1962, Rue de Laubespin - de Laubespinstraat, maryse.alsteen@yahoo.fr
+15659, Chanel, Williamson, He4lth, Wistai, 22-03-1972, Rue Édouard Dekoster - Edward Dekosterstraat, chanel.williamson@gmail.com
+15677, Pascal, Pools, TheLogPiviPi, Hi_DreamGamer, 22-12-1957, Boterstraat, pascal.pools@gmail.com
+15690, Nyasia, Huerta, damdidou77, ITZ_AgusPvP2005, 07-05-1991, Avenue du Bempt - Bemptlaan, nyasia.huerta@gmail.com
+15711, Melanie, Blondeel, BossCreeper8, MrZboub70, 16-10-1983, Rue Decrée - Decréestraat, melanie.blondeel@gmail.com
+15721, David, Gasthuys, rugbyboy85, blacktroll38, 26-05-1975, Impasse Saint-Nicolas - Sint-Nikolaasgang, david.gasthuys@hotmail.be
+15733, Aliya, Hamilton, Edgir, kinglion38, 27-11-1962, Avenue Calypso - Calypsolaan, aliya.hamilton@ulb.ac.be
+15749, Joelle, De Meulenaer, RoyalGiochy, Steemix, 03-12-1996, Place de Houffalize - Houffalizeplein, joelle.demeulenaer@gmail.com
+15759, Sara, Guerrero, MisterBeens, lapton26, 16-04-1956, Rue des Champs Elysées - Elyzeese Veldenstraat, sara.guerrero@gmail.com
+15770, Amelie, Claeys, philippe_theo, popecinquante, 26-12-1999, Avenue Delleur - Delleurlaan, amelie.claeys@hotmail.be
+15779, Fabrice, Linglay, JinxGD03, KoayGon, 04-01-1963, Square du Vieux Tilleul - Oude-Lindesquare, fabrice.linglay@gmail.com
+15793, Tucker, Li, HugoP2004, Rafaelel31, 01-03-1965, Avenue de Boetendael - Boetendaellaan, tucker.li@gmail.com
+15802, Oceane, Laseure, tyta17, MatoCze, 31-12-1981, Rue du Béguinage, oceane.laseure@gmail.com
+15809, Lina, Konninckx, _Mopsy_, TheVava12, 09-12-1967, Rue des Compagnons - Gezellenstraat, lina.konninckx@gmail.com
+15825, Areli, Cochran, Queny76, Duff_Ratchet, 12-11-1952, Avenue Fond&#39;Roy - Vronerodelaan, areli.cochran@ulb.ac.be
+15832, Cécile, De Backer, concombre27, racso258, 19-05-1955, Rue Victor Allard - Victor Allardstraat, cécile.debacker@yahoo.fr
+15844, Lou, Casteau, trucho58, SkiPlay, 05-01-1951, Avenue Victor-Emmanuel III - Victor-Emmanuel III laan, lou.casteau@gmail.com
+15859, Jacqueline, Monteyne, TrinDassler, lozag, 11-09-1979, Rue Groeselenberg - Groeselenbergstraat, jacqueline.monteyne@hotmail.be
+15869, Estrella, Lucas, Aleg33, funkyboubi75, 04-05-1958, Drève Olympique - Olympische dreef, estrella.lucas@gmail.com
+15877, Sonia, Van Damme, Bitonio54, iTz54, 24-12-1953, Avenue de la Princesse Paola - Prinses Paolalaan, sonia.vandamme@yahoo.fr
+15886, Yazmin, Russell, Hello_Herobrine, willyiron, 17-01-1979, Avenue des Pagodes - Pagodenlaan, yazmin.russell@hotmail.com
+15903, Karine, Kenes, moise12321, ItzYazRohgTV, 08-11-1961, Place de la Duchesse de Brabant - Hertogin van Brabantplaats, karine.kenes@gmail.com
+15920, Élodie, Jone, undertix, Jawad_PvP_G0D, 25-01-1997, Rue Général Capiaumont - Generaal Capiaumontstraat, élodie.jone@gmail.com
+15930, Alison, Martin, hqifi, ByFeloso, 06-11-1972, Rue Xavier De Bue - Xavier De Buestraat, alison.martin@gmail.com
+15943, Jazmin, Soto, Drekke, Gustyl, 08-01-1988, Rogier van der Weydenstraat, jazmin.soto@gmail.com
+15951, Loïc, Herbrand, jelloblue789, Meta791, 29-11-1988, Rue Blockmans - Blockmansstraat, loïc.herbrand@hotmail.com
+15962, Sylvain, Delflache, TheWin98Guy, iSn0wz, 31-01-1978, Rue de la Résistance - Verzetsstraat, sylvain.delflache@gmail.com
+15978, Ryan, Hensley, Sun_Rise, hacoficiial, 24-02-1960, Rue du Campanile - Campanilestraat, ryan.hensley@yahoo.fr
+15987, Stéphanie, Volkart, loco_et_kiki, darien60, 23-02-1968, Place André Duchêne - André Duchêneplein, stéphanie.volkart@hotmail.com
+15998, Ezra, Browning, PixiePixels, ImProAH, 27-06-1965, Rue Harenheyde - Harenheidestraat, ezra.browning@gmail.com
+16017, Matteo, Desmet, pierrealex1150, Interflowgameryt, 16-08-1965, Rue Roger Abeels - Roger Abeelsstraat, matteo.desmet@gmail.com
+16035, Alexandre, Blanquaert, Fanta979, lizanaplayer, 27-06-1990, Korte Beenhouwersstraat, alexandre.blanquaert@ulb.ac.be
+16040, Gage, Mathews, Greediesman, bryanmanta, 29-09-1965, Rue Hubert Krains - Hubert Krainsstraat, gage.mathews@gmail.com
+16054, Brennen, Foley, PaCiiz, NP_WyMayZ, 17-03-1973, Clos des Étangs - Vijversgaarde, brennen.foley@hotmail.be
+16064, Diya, Bush, xXSonny_TrollXx, Seve45, 20-08-1972, Rue de Parme - Parmastraat, diya.bush@gmail.com
+16069, André, Dehoorne, Suricate44, Bobbing007, 08-04-1978, Rue Van Lint - Van Lintstraat, andré.dehoorne@hotmail.com
+16082, Enzo, Vette, ZaiGarD_YT, Smau_LPA, 23-12-1995, Rue François Vekemans - Frans Vekemansstraat, enzo.vette@hotmail.be
+16095, Monique, Crespel, Professer_TNT, argounet, 26-06-1986, Rue du Greffe - Griffiestraat, monique.crespel@gmail.com
+16107, Diego, Hubert, _ZayD, castellos123, 17-07-1972, Rue François Janssens - François Janssensstraat, diego.hubert@hotmail.be
+16120, Corey, Kramer, MrCo59, LuckyAndGamer, 23-10-1971, Rue des Colombophiles - Duivenmelkersstraat, corey.kramer@gmail.com
+16138, Francis, Demeiere, TryPixels, TB_Iseawx, 30-10-1987, Humaniteitslaan - Boulevard de l&#39;Humanité, francis.demeiere@ulb.ac.be
+16156, Mathis, Lesoille, OsvalRM, howardtsang3, 20-03-1962, Rue Omer Lepreux - Omer Lepreuxstraat, mathis.lesoille@gmail.com
+16170, Fernanda, Parks, Arcko, caboume, 01-05-1960, Rue d&#39;Alost, fernanda.parks@yahoo.fr
+16180, Dwayne, Owens, FriRiXHd, spion_callaert, 22-08-1955, Avenue Coghen - Coghenlaan, dwayne.owens@gmail.com
+16188, Cristian, Cantu, Joyzze, sesam1, 08-06-2002, Rue d&#39;Ostende - Oostendestraat, cristian.cantu@gmail.com
+16206, Patrice, Vanpée, d01t, Keylay47, 05-10-1976, Esplanade de l&#39;Europe - Europaesplanade, patrice.vanpée@gmail.com
+16214, Delphine, De Busschere, justdohit, PlKACRAFT, 27-01-1950, Maastrichtlaan, delphine.debusschere@gmail.com
+16228, Harrison, Kent, yokos03, kbanc23, 11-11-1960, Avenue Frans Courtens - Frans Courtenslaan, harrison.kent@gmail.com
+16235, Julien, Debacker, o0ItsGames0o, Florenticorne, 02-12-1950, Quai des Charbonnages - Koolmijnenkaai, julien.debacker@yahoo.fr
+16251, Théo, Hendrickx, Salva_Mateo, mariocembra, 11-07-1995, Rue Robert Bosch - Robert Boschstraat, théo.hendrickx@gmail.com
+16264, Heloise, Fawat, pouf987, ridnofast, 10-07-1980, Rue de Rotterdam - Rotterdamstraat, heloise.fawat@hotmail.com
+16274, Diego, Evrard, tomte974, UNIPony_, 28-09-1968, Rue des Vieillards, diego.evrard@gmail.com
+16287, Valentin, Heylen, totitor, Zork_HD, 12-12-1989, Rue des Confédérés - Eedgenotenstraat, valentin.heylen@gmail.com
+16297, Romain, Cavard, MsStarckVloogYT, Zaracksun, 30-09-2001, Place Sainctelette - Saincteletteplaats, romain.cavard@gmail.com
+16305, Sabrina, Adami, JaasielxD, Ax9predator, 06-05-1958, Rue Léon XIII - Leo XIII-straat, sabrina.adami@ulb.ac.be
+16316, Jeremy, Deboskre, RivenNoobChamp, Gelatiman, 28-09-1969, Rue Félix Terlinden - Félix Terlindenstraat, jeremy.deboskre@yahoo.fr
+16321, Miley, Benson, ThePoupou, MS_TV, 29-11-1982, Avenue Voltaire - Voltairelaan, miley.benson@hotmail.be
+16334, Corinne, Daems, baT0x, Paulita2048, 10-12-1961, Rue Albert et Marie-Louise Servais-Kinet - Albert en Marie-Louise, corinne.daems@hotmail.com
+16348, Hugo, Mechelaere, WeakGeForce, Ludomart, 06-10-1992, Servais-Kinetstraat, hugo.mechelaere@hotmail.com
+16358, Denisse, Jefferson, Beadles_Ghost, SeandoGames1, 04-12-1985, Rue Henri Vieuxtemps - Henri Vieuxtempsstraat, denisse.jefferson@gmail.com
+16370, Cristopher, Woods, Nuryon, milkoA3, 10-06-1970, Rue Jakob Smits - Jakob Smitsstraat, cristopher.woods@gmail.com
+16388, Valérie, Deroosse, Southcast, Yoshimax_2107, 08-11-1951, Clos Ingrid Bergman - Ingrid Bergmangaarde, valérie.deroosse@gmail.com
+16405, Lizeth, Paul, PonyS_PvP_, Gamma_Dawn, 18-05-2001, Kogelstraat, lizeth.paul@gmail.com
+16416, Myriam, Ebrard, greglamenace, dag43, 01-05-1981, Place de la Bourse, myriam.ebrard@gmail.com
+16422, Nathalie, Depooter, DraiiZe, elmimor577, 04-10-1989, Avenue des Champs - Veldlaan, nathalie.depooter@gmail.com
+16431, Jean-François, Herbrand, jujupompier, xXSophie_PVP_Xx, 14-11-1982, Rue de l&#39;Hôpital - Gasthuisstraat, jeanfrançois.herbrand@gmail.com
+16440, Callum, Bishop, hyrko1995, TomBuilder99, 27-06-1972, Lenneke Marelaan, callum.bishop@ulb.ac.be
+16452, Pierre, De Smit, Jakey_Jokey, arnassi, 12-12-1957, Vallon d&#39;Ohain - Ohaindal, pierre.desmit@gmail.com
+16461, Zoe, Mckenzie, issasangare, justjordynl, 21-02-1969, Boulevard de Nieuport, zoe.mckenzie@gmail.com
+16471, Alexis, Verhaeghen, Bluedragon180, Nerelox, 13-03-1959, Rue André Baillon - André Baillonstraat, alexis.verhaeghen@gmail.com
+16482, Avery, Lane, Loan_15, Narashei, 24-07-1979, Rue des Abbesses - Abdissenstraat, avery.lane@ulb.ac.be
+16493, Thierry, Bodson, Picho04, TommyBoss8, 24-07-1968, Quai des Péniches - Akenkaai, thierry.bodson@yahoo.fr
+16506, Jairo, Lewis, Orenje, ARMASIDE, 21-10-1952, Val des Epinettes - Doorndal, jairo.lewis@gmail.com
+16520, Cyril, Schoenman, RodriGamer_89, BlockMasterPro1, 02-10-1955, Rue Abbé Victor de Sloover - Priester Victor de Slooverstraat, cyril.schoenman@hotmail.be
+16536, Vincent, Hall, Deviloffire50, SHARIF_EKS, 18-03-1974, Rue des Saxifrages - Steenbreekstraat, vincent.hall@hotmail.be
+16545, Arnaud, Raveydts, Crazox_Pvp, ManuJLG, 04-03-1969, Avenue Maxe Smal - Maxe Smallaan, arnaud.raveydts@gmail.com
+16555, Jonathan, Hardy, lolopo550, LucSkywalker37, 13-09-1954, Zinnikstraat, jonathan.hardy@gmail.com
+16567, Jeremy, Deroosse, TheEternalStreak, happy_ebi, 22-05-1968, Kleinenbergstraat, jeremy.deroosse@gmail.com
+16577, Julie, Depercenaire, GAMEPERXX, MrBadzeep, 06-08-1963, Hortensia, julie.depercenaire@gmail.com
+16592, Gérard, Debakker, AntropiX, Notchau, 16-04-1986, Boulevard Général Wahis - Generaal Wahislaan, gérard.debakker@gmail.com
+16599, Monique, Bright, Royal_MaxCraft, SrPantera, 06-07-1990, Rue Ernest Vander Aa - Ernest Vander Aastraat, monique.bright@gmail.com
+16606, Elisabeth, De Coninck, Okashi26, OxyGeNe_, 14-09-1965, Jan Baptist Paulusstraat, elisabeth.deconinck@yahoo.fr
+16624, Cael, Ruiz, lucie34576, XDIAV, 30-10-1969, Avenue Sainte Alix - Sinte-Aleidislaan, cael.ruiz@hotmail.com
+16630, Christelle, Destoute, xAczino, Metalt, 07-09-1967, Laskouter - Laskouter, christelle.destoute@gmail.com
+16641, Dayanara, Gates, bastien09, 6pri1Fischer, 20-12-1973, Rue de la Compétition - Mededingingstraat, dayanara.gates@gmail.com
+16654, Grégory, Santilman, Zdestiny87, vaspette, 17-02-1965, Place Colignon - Colignonplein, grégory.santilman@hotmail.com
+16663, Antoine, Geerts, Don_Blunt, Viilivo7, 29-10-1984, Rue des Pierres - Steenstraat, antoine.geerts@hotmail.com
+16681, Maëlys, Neuray, fleempy, gogodu63, 18-05-1950, Rue d&#39;Oultremont - d&#39;Oultremontstraat, maëlys.neuray@ulb.ac.be
+16690, Guadalupe, Powers, Cxlia25, Hyren575, 13-09-1972, Avenue Hugo Van der Goes - Hugo Van der Goeslaan, guadalupe.powers@hotmail.be
+16710, Alanna, Haney, antx68, iSubZ_, 03-09-1984, Avenue Michel-Ange - Michel Angelolaan, alanna.haney@hotmail.com
+16727, Darren, Ferrell, MIDAV2005, Tomazon8255, 21-04-2001, Place Charles Rogier - Karel Rogierplein, darren.ferrell@hotmail.com
+16739, Josephine, Dorsey, tvalek23, KmpZz, 01-05-1968, Rue Zandbeek - Zandbeekstraat, josephine.dorsey@yahoo.fr
+16754, Nathalia, Ferrell, LaDyZzz, kodyrich13, 10-02-1971, Rue de la Poudrière, nathalia.ferrell@hotmail.be
+16765, Dominique, Prevostel, KaTe_FrOm_RuSsIa, xxlouvitoxx, 07-02-1973, Chemin du Connemara - Connemaraweg, dominique.prevostel@hotmail.be
+16773, Magali, Van den Bergh, Ascarnaud, SkyCraft_YTB, 18-07-1996, Avenue Eléonore - Eleonorelaan, magali.vandenbergh@gmail.com
+16787, Samir, Dominguez, CedricD87, xWeez_, 03-12-1993, Rue Teniers - Teniersstraat, samir.dominguez@gmail.com
+16795, Nathaniel, Harrell, TropFortPourVous, bl4ckr41n, 04-05-2003, Rue Léon de Lantsheere - Léon de Lantsheerestraat, nathaniel.harrell@gmail.com
+16805, Roselyn, Allison, pikiril, LOIC34007, 09-09-1998, Place du Rinsdelle - Rinsdelleplein, roselyn.allison@gmail.com
+16817, Muriel, Le Provost, LeRoYDesTomAteS, Ducker_VII, 19-01-2002, Rue Fulton - Fultonstraat, muriel.leprovost@gmail.com
+16830, Valentin, Chrispeels, Jayceawesomeness, SaplingPvP, 23-05-1991, Avenue de la Cité Modèle - Modelwijklaan, valentin.chrispeels@yahoo.fr
+16839, Eddie, Benton, totonigo3, Srgalletika28, 16-02-1990, Avenue Joseph Divoort - Joseph Divoortlaan, eddie.benton@ulb.ac.be
+16854, Javion, Payne, Castellacul, Gurdilo, 09-07-1980, Avenue Van Bever - Van Beverlaan, javion.payne@hotmail.be
+16870, Cyril, Shoen, JazXVIII, TitlezaTH123, 20-01-1977, Rue de la Senne - Zennestraat, cyril.shoen@gmail.com
+16888, Jean-François, Scuvie, happy111, pasteque_poilu, 03-01-2002, Rue de l&#39;Église Sainte-Anne - Sint-Annakerkstraat, jeanfrançois.scuvie@gmail.com
+16902, Alain, Baugniez, Sergent_Garciaa, Misses_Kittens, 24-04-1956, Avenue du Condor - Condorlaan, alain.baugniez@ulb.ac.be
+16920, Lucas, Neven, VeggetaGayemer, KoRoSeNsEi, 21-01-1987, Avenue du Furet - Fretlaan, lucas.neven@yahoo.fr
+16936, Gretchen, Morris, _DJLuck_, zeliMyakwa, 05-02-1990, Avenue de la Tempérance - Matigheidslaan, gretchen.morris@gmail.com
+16945, Allyson, Hudson, choumanyer, mrcap947, 27-08-1959, Chaussée de Dieleghem - Dieleghemse Steenweg, allyson.hudson@hotmail.be
+16953, Charlotte, Dumont, Xx_Symbi0se_xX, MisterP74, 19-06-1955, Rue des Fraises - Aardbeienstraat, charlotte.dumont@ulb.ac.be
+16971, Mathilde, De Flandre, WorstHunder, Dark_Isotope_74, 05-08-1968, Place Madou, mathilde.deflandre@ulb.ac.be
+16981, Martin, Brown, Vega208, maxi811, 25-06-1987, Rue Charles Quint - Keizer Karelstraat, martin.brown@gmail.com
+16996, Mathieu, Dehorne, leomani, Remplex3, 08-12-1985, Rue Isidore Verheyden - Isidore Verheydenstraat, mathieu.dehorne@gmail.com
+17010, Nathanael, Padilla, _TH, Devzec, 28-05-1980, Rue Joseph Plateau - Josef Plateaustraat, nathanael.padilla@gmail.com
+17024, Adele, Dewit, UnderRex, SpirituaL06, 10-02-1969, Rue du Buisson - Braambosstraat, adele.dewit@ulb.ac.be
+17040, Nadia, Van der Gucht, Lougia76, titouXD01, 30-07-2000, Rue Vandermeersch - Vandermeerschstraat, nadia.vandergucht@hotmail.com
+17050, Axel, Shepard, Lord_Sirius, Sharlkwolf, 01-01-1959, Rue du Magistrat - Wethoudersstraat, axel.shepard@gmail.com
+17061, Jaidyn, Fischer, NexoneY, Soosles, 14-04-1968, Rue De Keersmaeker - De Keersmaekerstraat, jaidyn.fischer@gmail.com
+17072, Alice, Kreemers, Rotom93, jules13830, 12-02-1951, Natieplein, alice.kreemers@hotmail.com
+17079, Dominique, Bogaerts, PsahTekk, RossHG, 21-10-1954, Carré des Platanes - Platanenwijk, dominique.bogaerts@hotmail.com
+17091, Richard, Galvan, Bartflash, ByDiegoDeww, 29-10-1960, Lievevrouwbroersstraat, richard.galvan@gmail.com
+17102, Jocelyne, Van de Loo, NeverLine, brunchis002, 02-05-1968, Avenue Kersbeek - Kersbeeklaan, jocelyne.vandeloo@gmail.com
+17115, Romain, De Busschere, Nyx34, Nyro_games, 16-08-1994, Chaussée de Jette - Jetse Steenweg, romain.debusschere@gmail.com
+17123, Anabel, Jacobson, Ginstorm, shinster1000, 18-12-1997, Rue de Lessines - Lessenstraat, anabel.jacobson@yahoo.fr
+17137, Manon, Bruynseels, _ImBlaze_, Surfer123YT, 12-01-1969, Rue Alphonse Hottat - Alphonse Hottatstraat, manon.bruynseels@yahoo.fr
+17152, Léna, Martins, nuij, JanOto, 07-08-1991, Rue de la Braie - Moutstraat, léna.martins@hotmail.be
+17164, Shannon, Alexander, grosgeekdu94, Laytor_ZoX, 12-07-1989, Mechelsestraat, shannon.alexander@hotmail.be
+17176, Catherine, Honnay, AleMM015, MINELLAN, 30-08-1968, Rue du Progrès - Vooruitgangsstraat, catherine.honnay@gmail.com
+17188, Paige, Herman, darkus18, MrVolfoni, 16-03-1991, Rue d&#39;Irlande - Ierlandstraat, paige.herman@ulb.ac.be
+17205, Quentin, Casteau, TWEDICID, ExitRoute, 13-05-1955, Square James Dean - James Deanplein, quentin.casteau@gmail.com
+17224, Jean-Pierre, Prost, camille34, 22cant, 05-07-1984, Rue Washington - Washingtonstraat, jeanpierre.prost@gmail.com
+17238, Breanna, Harrington, carkl, 3vaches, 01-09-1954, Rue de Pavie - Paviastraat, breanna.harrington@gmail.com
+17247, Melanie, De Sueter, MatiiPvP, Eleadan94, 04-02-1996, Place Dailly - Daillyplein, melanie.desueter@hotmail.com
+17263, Louis, Castiaux, Carlos_TheZomber, Beuuns, 04-03-1990, Rue de la Vanne - Verlaatstraat, louis.castiaux@gmail.com
+17277, Brent, Hodge, Botticelli, Rivir0l, 22-09-1985, Rue Adolphe Willemyns - Adolphe Willemynsstraat, brent.hodge@ulb.ac.be
+17289, Lucie, Wylock, MrArdaHD, matth1111, 03-01-1987, Avenue Verdi - Verdilaan, lucie.wylock@gmail.com
+17300, Olivier, Pottié, Enictor, ImOkli, 06-02-1983, Rue du Railway - Railwaystraat, olivier.pottié@ulb.ac.be
+17315, Ashley, Moses, medymedor, artydevil37, 27-01-1986, Avenue De Roovere - De Rooverelaan, ashley.moses@yahoo.fr
+17326, Sandra, Pham, Melana57, darkfougy, 07-10-1971, Rue Van Ysendyck - Van Ysendyckstraat, sandra.pham@gmail.com
+17340, Damien, Louzeau, tirapt, jeffafaaa, 15-04-2002, Avenue du Bourgmestre Jean Neybergh - Burgemeester Jean Neyberghlaan, damien.louzeau@gmail.com
+17356, Miriam, Price, SBB_Bubuche, MineZeroMC, 07-01-1951, Drève du Sénéchal - Landvoogddreef, miriam.price@yahoo.fr
+17368, Erwan, Delboulle, dlpaxel0802, Coco33290, 15-07-1982, Avenue d&#39;Itterbeek - Itterbeekselaan, erwan.delboulle@gmail.com
+17381, Chloe, Doeraene, mapcube, ryanflyby2223, 30-01-1987, Rue de Chantilly - Chantillystraat, chloe.doeraene@yahoo.fr
+17394, Théo, Vermeiren, Bibendum22, Varkias, 14-02-1989, Avenue des Naïades - Najadenlaan, théo.vermeiren@yahoo.fr
+17408, Nikolai, Mayer, Olbatar01, vic34, 28-06-2003, Itterbeeksebaan, nikolai.mayer@hotmail.be
+17420, Hugo, Lepoutre, DiFooLGaming, mart1712, 15-06-1963, Rue de Barcelone - Barcelonastraat, hugo.lepoutre@ulb.ac.be
+17427, Laurent, Van Eyck, Miky717, MolecularGamer, 15-09-1954, Schetsveld, laurent.vaneyck@hotmail.com
+17436, Santino, Harmon, didi1943, Natsura97215, 06-11-1965, Avenue Joseph Jongen - Joseph Jongenlaan, santino.harmon@yahoo.fr
+17451, Marion, De Buyle, didge, FoxFr, 15-02-1970, Rue de Bosnie - Bosniëstraat, marion.debuyle@hotmail.be
+17463, Isabelle, Vlaminck, M4TTOP, ethann67, 09-04-1983, Galerie de la Reine - Koninginnegalerij, isabelle.vlaminck@gmail.com
+17477, Sofia, Melendez, Xorgria, crankshafts, 26-10-2002, Rue des Hirondelles, sofia.melendez@hotmail.com
+17489, Nia, Yoder, Shadowplay0, Zankaii, 09-07-1993, Boulevard Anspach, nia.yoder@gmail.com
+17496, Morgan, De Cruyenaere, ricola38, Peyruze, 21-05-1953, Dageraadlaan - Avenue de l&#39;Aurore, morgan.decruyenaere@hotmail.com
+17507, Alia, Garrett, Eugenebro2, Nyugatine, 17-08-2001, Rue Jean Lagey - Jean Lageystraat, alia.garrett@gmail.com
+17518, Martine, Vleminckx, Tintaguel, Vorteqz, 28-12-1956, Avenue de Scheut - Scheutlaan, martine.vleminckx@gmail.com
+17529, Amelie, Coppens, BorderlinerKKL, gustitos, 11-01-1952, Ligusterslaan - Avenue des Troènes, amelie.coppens@yahoo.fr
+17539, Parker, Keller, kidsofthenight, Gafrezze, 08-08-1963, Rue Franklin - Franklinstraat, parker.keller@gmail.com
+17546, Walker, Roach, magniatwilliam, MineRaid_, 27-12-1990, Rue Rodenbach - Rodenbachstraat, walker.roach@yahoo.fr
+17556, Laure, Lebrun, Anonimous_PvP, Skytops22, 04-08-1961, Rue Melpomène - Melpomenestraat, laure.lebrun@gmail.com
+17563, Benjamin, Brug, FireDragon03, Maxmich98, 25-10-1996, Anneessensstraat, benjamin.brug@hotmail.com
+17576, Pierre, De Smedt, mead95, TefiLike19, 29-12-1992, Belgiëplein - Place de Belgique, pierre.desmedt@gmail.com
+17590, Melanie, Groot, BuzzBeeHD, Oblivion_55, 10-07-1989, Place Sainte-Croix - Heilig-Kruisplein, melanie.groot@hotmail.be
+17605, Roselyn, Bryan, Vipron123, TwoExoHD, 06-07-1985, Rue des Cendres, roselyn.bryan@gmail.com
+17623, Julie, De Markgraef, gelatoxlekirito, FrozzenDick, 13-09-1951, Avenue du Onze Novembre - Elf Novemberlaan, julie.demarkgraef@ulb.ac.be
+17631, Guillaume, Bosmans, _ZaikoMC_, d3stroy_68, 18-03-1990, Eclipsstraat, guillaume.bosmans@gmail.com
+17640, Fabienne, Doorneman, pokipro, brazigali, 28-10-1967, Rue de Ganshoren - Ganshorensestraat, fabienne.doorneman@gmail.com
+17654, Skyler, Vaughan, LOUISPROUTEAU, EmPy4, 01-09-1955, Rue de Russie - Ruslandstraat, skyler.vaughan@gmail.com
+17671, Clément, Mouyart, asiri_95, sasabensafir, 15-06-1969, Rue Guillaume Van Laethem - Willem Van Laethemstraat, clément.mouyart@hotmail.com
+17688, Tom, Cappelaire, D_B_L_S, Sami3530, 18-03-2002, Rue Nestor Martin - Nestor Martinstraat, tom.cappelaire@gmail.com
+17697, Jan, Middleton, Itz_FeloGameR, lemitte, 26-05-1952, Rue Saint-Bernard - Sint-Bernardusstraat, jan.middleton@yahoo.fr
+17712, Romain, Broucque, Apox4, LobinhaG, 28-09-1963, Rue des Moissons - Oogststraat, romain.broucque@hotmail.com
+17725, Marius, Doorn, OuEstLeRespect, TheDemis26, 27-05-1956, Rue de la Vignette - Kleine Wijngaardstraat, marius.doorn@gmail.com
+17735, Gabriel, Lacroix, SweemFx, Wever84, 13-01-1989, Avenue de la Force Aérienne - Luchtmachtlaan, gabriel.lacroix@gmail.com
+17750, Guy, Delcorps, peps11, MoNsTeRBigs, 03-01-2000, Rue de la Marne - Marnestraat, guy.delcorps@hotmail.com
+17754, Jeremy, Dupont, Pterodactor, biggerthangod97, 29-06-1995, Rue de Tournai - Doornikstraat, jeremy.dupont@gmail.com
+17764, Rémi, Collin, Mr2lool, Go2Domi, 15-08-1951, Galeries de la Toison d’Or, rémi.collin@gmail.com
+17775, Jacques, Declerck, SoldatMachmalow, davesouls, 18-12-1954, Avenue Reine Astrid - Koningin Astridlaan, jacques.declerck@hotmail.com
+17792, Haven, Mcdaniel, ElFudji, XxFight_BroxX, 24-10-1969, Chaussée de Forest - Vorstsesteenweg, haven.mcdaniel@yahoo.fr
+17806, Gérard, Premereur, KorksHD, DeadStones, 10-02-1973, Sint-Sebastiaanstraat - Rue Saint-Sébastien, gérard.premereur@hotmail.com
+17819, Marion, Willock, Shimigaro90, edward45, 19-11-1979, Rue du Château Beyaerd - Kasteel Beyaerdstraat, marion.willock@hotmail.be
+17829, Pascale, De Groote, MegaPiixel, ShunKala_1702, 26-06-1958, Avenue Jan Stobbaerts - Jan Stobbaertslaan, pascale.degroote@gmail.com
+17839, Jade, Kleineman, MINEUSE4236, CavalierSkrat, 24-01-1961, Rue de Meudon - Meudonstraat, jade.kleineman@gmail.com
+17846, Clément, Mardaga, AyalinaGamer, Ignir92, 01-02-1983, Place Adolphe Sax - Adolphe Saxplein, clément.mardaga@gmail.com
+17855, Guillaume, Deboscker, BySyGma, Gajeel522, 20-06-1989, Avenue Yvan Lutens - Yvan Lutenslaan, guillaume.deboscker@gmail.com
+17865, Lewis, Glass, vulcanien, mistouf, 30-11-1960, Cité Ouvrière de Linthout - Linthoutse Werkmanswoonwijk, lewis.glass@gmail.com
+17872, Antwan, Huffman, The_Subbus, ItzMrAlex_Ez, 27-07-1968, Square Baron Alfred Bouvier - Baron Alfred Bouviersquare, antwan.huffman@gmail.com
+17877, Yannis, Seghers, njv1182, Driawyn, 07-09-1957, Station Montgomery - Montgomery station, yannis.seghers@ulb.ac.be
+17888, Isaias, Goodman, sorcrryd53, lagsoulcris, 11-11-1966, Rue Goossens - Goossensstraat, isaias.goodman@gmail.com
+17900, Corinne, Watriquant, theflyingt0rta, Toufiix_Tv, 03-06-1983, Rue Colonel Van Gele - Kolonel Van Gelestraat, corinne.watriquant@hotmail.be
+17918, Isabelle, Hoyois, MrKarma, pierreti, 13-11-1974, Hopstraat, isabelle.hoyois@gmail.com
+17937, Claire, Wauters, Jocker83, Plaguedreaper, 23-05-1952, Square de Léopoldville - Leopoldstadplein, claire.wauters@hotmail.com
+17951, Tristan, Istasse, Rocket001, TropsNeo, 05-01-1966, Rue de la Technologie - Technologiestraat, tristan.istasse@gmail.com
+17957, Wyatt, Hartman, obi_343, Retropolaroid03, 28-07-1981, Rue du Vautour - Gierstraat, wyatt.hartman@hotmail.be
+17967, Sandra, Zegers, Rhaonyth, monkeytree50p, 25-09-2003, Rue de la Verdure, sandra.zegers@yahoo.fr
+17977, Zaniyah, Bridges, djxd230, Onyxs, 19-07-2000, Quai du Commerce - Handelskaai, zaniyah.bridges@gmail.com
+17988, Brooklyn, Richardson, Theman123p, Z3ROX_YT, 06-11-1986, Rue de Picardie - Picardiestraat, brooklyn.richardson@yahoo.fr
+17995, Bennett, Hood, TNTfire07, villenave, 24-04-1995, Avenue Jacques Brel - Jacques Brellaan, bennett.hood@gmail.com
+18011, Julie, De Saedeleer, Anthony9812, Fabulas_c17, 06-05-2000, Chaussée de Waterloo - Waterloose Steenweg, julie.desaedeleer@gmail.com
+18026, 586, Lebrun, ironobscure, framauben, 21-01-1982, Rue du Drapeau - Vaandelstraat, 586.lebrun@hotmail.be
+18039, Sonia, De Muynck, Roleo_Killer, reyfun1, 08-04-1971, Locquenghienstraat, sonia.demuynck@gmail.com
+18051, Georges, Depiéreux, facurolo, Guiwar, 20-02-1989, Rue du Château d&#39;Eau - Waterkasteelstraat, georges.depiéreux@ulb.ac.be
+18063, Melanie, Hardat, pepette62, Mordredd, 21-11-1960, Neerpedestraat, melanie.hardat@gmail.com
+18079, Julie, Damart, BurningShard, EpsiLOL_66, 06-08-1993, Avenue du Renouveau - Herlevingslaan, julie.damart@ulb.ac.be
+18086, Maël, Lanens, Nearen, mymy45100, 19-11-1967, Avenue Mahatma Gandhi - Mahatma Gandhilaan, maël.lanens@gmail.com
+18097, Ruth, Wheeler, Kroosis, Axel_117, 12-05-1955, Rue Pierre Strauwen - Pierre Strauwenstraat, ruth.wheeler@yahoo.fr
