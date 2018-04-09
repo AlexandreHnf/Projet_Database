@@ -19,7 +19,8 @@
 \title{\textsc{[INFO-H-303] Bases de données - Rapport Projet:}\
    "Ebay"}
 \author{Alexandre Heneffe - 000440761\\
-        Nicolas Jonas - 000442112}
+        Nicolas Jonas - 000442112\\
+        Evgueniy Starygin - 000443325}
 \date{Mars 2018}
 
 \begin{document}
@@ -90,65 +91,75 @@ Dans cette section, nous traduisons le modèle entité-association de la section
 \indent
 
 \paragraph{Objet} (\underline{Titre}, Description, DateMiseEnVente, PrixMin, Vendeur, DateVente, Acheteur, NumVendeur, NumAdmin)\\
-\indent - Objet.NumVendeur référence Vendeur.Numéro\\
-\indent - Objet.NumAdmin référence Administrateur.Numéro
+\indent - Objet.NumVendeur référence Vendeur.Numéro \\
+\indent \indent -> Un objet est mis en vente par (1,1) vendeur\\
+\indent - Objet.NumAdmin référence Administrateur.Numéro \\
+\indent \indent -> Un objet est supprimé par (1,1) administrateur
 
 
 \paragraph{Vendeur} (\underline{Pseudo}, Nom, Prénom, DateNaissance, Adresse, PseudoUser)\\
-\indent - Vendeur.PseudoUser référence Utilisateur.Pseudo
+\indent - Vendeur.PseudoUser référence Utilisateur.Pseudo \\
+\indent \indent -> Le vendeur est une généralisation de l'utilisateur, il en hérite
 
 \paragraph{Administrateur} (\underline{Pseudo}, PseudoUser)\\
-\indent - Administrateur.PseudoUser référence Utilisateur.Pseudo
+\indent - Administrateur.PseudoUser référence Utilisateur.Pseudo \\
+\indent \indent -> L'administrateur est une généralisation de l'utilisateur, il en hérite
 
 
-\paragraph{Utilisateur} (\underline{Pseudo}, AddresseMail, MotDePasse, 
-Description, PseudoAdmin)\\
-\indent - Utilisateur.PseudoAdmin référence Administrateur.Pseudo
-
+\paragraph{Utilisateur} (\underline{Pseudo}, AddresseMail, MotDePasse, Description)\\
 
 \paragraph{PropositionAchat} (\underline{NuméroObjet}, \underline{Acheteur}, Prix, Etat, TitreObj, PseudoUser)\\
-\indent - PropositionAchat.TitreObj référence Objet.Titre\\
-\indent - PropositionAchat.PseudoUser référence Utilisateur.Pseudo
+\indent - PropositionAchat.TitreObj référence Objet.Titre \\
+\indent \indent -> Une proposition d'achat est concernée par (1,1) objet)\\
+\indent - PropositionAchat.PseudoUser référence Utilisateur.Pseudo \\
+\indent \indent -> Une proposition d'achat est faite par (1,1) utilisateur
 
 
 \paragraph{Evaluation} (\underline{Numéro}, Note, Date, Commentaire, TitreObj, PseudoVendeur, PseudoUser)\\
 \indent - Evaluation.TitreObj référence Objet.Titre\\
+\indent \indent -> Une evaluation est concernée par (1,1) Objet\\
 \indent - Evaluation.PseudoVendeur référence Vendeur.Pseudo\\
-\indent - Evaluation.PseudoUser référence Utilisateur.Pseudo
+\indent \indent -> une evaluation est reçue par (1,1) vendeur\\
+\indent - Evaluation.PseudoUser référence Utilisateur.Pseudo\\
+\indent \indent -> une evaluation est faite par (1,1) utilisateur 
 
 
 \paragraph{Catégorie} (\underline{Titre}, Description, PseudoAdmin)\\
-\indent - Catégorie.PseudoAdmin référence Administrateur.Pseudo
+\indent - Catégorie.PseudoAdmin référence Administrateur.Pseudo\\
+\indent \indent -> Une catégorie est créée par (1,1) administrateur
 
 
 \paragraph{Appartenance} (\underline{TitreObj, TitreCatégorie})\\
 \indent - Appartenance.TitreObj référence Objet.Titre\\
-\indent - Appartenance.TitreCatégorie référence Catégorie.Titre
+\indent - Appartenance.TitreCatégorie référence Catégorie.Titre\\
+\indent \indent -> Une catégorie est appartenu par (0,n) objet et un objet appartient à (1,n) catégorie
 
 
-\paragraph{Modifiation} (\underline{TitreCatégorie, PseudoAdmin})\\
+\paragraph{Modification} (\underline{TitreCatégorie, PseudoAdmin}, DateModif)\\
 \indent - Modification.TitreCatégorie référence Catégorie.Titre\\
-\indent - Modification.PseudoAdmin référence Administrateur.Pseudo
+\indent - Modification.PseudoAdmin référence Administrateur.Pseudo\\
+\indent \indent -> Une catégorie est modifiée par (0,n) administrateur et un administrateur modifie (0,n) catégorie
+
+\paragraph{Suppression} (\underline{PseudoAdmin, PseudoUser}, DateSup)\\
+\indent - Suppression.PseudoAdmin référence Administrateur.Pseudo\\
+\indent - Suppression.PseudoUser référence Utilisateur.Pseudo\\
+\indent \indent -> Un administrateur supprime (0,n) utilisateur et un utilisateur est supprimé par (1,1) administrateur
+
 
 
 \subsection{Contraintes}
 
 \begin{itemize}
-\item Pour tout Objet.Titre, il existe au moins un Appartenance.TitreObj
-\item Pour un Objet, Objet.DateVente > Objet.DateMiseEnVente
-\item Pour un PropositionAchat, PropositionAchat.Prix >= Objet.PrixMin
-\item Pour un Utilisateur, Administrateur.Pseudo != Utilisateur.Pseudo (un Administrateur ne peut pas se supprimer)
-\item Pour un Evaluation, Evaluation.Date < Objet.DateVente + 10
-\item Pour un Evaluation, Evaluation.Date > Objet.DateVente
-\item Pour un Vendeur, Vendeur.DateNaissance >= 18
-\item Pour un Vendeur, Vendeur.DateNaissance > Objet.DateMiseEnVente
-\item Pour un Objet, Objet.Vendeur != Objet.Acheteur
+    \item Pour tout Objet.Titre, il existe au moins un Appartenance.TitreObj
+    \item Pour un Objet, Objet.DateVente > Objet.DateMiseEnVente
+    \item Pour un PropositionAchat, PropositionAchat.Prix >= Objet.PrixMin
+    \item Pour un Utilisateur, Administrateur.Pseudo != Utilisateur.Pseudo (un Administrateur ne peut pas se supprimer)
+    \item Pour un Evaluation, Evaluation.Date < Objet.DateVente + 10
+    \item Pour un Evaluation, Evaluation.Date > Objet.DateVente
+    \item Pour un Vendeur, Vendeur.DateNaissance >= 18
+    \item Pour un Vendeur, Vendeur.DateNaissance > Objet.DateMiseEnVente
+    \item Pour un Objet, Objet.Vendeur != Objet.Acheteur
 \end{itemize}
-
-
-\section{Modifications de la phase 1}
-
-corrections apportées a la phase 1 suite aux remarques des assistants
 
 \section{Gestion des données}
 
@@ -162,7 +173,10 @@ les requêtes spécifiques demandées dans l'énoncé
 
 Explications et justifications des choix et hypothèses qu'on a pris
 
-
+\begin{itemize}
+    \item Lorsqu'un utilisateur est supprimé, il n'est pas supprimé de la base de données mais il est placé dans la table "Supression" et aucun autre utilisateur ne pourra avoir le meme pseudo que lui, même si il est supprimé.
+    
+\end{itemize}
 
 
 \end{document}

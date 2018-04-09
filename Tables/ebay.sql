@@ -180,6 +180,7 @@ CREATE TABLE Modification (
 
     TitreCategorie VARCHAR(30) NOT NULL,
     PseudoAdmin VARCHAR(30) NOT NULL, -- 2 foreign keys qui forment la clé primaire
+    DateModif DATETIME NOT NULL,
 
     PRIMARY KEY(TitreCategorie, PseudoAdmin),
 
