@@ -219,3 +219,27 @@ CREATE TABLE Appartenance (
 );
 
 
+
+
+DROP TABLE IF EXISTS Suppression; -- Un objet appartient a (1,n) catégorie(s)
+
+CREATE TABLE Suppression (
+
+    PseudoAdmin VARCHAR(30) NOT NULL,
+    PseudoUser VARCHAR(30) NOT NULL, -- 2 foreign keys qui forment la clé primaire
+    DateSup DATETIME NOT NULL,
+
+    PRIMARY KEY(PseudoAdmin, PseudoUser),
+
+    CONSTRAINT fk_admin_suppr
+        FOREIGN KEY (PseudoAdmin)
+        REFERENCES Administrateur(Pseudo),
+
+    CONSTRAINT fk_suppr_user
+        FOREIGN KEY (PseudoUser)
+        REFERENCES Utilisateur(Pseudo)
+
+    
+);
+
+
