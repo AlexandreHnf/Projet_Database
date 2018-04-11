@@ -27,13 +27,13 @@ LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/users.txt'
 INTO TABLE Utilisateur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(@ignore, MotDePasse, Pseudo, AdresseMail);
+(UserID, MotDePasse, Pseudo, AdresseMail);
 
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
 INTO TABLE Utilisateur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(@ignore, @ignore, MotDePasse, Pseudo, @ignore, @ignore, AdresseMail);
+(UserID, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail);
 
 
 -- ============================ TABLE ADMIN ============================
