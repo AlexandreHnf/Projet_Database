@@ -17,7 +17,7 @@ CREATE TABLE Utilisateur (
     Pseudo VARCHAR(30) NOT NULL, -- clé primaire
     AdresseMail VARCHAR(320) NOT NULL, -- 320 = 64 (avant @) + 1 (@) + 255 (apres @)
     MotDePasse VARCHAR(30) NOT NULL,
-    Description_user TEXT, -- pas de foreign key vers Admin car on stocke pas de "supprime"
+    Description_user TEXT default NULL, -- pas de foreign key vers Admin car on stocke pas de "supprime"
 
     PRIMARY KEY (Pseudo)
     
@@ -25,6 +25,11 @@ CREATE TABLE Utilisateur (
 );
 
 
+LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/users.txt'
+INTO TABLE Utilisateur
+FIELDS TERMINATED BY ', '
+LINES TERMINATED BY '\n' 
+(@ignore, Pseudo, AdresseMail, MotDePasse);
 
 
 -- ============================ TABLE ADMIN ============================
@@ -74,7 +79,7 @@ DROP TABLE IF EXISTS Objet;
 
 CREATE TABLE Objet (
     
-    Titre CHAR(30) NOT NULL, -- clé primaire
+    Title CHAR(30) NOT NULL, -- clé primaire
     Description_obj TEXT,
     DateMiseEnVente DATE,
     PrixMin DECIMAL(6,2) NOT NULL,
@@ -85,14 +90,13 @@ CREATE TABLE Objet (
     -- On stocke plus AdminPseudo du coup vu qu'on sauve pas les supprime
 
     -- CONTRAINTES D'INTEGRITE
-    PRIMARY KEY (Titre),
+    PRIMARY KEY (Title),
     
     CONSTRAINT fk_obj_vendeur             -- On donne un nom à notre clé
         FOREIGN KEY (PseudoVendeur)       -- Colonne sur laquelle on crée la clé
         REFERENCES Vendeur(Pseudo)        -- Colonne de référence
 
 );
-
 
 
 -- ============================ TABLE EVALUATION ============================
@@ -112,7 +116,7 @@ CREATE TABLE Evaluation (
 
     CONSTRAINT fk_obj_eval                -- On donne un nom à notre clé
         FOREIGN KEY (TitreObj)            -- Colonne sur laquelle on crée la clé
-        REFERENCES Objet(Titre),          -- Colonne de référence
+        REFERENCES Objet(Title),          -- Colonne de référence
 
     CONSTRAINT fk_eval_vendeur                
         FOREIGN KEY (PseudoVendeur)      
@@ -165,7 +169,7 @@ CREATE TABLE PropositionAchat (
 
     CONSTRAINT fk_obj_prop          
         FOREIGN KEY (TitreObj)         
-        REFERENCES Objet(Titre),
+        REFERENCES Objet(Title),
 
     CONSTRAINT fk_user_prop          
         FOREIGN KEY (PseudoUser)         
@@ -209,7 +213,7 @@ CREATE TABLE Appartenance (
 
     CONSTRAINT fk_titre_app
         FOREIGN KEY (TitreObj)
-        REFERENCES Objet(Titre),
+        REFERENCES Objet(Title),
 
     CONSTRAINT fk_cat_app
         FOREIGN KEY (TitreCategorie)
