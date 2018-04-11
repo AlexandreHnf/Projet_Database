@@ -25,11 +25,17 @@ CREATE TABLE Utilisateur (
 );
 
 
-LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/users.txt'
+LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/users.txt'
 INTO TABLE Utilisateur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
 (@ignore, MotDePasse, Pseudo, AdresseMail);
+
+LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
+INTO TABLE Utilisateur
+FIELDS TERMINATED BY ', '
+LINES TERMINATED BY '\n' 
+(@ignore, @ignore, MotDePasse, Pseudo, @ignore, @ignore, AdresseMail);
 
 
 -- ============================ TABLE ADMIN ============================
@@ -37,8 +43,11 @@ DROP TABLE IF EXISTS Administrateur;
 
 CREATE TABLE Administrateur (
     
-    Pseudo VARCHAR(30) NOT NULL,
-    PseudoUser VARCHAR(30) NOT NULL, -- foreign key pour l'héritage
+    Pseudo VARCHAR(30) NOT NULL default '',
+    PseudoUser VARCHAR(30) NOT NULL default '', -- foreign key pour l'héritage
+    
+    -- CONTRAINTES D'INTEGRITE
+
     PRIMARY KEY (Pseudo),
     
     CONSTRAINT fk_admin_user
@@ -72,6 +81,11 @@ CREATE TABLE Vendeur (
 );
 
 
+LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
+INTO TABLE Vendeur
+FIELDS TERMINATED BY ', '
+LINES TERMINATED BY '\n' 
+(@ignore, Prenom, Nom, Pseudo, MotDePasse, DateNaissance, Adresse, AdresseMail);
 
 
 -- ============================ TABLE OBJET ============================
@@ -182,8 +196,9 @@ DROP TABLE IF EXISTS Modification; -- Un admin modifie (0,n) catégorie(s)
 
 CREATE TABLE Modification (
 
-    TitreCategorie VARCHAR(30) NOT NULL,
-    PseudoAdmin VARCHAR(30) NOT NULL, -- 2 foreign keys qui forment la clé primaire
+    TitreCategorie VARCHAR(30) NOT NULL default '',
+    PseudoAdmin VARCHAR(30) NOT NULL default '', 
+    -- 2 foreign keys qui forment la clé primaire
     DateModif DATETIME NOT NULL,
 
     PRIMARY KEY(TitreCategorie, PseudoAdmin),
@@ -206,8 +221,9 @@ DROP TABLE IF EXISTS Appartenance; -- Un objet appartient a (1,n) catégorie(s)
 
 CREATE TABLE Appartenance (
 
-    TitreObj CHAR(30) NOT NULL,
-    TitreCategorie VARCHAR(30) NOT NULL, -- 2 foreign keys qui forment la clé primaire
+    TitreObj CHAR(30) NOT NULL default '',
+    TitreCategorie VARCHAR(30) NOT NULL default '', 
+    -- 2 foreign keys qui forment la clé primaire
 
     PRIMARY KEY(TitreObj, TitreCategorie),
 
@@ -229,8 +245,8 @@ DROP TABLE IF EXISTS Suppression; -- Un objet appartient a (1,n) catégorie(s)
 
 CREATE TABLE Suppression (
 
-    PseudoAdmin VARCHAR(30) NOT NULL,
-    PseudoUser VARCHAR(30) NOT NULL, -- 2 foreign keys qui forment la clé primaire
+    PseudoAdmin VARCHAR(30) NOT NULL default '',
+    PseudoUser VARCHAR(30) NOT NULL default '', -- 2 foreign keys qui forment la clé primaire
     DateSup DATETIME NOT NULL,
 
     PRIMARY KEY(PseudoAdmin, PseudoUser),
