@@ -14,14 +14,15 @@ CREATE TABLE Utilisateur (
     UserID INT UNSIGNED NOT NULL AUTO_INCREMENT, -- clé primaire
     MotDePasse VARCHAR(30) NOT NULL,
     Pseudo VARCHAR(30) NOT NULL, 
-    AdresseMail VARCHAR(320) NOT NULL, -- 320 = 64 (avant @) + 1 (@) + 255 (apres @)
-    Description_user TEXT default NULL, -- pas de foreign key vers Admin car on stocke pas de "supprime"
+    AdresseMail VARCHAR(255) NOT NULL, 
+    Description_user TEXT default '',
 
     PRIMARY KEY (UserID)
     
-
 );
 
+
+-- =========================== USERS.TXT > UTILISATEUR ===================
 
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/users.txt'
 INTO TABLE Utilisateur
@@ -29,11 +30,15 @@ FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
 (UserID, MotDePasse, Pseudo, AdresseMail);
 
+-- =========================== SELLERS.TXT > UTILISATEUR ===================
+
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
 INTO TABLE Utilisateur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(UserID, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail);
+(UserID, @ignore, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail);
+
+
 
 
 -- ============================ TABLE ADMIN ============================
@@ -41,17 +46,17 @@ DROP TABLE IF EXISTS Administrateur;
 
 CREATE TABLE Administrateur (
     
-    AdminID INT UNSIGNED NOT NULL AUTO_INCREMENT, -- clé primaire
-    Pseudo VARCHAR(30) NOT NULL default '',
+    AdminID INT UNSIGNED NOT NULL AUTO_INCREMENT, -- clé primaire et foreign key
+    -- Pseudo VARCHAR(30) NOT NULL default '',
     -- PseudoUser VARCHAR(30) NOT NULL default '', -- foreign key pour l'héritage
-    UserID INT UNSIGNED NOT NULL, -- foreign key
+    -- UserID INT UNSIGNED NOT NULL, -- foreign key pour l'héritage
     
     -- CONTRAINTES D'INTEGRITE
 
     PRIMARY KEY (AdminID),
     
     CONSTRAINT fk_admin_user
-        FOREIGN KEY (UserID)         
+        FOREIGN KEY (AdminID)         
         REFERENCES Utilisateur(UserID)
 
 );
@@ -63,31 +68,35 @@ DROP TABLE IF EXISTS Vendeur;
 
 CREATE TABLE Vendeur (
     
-    SellerID INT UNSIGNED NOT NULL AUTO_INCREMENT, -- clé primaire
-    Pseudo VARCHAR(30) NOT NULL,
+    SellerID INT UNSIGNED NOT NULL, -- clé primaire et foreign key
+    -- Pseudo VARCHAR(30) NOT NULL,
     Nom CHAR(30) NOT NULL,
     Prenom CHAR(30) NOT NULL,
     DateNaissance DATE NOT NULL,
     Adresse TEXT NOT NULL,
     -- PseudoUser VARCHAR(30) NOT NULL, -- foreign key pour l'héritage
-    UserID INT UNSIGNED NOT NULL, -- foreign key
+    -- UserID INT UNSIGNED NOT NULL, -- foreign key
 
     -- CONTRAINTES D'INTEGRITE
 
     PRIMARY KEY (SellerID),
 
     CONSTRAINT fk_vendeur_user               -- On donne un nom à notre clé
-        FOREIGN KEY (UserID)             -- Colonne sur laquelle on crée la clé
+        FOREIGN KEY (SellerID)             -- Colonne sur laquelle on crée la clé
         REFERENCES Utilisateur(UserID)       -- Colonne de référence
 
 );
 
 
+-- =========================== SELLERS.TXT > VENDEUR ===================
+
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
 INTO TABLE Vendeur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(@ignore, Prenom, Nom, Pseudo, MotDePasse, DateNaissance, Adresse, AdresseMail);
+(SellerID, Prenom, Nom, @ignore, @ignore, DateNaissance, Adresse, @ignore);
+
+
 
 
 -- ============================ TABLE OBJET ============================
@@ -96,14 +105,13 @@ DROP TABLE IF EXISTS Objet;
 CREATE TABLE Objet (
     
     ItemID INT UNSIGNED NOT NULL AUTO_INCREMENT, -- clé primaire
-    Titre CHAR(30) NOT NULL,
+    Titre CHAR(255) NOT NULL,
     Description_obj TEXT,
     DateMiseEnVente DATE,
     PrixMin DECIMAL(6,2) NOT NULL,
-    Vendeur VARCHAR(30),
+    -- Vendeur VARCHAR(30),
     DateVente DATE,
     Acheteur VARCHAR(30),
-    --PseudoVendeur VARCHAR(30) NOT NULL, -- foreign key
     SellerID INT UNSIGNED NOT NULL, -- foreign key
     -- On stocke plus AdminPseudo du coup vu qu'on sauve pas les supprime
 
@@ -117,11 +125,15 @@ CREATE TABLE Objet (
 );
 
 
+-- =========================== ITEMS.TXT > OBJET ===================
+
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/items.txt'
 INTO TABLE Objet
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n'
-(@ignore, Vendeur, Titre, Description_obj, @ignore, PrixMin, DateMiseEnVente);
+(ItemID, SellerID, Titre, Description_obj, @ignore, PrixMin, DateMiseEnVente);
+
+
 
 
 -- ============================ TABLE EVALUATION ============================
@@ -132,7 +144,7 @@ CREATE TABLE Evaluation (
     Numero INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, -- clé primaire
     Note SMALLINT NOT NULL,
     Date_eval DATETIME NOT NULL,
-    Commentaire TEXT,
+    Commentaire TEXT default '',
     -- TitreObj CHAR(30) NOT NULL, -- foreign key
     -- PseudoVendeur VARCHAR(30) NOT NULL, -- foreign key
     -- PseudoUser VARCHAR(30) NOT NULL, -- foreign key
@@ -165,7 +177,7 @@ DROP TABLE IF EXISTS Categorie;
 CREATE TABLE Categorie (
     
     Titre VARCHAR(30) NOT NULL, -- clé primaire
-    Description_cat TEXT,
+    Description_cat TEXT default '',
     -- PseudoAdmin VARCHAR(30) NOT NULL, -- foreign key
     AdminID INT UNSIGNED NOT NULL, -- foreign key
 
@@ -181,6 +193,16 @@ CREATE TABLE Categorie (
 );
 
 
+-- =========================== ITEMS.TXT > OBJET ===================
+
+LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/items.txt'
+INTO TABLE Categorie
+FIELDS TERMINATED BY ', '
+LINES TERMINATED BY '\n'
+(@ignore, @ignore, @ignore, @ignore, Titre, @ignore, @ignore);
+
+
+
 
 -- ============================ TABLE PROP ACHAT ============================
 DROP TABLE IF EXISTS PropositionAchat;
@@ -189,18 +211,20 @@ CREATE TABLE PropositionAchat (
     
     -- TitreObjet CHAR(30) NOT NULL, -- clé primaire
     ItemID INT UNSIGNED NOT NULL, -- clé primaire
-    AcheteurPotentiel VARCHAR(30),
+    -- AcheteurPotentiel VARCHAR(30),
+    AcheteurPotentiel INT UNSIGNED NOT NULL,
     PrixPropose DECIMAL(6,2) NOT NULL,
-    Etat TINYINT(1) NOT NULL,
+    -- Etat TINYINT(1) NOT NULL,
+    Etat VARCHAR(10) NOT NULL, -- True ou False
     -- TitreObj CHAR(30) NOT NULL, -- foreign key
     -- PseudoUser VARCHAR(30) NOT NULL, -- foreign key
     UserID INT UNSIGNED NOT NULL, -- foreign key
     
     PRIMARY KEY (ItemID),
 
-    -- CONSTRAINT fk_obj_prop          
-    --     FOREIGN KEY (TitreObj)         
-    --     REFERENCES Objet(Titre),
+    CONSTRAINT fk_obj_prop          
+        FOREIGN KEY (ItemID)         
+        REFERENCES Objet(ItemID),
 
     CONSTRAINT fk_user_prop          
         FOREIGN KEY (UserID)         
@@ -263,14 +287,12 @@ CREATE TABLE Appartenance (
 DROP TABLE IF EXISTS Suppression; -- Un objet appartient a (1,n) catégorie(s)
 
 CREATE TABLE Suppression (
-
-    -- PseudoAdmin VARCHAR(30) NOT NULL default '',
-    -- PseudoUser VARCHAR(30) NOT NULL default '', -- 2 foreign keys qui forment la clé primaire
+    
     AdminID INT UNSIGNED NOT NULL,
-    UserID INT UNSIGNED NOT NULL,
+    UserID INT UNSIGNED NOT NULL, -- 2 foreign keys qui forment la clé primaire
     DateSup DATETIME NOT NULL,
 
-    PRIMARY KEY(PseudoAdmin, PseudoUser),
+    PRIMARY KEY(AdminID, UserID),
 
     CONSTRAINT fk_admin_suppr
         FOREIGN KEY (AdminID)
@@ -282,9 +304,3 @@ CREATE TABLE Suppression (
 
     
 );
-
-LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/items.txt'
-INTO TABLE Objet
-FIELDS TERMINATED BY ', '
-LINES TERMINATED BY '\n'
-(@ignore, Vendeur, Titre, Description_obj, @ignore, PrixMin, DateMiseEnVente);
