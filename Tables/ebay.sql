@@ -200,28 +200,31 @@ CREATE TABLE Categorie (
 
 
 
-
 -- ============================ TABLE PROP ACHAT ============================
 DROP TABLE IF EXISTS PropositionAchat;
 
 CREATE TABLE PropositionAchat (
     
     ItemID INT UNSIGNED NOT NULL, -- clé primaire
-    DateProp DATE,
-    AcheteurPotentiel INT UNSIGNED NOT NULL,
-    PrixPropose DECIMAL(6,2) NOT NULL,
-    Etat VARCHAR(10) NOT NULL, -- True ou False
+    Time DATE,
+    Buyer INT UNSIGNED NOT NULL,
+    price DECIMAL(6,2) NOT NULL,
+    accepted VARCHAR(10) NOT NULL, -- True ou False
+    /*
     UserID INT UNSIGNED default '0', -- foreign key
-    
+    */
+
     PRIMARY KEY (ItemID),
 
     CONSTRAINT fk_obj_prop          
         FOREIGN KEY (ItemID)         
-        REFERENCES Objet(ItemID),
+        REFERENCES Objet(ItemID)
 
+    /*
     CONSTRAINT fk_user_prop          
         FOREIGN KEY (UserID)         
         REFERENCES Utilisateur(UserID)
+    */
 
 );
 
