@@ -14,9 +14,9 @@ DROP TABLE IF EXISTS Utilisateur;
 
 CREATE TABLE Utilisateur (
     
+    MotDePasse VARCHAR(30) NOT NULL,
     Pseudo VARCHAR(30) NOT NULL, -- clé primaire
     AdresseMail VARCHAR(320) NOT NULL, -- 320 = 64 (avant @) + 1 (@) + 255 (apres @)
-    MotDePasse VARCHAR(30) NOT NULL,
     Description_user TEXT default NULL, -- pas de foreign key vers Admin car on stocke pas de "supprime"
 
     PRIMARY KEY (Pseudo)
@@ -29,7 +29,7 @@ LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/users.txt'
 INTO TABLE Utilisateur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(@ignore, Pseudo, AdresseMail, MotDePasse);
+(@ignore, MotDePasse, Pseudo, AdresseMail);
 
 
 -- ============================ TABLE ADMIN ============================
