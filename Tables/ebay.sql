@@ -6,9 +6,6 @@ USE Ebay;
 
 SET NAMES utf8;
 
--- Pour importer données des fichiers XML: 
--- https://stackoverflow.com/questions/5491056/how-to-import-xml-file-into-mysql-database-table-using-xml-load-function
-
 -- ============================ TABLE UTILISATEUR ============================
 DROP TABLE IF EXISTS Utilisateur;
 
@@ -262,4 +259,8 @@ CREATE TABLE Suppression (
     
 );
 
-
+LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/items.txt'
+INTO TABLE Objet
+FIELDS TERMINATED BY ', '
+LINES TERMINATED BY '\n'
+(@ignore, Vendeur, Titre, Description_obj, @ignore, PrixMin, DateMiseEnVente);
