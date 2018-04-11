@@ -131,6 +131,7 @@ LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/items.txt'
 INTO TABLE Objet
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n'
+IGNORE 1 LINES
 (ItemID, SellerID, Titre, Description_obj, @ignore, PrixMin, DateMiseEnVente);
 
 
@@ -170,16 +171,21 @@ CREATE TABLE Evaluation (
 );
 
 
+-- LOAD XML LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/reviews.xml' 
+-- INTO TABLE Evaluation
+-- ROWS IDENTIFIED BY '<Review>';
+
+
 
 -- ============================ TABLE CATEGORIE ============================
 DROP TABLE IF EXISTS Categorie;
 
 CREATE TABLE Categorie (
     
-    Titre VARCHAR(30) NOT NULL, -- clé primaire
+    Titre VARCHAR(30) NOT NULL default 'Default', -- clé primaire
     Description_cat TEXT default '',
     -- PseudoAdmin VARCHAR(30) NOT NULL, -- foreign key
-    AdminID INT UNSIGNED NOT NULL, -- foreign key
+    AdminID INT UNSIGNED, -- foreign key
 
     -- CONTRAINTES D'INTEGRITE
 
@@ -193,15 +199,6 @@ CREATE TABLE Categorie (
 );
 
 
--- =========================== ITEMS.TXT > OBJET ===================
-
-LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/items.txt'
-INTO TABLE Categorie
-FIELDS TERMINATED BY ', '
-LINES TERMINATED BY '\n'
-(@ignore, @ignore, @ignore, @ignore, Titre, @ignore, @ignore);
-
-
 
 
 -- ============================ TABLE PROP ACHAT ============================
@@ -209,16 +206,12 @@ DROP TABLE IF EXISTS PropositionAchat;
 
 CREATE TABLE PropositionAchat (
     
-    -- TitreObjet CHAR(30) NOT NULL, -- clé primaire
     ItemID INT UNSIGNED NOT NULL, -- clé primaire
-    -- AcheteurPotentiel VARCHAR(30),
+    DateProp DATE,
     AcheteurPotentiel INT UNSIGNED NOT NULL,
     PrixPropose DECIMAL(6,2) NOT NULL,
-    -- Etat TINYINT(1) NOT NULL,
     Etat VARCHAR(10) NOT NULL, -- True ou False
-    -- TitreObj CHAR(30) NOT NULL, -- foreign key
-    -- PseudoUser VARCHAR(30) NOT NULL, -- foreign key
-    UserID INT UNSIGNED NOT NULL, -- foreign key
+    UserID INT UNSIGNED default '0', -- foreign key
     
     PRIMARY KEY (ItemID),
 
@@ -233,6 +226,16 @@ CREATE TABLE PropositionAchat (
 );
 
 
+-- ================ PROPOSITION.XML > PROPOSITIONACHAT=====================
+
+LOAD XML LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/propositions.xml' 
+INTO TABLE PropositionAchat
+ROWS IDENTIFIED BY '<Proposition>';
+
+
+
+
+-- ============================ TABLE MODIFICATION ============================
 DROP TABLE IF EXISTS Modification; -- Un admin modifie (0,n) catégorie(s)
 
 CREATE TABLE Modification (
@@ -259,6 +262,7 @@ CREATE TABLE Modification (
 
 
 
+-- ============================ TABLE APPARTENANCE ============================
 DROP TABLE IF EXISTS Appartenance; -- Un objet appartient a (1,n) catégorie(s)
 
 CREATE TABLE Appartenance (
@@ -284,6 +288,7 @@ CREATE TABLE Appartenance (
 
 
 
+-- ============================ TABLE SUPPRESSION ============================
 DROP TABLE IF EXISTS Suppression; -- Un objet appartient a (1,n) catégorie(s)
 
 CREATE TABLE Suppression (
