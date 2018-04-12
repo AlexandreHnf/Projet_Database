@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS Ebay;
 
-CREATE DATABASE Ebay; -- création de la base de données
+CREATE DATABASE Ebay CHARACTER SET utf8; -- création de la base de données
 
 USE Ebay;
 
