@@ -141,39 +141,36 @@ IGNORE 1 LINES
 DROP TABLE IF EXISTS Evaluation;
 
 CREATE TABLE Evaluation (
-    
-    Numero INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, -- clé primaire
-    Note SMALLINT NOT NULL,
-    Date_eval DATETIME NOT NULL,
+    /*
+    Numero INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, -- clé primaire  
+    */
+    Buyer INT UNSIGNED NOT NULL,
+    Seller INT UNSIGNED NOT NULL,
+    Time DATE,
+    Rate SMALLINT NOT NULL,
     Commentaire TEXT default '',
-    -- TitreObj CHAR(30) NOT NULL, -- foreign key
-    -- PseudoVendeur VARCHAR(30) NOT NULL, -- foreign key
-    -- PseudoUser VARCHAR(30) NOT NULL, -- foreign key
-    ItemID INT UNSIGNED NOT NULL, -- foreign key
-    SellerID INT UNSIGNED NOT NULL, -- foreign key
-    UserID INT UNSIGNED NOT NULL, -- foreign key
+    ItemID INT UNSIGNED,
 
     -- CONTRAINTES D'INTEGRITE
 
-    CONSTRAINT fk_obj_eval                -- On donne un nom à notre clé
-        FOREIGN KEY (ItemID)            -- Colonne sur laquelle on crée la clé
-        REFERENCES Objet(ItemID),          -- Colonne de référence
+    CONSTRAINT fk_buyer          
+        FOREIGN KEY (Buyer)         
+        REFERENCES Utilisateur(UserID),
 
-    CONSTRAINT fk_eval_vendeur                
-        FOREIGN KEY (SellerID)      
-        REFERENCES Vendeur(SellerID),       
+    CONSTRAINT fk_seller          
+        FOREIGN KEY (Seller)         
+        REFERENCES Vendeur(SellerID),
 
-    CONSTRAINT fk_eval_user            
-        FOREIGN KEY (UserID)         
-        REFERENCES Utilisateur(UserID)   
-
+    CONSTRAINT fk_item          
+        FOREIGN KEY (ItemID)         
+        REFERENCES Objet(ItemID)
 
 );
 
 
--- LOAD XML LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/reviews.xml' 
--- INTO TABLE Evaluation
--- ROWS IDENTIFIED BY '<Review>';
+LOAD XML LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/reviews.xml' 
+INTO TABLE Evaluation
+ROWS IDENTIFIED BY '<Review>';
 
 
 
@@ -207,7 +204,7 @@ CREATE TABLE PropositionAchat (
     
     ItemID INT UNSIGNED NOT NULL, -- clé primaire
     Time DATE,
-    Buyer INT UNSIGNED NOT NULL,
+    Buyer INT UNSIGNED NOT NULL, -- foreign key
     price DECIMAL(6,2) NOT NULL,
     accepted VARCHAR(10) NOT NULL, -- True ou False
     /*
@@ -218,13 +215,13 @@ CREATE TABLE PropositionAchat (
 
     CONSTRAINT fk_obj_prop          
         FOREIGN KEY (ItemID)         
-        REFERENCES Objet(ItemID)
+        REFERENCES Objet(ItemID),
 
-    /*
+    
     CONSTRAINT fk_user_prop          
-        FOREIGN KEY (UserID)         
+        FOREIGN KEY (Buyer)         
         REFERENCES Utilisateur(UserID)
-    */
+    
 
 );
 
