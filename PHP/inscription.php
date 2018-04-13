@@ -20,8 +20,10 @@
         <?php
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
             $pseudo = $_POST['pseudo'];
             $password = $_POST['motdepasse'];
+            $hashed = SHA1($password);
             $age = $_POST['age'];
             $email = $_POST['email'];
 
@@ -36,12 +38,12 @@
 
             include("database.php");
 
+            // Check avec la database
             $req = $bdd->prepare('SELECT Pseudo FROM Utilisateur WHERE Pseudo = ?');
             $req->execute(array($pseudo));
             $donnees = $req->fetch();
-
             
-            if ($donnees) {
+            if ($donnees) { // Si deja dans la db
                 $errors[] = "Pseudo deja pris !";
             }
 
@@ -57,14 +59,14 @@
                 $_SESSION['pseudo'] = $pseudo; // variable de session
                                                // donc accessible partout
 
-                // $req2 = $bdd->prepare('INSERT INTO Utilisateur(Pseudo, MotDePasse, Age, Email) 
-                //     VALUES(:pseudo, :mdp, :age, :email)');
-                // $req2->execute(array(    
-                //     'pseudo' => $pseudo,
-                //     'mdp' => $password,
-                //     'age' => $age,
-                //     'email' => $email
-                // ));
+                $req2 = $bdd->prepare('INSERT INTO Utilisateur(Pseudo, MotDePasse, AdresseMail) 
+                    VALUES(:pseudo, :mdp, :email)');
+                $req2->execute(array(    
+                    'pseudo' => $pseudo,
+                    'mdp' => $hashed,
+                    'email' => $email
+                ));
+
 
                 header('location: accueil.php');
                 exit;

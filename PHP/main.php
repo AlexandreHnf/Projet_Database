@@ -11,8 +11,10 @@
 
    <body>
         <h2>Welcome ! Ebay du bled </h2>
+
         <?php include("database.php");
 
+        // QUELQUES TESTS
 		$reponse = $bdd->query('SELECT * FROM Utilisateur');
 
 		// On affiche chaque entrée une à une

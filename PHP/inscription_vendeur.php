@@ -38,17 +38,25 @@
             }
 
             else {
-                // mysql_query("INSERT INTO USR_INFO (NAME, MAIL, SURNAME) 
-				//              VALUES ('$name', '$email','$surName') ") or die(mysql_error());
 				include("database.php");
 
 				$req = $bdd->prepare('SELECT UserID FROM Utilisateur WHERE Pseudo = ?');
 				$req->execute(array($_SESSION['pseudo']));
 				$donnees = $req->fetch();
 
-				// INSERT AVEC L'ID RECUPERE JUSTE AVANT
+                // $req2 = $bdd->prepare('INSERT INTO Vendeur(SellerID, Nom, Prenom, 
+                       //DateNaissance, Adresse) 
+                //     VALUES(:SellerID, :Nom, :Prenom, :DateNaissance, :Adresse)');
+                // $req2->execute(array(    
+                //     'SellerID' => donnees['UserID'],
+                //     'Nom' => $nom,
+                //     'Prenom' => $prenom,
+                //     'DateNaissance' => $birthday,
+                //     'Adresse' => $adresse,
+                // ));
 
-				//$reponse->closeCursor(); // Termine le traitement de la requête
+                //$req->closeCursor(); // Termine le traitement de la requête
+                //$req2->closeCursor(); // Termine le traitement de la requête
 
                 header('location: accueil.php');
                 exit;
