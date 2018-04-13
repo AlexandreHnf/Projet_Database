@@ -22,6 +22,7 @@
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$pseudo = $_POST['pseudo'];
 			$mdp = $_POST['motdepasse'];
+			$hashed_mdp = SHA1($mdp);
 
 			$errors = array(); // liste d'erreurs (messages)
 			
@@ -33,12 +34,12 @@
 
             $req = $bdd->prepare('SELECT Pseudo, MotDePasse FROM Utilisateur 
 								WHERE Pseudo = ? AND MotDePasse = ?');
-            $req->execute(array($pseudo, $mdp));
+            $req->execute(array($pseudo, $hashed_mdp)); // avec mdp hashé
             $donnees = $req->fetch();
 
             
-            if (!$donnes) { // Si pas dans la db
-                $errors[] = "Pseudo ou mot de passe incorrect !";
+            if (!$donnees) { // Si pas dans la db
+                $errors[] = "Vous n'avez pas encore de compte ou vos données sont erronées !";
             }
 
             $req->closeCursor(); // Termine le traitement de la requête
@@ -50,7 +51,7 @@
 			}
 
 			else {
-				$_SESSION['pseudo'] = $_POST['pseudo']; // variable de session
+				$_SESSION['pseudo'] = $pseudo; // variable de session
                                                         // donc accessible partout
 				header('location: accueil.php');
 				exit;
@@ -59,7 +60,7 @@
 
 		?>		
 		
-		<form action="accueil.php" method="post">
+		<form action="connexion.php" method="post">
 			<p>
 				Pseudo:<br>
 				<input type="text" name="pseudo" /> <br />

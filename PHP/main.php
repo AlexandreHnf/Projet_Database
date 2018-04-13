@@ -28,8 +28,11 @@
         $req->execute(array($pseudo));
         $donnees2 = $req->fetch();
 
+        $hashed = SHA1('Samus32');
         if ($donnees2) {
-            echo "yeah";
+            echo "yeah ";
+            echo $hashed;
+            echo "   " . $donnees2['MotDePasse'];
         }
 
         $req->closeCursor(); // Termine le traitement de la requête
