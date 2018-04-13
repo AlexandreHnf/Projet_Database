@@ -40,7 +40,6 @@ LINES TERMINATED BY '\n'
 
 
 
-
 -- ============================ TABLE ADMIN ============================
 DROP TABLE IF EXISTS Administrateur;
 
@@ -68,7 +67,7 @@ CREATE TABLE Vendeur (
     SellerID INT UNSIGNED NOT NULL, -- clé primaire et foreign key
     Nom CHAR(30) NOT NULL,
     Prenom CHAR(30) NOT NULL,
-    DateNaissance DATE NOT NULL,
+    DateNaissance TEXT NOT NULL,
     Adresse TEXT NOT NULL,
 
     -- CONTRAINTES D'INTEGRITE
@@ -99,7 +98,6 @@ CREATE TABLE Categorie (
     Titre VARCHAR(100) NOT NULL, -- clé primaire
     Description_cat TEXT NOT NULL,
     AdminID INT UNSIGNED, -- foreign key
-    AdminIDLastModification INT UNSIGNED,
 
     -- CONTRAINTES D'INTEGRITE
 
@@ -108,18 +106,13 @@ CREATE TABLE Categorie (
 
     CONSTRAINT fk_admin_cat           
         FOREIGN KEY (AdminID)         
-        REFERENCES Administrateur(AdminID),
-    
-    CONSTRAINT fk_madmin_cat           
-        FOREIGN KEY (AdminIDLastModification)         
         REFERENCES Administrateur(AdminID)
-    
 
 );
 
 -- Ajout de la Categorie par défaut Default
 INSERT INTO Categorie
-VALUES ('Default', 'Catégorie par défaut', NULL, NULL);
+VALUES ('Default', 'Catégorie par défaut', NULL);
 
 
 -- ============================ TABLE OBJET ============================
@@ -205,9 +198,6 @@ CREATE TABLE PropositionAchat (
     Buyer INT UNSIGNED NOT NULL, -- foreign key
     price DECIMAL(6,2) NOT NULL,
     accepted VARCHAR(10) NOT NULL, -- True ou False
-    /*
-    UserID INT UNSIGNED default '0', -- foreign key
-    */
 
     PRIMARY KEY (ItemID),
 
@@ -238,8 +228,7 @@ DROP TABLE IF EXISTS Modification; -- Un admin modifie (0,n) catégorie(s)
 
 CREATE TABLE Modification (
 
-    TitreCategorie VARCHAR(30) NOT NULL default '',
-    -- PseudoAdmin VARCHAR(30) NOT NULL default '', 
+    TitreCategorie VARCHAR(30) NOT NULL default '', 
     AdminID INT UNSIGNED NOT NULL,
     -- 2 foreign keys qui forment la clé primaire
     DateModif DATETIME NOT NULL,
@@ -256,34 +245,6 @@ CREATE TABLE Modification (
 
     
 );
-
-
-
-
--- ============================ TABLE APPARTENANCE ============================
-DROP TABLE IF EXISTS Appartenance; -- Un objet appartient a (1,n) catégorie(s)
-
-CREATE TABLE Appartenance (
-
-    -- TitreObj CHAR(30) NOT NULL default '',
-    ItemID INT UNSIGNED NOT NULL, 
-    TitreCategorie VARCHAR(30) NOT NULL default '', 
-    -- 2 foreign keys qui forment la clé primaire
-
-    PRIMARY KEY(ItemID, TitreCategorie),
-
-    CONSTRAINT fk_titre_app
-        FOREIGN KEY (ItemID)
-        REFERENCES Objet(ItemID),
-
-    CONSTRAINT fk_cat_app
-        FOREIGN KEY (TitreCategorie)
-        REFERENCES Categorie(Titre)
-
-    
-);
-
-
 
 
 -- ============================ TABLE SUPPRESSION ============================
