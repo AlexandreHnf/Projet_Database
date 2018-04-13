@@ -24,7 +24,15 @@
         $donnees3 = $req3->fetch();
 
         if ($donnees3) {
-            echo "mail de a: " . $donnees3['AdresseMail'];
+            echo "mail de a: " . $donnees3['AdresseMail'] . "<br>";
+        }
+
+        $req4 = $bdd->prepare('SELECT Nom, Prenom FROM Vendeur WHERE Nom = ?');
+        $req4->execute(array('a3'));
+        $donnees4 = $req4->fetch();
+
+        if ($donnees4) {
+            echo "nom et prenom du vendeur a3: " . $donnees4['Nom'] . " " . $donnees4['Prenom'];
         }
 		?>
 
