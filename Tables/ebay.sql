@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS Utilisateur;
 CREATE TABLE Utilisateur (
     
     UserID INT UNSIGNED NOT NULL AUTO_INCREMENT, -- clé primaire
-    MotDePasse VARCHAR(30) NOT NULL,
+    MotDePasse VARCHAR(255) NOT NULL,
     Pseudo VARCHAR(30) NOT NULL, 
     AdresseMail VARCHAR(255) NOT NULL, 
     Description_user TEXT default '',
@@ -28,15 +28,16 @@ LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/users.txt'
 INTO TABLE Utilisateur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(UserID, MotDePasse, Pseudo, AdresseMail);
-
+(UserID, MotDePasse, Pseudo, AdresseMail)
+set MotDePasse = SHA1(MotDePasse);
 -- =========================== SELLERS.TXT > UTILISATEUR ===================
 
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
 INTO TABLE Utilisateur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(UserID, @ignore, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail);
+(UserID, @ignore, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail)
+set MotDePasse = MotDePasse;
 
 
 
