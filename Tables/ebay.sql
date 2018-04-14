@@ -68,7 +68,7 @@ CREATE TABLE Vendeur (
     SellerID INT UNSIGNED NOT NULL, -- clé primaire et foreign key
     Nom CHAR(30) NOT NULL,
     Prenom CHAR(30) NOT NULL,
-    DateNaissance TEXT NOT NULL,
+    DateNaissance DATE NOT NULL,
     Adresse TEXT NOT NULL,
 
     -- CONTRAINTES D'INTEGRITE
@@ -88,8 +88,8 @@ LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
 INTO TABLE Vendeur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(SellerID, Prenom, Nom, @ignore, @ignore, DateNaissance, Adresse, @ignore);
-
+(SellerID, Prenom, Nom, @ignore, @ignore, @date, Adresse, @ignore)
+SET DateNaissance = STR_TO_DATE(@date, '%d-%m-%Y ');
 
 -- ============================ TABLE CATEGORIE ============================
 DROP TABLE IF EXISTS Categorie;
@@ -129,9 +129,7 @@ CREATE TABLE Objet (
     DateVente DATE,
     Acheteur VARCHAR(30),
     SellerID INT UNSIGNED NOT NULL, -- foreign key
-    -- On stocke plus AdminPseudo du coup vu qu'on sauve pas les supprime
     Categorie VARCHAR(255) NOT NULL default 'Default',
-
 
     -- CONTRAINTES D'INTEGRITE
     PRIMARY KEY (ItemID),
