@@ -34,9 +34,45 @@
         if ($donnees4) {
             echo "nom et prenom du vendeur a3: " . $donnees4['Nom'] . " " . $donnees4['Prenom'];
         }
-		?>
 
+        if (isset($_SESSION['pseudo']) && isSeller($_SESSION['pseudo'])) {
+            $req5 = $bdd->prepare(' SELECT v.SellerID 
+                                    FROM Vendeur v, Utilisateur u 
+                                    WHERE v.SellerID = u.UserID AND u.Pseudo = ?'
+                                );
+            $req5->execute(array($_SESSION['pseudo']));
+            $donnee5 = $req5->fetch();
+        ?>
+        <p> <a href="ajoutObjet.php">Mettre un objet en vente</a></p>
+        <?php   
+        }
+
+        else
+        {
+        ?>
         <p> <a href="inscription_vendeur.php">Devenir vendeur !</a></p>
+        <?php
+        }
+        ?>
         <p> <a href="deconnexion.php">Se déconnecter</a></p>
     </body>
 </html>
+
+
+<?php
+
+function isSeller($pseudo)
+{
+    include("database.php");
+    $test = $bdd->prepare(' SELECT v.SellerID 
+                            FROM Vendeur v, Utilisateur u 
+                            WHERE v.SellerID = u.UserID AND u.Pseudo = ?'
+                        );
+
+    $test->execute(array($_SESSION['pseudo']));
+    $res = $test->fetch();
+    
+    return isset($res['SellerID']);
+}
+
+?>

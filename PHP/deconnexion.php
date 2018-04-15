@@ -14,7 +14,7 @@
 
         <?php 
         if (isset($_SESSION['pseudo'])) {
-            echo '<p> Aurevoir '. htmlspecialchars($_SESSION['pseudo']).'!</p>';
+            echo '<p> Au revoir '. htmlspecialchars($_SESSION['pseudo']).'!</p>';
         }
         ?>
 
