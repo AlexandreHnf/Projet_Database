@@ -19,6 +19,8 @@
 		
 		<?php
 
+        include("database.php");
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $nom = $_POST['nom'];
             $prenom = $_POST['prenom'];
@@ -31,6 +33,15 @@
                 $errors[] = "Vous n'avez pas complété tous les champs !";
             }
 
+            $verif = $bdd->prepare('SELECT SellerID FROM Vendeur WHERE Nom = ? AND
+                                    Prenom = ?');
+            $verif->execute(array($nom, $prenom));
+            $res = $verif->fetch();
+
+            if ($res) { // Si deja dans la database
+                $errors[] = "Vous êtes deja vendeur !";
+            }
+
             if (count($errors) > 0) { // Si erreurs
                 echo '<p Nous avons rencontré des problèmes avec vos informations : </p>';
                 foreach($errors as $e)
@@ -38,7 +49,6 @@
             }
 
             else {
-				include("database.php");
 
 				$req = $bdd->prepare('SELECT UserID FROM Utilisateur WHERE Pseudo = ?');
 				$req->execute(array($_SESSION['pseudo']));
