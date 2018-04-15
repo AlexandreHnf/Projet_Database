@@ -1,60 +1,59 @@
-<?php 
-    session_start();  // On démarre la session
-?> 
-
+<?php
+  session_start();  // On démarre la session
+  include('database.php');
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/style.css">
         <title>Accueil</title>
     </head>
 
     <body>
-        <h2>Accueil</h2>
+        <header>
+          <?php include("menu.php"); ?>
+        </header>
+        <div class="section">
+          <div class="produits">
+            <h2>Les derniers ajouts</h2>
+            <ul>
+              <?php
+                $liste = $bdd->query('SELECT Titre FROM objet ORDER BY objet.DateMiseEnVente DESC LIMIT 0,10');/*'SELECT COUNT(ItemID) AS nb_vente,ItemID FROM propositionachat WHERE accepted = \'True\' GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,20')*/;
+                while($donne = $liste->fetch()){
+                  echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
+                }
+                $liste->closeCursor();
+                ?>
+            </ul>
+          </div>
 
-        <?php
+          <div class="produits">
+            <h2>Les plus vendu</h2>
+            <ul>
+              <?php
+                $liste = $bdd->query('SELECT COUNT(propositionachat.ItemID) AS nb_vente,propositionachat.ItemID,Titre FROM propositionachat,objet WHERE accepted = \'True\' AND objet.ItemID = propositionachat.ItemID GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,10' );
+                while($donne = $liste->fetch()){
+                  echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
+                }
+                $liste->closeCursor();
+              ?>
+            </ul>
+          </div>
 
-        if (isset($_SESSION['pseudo'])) {
-            echo '<p> Bonjour '. htmlspecialchars($_SESSION['pseudo']).'!</p>';
-        }
-
-        include("database.php");
-        $req3 = $bdd->prepare('SELECT Pseudo, AdresseMail FROM Utilisateur WHERE Pseudo = ?');
-        $req3->execute(array('a'));
-        $donnees3 = $req3->fetch();
-
-        if ($donnees3) {
-            echo "mail de a: " . $donnees3['AdresseMail'] . "<br>";
-        }
-
-        $req4 = $bdd->prepare('SELECT Nom, Prenom FROM Vendeur WHERE Nom = ?');
-        $req4->execute(array('a3'));
-        $donnees4 = $req4->fetch();
-
-        if ($donnees4) {
-            echo "nom et prenom du vendeur a3: " . $donnees4['Nom'] . " " . $donnees4['Prenom'];
-        }
-
-        if (isset($_SESSION['pseudo']) && isSeller($_SESSION['pseudo'])) {
-            $req5 = $bdd->prepare(' SELECT v.SellerID 
-                                    FROM Vendeur v, Utilisateur u 
-                                    WHERE v.SellerID = u.UserID AND u.Pseudo = ?'
-                                );
-            $req5->execute(array($_SESSION['pseudo']));
-            $donnee5 = $req5->fetch();
-        ?>
-        <p> <a href="ajoutObjet.php">Mettre un objet en vente</a></p>
-        <?php   
-        }
-
-        else
-        {
-        ?>
-        <p> <a href="inscription_vendeur.php">Devenir vendeur !</a></p>
-        <?php
-        }
-        ?>
-        <p> <a href="deconnexion.php">Se déconnecter</a></p>
+          <div class="produits">
+            <h2>De nos meilleurs vendeurs</h2>
+            <ul>
+              <?php
+                $liste = $bdd->query('SELECT AVG(Rate) AS eval_moyen,Seller,Titre FROM evaluation,objet WHERE evaluation.Seller = objet.SellerID GROUP BY Seller ORDER BY eval_moyen DESC LIMIT 0,10');
+                while($donne = $liste->fetch()){
+                  echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
+                }
+                $liste->closeCursor();
+              ?>
+           </ul>
+          </div>
+        </div>
     </body>
 </html>
 
