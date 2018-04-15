@@ -6,7 +6,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title><?php echo "recherche \"" . htmlspecialchars($_POST['recherche']) ."\""; ?></title>
   </head>
   <body>
@@ -21,7 +21,7 @@
           <h5>Catégorie</h5>
           <select name="categorie">
             <?php
-              $categories = $bdd->query('SELECT Titre FROM categorie');
+              $categories = $bdd->query('SELECT Titre FROM Categorie');
               while($donne = $categories->fetch()){
                 echo "<option value= \"".$donne['Titre']. "\">" .$donne['Titre']. "</option>";
               }
@@ -52,7 +52,7 @@
         <?php
           if(isset($_POST['Prix'])){echo"lol";}
           else{
-            $recherche = $bdd->prepare('SELECT * FROM objet WHERE ?');
+            $recherche = $bdd->prepare('SELECT * FROM Objet WHERE ?');
           }
         ?>
       </div>

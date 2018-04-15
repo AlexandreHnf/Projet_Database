@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>Accueil</title>
     </head>
 
@@ -19,7 +19,7 @@
             <h2>Les derniers ajouts</h2>
             <ul>
               <?php
-                $liste = $bdd->query('SELECT Titre FROM objet ORDER BY objet.DateMiseEnVente DESC LIMIT 0,10');/*'SELECT COUNT(ItemID) AS nb_vente,ItemID FROM propositionachat WHERE accepted = \'True\' GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,20')*/;
+                $liste = $bdd->query('SELECT Titre FROM Objet ORDER BY Objet.DateMiseEnVente DESC LIMIT 0,10');/*'SELECT COUNT(ItemID) AS nb_vente,ItemID FROM PropositionAchat WHERE accepted = \'True\' GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,20')*/;
                 while($donne = $liste->fetch()){
                   echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
                 }
@@ -32,7 +32,7 @@
             <h2>Les plus vendu</h2>
             <ul>
               <?php
-                $liste = $bdd->query('SELECT COUNT(propositionachat.ItemID) AS nb_vente,propositionachat.ItemID,Titre FROM propositionachat,objet WHERE accepted = \'True\' AND objet.ItemID = propositionachat.ItemID GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,10' );
+                $liste = $bdd->query('SELECT COUNT(PropositionAchat.ItemID) AS nb_vente,PropositionAchat.ItemID,Titre FROM PropositionAchat,Objet WHERE accepted = \'True\' AND Objet.ItemID = PropositionAchat.ItemID GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,10' );
                 while($donne = $liste->fetch()){
                   echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
                 }
@@ -45,7 +45,7 @@
             <h2>De nos meilleurs vendeurs</h2>
             <ul>
               <?php
-                $liste = $bdd->query('SELECT AVG(Rate) AS eval_moyen,Seller,Titre FROM evaluation,objet WHERE evaluation.Seller = objet.SellerID GROUP BY Seller ORDER BY eval_moyen DESC LIMIT 0,10');
+                $liste = $bdd->query('SELECT AVG(Rate) AS eval_moyen,Seller,Titre FROM Evaluation,Objet WHERE Evaluation.Seller = Objet.SellerID GROUP BY Seller ORDER BY eval_moyen DESC LIMIT 0,10');
                 while($donne = $liste->fetch()){
                   echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
                 }

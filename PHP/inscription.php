@@ -24,16 +24,12 @@
             $pseudo = $_POST['pseudo'];
             $password = $_POST['motdepasse'];
             $hashed = SHA1($password);
-            $age = $_POST['age'];
             $email = $_POST['email'];
 
             $errors = array(); // liste d'erreurs (messages)
             
-            if (empty($pseudo) or empty($password) or empty($age) or empty($email)) {
+            if (empty($pseudo) or empty($password) or empty($email)) {
                 $errors[] = "Vous n'avez pas complété tous les champs !";
-            }
-            if (!empty($age) and $age < 18) {
-                $errors[] = "Vous n'êtes pas majeur !";
             }
 
             include("database.php");
@@ -82,8 +78,6 @@
                 <input type="text" name="pseudo" /> <br /> 
 				Mot de passe: <br />
                 <input type="password" name="motdepasse" /> <br />
-                Age: <br/ >
-                <input type="number" name="age" min="1" max="100" /> <br />
                 Adresse E-mail: <br />
                 <input type="email" name="email" /> <br />
 				<input type="submit" value="S'inscrire" />

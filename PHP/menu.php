@@ -22,7 +22,7 @@
             <input type="text" name="recherche" />
             <select name="categorie">
               <?php
-                $categories = $bdd->query('SELECT Titre FROM categorie');
+                $categories = $bdd->query('SELECT Titre FROM Categorie');
                 while($donne = $categories->fetch()){
                   echo "<option value= \"".$donne['Titre']. "\">" .$donne['Titre']. "</option>";
                 }
