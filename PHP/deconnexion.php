@@ -1,30 +1,15 @@
-<?php 
-    session_start(); // On démarre la session
+<?php
+    session_start();  // On démarre la session
+    session_destroy();
+    header('Location: accueil.php');
 ?>
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Deconnexion</title>
-        <meta charset="utf-8" />
-    </head>
-
-    <body>
-        <h2>Deconnexion !</h2>
-
-        <?php 
-        if (isset($_SESSION['pseudo'])) {
-            echo '<p> Aurevoir '. htmlspecialchars($_SESSION['pseudo']).'!</p>';
-        }
-        ?>
-
-        <p> Vous avez choisi de vous déconnecter. 
-
-        <?php 
-            session_destroy(); // on détruit la session
-        ?>
-
-        <p> <a href="main.php">Revenir au menu de base<a></p>
-        
-    </body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>deconnexion</title>
+  </head>
+  <body>
+  </body>
 </html>
