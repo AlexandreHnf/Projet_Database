@@ -155,8 +155,6 @@ IGNORE 1 LINES
 (ItemID, SellerID, Titre, Description_obj, Categorie, PrixMin, DateMiseEnVente);
 
 
-
-
 -- ============================ TABLE EVALUATION ============================
 DROP TABLE IF EXISTS Evaluation;
 
