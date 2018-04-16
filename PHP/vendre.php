@@ -13,24 +13,24 @@
    <body>
         <h2> Vendre </h2> 
 
-        <p> <a href="inscription.php"> S'inscrire </a></p>
-        <p> <a href="connexion.php"> Se connecter </a></p>
-
         <?php
         $pseudo = $_SESSION['pseudo'];
         if (isset($pseudo)) {
-            $req = $bdd->prepare('SELECT SellerID FROM Vendeur 
-								WHERE Pseudo = ?'); // A MODIFIER
+            $req = $bdd->prepare('SELECT SellerID FROM Vendeur, Utilisateur
+								WHERE Vendeur.SellerID = Utilisateur.UserID
+                                AND Utilisateur.Pseudo = ?');
             $req->execute(array($pseudo));
             $donnees = $req->fetch();
 
-            if (!$donnes) {
-                echo "Vous n'êtes pas vendeur ! \n";
-                echo "<a href=\"inscription_vendeur.php\"Devenir vendeur </a>";
+            if (!$donnees) {
+                echo "Vous n'êtes pas vendeur !" . "<br>";
+                //echo "<a href=\"inscription_vendeur.php\"Devenir vendeur </a>";
+                echo "<a href='inscription_vendeur.php'> Devenir vendeur ! </a>";
             }
 
             else {
                 // vendre objets TODO
+                echo "vendre maggle";
             }
             
         }

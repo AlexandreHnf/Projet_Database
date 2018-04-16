@@ -6,7 +6,7 @@
               if(isset($_SESSION['pseudo'])){
                 echo "<li> Bonjour " . $_SESSION['pseudo'] . "</li>";
                 echo "<li><a href=# class = \"text_menu\">Profil</a></li>";
-                echo "<li><a href=# class = \"text_menu\">Vendre</a></li>";
+                echo "<li><a href=\"vendre.php\" class = \"text_menu\">Vendre</a></li>";
                 echo "<li><a href=\"deconnexion.php\" class = \"text_menu\">Se deconnecter</a></li>";
 
               }
