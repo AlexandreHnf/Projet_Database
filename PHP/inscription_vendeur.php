@@ -1,5 +1,6 @@
 <?php 
-	session_start();  // On démarre la session
+    session_start();  // On démarre la session
+    include("database.php");
 ?> 
 
 <!DOCTYPE html>
@@ -18,8 +19,6 @@
 		</p>
 		
 		<?php
-
-        include("database.php");
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $nom = $_POST['nom'];
