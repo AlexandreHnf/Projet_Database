@@ -1,3 +1,5 @@
+<?php include("function.php"); ?>
+
 <nav id="menu">
     <div class="element_menu">
         <ul>
@@ -5,9 +7,8 @@
             <?php
               if(isset($_SESSION['pseudo'])){
                 echo "<li> Bonjour " . $_SESSION['pseudo'] . "</li>";
-                echo "<li><a href=# class = \"text_menu\">Profil</a></li>";
-
-                if (isset($_SESSION['pseudo']) && isSeller($_SESSION['pseudo'])) {                
+                echo "<li><a href=testTable.php class = \"text_menu\">Profil</a></li>";
+                if (isSeller($_SESSION['pseudo'])) {                
                     echo "<li><a href=\"ajoutObjet.php\" class = \"text_menu\">Vendre</a></li>";  
                 }
         
@@ -16,31 +17,21 @@
                     echo "<li><a href=\"inscription_vendeur.php\" class = \"text_menu\">Devenir vendeur</a></li>";
                 }
 
+                if (isAdmin($_SESSION['pseudo'])) {
+                  echo "<li><a href=\"adminHandling.php\" class = \"text_menu\">Droits administrateur</a></li>";  
+                }
+
                 echo "<li><a href=\"deconnexion.php\" class = \"text_menu\">Se déconnecter</a></li>";
-
               }
-
               else{
                 echo "<li class><a href=\"connexion.php \" class = \"text_menu\">Se connecter</a></li>";
                 echo "<li><a href=\"inscription.php \" class = \"text_menu\">S'inscrire</a></li>";
               }
+
+              echo "<li><a href=\"accueil.php\" class = \"text_menu\">Accueil</a></li>";
+
             ?>
             <li><a href=# class ="text_menu">Aide</a></li>
         </ul>
-        <form action="recherche.php" method="post" id='search'>
-          <p>
-            <input type="text" name="recherche" />
-            <select name="categorie">
-              <?php
-                $categories = $bdd->query('SELECT Titre FROM Categorie');
-                while($donne = $categories->fetch()){
-                  echo "<option value= \"".$donne['Titre']. "\">" .$donne['Titre']. "</option>";
-                }
-                $categories->closeCursor();
-               ?>
-            </select>
-            <input type="submit" value="🔎" />
-          </p>
-        </form>
     </div>
 </nav>

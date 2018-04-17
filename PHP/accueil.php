@@ -13,6 +13,7 @@
     <body>
         <header>
           <?php include("menu.php"); ?>
+          <?php include("researchTool.php"); ?>
         </header>
         <div class="section">
           <div class="produits">
@@ -56,22 +57,3 @@
         </div>
     </body>
 </html>
-
-
-<?php
-
-function isSeller($pseudo)
-{
-    include("database.php");
-    $test = $bdd->prepare(' SELECT v.SellerID 
-                            FROM Vendeur v, Utilisateur u 
-                            WHERE v.SellerID = u.UserID AND u.Pseudo = ?'
-                        );
-
-    $test->execute(array($_SESSION['pseudo']));
-    $res = $test->fetch();
-    
-    return isset($res['SellerID']);
-}
-
-?>

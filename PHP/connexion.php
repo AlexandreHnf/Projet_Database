@@ -71,7 +71,7 @@
 
 		</form>
 
-		<p> <a href="main.php"> Retour </a></p>
+		<p> <a href="accueil.php"> Retour </a></p>
 
    </body>
 </html>
