@@ -22,7 +22,7 @@
               <?php
                 $liste = $bdd->query('SELECT Titre FROM Objet ORDER BY Objet.DateMiseEnVente DESC LIMIT 0,10');/*'SELECT COUNT(ItemID) AS nb_vente,ItemID FROM PropositionAchat WHERE accepted = \'True\' GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,20')*/;
                 while($donne = $liste->fetch()){
-                  echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
+                  echo "<li class = \"item\"><a href=# >" . $donne['Titre'] . "</a></li>";
                 }
                 $liste->closeCursor();
                 ?>
@@ -30,12 +30,12 @@
           </div>
 
           <div class="produits">
-            <h2>Les plus vendu</h2>
+            <h2>Les plus vendus</h2>
             <ul>
               <?php
                 $liste = $bdd->query('SELECT COUNT(PropositionAchat.ItemID) AS nb_vente,PropositionAchat.ItemID,Titre FROM PropositionAchat,Objet WHERE accepted = \'True\' AND Objet.ItemID = PropositionAchat.ItemID GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,10' );
                 while($donne = $liste->fetch()){
-                  echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
+                  echo "<li class = \"item\"><a href=#>" . $donne['Titre'] . "</a></li>";
                 }
                 $liste->closeCursor();
               ?>
@@ -48,7 +48,7 @@
               <?php
                 $liste = $bdd->query('SELECT AVG(Rate) AS eval_moyen,Seller,Titre FROM Evaluation,Objet WHERE Evaluation.Seller = Objet.SellerID GROUP BY Seller ORDER BY eval_moyen DESC LIMIT 0,10');
                 while($donne = $liste->fetch()){
-                  echo "<li><a href=# class = \"item\">" . $donne['Titre'] . "</a></li>";
+                  echo "<li class = \"item\"><a href=# >" . $donne['Titre'] . "</a></li>";
                 }
                 $liste->closeCursor();
               ?>

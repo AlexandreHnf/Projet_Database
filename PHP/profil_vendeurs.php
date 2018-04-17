@@ -11,18 +11,18 @@
    </head>
 
    <body>
-        <h2> Profil vendeurs </h2> 
-
         <?php
 
         if (isset($_GET['page']) and isset($_GET['SellerID'])) {    
             // on affiche le profil
-        
+            
             $req2 = $bdd->prepare('SELECT * FROM Vendeur, Utilisateur
                                     WHERE Vendeur.SellerID = Utilisateur.UserID
                                     AND Vendeur.SellerID = ?');
             $req2->execute(array($_GET['SellerID']));
-            $profil = $req2->fetch();
+            $profil = $req2->fetch();           
+
+            echo "<h2> Profil du vendeur</h2>";
 
             echo "ID : " . $profil['SellerID'] . "<br>";
             echo "Nom : " . $profil['Nom'] . "<br>";
@@ -33,11 +33,28 @@
             echo "Adresse mail : " . $profil["AdresseMail"] . "<br>";
             echo "Description : " . $profil["Description_user"] . "<br><br>";
 
+            $req3 = $bdd->prepare('SELECT Pseudo, Time, Rate, Commentaire 
+                                    FROM Evaluation, Utilisateur
+                                    WHERE Evaluation.Buyer = Utilisateur.UserID
+                                    AND Evaluation.Seller = ?');
+            $req3->execute(array($_GET['SellerID']));
+
+            echo "<h2> Evaluations du vendeur </h2>";
+            while ($eval = $req3->fetch()) {
+                echo "Pseudo de l'acheteur : " . $eval['Pseudo'] . "<br>";
+                echo "Date d'évaluation : " . $eval['Time'] . "<br>";
+                echo "Note : " . $eval['Rate'] . "<br>";
+                echo "Commentaire : " . $eval['Commentaire'] . "<br>";
+                echo "=============================================" . "<br>";
+            } 
+
             // affiche du lien pour retour
             echo '<a href="profil_vendeurs.php?page=' . $_GET['page'] . '">' . "Retour" . '</a> ';
         }
 
         else{ // On affiche la liste des vendeurs
+
+            echo "<h2> Liste des vendeurs </h2>";
 
             if (isset($_GET['page'])) {
                 $page = $_GET['page'];
