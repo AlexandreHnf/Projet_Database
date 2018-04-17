@@ -1,5 +1,6 @@
 <?php 
-	session_start();  // On démarre la session
+    session_start();  // On démarre la session
+    include("database.php");
 ?> 
 
 <!DOCTYPE html>
@@ -31,8 +32,6 @@
             if (empty($pseudo) or empty($password) or empty($email)) {
                 $errors[] = "Vous n'avez pas complété tous les champs !";
             }
-
-            include("database.php");
 
             // Check avec la database
             $req = $bdd->prepare('SELECT Pseudo FROM Utilisateur WHERE Pseudo = ?');

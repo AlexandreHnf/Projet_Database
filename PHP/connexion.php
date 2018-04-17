@@ -1,5 +1,6 @@
 <?php 
 	session_start();  // On démarre la session
+	include("database.php");
 ?> 
 
 <!DOCTYPE html>
@@ -29,8 +30,6 @@
 			if (empty($pseudo) or empty($mdp)) {
 				$errors[] = "Vous n'avez pas complété tous les champs !";
 			}
-
-			include("database.php");
 
             $req = $bdd->prepare('SELECT Pseudo, MotDePasse FROM Utilisateur 
 								WHERE Pseudo = ? AND MotDePasse = ?');
