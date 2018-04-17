@@ -95,8 +95,8 @@ LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
 INTO TABLE Vendeur
 FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
-(SellerID, Prenom, Nom, @ignore, @ignore, DateNaissance, Adresse, @ignore);
-
+(SellerID, Prenom, Nom, @ignore, @ignore, @date, Adresse, @ignore);
+SET DateNaissance = STR_TO_DATE(@date, '%d-%m-%Y ');
 
 
 

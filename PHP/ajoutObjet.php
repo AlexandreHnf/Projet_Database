@@ -78,6 +78,8 @@
         }
         ?>
 
+        <p> <a href="accueil.php"> Retour </a></p>
+
     </body>
     
 

@@ -13,6 +13,7 @@
     <body>
         <header>
           <?php include("menu.php"); ?>
+          <?php include("researchTool.php"); ?>
         </header>
         <div class="section">
           <div class="produits">
