@@ -1,6 +1,36 @@
 body
 {
-  background-color: rgb(244, 176, 66);
+  /*background-color: rgb(244, 176, 66);*/
+  /* background-image: url("css/fond.jpeg"); */
+  background-color: rgb(80, 80, 80);
+  /* background-color: rgb(198, 79, 0); */
+  /* background-image: linear-gradient(rgb(232,105,0), rgb(80, 80, 80)); */
+  color: rgb(255, 242, 211);
+}
+
+h2 {
+  /* background-color: #fefbd8; */
+  background-color: rgb(198, 79, 0);
+}
+
+div {
+  /* background-color: rgb(198, 79, 0);
+  background-color: rgb(80, 80, 80); */
+  color:rgb(255, 242, 211);
+}
+
+li.item a {
+  color: rgb(255, 242, 211);
+}
+
+/* Liens pas visités*/
+a:link {
+  color: rgb(255, 242, 211);
+}
+
+/* liens visités */
+a:visited {
+  color: rgb(182, 171, 147);
 }
 
 
@@ -14,7 +44,10 @@ body
 
 .text_menu
 {
-  color: rgb(250, 100, 0);
+  /* color: rgb(250, 100, 0); */
+  background-color: rgb(198, 79, 0);
+  color:rgb(0,0,0);
+  /* color: white; */
 }
 nav ul
 {

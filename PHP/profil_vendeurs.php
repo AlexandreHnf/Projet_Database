@@ -7,6 +7,7 @@
 <html>
    <head>
        <meta charset="utf-8" />
+       <link rel="stylesheet" href="css/style.css">
        <title>Profil des vendeurs</title>
    </head>
 
@@ -54,8 +55,6 @@
 
         else{ // On affiche la liste des vendeurs
 
-            echo "<h2> Liste des vendeurs </h2>";
-
             if (isset($_GET['page'])) {
                 $page = $_GET['page'];
             }
@@ -74,8 +73,9 @@
             // On calcule le nombre de pages à créer
             $nombreDePages  = ceil($total / $nb_mess_per_page);
             
+            echo "<h2> Pages </h2>";
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
-            echo 'Pages : ';
+
             for ($i = 1 ; $i <= $nombreDePages ; $i++) {
                 echo '<a href="profil_vendeurs.php?page=' . $i . '">' . $i . '</a> ';
             }
@@ -89,6 +89,8 @@
             $req1 = $bdd->query('SELECT SellerID, Nom, Prenom FROM Vendeur             
                     ORDER BY SellerID 
                     DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
+
+            echo "<h2> Liste des vendeurs </h2>";
 
             while ($seller = $req1->fetch()) {
                 $id = $seller['SellerID'];
