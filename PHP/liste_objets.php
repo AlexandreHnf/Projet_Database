@@ -7,10 +7,7 @@
 <html>
    <head>
        <meta charset="utf-8" />
-<<<<<<< HEAD
        <link rel="stylesheet" href="css/style.css">
-=======
->>>>>>> d593a4a8a43d5eda9de01f3254112c014af1fa37
        <title>Objets</title>
    </head>
 
@@ -27,14 +24,10 @@
             $req2->execute(array($_GET['ItemID']));
             $objet = $req2->fetch();
 
-<<<<<<< HEAD
             // affiche du lien pour retour
             echo '<class = \"item\"><a href="liste_objets.php?page=' . $_GET['page'] . '">' . "Retour" . '</a>';
 
             echo "<h2> Caractéristiques de l'objet </h2>";
-=======
-            echo "<h2> Détails de l'objet </h2>";
->>>>>>> d593a4a8a43d5eda9de01f3254112c014af1fa37
 
             echo "Titre : " . $objet['Titre'] . "<br>";
             echo "Description : " . $objet['Description_obj'] . "<br>";
@@ -45,7 +38,6 @@
             echo "Vendeur : " . $objet["Nom"] . " " . $objet['Prenom'] . "<br>";
             echo "Catégorie : " . $objet["Categorie"] . "<br><br>";
 
-<<<<<<< HEAD
             echo "<h2> Les propositions d'achat </h2>";
             
             $req3 = $bdd->prepare('SELECT Pseudo, Time, price, accepted
@@ -66,19 +58,10 @@
             }
             echo "========================================================" . "<br>";
 
-=======
-            // affiche du lien pour retour
-            echo '<a href="liste_objets.php?page=' . $_GET['page'] . '">' . "Retour" . '</a> ';
->>>>>>> d593a4a8a43d5eda9de01f3254112c014af1fa37
         }
 
         else{ // On affiche la liste des vendeurs
 
-<<<<<<< HEAD
-=======
-            echo "<h2> Liste des objets mis en vente </h2>";
-
->>>>>>> d593a4a8a43d5eda9de01f3254112c014af1fa37
             if (isset($_GET['page'])) {
                 $page = $_GET['page'];
             }
@@ -97,14 +80,9 @@
             // On calcule le nombre de pages à créer
             $nombreDePages  = ceil($total / $nb_mess_per_page);
             
-<<<<<<< HEAD
             echo "<h2> Pages </h2>";
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
 
-=======
-            // Puis on fait une boucle pour écrire les liens vers chacune des pages
-            echo 'Pages : ';
->>>>>>> d593a4a8a43d5eda9de01f3254112c014af1fa37
             for ($i = 1 ; $i <= $nombreDePages ; $i++) {
                 echo '<a href="liste_objets.php?page=' . $i . '">' . $i . '</a> ';
             }
@@ -119,11 +97,8 @@
                     ORDER BY ItemID 
                     DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
 
-<<<<<<< HEAD
             echo "<h2> Liste des objets mis en vente </h2>";
 
-=======
->>>>>>> d593a4a8a43d5eda9de01f3254112c014af1fa37
             while ($obj = $req1->fetch()) {
                 $id = $obj['ItemID'];
                 // print des liens
