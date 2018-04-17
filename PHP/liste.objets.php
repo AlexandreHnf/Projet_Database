@@ -7,16 +7,16 @@
 <html>
    <head>
        <meta charset="utf-8" />
-       <title>Profil des vendeurs</title>
+       <title>Objets</title>
    </head>
 
    <body>
-        <h2> Profil vendeurs </h2> 
+        <h2> Liste des objets </h2> 
 
         <?php
 
-        if (isset($_GET['page']) and isset($_GET['SellerID'])) {    
-            // on affiche le profil
+        if (isset($_GET['page']) and isset($_GET['ItemID'])) {    
+            // on affiche l'objet
         
             $req2 = $bdd->prepare('SELECT * FROM Vendeur, Utilisateur
                                     WHERE Vendeur.SellerID = Utilisateur.UserID
