@@ -8,7 +8,7 @@
               if(isset($_SESSION['pseudo'])){
                 echo "<li><a href=# class = \"text_menu\">" . $_SESSION['pseudo'] . "</a></li>";              
                 echo "<li><a href=\"profil_vendeurs.php\" class = \"text_menu\">Vendeurs</a></li>";
-                echo "<li><a href=\"objets.php\" class = \"text_menu\">Objets</a></li>";
+                echo "<li><a href=\"liste_objets.php\" class = \"text_menu\">Objets</a></li>";
 
                 if (isset($_SESSION['pseudo']) && isSeller($_SESSION['pseudo'])) {                
 
