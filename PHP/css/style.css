@@ -1,36 +1,39 @@
 body
 {
-  /*background-color: rgb(244, 176, 66);*/
-  /* background-image: url("css/fond.jpeg"); */
-  background-color: rgb(80, 80, 80);
-  /* background-color: rgb(198, 79, 0); */
-  /* background-image: linear-gradient(rgb(232,105,0), rgb(80, 80, 80)); */
-  color: rgb(255, 242, 211);
+  /* gris flat */
+  background-color: rgb(72, 84, 96);
 }
 
 h2 {
-  /* background-color: #fefbd8; */
-  background-color: rgb(198, 79, 0);
+  /* background-color: rgb(198, 79, 0); */
+  background-color: rgb(52, 172, 224);
+  display:inline-block;
+  height:30px;
 }
 
 div {
-  /* background-color: rgb(198, 79, 0);
-  background-color: rgb(80, 80, 80); */
-  color:rgb(255, 242, 211);
+  color: white;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
 li.item a {
-  color: rgb(255, 242, 211);
+  color: white;
 }
 
 /* Liens pas visités*/
 a:link {
-  color: rgb(255, 242, 211);
+  color: white;
 }
 
 /* liens visités */
 a:visited {
-  color: rgb(182, 171, 147);
+  color: white;
 }
 
 
@@ -44,24 +47,71 @@ a:visited {
 
 .text_menu
 {
-  /* color: rgb(250, 100, 0); */
-  background-color: rgb(198, 79, 0);
-  color:rgb(0,0,0);
-  /* color: white; */
+  color: white;
 }
+
+li a:hover {
+  /* background-color: rgb(52, 172, 224); */
+}
+
+li.item a:hover {
+
+  border-radius: 15px;
+  box-shadow: 0px 0px 100px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.1);   
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
+}
+
+#rcorners1 { /* Box arrondi pour englober un texte */
+
+  border-radius: 15px;
+  background: rgba(16, 13, 13, 0.193);
+  padding: 15px;
+  width:1200px;
+  height:20px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1); 
+    
+} 
+
+li.item {
+  list-style:none;
+  padding-left: 160px;
+}
+
 nav ul
 {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+  overflow: hidden;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(16, 13, 13, 0.193);
+  /* width: 100%;
+  top: 0;
+  position: fixed; */
+  /* position: sticky; */
 }
 
 nav li
 {
-    margin-right: 15px;
+    margin-right: 30px;
 }
+
 
 #search
 {
