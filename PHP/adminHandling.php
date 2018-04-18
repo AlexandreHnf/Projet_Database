@@ -17,7 +17,7 @@
 
         <?php
             echo "<li><a href=addAdmin.php \" class = \"text_menu\">Ajouter un administrateur</a></li><br />";
-            echo "<li><a href=# \" class = \"text_menu\">Supprimer un compte</a></li><br />";
+            echo "<li><a href=suppressAccount.php \" class = \"text_menu\">Supprimer un compte</a></li><br />";
             echo "<li><a href=# \" class = \"text_menu\">Modifier une catégorie</a></li><br />";
             echo "<li><a href=# \" class = \"text_menu\">Supprimer un article</a></li><br />";
             echo "<li><a href=# \" class = \"text_menu\">Consulter les historiques</a></li><br />";
