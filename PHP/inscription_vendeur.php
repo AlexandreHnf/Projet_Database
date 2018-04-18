@@ -7,6 +7,7 @@
 <html>
    <head>
        <meta charset="utf-8" />
+       <link rel="stylesheet" href="css/style.css">
        <title>devenir vendeur</title>
    </head>
 
@@ -89,7 +90,7 @@
 
 		</form>
 
-		<p> <a href="vendre.php"> Retour </a></p>
+		<p> <a href="accueil.php"> Retour </a></p>
 
    </body>
 </html>

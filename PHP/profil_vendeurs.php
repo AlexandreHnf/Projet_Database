@@ -7,22 +7,23 @@
 <html>
    <head>
        <meta charset="utf-8" />
+       <link rel="stylesheet" href="css/style.css">
        <title>Profil des vendeurs</title>
    </head>
 
    <body>
-        <h2> Profil vendeurs </h2> 
-
         <?php
 
         if (isset($_GET['page']) and isset($_GET['SellerID'])) {    
             // on affiche le profil
-        
+            
             $req2 = $bdd->prepare('SELECT * FROM Vendeur, Utilisateur
                                     WHERE Vendeur.SellerID = Utilisateur.UserID
                                     AND Vendeur.SellerID = ?');
             $req2->execute(array($_GET['SellerID']));
-            $profil = $req2->fetch();
+            $profil = $req2->fetch();           
+
+            echo "<h2> Profil du vendeur</h2>";
 
             echo "ID : " . $profil['SellerID'] . "<br>";
             echo "Nom : " . $profil['Nom'] . "<br>";
@@ -32,6 +33,21 @@
             echo "Adresse : " . $profil["Adresse"] . "<br>";
             echo "Adresse mail : " . $profil["AdresseMail"] . "<br>";
             echo "Description : " . $profil["Description_user"] . "<br><br>";
+
+            $req3 = $bdd->prepare('SELECT Pseudo, Time, Rate, Commentaire 
+                                    FROM Evaluation, Utilisateur
+                                    WHERE Evaluation.Buyer = Utilisateur.UserID
+                                    AND Evaluation.Seller = ?');
+            $req3->execute(array($_GET['SellerID']));
+
+            echo "<h2> Evaluations du vendeur </h2>";
+            while ($eval = $req3->fetch()) {
+                echo "Pseudo de l'acheteur : " . $eval['Pseudo'] . "<br>";
+                echo "Date d'évaluation : " . $eval['Time'] . "<br>";
+                echo "Note : " . $eval['Rate'] . "<br>";
+                echo "Commentaire : " . $eval['Commentaire'] . "<br>";
+                echo "=============================================" . "<br>";
+            } 
 
             // affiche du lien pour retour
             echo '<a href="profil_vendeurs.php?page=' . $_GET['page'] . '">' . "Retour" . '</a> ';
@@ -57,11 +73,14 @@
             // On calcule le nombre de pages à créer
             $nombreDePages  = ceil($total / $nb_mess_per_page);
             
+            echo "<h2> Pages </h2>";
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
-            echo 'Pages : ';
+
             for ($i = 1 ; $i <= $nombreDePages ; $i++) {
                 echo '<a href="profil_vendeurs.php?page=' . $i . '">' . $i . '</a> ';
             }
+            echo "<br><br>";
+            echo '<a href="accueil.php">' . "Retour" . '</a> ';
             echo "<br><br>";
 
             // On calcule le numéro du premier message qu'on prend pour le LIMIT
@@ -70,6 +89,8 @@
             $req1 = $bdd->query('SELECT SellerID, Nom, Prenom FROM Vendeur             
                     ORDER BY SellerID 
                     DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
+
+            echo "<h2> Liste des vendeurs </h2>";
 
             while ($seller = $req1->fetch()) {
                 $id = $seller['SellerID'];

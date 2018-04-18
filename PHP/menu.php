@@ -6,10 +6,9 @@
             <li><a href=accueil.php> <img src="png/ebay.png" alt="Logo" id="logo"> </a></li>
             <?php
               if(isset($_SESSION['pseudo'])){
-                echo "<li> Bonjour " . $_SESSION['pseudo'] . "</li>";               
-
-                echo "<li><a href=# class = \"text_menu\">Profil</a></li>";
+                echo "<li><a href=# class = \"text_menu\">" . $_SESSION['pseudo'] . "</a></li>";              
                 echo "<li><a href=\"profil_vendeurs.php\" class = \"text_menu\">Vendeurs</a></li>";
+                echo "<li><a href=\"liste_objets.php\" class = \"text_menu\">Objets</a></li>";
 
                 if (isset($_SESSION['pseudo']) && isSeller($_SESSION['pseudo'])) {                
 
