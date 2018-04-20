@@ -75,7 +75,7 @@
 
         ?>
 
-		<form action="inscription_vendeur.php" method="post">
+		<form class='form' action="inscription_vendeur.php" method="post">
 			<p>
 				Nom:<br>
 				<input type="text" placeholder="Nom" name="nom" /> <br /><br />

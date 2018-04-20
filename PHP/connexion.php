@@ -60,7 +60,7 @@
 
 		?>		
 		
-		<form action="connexion.php" method="post">
+		<form class='form' action="connexion.php" method="post">
 			<p>
 				Pseudo:<br>
 				<input type="text" placeholder="pseudo" name="pseudo" /> <br /><br/>

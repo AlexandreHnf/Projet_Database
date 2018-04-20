@@ -72,7 +72,7 @@
         ?>
 		
 		
-		<form action="inscription.php" method="post">
+		<form class='form' action="inscription.php" method="post">
 			<p>
 				Pseudo: <br /> 
                 <input type="text" placeholder="pseudo" name="pseudo" /> <br /><br />

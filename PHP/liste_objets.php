@@ -26,7 +26,7 @@
 
             // affiche du lien pour retour
             if (isset($_GET['a'])) { // Si on vient d'un objet de l'accueil
-                echo '<a href="accueil.php">
+                echo '<a href="liste_objets.php?page=' . $_GET['page'] . '">
                 <button class="button button1">Retour</button></a> ' . '<br><br>';
             }
             else {
@@ -36,16 +36,23 @@
 
             echo "<h2> Caractéristiques de l'objet </h2>";
 
-            echo "Titre : " . $objet['Titre'] . "<br>";
-            echo "Description : " . $objet['Description_obj'] . "<br>";
-            echo "Date de mise en vente : " . $objet['DateMiseEnVente'] . "<br>";
-            echo "Prix minimum : " . $objet['PrixMin'] . " €" . "<br>";
-            echo "Date de vente : " . $objet['DateVente'] . "<br>";
-            echo "Acheteur : " . $objet["Acheteur"] . "<br>";
-            echo "Vendeur : " . $objet["Nom"] . " " . $objet['Prenom'] . "<br>";
-            echo "Catégorie : " . $objet["Categorie"] . "<br><br>";
+            echo "<table>"; // Tableau
 
-            echo "<h2> Les propositions d'achat </h2>";
+            // Lignes dans le tableau
+            echo "<tr>" . "<th>Titre</th>" . "<td>" . $objet['Titre'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Description</th>" . "<td>" . $objet['Description_obj'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Date de mise en vente</th>" . "<td>" . $objet['DateMiseEnVente'] . 
+            "</td>" . "</tr>";
+            echo "<tr>" . "<th>Prix minimum</th>" . "<td>" . $objet['PrixMin'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Date de vente</th>" . "<td>" . $objet['DateVente'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Acheteur</th>" . "<td>" . $objet['Acheteur'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Vendeur mail</th>" . "<td>" . $objet['Nom'] . " " 
+            . $objet['Prenom'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Catégorie</th>" . "<td>" . $objet['Categorie'] . "</td>" . "</tr>";
+
+            echo "</table>";
+
+            echo "<br>" . "<h2> Les propositions d'achat </h2>";
             
             $req3 = $bdd->prepare('SELECT Pseudo, Time, price, accepted
                                     FROM Utilisateur, PropositionAchat
@@ -53,17 +60,21 @@
                                     AND PropositionAchat.Buyer = Utilisateur.UserID');
             $req3->execute(array($_GET['ItemID']));
             $prop = $req3->fetch();
+            echo "<table>"; // Tableau
 
-            echo "Pseudo de l'acheteur potentiel : " . $prop['Pseudo'] . "<br>";
-            echo "Date : " . $prop['Time'] . "<br>";
-            echo "Prix proposé : " . $prop['price'] . " €" . "<br>";
+            echo "<tr>" . "<th>Pseudo de l'acheteur potentiel </th>" . "<th>Date</th>";
+            echo "<th>Prix proposé</th>" . "<th>Statut</th>" . "</tr>";
+
+            echo "<tr>"."<td>" . $prop['Pseudo'] . "</td>".
+                "<td>" . $prop['Time'] . "</td>" . 
+                "<td>" . $prop['price'] . "</td>";
+
             if ($prop['price'] == True) {
-                echo "Statut : accepté" . "<br>";
+                echo "<td>accepté </td>" . "</tr>";
             }
             else {
-                echo "Statut: refusé" . "<br>";
+                echo "<td>refusé</td>" . "</tr>";
             }
-            echo "========================================================" . "<br>";
 
         }
 

@@ -3,7 +3,7 @@
 <nav id="menu">
     <div class="element_menu">
         <ul>
-            <li><a href=accueil.php> <img src="png/ebay.png" alt="Logo" id="logo"> </a></li>
+            <li><a class='menu' href=accueil.php> <img src="png/ebay.png" alt="Logo" id="logo"> </a></li>
             <?php
               if(isset($_SESSION['pseudo'])){
 				// PROFIL

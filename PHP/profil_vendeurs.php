@@ -25,30 +25,46 @@
 
             echo "<h2> Profil du vendeur</h2>" . "<br>";
 
-            echo "ID : " . $profil['SellerID'] . "<br>";
-            echo "Nom : " . $profil['Nom'] . "<br>";
-            echo "Prénom : " . $profil['Prenom'] . "<br>";
-            echo "Pseudo : " . $profil['Pseudo'] . "<br>";
-            echo "Date de naissance : " . $profil['DateNaissance'] . "<br>";
-            echo "Adresse : " . $profil["Adresse"] . "<br>";
-            echo "Adresse mail : " . $profil["AdresseMail"] . "<br>";
-            echo "Description : " . $profil["Description_user"] . "<br><br>";
+            echo "<table>"; // Tableau
+
+            // Lignes dans le tableau
+            echo "<tr>" . "<th>ID</th>" . "<td>" . $profil['SellerID'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Nom</th>" . "<td>" . $profil['Nom'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Prénom</th>" . "<td>" . $profil['Prenom'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Pseudo</th>" . "<td>" . $profil['Pseudo'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Date de naissance</th>" . "<td>" . $profil['DateNaissance'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Adresse</th>" . "<td>" . $profil['Adresse'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Adresse mail</th>" . "<td>" . $profil['AdresseMail'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Description</th>" . "<td>" . $profil['Description_user'] . "</td>" . "</tr>";
+
+            echo "</table>";
+
 
             $req3 = $bdd->prepare('SELECT Pseudo, Time, Rate, Commentaire 
                                     FROM Evaluation, Utilisateur
                                     WHERE Evaluation.Buyer = Utilisateur.UserID
                                     AND Evaluation.Seller = ?');
             $req3->execute(array($_GET['SellerID']));
+            ?>
+            
+            <?php
+            echo "<br>" . "<h2> Evaluations du vendeur </h2>" . "<br>";
 
-            echo "<h2> Evaluations du vendeur </h2>" . "<br>";
+            echo "<table>"; // Tableau
+
+            echo "<tr>" . "<th>Pseudo de l'acheteur </th>" . "<th>Date d'évaluation</th>";
+            echo "<th>Note</th>" . "<th>Commentaire</th>" . "</tr>";
 
             while ($eval = $req3->fetch()) {
-                echo "Pseudo de l'acheteur : " . $eval['Pseudo'] . "<br>";
-                echo "Date d'évaluation : " . $eval['Time'] . "<br>";
-                echo "Note : " . $eval['Rate'] . "<br>";
-                echo "Commentaire : " . $eval['Commentaire'] . "<br>";
-                echo "=============================================" . "<br>";
-            } 
+                // Lignes dans le tableau
+                echo "<tr>"."<td>" . $eval['Pseudo'] . "</td>".
+                "<td>" . $eval['Time'] . "</td>" . 
+                "<td>" . $eval['Rate'] . "</td>" .
+                "<td>" . $eval['Commentaire'] . "</td>" . "</tr>";
+            
+            }
+
+            echo "</table>";
 
             // affiche du lien pour retour
             echo '<a href="profil_vendeurs.php?page=' . $_GET['page'] . '">
