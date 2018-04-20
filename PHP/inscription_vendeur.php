@@ -43,7 +43,7 @@
             }
 
             if (count($errors) > 0) { // Si erreurs
-                echo '<p Nous avons rencontré des problèmes avec vos informations : </p>';
+                echo "Nous avons rencontré des problèmes avec vos informations :" . "<br>";
                 foreach($errors as $e)
                     echo '<p class="error">'.$e.'</p>';
             }

@@ -79,16 +79,27 @@
 
             // On calcule le nombre de pages à créer
             $nombreDePages  = ceil($total / $nb_mess_per_page);
+            $next_page = ($page + 1) % $nombreDePages;
+            $prev_page = ($page - 1) % $nombreDePages;
+            if ($prev_page == 0) {$prev_page = $nombreDePages;}
             
-            echo "<h2> Pages </h2>";
+            echo "<h2> Pages </h2>" . "<br>";
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
-
+            
+            echo '<a class=\'page\' href="liste_objets.php?page='.$prev_page.'">'.'<<'.'</a>';
             for ($i = 1 ; $i <= $nombreDePages ; $i++) {
-                echo '<a href="liste_objets.php?page=' . $i . '">' . $i . '</a> ';
+                if ($i == $page) {
+                    echo '<a class=\'active\' href="liste_objets.php?page='.$i.'">'.$i .'</a>';
+                }
+                else {
+                    echo '<a class=\'page\' href="liste_objets.php?page='.$i.'">'.$i . '</a>';
+                }
             }
+            echo '<a class=\'page\' href="liste_objets.php?page='.$next_page.'">'.'>>'.'</a>';
+
             echo "<br><br>";
-            echo '<a href="accueil.php">' . "Retour" . '</a> ';
-            echo "<br><br>";
+            echo '<a href="accueil.php">
+            <button class="button button1">Retour</button></a> ' . '<br><br>';
 
             // On calcule le numéro du premier message qu'on prend pour le LIMIT
             $premierMessageAafficher = ($page - 1) * $nb_mess_per_page;
@@ -102,8 +113,11 @@
             while ($obj = $req1->fetch()) {
                 $id = $obj['ItemID'];
                 // print des liens
-                echo '<a href="liste_objets.php?page=' . $page . '&ItemID=' . $id . '">' 
-                    . $obj['Titre'] . " | Prix: " . $obj['PrixMin'] . " €" . '</a> ' . "<br>";
+
+                echo "<li class = \"item\"><a href=\"liste_objets.php?page=" . 
+                $page . "&ItemID=" . $id . "\" >" . "<p class='rcorners corner2'>
+                ".$obj['Titre']. "<br>" . "PRIX: " . "<mark class=\"price\">". 
+                $obj['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
             }
         }
 

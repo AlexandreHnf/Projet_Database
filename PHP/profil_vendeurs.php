@@ -23,7 +23,7 @@
             $req2->execute(array($_GET['SellerID']));
             $profil = $req2->fetch();           
 
-            echo "<h2> Profil du vendeur</h2>";
+            echo "<h2> Profil du vendeur</h2>" . "<br>";
 
             echo "ID : " . $profil['SellerID'] . "<br>";
             echo "Nom : " . $profil['Nom'] . "<br>";
@@ -40,7 +40,8 @@
                                     AND Evaluation.Seller = ?');
             $req3->execute(array($_GET['SellerID']));
 
-            echo "<h2> Evaluations du vendeur </h2>";
+            echo "<h2> Evaluations du vendeur </h2>" . "<br>";
+
             while ($eval = $req3->fetch()) {
                 echo "Pseudo de l'acheteur : " . $eval['Pseudo'] . "<br>";
                 echo "Date d'évaluation : " . $eval['Time'] . "<br>";
@@ -50,7 +51,9 @@
             } 
 
             // affiche du lien pour retour
-            echo '<a href="profil_vendeurs.php?page=' . $_GET['page'] . '">' . "Retour" . '</a> ';
+            echo '<a href="profil_vendeurs.php?page=' . $_GET['page'] . '">
+            <button class="button button1">Retour</button></a> ';
+
         }
 
         else{ // On affiche la liste des vendeurs
@@ -72,16 +75,27 @@
 
             // On calcule le nombre de pages à créer
             $nombreDePages  = ceil($total / $nb_mess_per_page);
+            $next_page = ($page + 1) % $nombreDePages;
+            $prev_page = ($page - 1) % $nombreDePages;
+            if ($prev_page == 0) {$prev_page = $nombreDePages;}
             
-            echo "<h2> Pages </h2>";
+            echo "<h2> Pages </h2>" . "<br>";
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
-
+            
+            echo '<a class=\'page\' href="profil_vendeurs.php?page='.$prev_page.'">'.'<<'.'</a>';
             for ($i = 1 ; $i <= $nombreDePages ; $i++) {
-                echo '<a href="profil_vendeurs.php?page=' . $i . '">' . $i . '</a> ';
+                if ($i == $page) {
+                    echo '<a class=\'active\' href="profil_vendeurs.php?page='.$i.'">'.$i .'</a>';
+                }
+                else {
+                    echo '<a class=\'page\' href="profil_vendeurs.php?page='.$i.'">'.$i . '</a>';
+                }
             }
+            echo '<a class=\'page\' href="profil_vendeurs.php?page='.$next_page.'">'.'>>'.'</a>';
+
             echo "<br><br>";
-            echo '<a href="accueil.php">' . "Retour" . '</a> ';
-            echo "<br><br>";
+            echo '<a href="accueil.php">
+            <button class="button button1">Retour</button></a> ' . '<br><br>';
 
             // On calcule le numéro du premier message qu'on prend pour le LIMIT
             $premierMessageAafficher = ($page - 1) * $nb_mess_per_page;
@@ -90,13 +104,17 @@
                     ORDER BY SellerID 
                     DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
 
-            echo "<h2> Liste des vendeurs </h2>";
+            echo "<h2> Liste des vendeurs </h2>" . "<br>";
 
             while ($seller = $req1->fetch()) {
                 $id = $seller['SellerID'];
-                // print des liens
-                echo '<a href="profil_vendeurs.php?page=' . $page . '&SellerID=' . $id . '">' 
-                    . $seller['Nom'] . " " . $seller['Prenom'] . '</a> ' . "<br>";
+                // echo '<a href="profil_vendeurs.php?page=' . $page . '&SellerID=' . $id . '">' 
+                //     . $seller['Nom'] . " " . $seller['Prenom'] . '</a> ' . "<br>";
+
+                // Affichage du lien (nom et prénom du vendeur)
+                echo "<li class = \"item\"><a href=\"profil_vendeurs.php?page=" . 
+                $page . "&SellerID=" . $id . "\" >" . "<p class='rcorners corner1'>".
+                $seller['Nom'] . " " . $seller['Prenom']. "</p>" . "</a></li>";
             }
         }
 

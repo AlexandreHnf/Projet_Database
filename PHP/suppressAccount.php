@@ -20,7 +20,8 @@
         $error = false;
         if (isset($_POST['pseudo']) && !(isUser($_POST['pseudo']) && checkPassword($_SESSION['pseudo'], SHA1($_POST['password']))))
         {
-            echo "Erreur ! Les données fournies sont invalides.";
+            // echo "Erreur ! Les données fournies sont invalides.";
+            echo '<p class="error">"Erreur ! Les données fournies sont invalides"</p>'
             $error = true;
         }
 
@@ -125,7 +126,8 @@
 
                 $reqSuppress->closeCursor();
 
-                echo "Le compte de " . $pseudo . ' à été supprimé !';
+                // echo "Le compte de " . $pseudo . ' à été supprimé !';
+                echo '<p class="success">"Le compte de " . $pseudo . " à été supprimé !"</p>'
             
             }          
 

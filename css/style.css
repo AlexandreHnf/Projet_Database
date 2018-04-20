@@ -2,13 +2,28 @@ body
 {
   /* gris flat */
   background-color: rgb(72, 84, 96);
+  color: white;
 }
 
-h2 {
-  /* background-color: rgb(198, 79, 0); */
-  background-color: rgb(52, 172, 224);
+/* h2 {
+  color: rgb(52, 172, 224);
   display:inline-block;
   height:30px;
+} */
+
+h2 { 
+  /* color: rgb(52, 172, 224);  */
+  color: white;
+  font-family: 'Raleway',sans-serif; 
+  font-size: 40px; 
+  font-weight: 800; 
+  line-height: 72px; 
+  margin: 0 0 24px; 
+  text-align: left; 
+  text-transform: uppercase; 
+  /* text-shadow: 2px 2px 8px rgb(52, 172, 224); */
+  /* text-shadow: 2px 2px 8px black; */
+  /* text-shadow:1px 1px 0px black; */
 }
 
 div {
@@ -36,13 +51,59 @@ a:visited {
   color: white;
 }
 
+a.page {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  /* width: 50px;
+  height: 50px; */
+  transition: background-color .3s;
+  border-radius: 5px;
+  border: 1px rgb(52, 172, 224);
+  
+}
+
+a.page:hover:not(.active) {
+  /* background-color: rgb(52, 172, 224); */
+  background-color: #2bcbba;
+}
+
+a.active {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #2bcbba;
+  color: white;
+  border-radius: 5px;
+}
+
+p.error {
+  display: inline-block;
+  color: white;
+  background-color: rgb(252, 92, 101);
+}
+
+p.success {
+  display: inline-block;
+  color: white;
+  background-color: rgb(38, 222, 129);
+}
+
+mark.price {
+  color: #fed330;
+  background: none;
+}
+
 
 #logo
 {
-    min-width: 150px;
-    min-height: 50px;
-    max-width: 150px;
-    max-height: 50px;
+  min-width: 150px;
+  min-height: 50px;
+  max-width: 150px;
+  max-height: 50px;
 }
 
 .text_menu
@@ -51,7 +112,7 @@ a:visited {
 }
 
 li a:hover {
-  /* background-color: rgb(52, 172, 224); */
+  background-color: rgb(52, 172, 224);
 }
 
 li.item a:hover {
@@ -69,13 +130,13 @@ li.item a:hover {
   transform: scale(1.1);
 }
 
-#rcorners1 { /* Box arrondi pour englober un texte */
+.rcorners { /* Box arrondi pour englober un texte */
 
   border-radius: 15px;
   background: rgba(16, 13, 13, 0.193);
   padding: 15px;
-  width:1200px;
-  height:20px;
+  /* width:1200px;
+  height:20px; */
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1); 
   -ms-transition: all 200ms ease-in;
@@ -84,12 +145,51 @@ li.item a:hover {
   -moz-transform: scale(1);
   transition: all 200ms ease-in;
   transform: scale(1); 
+  text-align: left;
     
 } 
+
+.corner1 {
+  width:1200px;
+  height:20px;
+}
+
+.corner2 {
+  width: 1200px;
+  height: 30px;
+}
+
+.button {
+  background-color: rgb(72, 84, 96); /* Green */
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 10px;
+  background-color: rgb(72, 84, 96); 
+  color: white; 
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
 
 li.item {
   list-style:none;
   padding-left: 160px;
+  /* align-items: left;
+  justify-content: left; */
 }
 
 nav ul
@@ -101,6 +201,7 @@ nav ul
   align-items: center;
   justify-content: center;
   background-color: rgba(16, 13, 13, 0.193);
+  height: 80px;
   /* width: 100%;
   top: 0;
   position: fixed; */
