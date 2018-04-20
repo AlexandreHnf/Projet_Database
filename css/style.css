@@ -5,12 +5,7 @@ body
   color: white;
 }
 
-/* h2 {
-  color: rgb(52, 172, 224);
-  display:inline-block;
-  height:30px;
-} */
-
+/* Gros titres */
 h2 { 
   /* color: rgb(52, 172, 224);  */
   color: white;
@@ -21,9 +16,7 @@ h2 {
   margin: 0 0 24px; 
   text-align: left; 
   text-transform: uppercase; 
-  /* text-shadow: 2px 2px 8px rgb(52, 172, 224); */
-  /* text-shadow: 2px 2px 8px black; */
-  /* text-shadow:1px 1px 0px black; */
+
 }
 
 div {
@@ -47,10 +40,12 @@ a:link {
 }
 
 /* liens visités */
-a:visited {
+/* a:visited {
   color: white;
-}
+} */
 
+
+/* Pour la pagination */
 a.page {
   color: white;
   text-align: center;
@@ -65,11 +60,12 @@ a.page {
   
 }
 
+/* Quand on passe la souris sur un numéro de page */
 a.page:hover:not(.active) {
-  /* background-color: rgb(52, 172, 224); */
   background-color: #2bcbba;
 }
 
+/* Numéro de page sur lequel on se trouve */
 a.active {
   text-align: center;
   text-decoration: none;
@@ -80,23 +76,25 @@ a.active {
   border-radius: 5px;
 }
 
+/* Messages d'erreurs */
 p.error {
   display: inline-block;
   color: white;
   background-color: rgb(252, 92, 101);
 }
 
+/* Messages de succès */
 p.success {
   display: inline-block;
   color: white;
   background-color: rgb(38, 222, 129);
 }
 
+/* Pour colorier les prix */
 mark.price {
   color: #fed330;
   background: none;
 }
-
 
 #logo
 {
@@ -111,10 +109,21 @@ mark.price {
   color: white;
 }
 
-li a:hover {
+/* Quand on passe la souris sur les liens du menu */
+a.menu:hover {
+  display: inline-block;
+  border-radius: 15px;
+  /* padding: 4px 10px; */
+  padding: 5px;
+  transition-duration: 0.4s;
   background-color: rgb(52, 172, 224);
 }
 
+/* a.menu {
+  position:fixed;
+} */
+
+/* Quand on passe la souris sur les éléments d'une liste */
 li.item a:hover {
 
   border-radius: 15px;
@@ -128,9 +137,17 @@ li.item a:hover {
   -moz-transform: scale(1.1);
   transition: all 200ms ease-in;
   transform: scale(1.1);
+  background-color: rgb(52, 172, 224);
 }
 
-.rcorners { /* Box arrondi pour englober un texte */
+/* Décalage vers la droite des listes */
+li.item {
+  list-style:none;
+  padding-left: 160px;
+}
+
+/* Box arrondi pour englober un texte */
+.rcorners { 
 
   border-radius: 15px;
   background: rgba(16, 13, 13, 0.193);
@@ -159,6 +176,7 @@ li.item a:hover {
   height: 30px;
 }
 
+/* Boutons */
 .button {
   background-color: rgb(72, 84, 96); /* Green */
   border: none;
@@ -185,13 +203,6 @@ li.item a:hover {
   color: white;
 }
 
-li.item {
-  list-style:none;
-  padding-left: 160px;
-  /* align-items: left;
-  justify-content: left; */
-}
-
 nav ul
 {
   overflow: hidden;
@@ -202,15 +213,12 @@ nav ul
   justify-content: center;
   background-color: rgba(16, 13, 13, 0.193);
   height: 80px;
-  /* width: 100%;
-  top: 0;
-  position: fixed; */
-  /* position: sticky; */
 }
 
 nav li
 {
-    margin-right: 30px;
+  z-index: 100;
+  margin-right: 40px;
 }
 
 
@@ -218,6 +226,50 @@ nav li
 {
   display: flex;
   justify-content: center;
+  
+}
+
+input[type=text], input[type="password"], input[type="email"] {
+  border-radius: 12px;
+  padding: 5px 15px;
+  padding-right: 100px;
+  border: 1px solid #008CBA;
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+input[type=text]:focus, input[type="password"]:focus, input[type="email"]:focus {
+  width: 250px;
+  background-color: lightblue;
+}
+
+input[type=submit] {
+  color: black;
+  padding:5px 15px; 
+  background:white; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  border-radius: 5px; 
+  
+}
+
+input[type=submit]:hover{
+  background-color: lightblue;
+}
+
+select{
+  border-radius: 10px;
+  padding: 5px 15px;
+  /* border: 1px solid #008CBA; */
+  width: 100px;
+  -webkit-appearance: button;
 }
 
 .section
@@ -231,6 +283,7 @@ nav li
   display: flex;
   justify-content: space-around;
 }
+
 .resulatDeRecherche
 {
   margin-left: 20px;
@@ -240,10 +293,3 @@ nav li
   border-style: inset;
   background-color: white;
 }
-/*.produits ul
-{
-  list-style-type: none;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-}*/

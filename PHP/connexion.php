@@ -63,15 +63,19 @@
 		<form action="connexion.php" method="post">
 			<p>
 				Pseudo:<br>
-				<input type="text" name="pseudo" /> <br />
+				<input type="text" placeholder="pseudo" name="pseudo" /> <br /><br/>
 				Mot de passe:<br>
-				<input type="password" name="motdepasse" /> <br />
+
+				<input type="password" placeholder="mot de passe" name="motdepasse" /> 
+				<br /><br /><br />
 				<input type="submit" value="Se connecter" />
 			</p>
 
 		</form>
 
-		<p> <a href="accueil.php"> Retour </a></p>
+		<?php echo "<br>"; ?>
+		<?php echo '<a href="accueil.php">
+            <button class="button button1">Retour</button></a> ' . '<br><br>'; ?>
 
    </body>
 </html>
