@@ -25,7 +25,14 @@
             $objet = $req2->fetch();
 
             // affiche du lien pour retour
-            echo '<class = \"item\"><a href="liste_objets.php?page=' . $_GET['page'] . '">' . "Retour" . '</a>';
+            if (isset($_GET['a'])) { // Si on vient d'un objet de l'accueil
+                echo '<a href="accueil.php">
+                <button class="button button1">Retour</button></a> ' . '<br><br>';
+            }
+            else {
+                echo '<a href="liste_objets.php?page=' . $_GET['page'] . '">
+                <button class="button button1">Retour</button></a> ' . '<br><br>';
+            }
 
             echo "<h2> Caractéristiques de l'objet </h2>";
 

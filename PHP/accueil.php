@@ -13,28 +13,26 @@
     <body>
         <header>
           <?php include("menu.php"); ?>
-          <!-- <?php include("researchTool.php"); ?> -->
 
         </header>
 
         <div class="section">
           <div class="produits">
+            <?php echo "<br><br><br>" ?>
             <h2>Les derniers ajouts</h2>
             <ul>
               <?php
-                $liste = $bdd->query('SELECT Titre 
+                $liste = $bdd->query('SELECT Titre, ItemID
                                       FROM Objet ORDER BY Objet.DateMiseEnVente 
                                       DESC LIMIT 0,10');
 
                 
                 while($donne = $liste->fetch()){
-                  // echo "<li class = \"item\"><a href=# >" . "<p id='rcorners'>".$donne['Titre'].
-                  // str_repeat("-", 180-mb_strlen(utf8_decode($donne['Titre']))) . "</p>" . "</a></li>";
 
-                  echo "<li class = \"item\"><a href=# >" . "<p class='rcorners corner1'>".$donne['Titre'].
-                   "</p>" . "</a></li>";
+                  echo "<li class = \"item\"><a href=\"liste_objets.php?page=1"
+                  . "&ItemID=" . $donne['ItemID'] . "&a=1". "\" >" . "<p class='rcorners corner1'>
+                  ".$donne['Titre'] ."</p>" . "</a></li>";
 
-                  // echo str_repeat("-", 100-strlen($donne['Titre']));
                 }
                 $liste->closeCursor();
                 ?>
@@ -46,16 +44,18 @@
             <ul>
               <?php
                 $liste = $bdd->query('SELECT COUNT(PropositionAchat.ItemID) AS nb_vente,
-                                      PropositionAchat.ItemID,Titre 
-                                      FROM PropositionAchat,Objet 
+                                      PropositionAchat.ItemID, Titre
+                                      FROM PropositionAchat, Objet 
                                       WHERE accepted = \'True\' 
                                       AND Objet.ItemID = PropositionAchat.ItemID 
                                       GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,10' );
 
                 while($donne = $liste->fetch()){
-                  // echo "<li class = \"item\"><a href=#>" . $donne['Titre'] . "</a></li>";
-                  echo "<li class = \"item\"><a href=# >" . "<p class='rcorners corner1'>".$donne['Titre']."</p>" . 
-                  "</a></li>";
+
+                  echo "<li class = \"item\"><a href=\"liste_objets.php?page=1"
+                  . "&ItemID=" . $donne['ItemID'] . "&a=1". "\" >" . "<p class='rcorners corner1'>
+                  ".$donne['Titre'] ."</p>" . "</a></li>";
+
                 }
                 $liste->closeCursor();
               ?>
@@ -67,15 +67,18 @@
             <ul>
               <?php
                 $liste = $bdd->query('SELECT AVG(Rate) AS eval_moyen,Seller,
-                                      Titre FROM Evaluation,Objet 
+                                      Titre, ItemID FROM Evaluation,Objet 
                                       WHERE Evaluation.Seller = Objet.SellerID 
                                       GROUP BY Seller ORDER BY eval_moyen DESC LIMIT 0,10');
 
                 while($donne = $liste->fetch()){
-                  // echo "<li class = \"item\"><a href=# >" . $donne['Titre'] . "</a></li>";
-                  echo "<li class = \"item\"><a href=# >" . "<p class='rcorners corner1'>".$donne['Titre']."</p>" . 
-                  "</a></li>";
+
+                  echo "<li class = \"item\"><a href=\"liste_objets.php?page=1"
+                  . "&ItemID=" . $donne['ItemID'] . "&a=1". "\" >" . "<p class='rcorners corner1'>
+                  ".$donne['Titre'] ."</p>" . "</a></li>";
+
                 }
+                
                 $liste->closeCursor();
               ?>
            </ul>
