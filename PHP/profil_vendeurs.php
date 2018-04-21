@@ -22,6 +22,7 @@
                                     AND Vendeur.SellerID = ?');
             $req2->execute(array($_GET['SellerID']));
             $profil = $req2->fetch();           
+            $req2->closeCursor();
 
             echo "<h2> Profil du vendeur</h2>" . "<br>";
 
@@ -63,7 +64,7 @@
                 "<td>" . $eval['Commentaire'] . "</td>" . "</tr>";
             
             }
-
+            $req3->closeCursor();
             echo "</table>";
 
             // affiche du lien pour retour
@@ -87,6 +88,7 @@
             // On récupère le nombre total de messages
             $req = $bdd->query('SELECT COUNT(*) AS nb_messages FROM Vendeur');
             $donnees = $req->fetch();
+            $req->closeCursor();
             $total = $donnees ['nb_messages'];
 
             // On calcule le nombre de pages à créer
@@ -124,14 +126,13 @@
 
             while ($seller = $req1->fetch()) {
                 $id = $seller['SellerID'];
-                // echo '<a href="profil_vendeurs.php?page=' . $page . '&SellerID=' . $id . '">' 
-                //     . $seller['Nom'] . " " . $seller['Prenom'] . '</a> ' . "<br>";
 
                 // Affichage du lien (nom et prénom du vendeur)
                 echo "<li class = \"item\"><a href=\"profil_vendeurs.php?page=" . 
                 $page . "&SellerID=" . $id . "\" >" . "<p class='rcorners corner1'>".
                 $seller['Nom'] . " " . $seller['Prenom']. "</p>" . "</a></li>";
             }
+            $req1->closeCursor();
         }
 
         ?>

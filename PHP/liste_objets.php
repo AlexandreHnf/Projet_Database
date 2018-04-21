@@ -23,10 +23,11 @@
                                     AND Objet.SellerID = Vendeur.SellerID');
             $req2->execute(array($_GET['ItemID']));
             $objet = $req2->fetch();
+            $req2->closeCursor();
 
             // affiche du lien pour retour
             if (isset($_GET['a'])) { // Si on vient d'un objet de l'accueil
-                echo '<a href="liste_objets.php?page=' . $_GET['page'] . '">
+                echo '<a href="accueil.php">
                 <button class="button button1">Retour</button></a> ' . '<br><br>';
             }
             else {
@@ -43,10 +44,10 @@
             echo "<tr>" . "<th>Description</th>" . "<td>" . $objet['Description_obj'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Date de mise en vente</th>" . "<td>" . $objet['DateMiseEnVente'] . 
             "</td>" . "</tr>";
-            echo "<tr>" . "<th>Prix minimum</th>" . "<td>" . $objet['PrixMin'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Prix minimum</th>" . "<td>" . $objet['PrixMin'] ." €"."</td>" . "</tr>";
             echo "<tr>" . "<th>Date de vente</th>" . "<td>" . $objet['DateVente'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Acheteur</th>" . "<td>" . $objet['Acheteur'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Vendeur mail</th>" . "<td>" . $objet['Nom'] . " " 
+            echo "<tr>" . "<th>Vendeur</th>" . "<td>" . $objet['Nom'] . " " 
             . $objet['Prenom'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Catégorie</th>" . "<td>" . $objet['Categorie'] . "</td>" . "</tr>";
 
@@ -60,6 +61,7 @@
                                     AND PropositionAchat.Buyer = Utilisateur.UserID');
             $req3->execute(array($_GET['ItemID']));
             $prop = $req3->fetch();
+            $req3->closeCursor();
             echo "<table>"; // Tableau
 
             echo "<tr>" . "<th>Pseudo de l'acheteur potentiel </th>" . "<th>Date</th>";
@@ -69,11 +71,13 @@
                 "<td>" . $prop['Time'] . "</td>" . 
                 "<td>" . $prop['price'] . "</td>";
 
-            if ($prop['price'] == True) {
-                echo "<td>accepté </td>" . "</tr>";
-            }
-            else {
-                echo "<td>refusé</td>" . "</tr>";
+            if (isset($prop['accepted'])) {
+                if ($prop['accepted'] == True) {
+                    echo "<td>accepté </td>" . "</tr>";
+                }
+                else {
+                    echo "<td>refusé</td>" . "</tr>";
+                }
             }
 
         }
@@ -137,6 +141,7 @@
                 ".$obj['Titre']. "<br>" . "PRIX: " . "<mark class=\"price\">". 
                 $obj['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
             }
+            $req1->closeCursor();
         }
 
         ?>

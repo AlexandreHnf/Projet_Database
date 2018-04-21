@@ -73,6 +73,7 @@
 
 		</form>
 
+		<!-- Pour retourner a l'accueil  -->
 		<?php echo "<br>"; ?>
 		<?php echo '<a href="accueil.php">
             <button class="button button1">Retour</button></a> ' . '<br><br>'; ?>

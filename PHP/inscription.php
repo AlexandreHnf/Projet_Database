@@ -62,6 +62,7 @@
                     'mdp' => $hashed,
                     'email' => $email
                 ));
+                $req2->closeCursor();
 
 
                 header('location: accueil.php');

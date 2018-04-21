@@ -7,9 +7,7 @@
             <?php
               if(isset($_SESSION['pseudo'])){
 				// PROFIL
-                echo "<li><a class = 'menu' href=# class = \"text_menu\">" . $_SESSION['pseudo'] . "</a></li>";  
-                // echo '<a class = \'menu\' href="accueil.php">
-                // <button class="button button1">' . $_SESSION['pseudo'] . '</button></a> ' . '<br><br>';
+                echo "<li><a class = 'menu' href=\"profil.php\" class = \"text_menu\">" . $_SESSION['pseudo'] . "</a></li>";  
 				
 				// Liste des vendeurs et leurs profils
 				echo "<li><a class = 'menu' href=\"profil_vendeurs.php\" class = \"text_menu\">Vendeurs</a></li>";
