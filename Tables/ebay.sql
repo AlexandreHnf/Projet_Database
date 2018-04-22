@@ -30,6 +30,7 @@ FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
 (UserID, MotDePasse, Pseudo, AdresseMail)
 set MotDePasse = SHA1(MotDePasse);
+
 -- =========================== SELLERS.TXT > UTILISATEUR ===================
 
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
@@ -38,7 +39,6 @@ FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
 (UserID, @ignore, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail)
 set MotDePasse = SHA1(MotDePasse);
-
 
 
 -- ============================ TABLE ADMIN ============================

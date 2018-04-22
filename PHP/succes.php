@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Succès</title>
+        <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8" />
     </head>
 

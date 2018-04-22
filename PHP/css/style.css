@@ -6,7 +6,7 @@ body
 
 h2 {
   /* background-color: rgb(198, 79, 0); */
-  background-color: rgb(52, 172, 224);
+  /*background-color: rgb(52, 172, 224);*/
   display:inline-block;
   height:30px;
 }
@@ -16,6 +16,13 @@ div {
 }
 
 li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul a {
   display: inline-block;
   color: white;
   text-align: center;
@@ -50,9 +57,11 @@ a:visited {
   color: white;
 }
 
-li a:hover {
-  /* background-color: rgb(52, 172, 224); */
-}
+.text_menu:hover 
+{
+  text-decoration: underline;
+} 
+
 
 li.item a:hover {
 
@@ -146,3 +155,38 @@ nav li
   flex-wrap:wrap;
   justify-content: space-between;
 }*/
+
+/***************************************************************/
+
+.dropMenu
+{
+  padding: 20px;
+  display: inline-block;
+  color: white;
+}
+
+.dropBtn
+{
+  display: none;    
+  position: absolute;
+
+  background-color: rgba(16, 13, 13);
+  min-width: 160px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+}
+
+.dropMenu
+{
+  text-decoration: underline;
+}
+
+.dropMenu:hover .dropBtn
+{
+  text-decoration: underline;
+  color: white;
+  display:inline-block;
+}
+
+
+/***************************************************************/

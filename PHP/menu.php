@@ -6,7 +6,12 @@
             <li><a href=accueil.php> <img src="png/ebay.png" alt="Logo" id="logo"> </a></li>
             <?php
               if(isset($_SESSION['pseudo'])){
-                echo "<li><a href=# class = \"text_menu\">" . $_SESSION['pseudo'] . "</a></li>";              
+                echo 
+                "<div class=\"dropMenu\">
+                    <a href=# class = \"text_menu\">" . $_SESSION['pseudo'] . "</a>
+                    <div class=\"dropBtn\"><a href=\"deconnexion.php\" class = \"text_menu\">Se déconnecter</a> </div>
+                </div>";             
+                 
                 echo "<li><a href=\"profil_vendeurs.php\" class = \"text_menu\">Vendeurs</a></li>";
                 echo "<li><a href=\"liste_objets.php\" class = \"text_menu\">Objets</a></li>";
 
@@ -24,7 +29,6 @@
                   echo "<li><a href=\"adminHandling.php\" class = \"text_menu\">Droits administrateur</a></li>";  
                 }
 
-                echo "<li><a href=\"deconnexion.php\" class = \"text_menu\">Se déconnecter</a></li>";
               }
               else{
                 echo "<li class><a href=\"connexion.php \" class = \"text_menu\">Se connecter</a></li>";

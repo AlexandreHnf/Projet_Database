@@ -1,11 +1,13 @@
 <?php 
-	session_start();  // On démarre la session
+    session_start();  // On démarre la session
+    
 ?> 
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>Mettre un article en vente </title>
+        <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8" />
     </head>
 
