@@ -12,12 +12,12 @@
    </head>
 
    <body>
-		<h2>Connexion !</h2>
-
-		<p>
-			Ceci est la page de connexion du site Ebay.<br />
-			Veuillez taper votre pseudo et votre mot de passe:
-		</p>
+	
+   		<header>
+            <?php include("menu.php"); ?>
+        </header>
+		
+		<h1>Connexion </h1>
 
 		<?php
 

@@ -12,12 +12,11 @@
    </head>
 
    <body>
+        <header>
+            <?php include("menu.php"); ?>
+        </header>
+        
 		<h2>Devenir Vendeur !</h2>
-
-		<p>
-			Vous souhaitez devenir vendeur ?
-            Remplissez ce formulaire :
-		</p>
 		
 		<?php
 
