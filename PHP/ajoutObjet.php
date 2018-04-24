@@ -16,7 +16,7 @@
         if (!ISSET($_POST['categorie'])) 
         {
         ?>
-        <form method="post" action="ajoutObjet.php">
+        <form class='form' method="post" action="ajoutObjet.php">
             Titre de l'article : <input type="text" name="Titre" value="" /> <br />
             Prix minimal demandé : <input type="text" name="Prix" value="" /> <br />
 

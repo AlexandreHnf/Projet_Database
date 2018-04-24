@@ -21,6 +21,10 @@ CREATE TABLE Utilisateur (
     
 );
 
+INSERT INTO Utilisateur
+VALUES (@ignore, SHA1('master_admin'), 'Master', 'master0@hotmail.com',
+        'Administrateur suprême');
+
 
 -- =========================== USERS.TXT > UTILISATEUR ===================
 
@@ -58,7 +62,8 @@ CREATE TABLE Administrateur (
 
 );
 
-
+INSERT INTO Administrateur
+VALUES (1);
 
 -- ============================ TABLE VENDEUR ============================
 DROP TABLE IF EXISTS Vendeur;

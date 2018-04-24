@@ -45,7 +45,7 @@
             $req->closeCursor(); // Termine le traitement de la requête
 
 			if (count($errors) > 0) { // Si erreurs
-				echo '<p Nous avons rencontré des problèmes avec vos informations : </p>';
+				echo "Nous avons rencontré des problèmes avec vos informations :" . "<br>";
 				foreach($errors as $e)
 					echo '<p class="error">'.$e.'</p>';
 			}
@@ -60,18 +60,23 @@
 
 		?>		
 		
-		<form action="connexion.php" method="post">
+		<form class='form' action="connexion.php" method="post">
 			<p>
 				Pseudo:<br>
-				<input type="text" name="pseudo" /> <br />
+				<input type="text" placeholder="pseudo" name="pseudo" /> <br /><br/>
 				Mot de passe:<br>
-				<input type="password" name="motdepasse" /> <br />
+
+				<input type="password" placeholder="mot de passe" name="motdepasse" /> 
+				<br /><br /><br />
 				<input type="submit" value="Se connecter" />
 			</p>
 
 		</form>
 
-		<p> <a href="accueil.php"> Retour </a></p>
+		<!-- Pour retourner a l'accueil  -->
+		<?php echo "<br>"; ?>
+		<?php echo '<a href="accueil.php">
+            <button class="button button1">Retour</button></a> ' . '<br><br>'; ?>
 
    </body>
 </html>

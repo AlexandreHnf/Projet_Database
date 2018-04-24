@@ -43,7 +43,7 @@
             }
 
             if (count($errors) > 0) { // Si erreurs
-                echo '<p Nous avons rencontré des problèmes avec vos informations : </p>';
+                echo "Nous avons rencontré des problèmes avec vos informations :" . "<br>";
                 foreach($errors as $e)
                     echo '<p class="error">'.$e.'</p>';
             }
@@ -75,22 +75,24 @@
 
         ?>
 
-		<form action="inscription_vendeur.php" method="post">
+		<form class='form' action="inscription_vendeur.php" method="post">
 			<p>
 				Nom:<br>
-				<input type="text" name="nom" /> <br />
+				<input type="text" placeholder="Nom" name="nom" /> <br /><br />
                 Prénom:<br>
-				<input type="text" name="prenom" /> <br />
+				<input type="text" placeholder="Prenom" name="prenom" /> <br /><br />
 				Date de naissance:<br>
-				<input type="date" name="date" /> <br />
+				<input type="date" name="date" /> <br /><br />
                 Adresse:<br>
-				<input type="text" name="adresse" /> <br />
+                <input type="text" placeholder="rue n° ville" name="adresse" /> 
+                <br /><br /><br />
 				<input type="submit" value="Devenir vendeur" />
 			</p>
 
 		</form>
 
-		<p> <a href="accueil.php"> Retour </a></p>
+		<?php echo '<a href="accueil.php">
+            <button class="button button1">Retour</button></a> ' . '<br><br>'; ?>
 
    </body>
 </html>
