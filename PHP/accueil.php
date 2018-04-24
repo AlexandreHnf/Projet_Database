@@ -44,30 +44,6 @@
                 ?>
             </ul>
           </div>
-
-          <!-- <div class="produits">
-            <h2>Les plus vendus</h2>
-            <ul class="cadre"> -->
-              <?php
-                // $liste = $bdd->query('SELECT COUNT(PropositionAchat.ItemID) AS nb_vente,
-                //                       PropositionAchat.ItemID, Titre, PrixMin
-                //                       FROM PropositionAchat, Objet 
-                //                       WHERE accepted = \'True\' 
-                //                       AND Objet.ItemID = PropositionAchat.ItemID 
-                //                       GROUP BY ItemID ORDER BY nb_vente DESC LIMIT 0,10' );
-
-                // while($donne = $liste->fetch()){
-
-                //   echo "<li class = \"item\"><a href=\"liste_objets.php?page=1"
-                //   . "&ItemID=" . $donne['ItemID'] . "&a=1". "\" >" . "<p class='rcorners corner2'>
-                //   ".$donne['Titre'] ."<br>" . "PRIX: " . "<mark class=\"price\">". 
-                //   $donne['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
-
-                // }
-                // $liste->closeCursor();
-              ?>
-            <!-- </ul>
-          </div> -->
           <br/ >
 
           <div class="produits">

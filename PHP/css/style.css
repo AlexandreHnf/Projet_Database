@@ -3,21 +3,23 @@ body
   /* gris flat */
   background-color: rgb(72, 84, 96);
   color: white;
+  margin: 0px;
+  font-family: sans-serif;
 }
 
 /* Gros titres */
 
 h1 { 
-  /* color: rgb(52, 172, 224);  */
-  color: #2bcbba;
+  color: white;
   font-family: 'Raleway',sans-serif; 
-  font-size: 20px; 
-  font-weight: 400; 
-  line-height: 10px; 
-  margin: 12px 0 12px; 
-  text-align: left; 
-  display: inline
-  /* text-transform: uppercase;  */
+  font-size: 40px; 
+  font-weight: 800; 
+  line-height: 10px;
+  margin: 30 auto;
+  padding: 30px;
+  text-align: center; 
+  display: block;
+  text-transform: uppercase; 
 }
 
 
@@ -28,7 +30,7 @@ h2 {
   font-size: 40px; 
   font-weight: 800; 
   line-height: 72px; 
-  margin: 0 0 24px; 
+  margin: 0 15% 24px; 
   text-align: left; 
   text-transform: uppercase; 
 
@@ -36,6 +38,17 @@ h2 {
 
 div {
   color: white;
+}
+
+#image {
+  display: block;
+  height: 200px;
+  /* background-color: #2d98da; */
+  background-image:url("png/ebay.png");
+}
+
+#resize {
+  margin: 0 auto;
 }
 
 li a {
@@ -52,16 +65,15 @@ li.item a {
 /* Liens pas visités*/
 a:link {
   color: white;
-  text-decoration: none;
 }
 
 /* Pour la pagination */
 a.page {
-  color: white;
-  text-align: center;
+  margin: 0 auto;
   text-decoration: none;
-  display: inline-block;
   padding: 8px 16px;
+  /* width: 50px;
+  height: 50px; */
   transition: background-color .3s;
   border-radius: 5px;
   border: 1px rgb(52, 172, 224);
@@ -104,27 +116,51 @@ mark.price {
   background: none;
 }
 
+/* MENU */
+
 #logo
 {
-  min-width: 150px;
-  min-height: 50px;
-  max-width: 150px;
-  max-height: 50px;
+  margin: 0 auto;
+  min-width: 160px;
+  min-height: 160px;
+  max-width: 160px;
+  max-height: 160px;
 }
 
-.text_menu
-{
+.logow {
+  margin-left: 900px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display:inline;
+}
+
+nav {
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background: rgba(16, 13, 13, 0.193);
+}
+
+.link_menu {
+  /* display:block; */
+  transition: 0.5s;
   color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 35px 30px;
+}
+.link_menu:hover {
+  background-color: rgb(52, 172, 224);
+  color: white;
+  padding: 25px 30px;
 }
 
-/* Quand on passe la souris sur les liens du menu */
-a.menu:hover {
-  display: inline-block;
-  border-radius: 15px;
-  padding: 5px;
-  transition-duration: 0.4s;
-  background-color: rgb(52, 172, 224);
-}
+/* ================================================================================== */
 
 /* Quand on passe la souris sur les éléments d'une liste */
 li.item a:hover {
@@ -132,69 +168,51 @@ li.item a:hover {
   border-radius: 15px;
   box-shadow: 0px 0px 100px #000000;
   z-index: 2;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.1);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.1);   
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1.1);
-  transition: all 200ms ease-in;
-  transform: scale(1.1);
+  transition: all 300ms ease-in;
+  transform: scale(1.02);
   background-color: rgb(52, 172, 224);
-}
-
-/* Décalage vers la droite des listes */
-li.item {
-  list-style:none;
-  padding-left: 160px;
+  /* background-color: rgba(16, 13, 13, 0.193); */
 }
 
 /* Box arrondi pour englober un texte */
 .rcorners { 
 
   border-radius: 15px;
-  background: rgba(16, 13, 13, 0.193);
-  padding: 15px;
-  /* width:1200px;
-  height:20px; */
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1); 
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1); 
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1);
-  transition: all 200ms ease-in;
-  transform: scale(1); 
-  text-align: left;
-    
+  background-color: rgba(16, 13, 13, 0.193);
+  /* background-color: rgb(52, 172, 224); */
+  padding: 12px;
+  /* text-align: left; */
 } 
 
 .corner1 {
-  width:1200px;
+  width:530px;
   height:20px;
 }
 
 .corner2 {
-  width: 1200px;
+  width: 1000px;
   height: 30px;
 }
 
 /* Boutons */
 .button {
+  overflow:hidden;
   background-color: rgb(72, 84, 96); /* Green */
   border: none;
   color: black;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display:block;
+  /* display: inline-block; */
   font-size: 16px;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
 .button1 {
+  margin: 0 auto;
   border-radius: 10px;
   background-color: rgb(72, 84, 96); 
   color: white; 
@@ -206,25 +224,6 @@ li.item {
   color: white;
 }
 
-nav ul
-{
-  overflow: hidden;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(16, 13, 13, 0.193);
-  height: 80px;
-}
-
-nav li
-{
-  z-index: 10;
-  margin-right: 40px;
-  float: left;
-}
-
 
 #search
 {
@@ -233,17 +232,33 @@ nav li
   
 }
 
+.cadre {
+  border-radius: 12px;
+  display:block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 54%;
+  border: 5px solid rgba(16, 13, 13, 0.193);
+}
+
+/* Décalage vers la droite des listes */
+li.item {
+  list-style:none;
+  /* padding-left: 160px; */
+}
+
 /* Formulaires */
 
 .form {
   border-radius: 12px;
   display:block;
   padding: 10px 20px;
+  margin: 0 auto;
   width: 25%;
   border: 5px solid rgba(16, 13, 13, 0.193);
 }
 
-input[type=text], input[type="password"], input[type="email"] {
+input[type=text], input[type="password"], input[type="email"], input[type="float"] {
   border-radius: 12px;
   padding: 5px 15px;
   padding-right: 100px;
@@ -256,7 +271,8 @@ input[type=text], input[type="password"], input[type="email"] {
   -o-transition: all 0.30s ease-in-out;
 }
 
-input[type=text]:focus, input[type="password"]:focus, input[type="email"]:focus {
+input[type=text]:focus, input[type="password"]:focus, input[type="email"]:focus,
+input[type="float"]:focus {
   width: 250px;
   background-color: lightblue;
 }
@@ -295,6 +311,7 @@ table, td, th {
 }
 
 table {
+  margin: 0 auto;
   border-collapse: separate;
   border-spacing: 0; 
   border: 4px solid rgba(16, 13, 13, 0.193);
@@ -331,4 +348,31 @@ th {
   border: 2px #f4b042;
   border-style: inset;
   background-color: white;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
