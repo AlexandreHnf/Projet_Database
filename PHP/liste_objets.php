@@ -12,7 +12,10 @@
    </head>
 
    <body>
-
+        <header>
+            <?php include("menu.php"); ?>
+        </header>
+        
         <?php
 
         if (isset($_GET['page']) and isset($_GET['ItemID'])) {    
@@ -105,9 +108,11 @@
             $prev_page = ($page - 1) % $nombreDePages;
             if ($prev_page == 0) {$prev_page = $nombreDePages;}
             
-            echo "<h2> Pages </h2>" . "<br>";
+            // echo "<h2> Pages </h2>" . "<br>";
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
             
+            // echo "<div class='cadre'>";
+
             echo '<a class=\'page\' href="liste_objets.php?page='.$prev_page.'">'.'<<'.'</a>';
             for ($i = 1 ; $i <= $nombreDePages ; $i++) {
                 if ($i == $page) {
@@ -118,6 +123,8 @@
                 }
             }
             echo '<a class=\'page\' href="liste_objets.php?page='.$next_page.'">'.'>>'.'</a>';
+
+            // echo "<br />";
 
             echo "<br><br>";
             echo '<a href="accueil.php">
@@ -130,8 +137,9 @@
                     ORDER BY ItemID 
                     DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
 
-            echo "<h2> Liste des objets mis en vente </h2>";
+            echo "<h1> Liste des objets mis en vente </h1>";
 
+            echo "<ul class='cadre'>";
             while ($obj = $req1->fetch()) {
                 $id = $obj['ItemID'];
                 // print des liens
@@ -142,6 +150,8 @@
                 $obj['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
             }
             $req1->closeCursor();
+
+            echo "<ul />";
         }
 
         ?>

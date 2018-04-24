@@ -13,6 +13,10 @@
    </head>
 
    <body>
+        <header>
+            <?php include("menu.php"); ?>
+        </header>
+
         <?php
 
         if (isset($_SESSION['pseudo'])) {    
@@ -43,7 +47,7 @@
                 $isAdmin = true;
             }
 
-            echo "<h2> Votre profil</h2>" . "<br>";
+            echo "<h1> Votre profil</h1>" . "<br>";
 
             // rôle= Utilisateur, vnedeur, admin
             echo "<table>";
@@ -85,7 +89,7 @@
                                     AND Utilisateur.UserID = ?');
             $req2->execute(array($id));
 
-            echo "<br>" . "<h2> Vos évaluations </h2>" . "<br>";
+            echo "<br>" . "<h1> Vos évaluations </h1>" . "<br>";
 
             echo "<table>"; // Tableau
 
@@ -113,7 +117,7 @@
             
 
             
-            echo "<br>" . "<h2> Evaluations reçues </h2>" . "<br>";
+            echo "<br>" . "<h1> Evaluations reçues </h1>" . "<br>";
 
             echo "<table>"; // Tableau
 
@@ -138,7 +142,7 @@
                                         WHERE Objet.SellerID = ?');
             $req4->execute(array($id));
 
-            echo "<br>" . "<h2> Vos objets mis en vente </h2>" . "<br>";
+            echo "<br>" . "<h1> Vos objets mis en vente </h1>" . "<br>";
 
             echo "<table>"; // Tableau
 
@@ -163,7 +167,7 @@
             $req5->execute(array($id));            
 
             
-            echo "<br>" . "<h2> Vos propositions d'achat </h2>" . "<br>";
+            echo "<br>" . "<h1> Vos propositions d'achat </h1>" . "<br>";
 
             echo "<table>"; // Tableau
 

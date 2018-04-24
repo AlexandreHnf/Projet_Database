@@ -12,12 +12,11 @@
    </head>
 
    <body>
-		<h2>Inscription !</h2>
+        <header>
+            <?php include("menu.php"); ?>
+        </header>
 
-		<p>
-			Ceci est la page d'inscription du site Ebay.<br />
-			Veuillez compléter le formulaire d'inscription:
-		</p>
+		<h1>Inscription</h1>
 
         <?php
 

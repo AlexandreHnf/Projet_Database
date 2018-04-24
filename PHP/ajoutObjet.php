@@ -12,17 +12,27 @@
     </head>
 
     <body>
+        <header>
+            <?php include("menu.php"); ?>
+        </header>
+        
+        <h2>Vendre !</h2>
+
         <?php
         if (!ISSET($_POST['categorie'])) 
         {
         ?>
         <form class='form' method="post" action="ajoutObjet.php">
-            Titre de l'article : <input type="text" name="Titre" value="" /> <br />
-            Prix minimal demandé : <input type="text" name="Prix" value="" /> <br />
+            Titre de l'article : <br />
+            <input type="text" name="Titre" placeholder="Titre" /> <br /><br />
+            Prix minimal demandé : <br />
+            <input type="float" name="Prix" placeholder="Prix en €" /> <br /><br />
 
             Description de l'article : <br />
             <textarea name="Description" rows="8" cols="45">
-            </textarea> <br />
+            </textarea> <br /><br />
+
+            Catégorie : <br />
 
             <select name="categorie">
                 <?php
@@ -34,7 +44,7 @@
                     }
                     $categories->closeCursor();
                 ?>
-            </select> <br />
+            </select> <br /><br />
 
             <input type="submit" value="Valider">
         </form>
@@ -80,7 +90,9 @@
         }
         ?>
 
-        <p> <a href="accueil.php"> Retour </a></p>
+        <?php echo "<br>"; ?>
+		<?php echo '<a href="accueil.php">
+            <button class="button button1">Retour</button></a> ' . '<br><br>'; ?>
 
     </body>
     

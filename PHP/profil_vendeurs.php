@@ -12,6 +12,10 @@
    </head>
 
    <body>
+        <header>
+            <?php include("menu.php"); ?>
+        </header>
+
         <?php
 
         if (isset($_GET['page']) and isset($_GET['SellerID'])) {    
@@ -97,9 +101,10 @@
             $prev_page = ($page - 1) % $nombreDePages;
             if ($prev_page == 0) {$prev_page = $nombreDePages;}
             
-            echo "<h2> Pages </h2>" . "<br>";
+            // echo "<h2> Pages </h2>" . "<br>";
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
-            
+            echo "<div class='cadre'>";
+
             echo '<a class=\'page\' href="profil_vendeurs.php?page='.$prev_page.'">'.'<<'.'</a>';
             for ($i = 1 ; $i <= $nombreDePages ; $i++) {
                 if ($i == $page) {
@@ -111,6 +116,8 @@
             }
             echo '<a class=\'page\' href="profil_vendeurs.php?page='.$next_page.'">'.'>>'.'</a>';
 
+            echo "<div />";
+            
             echo "<br><br>";
             echo '<a href="accueil.php">
             <button class="button button1">Retour</button></a> ' . '<br><br>';
@@ -118,20 +125,27 @@
             // On calcule le numéro du premier message qu'on prend pour le LIMIT
             $premierMessageAafficher = ($page - 1) * $nb_mess_per_page;
 
-            $req1 = $bdd->query('SELECT SellerID, Nom, Prenom FROM Vendeur             
+            // $req1 = $bdd->query('SELECT SellerID, Nom, Prenom FROM Vendeur             
+            //         ORDER BY SellerID 
+            //         DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
+
+            $req1 = $bdd->query('SELECT SellerID, Pseudo FROM Vendeur, Utilisateur   
+                    WHERE Vendeur.SellerID = Utilisateur.UserID          
                     ORDER BY SellerID 
                     DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
 
-            echo "<h2> Liste des vendeurs </h2>" . "<br>";
+            echo "<h1> Liste des vendeurs </h1>" . "<br>";
 
+            echo "<ul class='cadre'>";
             while ($seller = $req1->fetch()) {
                 $id = $seller['SellerID'];
 
                 // Affichage du lien (nom et prénom du vendeur)
                 echo "<li class = \"item\"><a href=\"profil_vendeurs.php?page=" . 
                 $page . "&SellerID=" . $id . "\" >" . "<p class='rcorners corner1'>".
-                $seller['Nom'] . " " . $seller['Prenom']. "</p>" . "</a></li>";
+                $seller['Pseudo'] . "</p>" . "</a></li>";
             }
+            echo "<ul />";
             $req1->closeCursor();
         }
 

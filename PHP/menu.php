@@ -1,49 +1,56 @@
 <?php include("function.php"); ?>
 
-<nav id="menu">
-    <div class="element_menu">
-        <ul>
-            <li><a class='menu' href=accueil.php> <img src="png/ebay.png" alt="Logo" id="logo"> </a></li>
-            <?php
-              if(isset($_SESSION['pseudo'])){
-                echo 
-                "<li class = dropMenu> <a href=# class = \"text_menu\">" . $_SESSION['pseudo'] . "</a>
-                    <div class=\"dropContent\"> <a href=\"deconnexion.php\" class = \"text_menu\">Se déconnecter</a>
-                    </div>
-                </li>";             
-                 
-                echo "<li><a href=\"profil_vendeurs.php\" class = 'menu' class = \"text_menu\">Vendeurs</a></li>";
-                echo "<li><a href=\"liste_objets.php\" class = 'menu' class = \"text_menu\">Objets</a></li>";
+<nav>
+  <div>
+    <ul>
+      <!-- <li><a class='link_menu' href=accueil.php> <img src="png/logo_ebay.png" alt="Logo" id="logo"> </a></li> -->
+        <?php
+        if(isset($_SESSION['pseudo'])){
+				// PROFIL
+          echo "<li><a class='link_menu' href=\"profil.php\" >" . $_SESSION['pseudo'] . "</a></li>";  
+				
+	   		// Liste des vendeurs et leurs profils
+					echo "<li><a class='link_menu' href=\"profil_vendeurs.php\" >Vendeurs</a></li>";
+				
+				// Liste des objets mis en vente + leurs caractéristiques
+          echo "<li><a class='link_menu' href=\"liste_objets.php\" >Objets</a></li>";
 
-                if (isset($_SESSION['pseudo']) && isSeller($_SESSION['pseudo'])) {                
+          if (isset($_SESSION['pseudo']) && isSeller($_SESSION['pseudo'])) {                
 					// Vendre un objet en étant vendeur
-                    echo "<li><a class = 'menu' href=\"ajoutObjet.php\" class = \"text_menu\">Vendre</a></li>";  
-                }
+            echo "<li><a class='link_menu' href=\"ajoutObjet.php\" >Vendre</a></li>";  
+          }
         
-                else{
+          else{
 					// Devenir un vendeur => formulaire
-                    echo "<li><a class = 'menu' href=\"inscription_vendeur.php\" class = \"text_menu\">Devenir vendeur</a></li>";
-                }
-
-                if (isAdmin($_SESSION['pseudo'])) {
-				  // Modifier les informations en étant admin
-                  echo "<li><a class = 'menu' href=\"adminHandling.php\" class = \"text_menu\">Droits administrateur</a></li>";  
-                }
-
-    
+            echo "<li><a class='link_menu' href=\"inscription_vendeur.php\" >Devenir vendeur</a></li>";
             }
+
+          if (isAdmin($_SESSION['pseudo'])) {
+				  // Modifier les informations en étant admin
+            echo "<li><a class='link_menu' href=\"adminHandling.php\" >Droits administrateur</a></li>";  
+          }
+
+				// deconnexion
+          echo "<li><a class='link_menu' href=\"deconnexion.php\" >Se déconnecter</a></li>";
+		}
 			  
-              else{
+        else{
 				// Si l'utilisateur n'est pas connecté
-                echo "<li class><a class = 'menu' href=\"connexion.php \" class = \"text_menu\">Se connecter</a></li>";
-                echo "<li><a class = 'menu' href=\"inscription.php \" class = \"text_menu\">S'inscrire</a></li>";
-              }
+          echo "<li class><a class='link_menu' href=\"connexion.php \" >Se connecter</a></li>";
+          echo "<li><a class='link_menu' href=\"inscription.php \" >S'inscrire</a></li>";
+        }
 
-              echo "<li><a class = 'menu' href=\"accueil.php\" class = \"text_menu\">Accueil</a></li>";
+        echo "<li><a class='link_menu' href=\"accueil.php\" >Accueil</a></li>";
 
-            ?>
-            <li><a class = 'menu' href=# class ="text_menu">Aide</a></li>
-            <?php include("researchTool.php"); ?>
-        </ul>
-    </div>
+        ?>
+        <li><a class='link_menu' href=# class ="text_menu">Aide</a></li>
+      
+    </ul>
+  </div>
 </nav>
+
+<nav>
+<?php include("researchTool.php"); ?>
+</nav>
+
+<a class='logow' href=accueil.php> <img src="png/logo_ebay.png" alt="Logo" id="logo"> </a>
