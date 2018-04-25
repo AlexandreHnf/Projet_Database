@@ -21,11 +21,6 @@ CREATE TABLE Utilisateur (
     
 );
 
-INSERT INTO Utilisateur
-VALUES (@ignore, SHA1('master_admin'), 'Master', 'master0@hotmail.com',
-        'Administrateur suprême');
-
-
 -- =========================== USERS.TXT > UTILISATEUR ===================
 
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/users.txt'
@@ -34,7 +29,6 @@ FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
 (UserID, MotDePasse, Pseudo, AdresseMail)
 set MotDePasse = SHA1(MotDePasse);
-
 -- =========================== SELLERS.TXT > UTILISATEUR ===================
 
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/sellers.txt'
@@ -44,6 +38,9 @@ LINES TERMINATED BY '\n'
 (UserID, @ignore, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail)
 set MotDePasse = SHA1(MotDePasse);
 
+INSERT INTO Utilisateur
+VALUES (@ignore, SHA1('master_admin'), 'Master', 'master0@hotmail.com',
+        'Administrateur suprême');
 
 -- ============================ TABLE ADMIN ============================
 DROP TABLE IF EXISTS Administrateur;

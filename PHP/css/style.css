@@ -242,7 +242,7 @@ li.item a:hover {
 }
 
 .corner2 {
-  width: 1000px;
+  width: 920px;
   height: 30px;
 }
 
@@ -311,7 +311,8 @@ li.item {
   border: 5px solid rgba(16, 13, 13, 0.193);
 }
 
-input[type=text], input[type="password"], input[type="email"], input[type="float"] {
+input[type=text], input[type="password"], input[type="email"], 
+input[type="float"], input[type="number"] {
   border-radius: 12px;
   padding: 5px 15px;
   padding-right: 100px;
@@ -324,8 +325,9 @@ input[type=text], input[type="password"], input[type="email"], input[type="float
   -o-transition: all 0.30s ease-in-out;
 }
 
-input[type=text]:focus, input[type="password"]:focus, input[type="email"]:focus,
-input[type="float"]:focus {
+input[type=text]:focus, input[type="password"]:focus, 
+input[type="email"]:focus, input[type="float"]:focus,
+input[type="number"]:focus {
   width: 250px;
   background-color: lightblue;
 }

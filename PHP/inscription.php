@@ -13,9 +13,6 @@
    </head>
 
    <body>
-        <header>
-            <?php include("menu.php"); ?>
-        </header>
 
 		<h1>Inscription</h1>
 

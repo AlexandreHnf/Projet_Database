@@ -22,9 +22,13 @@
         if (isset($_GET['page']) and isset($_GET['ItemID'])) {    
             // on affiche l'objet
         
-            $req2 = $bdd->prepare('SELECT * FROM Objet, Utilisateur, Vendeur
-                                    WHERE Objet.ItemID = ?
-                                    AND Objet.SellerID = Vendeur.SellerID');
+            $req2 = $bdd->prepare('SELECT Titre, Description_obj, DateMiseEnVente, 
+                                    PrixMin, DateVente, Acheteur, Categorie, Pseudo 
+                                    FROM Objet, Utilisateur, Vendeur 
+                                    WHERE Objet.ItemID = ? 
+                                    AND Objet.SellerID = Vendeur.SellerID 
+                                    AND Utilisateur.UserID = Vendeur.SellerID ');
+
             $req2->execute(array($_GET['ItemID']));
             $objet = $req2->fetch();
             $req2->closeCursor();
@@ -51,8 +55,7 @@
             echo "<tr>" . "<th>Prix minimum</th>" . "<td>" . $objet['PrixMin'] ." €"."</td>" . "</tr>";
             echo "<tr>" . "<th>Date de vente</th>" . "<td>" . $objet['DateVente'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Acheteur</th>" . "<td>" . $objet['Acheteur'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Vendeur</th>" . "<td>" . $objet['Nom'] . " " 
-            . $objet['Prenom'] . "</td>" . "</tr>";
+            echo "<tr>" . "<th>Vendeur</th>" . "<td>" . $objet['Pseudo'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Catégorie</th>" . "<td>" . $objet['Categorie'] . "</td>" . "</tr>";
 
             echo "</table>";
@@ -95,9 +98,14 @@
                 $page = 1; // par défaut
             }
 
-
-            // On met dans une variable le nombre de messages qu'on veut par page
-            $nb_mess_per_page = 100; // Nombre d'éléments par page
+            if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['quantity']))) {
+                $nb_mess_per_page = $_POST['quantity']; // Nombre d'éléments par page
+            }
+            
+            else {
+                $nb_mess_per_page = 100; // Nombre d'éléments par page
+            }
+            
             // On récupère le nombre total de messages
             $req = $bdd->query('SELECT COUNT(*) AS nb_messages FROM Objet');
             $donnees = $req->fetch();
@@ -109,27 +117,21 @@
             $prev_page = ($page - 1) % $nombreDePages;
             if ($prev_page == 0) {$prev_page = $nombreDePages;}
             
-            // echo "<h2> Pages </h2>" . "<br>";
-            // Puis on fait une boucle pour écrire les liens vers chacune des pages
-            
-            // echo "<div class='cadre'>";
-
-            echo '<a class=\'page\' href="liste_objets.php?page='.$prev_page.'">'.'<<'.'</a>';
-            for ($i = 1 ; $i <= $nombreDePages ; $i++) {
-                if ($i == $page) {
-                    echo '<a class=\'active\' href="liste_objets.php?page='.$i.'">'.$i .'</a>';
-                }
-                else {
-                    echo '<a class=\'page\' href="liste_objets.php?page='.$i.'">'.$i . '</a>';
-                }
-            }
-            echo '<a class=\'page\' href="liste_objets.php?page='.$next_page.'">'.'>>'.'</a>';
-
-            // echo "<br />";
 
             echo "<br><br>";
             echo '<a href="accueil.php">
             <button class="button button1">Retour</button></a> ' . '<br><br>';
+
+            // Pour choisir combien d'éléments à afficher par page
+
+            echo "<form class='form' action='liste_objets.php' method='post'>";
+            echo "<p>";
+                echo "Nombre d'élements par page" . "<br>";
+                echo "<input type='number' name='quantity' min='20' max='100'>";
+				echo "<input type='submit' value='Valider' />";
+			echo "</p>";
+
+		    echo "</form>";
 
             // On calcule le numéro du premier message qu'on prend pour le LIMIT
             $premierMessageAafficher = ($page - 1) * $nb_mess_per_page;
@@ -153,6 +155,25 @@
             $req1->closeCursor();
 
             echo "<ul />";
+
+            echo "<br><br>";
+
+            echo "<div class='cadre'>";
+
+            // Puis on fait une boucle pour écrire les liens vers chacune des pages
+
+            echo '<a class=\'page\' href="liste_objets.php?page='.$prev_page.'">'.'<<'.'</a>';
+            for ($i = 1 ; $i <= $nombreDePages ; $i++) {
+                if ($i == $page) {
+                    echo '<a class=\'active\' href="liste_objets.php?page='.$i.'">'.$i .'</a>';
+                }
+                else {
+                    echo '<a class=\'page\' href="liste_objets.php?page='.$i.'">'.$i . '</a>';
+                }
+            }
+            echo '<a class=\'page\' href="liste_objets.php?page='.$next_page.'">'.'>>'.'</a>';
+
+            echo "<div />";
         }
 
         ?>
