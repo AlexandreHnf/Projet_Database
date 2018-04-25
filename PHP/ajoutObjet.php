@@ -1,5 +1,7 @@
 <?php 
-	session_start();  // On démarre la session
+    session_start();  // On démarre la session
+    include("database.php");
+    include("function.php");
 ?> 
 
 <!DOCTYPE html>
@@ -35,7 +37,7 @@
 
             <select name="categorie">
                 <?php
-                    include("database.php");
+                    // include("database.php");
                     $categories = $bdd->query('SELECT * FROM Categorie');
                     while ($tmpCat = $categories->fetch())
                     {
@@ -52,7 +54,7 @@
         }
         else 
         {
-            include("database.php");
+            // include("database.php");
             $pseudo = $_SESSION['pseudo'];
             echo $pseudo;
             $seller = $bdd->prepare(' SELECT v.SellerID

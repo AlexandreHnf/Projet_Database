@@ -1,7 +1,7 @@
 <?php 
     session_start();  // On démarre la session
     include('database.php');
-    include('function.php');
+    include("function.php");
 ?> 
 
 <!DOCTYPE html>
@@ -24,7 +24,8 @@
             $isSeller = false;
             $isAdmin = false;
 
-            if (isSeller($_SESSION['pseudo'])) { // VENDEUR
+            // VENDEUR
+            if (isset($_SESSION['isSeller']) && $_SESSION['isSeller']) {
                 $isSeller = true;
                 $req1 = $bdd->prepare('SELECT * FROM Vendeur, Utilisateur
                                         WHERE Vendeur.SellerID = Utilisateur.UserID
@@ -43,7 +44,8 @@
             }
             $id = $profil['UserID'];
 
-            if (isAdmin($_SESSION['pseudo'])) { // ADMIN
+            // ADMIN
+            if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin']) {
                 $isAdmin = true;
             }
 

@@ -67,6 +67,8 @@
                 $req->closeCursor(); // Termine le traitement de la requête
                 $req2->closeCursor(); // Termine le traitement de la requête
 
+                $_SESSION['isSeller'] = true; // désormais vendeur
+
                 header('location: accueil.php');
                 exit;
             }

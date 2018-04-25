@@ -18,7 +18,9 @@
         <h1>Ajouter un administrateur</h1>
     <?php
         $error = false;
-        if (isset($_POST['newAdmin']) && !(!isAdmin($_POST['newAdmin']) && isUser($_POST['newAdmin']) && checkPassword($_SESSION['pseudo'], SHA1($_POST['password']))))
+        if (isset($_POST['newAdmin']) && !(!isAdmin($_POST['newAdmin']) 
+            && isUser($_POST['newAdmin']) 
+            && checkPassword($_SESSION['pseudo'], SHA1($_POST['password']))))
         {
             echo "Erreur ! Les données fournies sont invalides.";
             $error = true;
@@ -46,7 +48,8 @@
         {
             $newAdmin = $_POST['newAdmin'];
 
-            if (!isAdmin($newAdmin) && isUser($newAdmin) && checkPassword($_SESSION['pseudo'], SHA1($_POST['password'])))
+            if (!isAdmin($newAdmin) && isUser($newAdmin) 
+                && checkPassword($_SESSION['pseudo'], SHA1($_POST['password'])))
             {
                 include("database.php");
 

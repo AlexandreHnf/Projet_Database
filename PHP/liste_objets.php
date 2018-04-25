@@ -1,6 +1,7 @@
 <?php 
     session_start();  // On démarre la session
     include('database.php');
+    include("function.php");
 ?> 
 
 <!DOCTYPE html>

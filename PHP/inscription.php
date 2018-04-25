@@ -1,6 +1,7 @@
 <?php 
     session_start();  // On démarre la session
     include("database.php");
+    include("function.php");
 ?> 
 
 <!DOCTYPE html>
@@ -62,6 +63,16 @@
                     'email' => $email
                 ));
                 $req2->closeCursor();
+
+                if (isSeller($pseudo)) {             // Variable de sess pour vendeurs
+					$_SESSION['isSeller'] = true;
+                }
+                else {$_SESSION['isSeller'] = false; }
+
+				if (isAdmin($pseudo)) {              // Variable de sess pour admins
+					$_SESSION['isAdmin'] = true;
+                }
+                else {$_SESSION['isAdmin'] = false; }
 
 
                 header('location: accueil.php');
