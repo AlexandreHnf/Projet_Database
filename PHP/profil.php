@@ -19,7 +19,6 @@
 
         <?php
 
-        if (isset($_SESSION['pseudo'])) {    
             // on affiche le profil
             $isSeller = false;
             $isAdmin = false;
@@ -49,9 +48,11 @@
                 $isAdmin = true;
             }
 
+        if (isset($_SESSION['pseudo']) && !isset($_GET['opt'])) {
+
             echo "<h1> Votre profil</h1>" . "<br>";
 
-            // rôle= Utilisateur, vnedeur, admin
+            // rôle= Utilisateur, vendeur, admin
             echo "<table>";
             echo "<tr>" . "<th>Rôle(s)</th>" . "</tr>";
             echo "<tr>" . "<td>Utilisateur</td>" . "</tr>";
@@ -79,126 +80,137 @@
 
             echo "</table>";
 
-            // =======================================================================
+        }
 
-            //objets
+        else {
 
             // ====================== EVALUATIONS FAITES AUX VENDEURS ====================
-            $req2 = $bdd->prepare('SELECT Time, Rate, Commentaire, Nom, Prenom 
-                                    FROM Evaluation, Utilisateur, Vendeur
-                                    WHERE Evaluation.Buyer = Utilisateur.UserID
-                                    AND Evaluation.Seller = Vendeur.SellerID
-                                    AND Utilisateur.UserID = ?');
-            $req2->execute(array($id));
 
-            echo "<br>" . "<h1> Vos évaluations </h1>" . "<br>";
+            if (isset($_GET['opt']) && ($_GET['opt'] == "eval")) {
+                $req2 = $bdd->prepare('SELECT Time, Rate, Commentaire, Nom, Prenom 
+                                        FROM Evaluation, Utilisateur, Vendeur
+                                        WHERE Evaluation.Buyer = Utilisateur.UserID
+                                        AND Evaluation.Seller = Vendeur.SellerID
+                                        AND Utilisateur.UserID = ?');
+                $req2->execute(array($id));
 
-            echo "<table>"; // Tableau
+                echo "<br>" . "<h1> Vos évaluations </h1>" . "<br>";
 
-            echo "<tr>" . "<th>Vendeur évalué </th>" . "<th>Date d'évaluation</th>";
-            echo "<th>Note</th>" . "<th>Commentaire</th>" . "</tr>";
+                echo "<table>"; // Tableau
 
-            while ($eval_perso = $req2->fetch()) {
-                // Lignes dans le tableau
-                echo "<tr>"."<td>" . $eval_perso['Nom'] . " " . $eval_perso['Prenom'] ."</td>".
-                "<td>" . $eval_perso['Time'] . "</td>" . 
-                "<td>" . $eval_perso['Rate'] . "</td>" .
-                "<td>" . $eval_perso['Commentaire'] . "</td>" . "</tr>";
-            
+                echo "<tr>" . "<th>Vendeur évalué </th>" . "<th>Date d'évaluation</th>";
+                echo "<th>Note</th>" . "<th>Commentaire</th>" . "</tr>";
+
+                while ($eval_perso = $req2->fetch()) {
+                    // Lignes dans le tableau
+                    echo "<tr>"."<td>" . $eval_perso['Nom'] . " " . $eval_perso['Prenom'] ."</td>".
+                    "<td>" . $eval_perso['Time'] . "</td>" . 
+                    "<td>" . $eval_perso['Rate'] . "</td>" .
+                    "<td>" . $eval_perso['Commentaire'] . "</td>" . "</tr>";
+                
+                }
+                $req2->closeCursor();
+                echo "</table>";
             }
-            $req2->closeCursor();
-            echo "</table>";
 
-
+            
             // ==================== ETANT VENDEUR, EVALUATIONS RECUES =====================
-            $req3 = $bdd->prepare('SELECT Pseudo, Time, Rate, Commentaire 
-                                    FROM Evaluation, Utilisateur
-                                    WHERE Evaluation.Buyer = Utilisateur.UserID
-                                    AND Evaluation.Seller = ?');
-            $req3->execute(array($id));
-            
 
-            
-            echo "<br>" . "<h1> Evaluations reçues </h1>" . "<br>";
+            if (isset($_GET['opt']) && ($_GET['opt'] == "eval_r")) {
+                $req3 = $bdd->prepare('SELECT Pseudo, Time, Rate, Commentaire 
+                                        FROM Evaluation, Utilisateur
+                                        WHERE Evaluation.Buyer = Utilisateur.UserID
+                                        AND Evaluation.Seller = ?');
+                $req3->execute(array($id));
+                
 
-            echo "<table>"; // Tableau
+                
+                echo "<br>" . "<h1> Evaluations reçues </h1>" . "<br>";
 
-            echo "<tr>" . "<th> Pseudo de Acheteur </th>" . "<th>Date d'évaluation</th>";
-            echo "<th>Note</th>" . "<th>Commentaire</th>" . "</tr>";
+                echo "<table>"; // Tableau
 
-            while ($eval = $req3->fetch()) {
-                // Lignes dans le tableau
-                echo "<tr>"."<td>" . $eval['Pseudo'] ."</td>".
-                "<td>" . $eval['Time'] . "</td>" . 
-                "<td>" . $eval['Rate'] . "</td>" .
-                "<td>" . $eval['Commentaire'] . "</td>" . "</tr>";
-            
+                echo "<tr>" . "<th> Pseudo de Acheteur </th>" . "<th>Date d'évaluation</th>";
+                echo "<th>Note</th>" . "<th>Commentaire</th>" . "</tr>";
+
+                while ($eval = $req3->fetch()) {
+                    // Lignes dans le tableau
+                    echo "<tr>"."<td>" . $eval['Pseudo'] ."</td>".
+                    "<td>" . $eval['Time'] . "</td>" . 
+                    "<td>" . $eval['Rate'] . "</td>" .
+                    "<td>" . $eval['Commentaire'] . "</td>" . "</tr>";
+                
+                }
+                $req3->closeCursor();
+                echo "</table>";
             }
-            $req3->closeCursor();
-            echo "</table>";
 
 
             // ==================== OBJETS MIS EN VENTE PAR LUI ==================================
 
-            $req4 = $bdd->prepare('SELECT * FROM Objet 
-                                        WHERE Objet.SellerID = ?');
-            $req4->execute(array($id));
+            if (isset($_GET['opt']) && ($_GET['opt'] == "obj")) {
 
-            echo "<br>" . "<h1> Vos objets mis en vente </h1>" . "<br>";
+                $req4 = $bdd->prepare('SELECT * FROM Objet 
+                                            WHERE Objet.SellerID = ?');
+                $req4->execute(array($id));
 
-            echo "<table>"; // Tableau
+                echo "<br>" . "<h1> Vos objets mis en vente </h1>" . "<br>";
 
-            echo "<tr>" . "<th>Titre </th>" . "<th>Prix</th>";
+                echo "<table>"; // Tableau
 
-            while ($obj = $req4->fetch()) {
-                // Lignes dans le tableau
-                echo "<tr>"."<td>" . $obj['Titre'] . "</td>".
-                "<td>" . $obj['PrixMin'] . " €" . "</td>" . "</tr>";
-            
+                echo "<tr>" . "<th>Titre </th>" . "<th>Prix</th>";
+
+                while ($obj = $req4->fetch()) {
+                    // Lignes dans le tableau
+                    echo "<tr>"."<td>" . $obj['Titre'] . "</td>".
+                    "<td>" . $obj['PrixMin'] . " €" . "</td>" . "</tr>";
+                
+                }
+                $req4->closeCursor();
+                echo "</table>";
+
             }
-            $req4->closeCursor();
-            echo "</table>";
-
-
 
             // ==================== PROPOSITIONS D'ACHAT QU'IL A FAIT =====================
-            $req5 = $bdd->prepare('SELECT Titre, Time, price, accepted
-                                    FROM PropositionAchat, Objet
-                                    WHERE Objet.ItemID = PropositionAchat.ItemID
-                                    AND Buyer = ?');
-            $req5->execute(array($id));            
 
-            
-            echo "<br>" . "<h1> Vos propositions d'achat </h1>" . "<br>";
+            if (isset($_GET['opt']) && ($_GET['opt'] == "prop")) {
+                $req5 = $bdd->prepare('SELECT Titre, Time, price, accepted
+                                        FROM PropositionAchat, Objet
+                                        WHERE Objet.ItemID = PropositionAchat.ItemID
+                                        AND Buyer = ?');
+                $req5->execute(array($id));            
 
-            echo "<table>"; // Tableau
+                
+                echo "<br>" . "<h1> Vos propositions d'achat </h1>" . "<br>";
 
-            echo "<tr>" . "<th> Objet concerné </th>" . "<th>Date</th>";
-            echo "<th>Prix</th>" . "<th>Statut</th>" . "</tr>";
+                echo "<table>"; // Tableau
 
-            while ($prop = $req5->fetch()) {
-                // Lignes dans le tableau
-                echo "<tr>"."<td>" . $prop['Titre'] ."</td>".
-                "<td>" . $prop['Time'] . "</td>" . 
-                "<td>" . $prop['price'] . " €" . "</td>";
-                if (isset($prop['accepted'])) {
-                    if ($prop['accepted'] == True) {
-                        echo "<td>accepté </td>" . "</tr>";
+                echo "<tr>" . "<th> Objet concerné </th>" . "<th>Date</th>";
+                echo "<th>Prix</th>" . "<th>Statut</th>" . "</tr>";
+
+                while ($prop = $req5->fetch()) {
+                    // Lignes dans le tableau
+                    echo "<tr>"."<td>" . $prop['Titre'] ."</td>".
+                    "<td>" . $prop['Time'] . "</td>" . 
+                    "<td>" . $prop['price'] . " €" . "</td>";
+                    if (isset($prop['accepted'])) {
+                        if ($prop['accepted'] == True) {
+                            echo "<td>accepté </td>" . "</tr>";
+                        }
+                        else {
+                            echo "<td>refusé</td>" . "</tr>";
+                        }
                     }
-                    else {
-                        echo "<td>refusé</td>" . "</tr>";
-                    }
+                
                 }
-            
+                $req5->closeCursor();
+                echo "</table>";
             }
-            $req4->closeCursor();
-            echo "</table>";
 
-            // affiche du lien pour retour
-            echo '<a href="accueil.php">
-            <button class="button button1">Retour</button></a> ';
+        } // fin else
 
-        }
+        // affiche du lien pour retour
+        echo '<a href="accueil.php">
+        <button class="button button1">Retour</button></a> ';
 
         ?>
 

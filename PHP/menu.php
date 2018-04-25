@@ -8,8 +8,14 @@
           echo "<li class='sub-menu-parent' tab-index='0'>";
             echo"<a class='link_menu' href=\"profil.php\" >" . $_SESSION['pseudo'] . "</a>";
             echo "<ul class='sub-menu'>";
-              echo "<li><a class='link_submenu' href='#'>Sub Item 1</a></li>";
-              echo "<li><a class='link_submenu' href='#'>Sub Item 2</a></li>";
+              echo "<li><a class='link_submenu' href='profil.php?opt=eval'>Vos evaluations</a></li>";
+
+              if (isset($_SESSION['isSeller']) && $_SESSION['isSeller']) {
+                echo "<li><a class='link_submenu' href='profil.php?opt=eval_r'>Evaluations reçues</a></li>";
+                echo "<li><a class='link_submenu' href='profil.php?opt=obj'>Vos objets</a></li>";
+              }
+
+              echo "<li><a class='link_submenu' href='profil.php?opt=prop'>Vos propositions d'achat</a></li>";
               echo "<li><a class='link_submenu' href=\"deconnexion.php\" >Se déconnecter</a></li>";
             echo "</ul>";
           echo "</li>";
