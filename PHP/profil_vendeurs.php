@@ -19,7 +19,7 @@
 
         <?php
 
-        if (isset($_GET['page']) and isset($_GET['SellerID'])) {    
+        if (isset($_GET['page']) and isset($_GET['SellerID'])) { 
             // on affiche le profil
             
             $req2 = $bdd->prepare('SELECT * FROM Vendeur, Utilisateur
@@ -73,8 +73,13 @@
             echo "</table>";
 
             // affiche du lien pour retour
-            echo '<a href="profil_vendeurs.php?page=' . $_GET['page'] . '">
-            <button class="button button1">Retour</button></a> ';
+            if ($_GET['page'] != 0) {
+                echo '<a href="profil_vendeurs.php?page=' . $_GET['page'] . '">
+                <button class="button button1">Retour</button></a> ';
+            }
+            else {
+                echo '<a href="accueil.php"> <button class="button button1">Retour</button></a> ';
+            }
 
         }
 
@@ -125,10 +130,6 @@
             // On calcule le numéro du premier message qu'on prend pour le LIMIT
             $premierMessageAafficher = ($page - 1) * $nb_mess_per_page;
 
-            // $req1 = $bdd->query('SELECT SellerID, Nom, Prenom FROM Vendeur             
-            //         ORDER BY SellerID 
-            //         DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
-
             $req1 = $bdd->query('SELECT SellerID, Pseudo FROM Vendeur, Utilisateur   
                     WHERE Vendeur.SellerID = Utilisateur.UserID          
                     ORDER BY SellerID 
@@ -140,7 +141,7 @@
             while ($seller = $req1->fetch()) {
                 $id = $seller['SellerID'];
 
-                // Affichage du lien (nom et prénom du vendeur)
+                // Affichage du lien (Pseudo du vendeur)
                 echo "<li class = \"item\"><a href=\"profil_vendeurs.php?page=" . 
                 $page . "&SellerID=" . $id . "\" >" . "<p class='rcorners corner2'>".
                 $seller['Pseudo'] . "</p>" . "</a></li>";

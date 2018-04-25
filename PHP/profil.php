@@ -87,11 +87,13 @@
             // ====================== EVALUATIONS FAITES AUX VENDEURS ====================
 
             if (isset($_GET['opt']) && ($_GET['opt'] == "eval")) {
-                $req2 = $bdd->prepare('SELECT Time, Rate, Commentaire, Nom, Prenom 
-                                        FROM Evaluation, Utilisateur, Vendeur
-                                        WHERE Evaluation.Buyer = Utilisateur.UserID
-                                        AND Evaluation.Seller = Vendeur.SellerID
-                                        AND Utilisateur.UserID = ?');
+                $req2 = $bdd->prepare('SELECT Time, Rate, Commentaire, 
+                                    u2.Pseudo AS pseudo_vendeur, u2.UserID AS sellerid
+                                    FROM Evaluation, Utilisateur u1, Utilisateur u2, Vendeur
+                                    WHERE Evaluation.Buyer = u1.UserID
+                                    AND Evaluation.Seller = Vendeur.SellerID
+                                    AND u1.UserID = ?
+                                    AND u2.UserID = Vendeur.SellerID');
                 $req2->execute(array($id));
 
                 echo "<br>" . "<h1> Vos évaluations </h1>" . "<br>";
@@ -103,7 +105,11 @@
 
                 while ($eval_perso = $req2->fetch()) {
                     // Lignes dans le tableau
-                    echo "<tr>"."<td>" . $eval_perso['Nom'] . " " . $eval_perso['Prenom'] ."</td>".
+                    // echo "<tr>"."<td>" . $eval_perso['pseudo_vendeur'] ."</td>".
+                    echo "<tr>"."<td>" . "<a href=\"profil_vendeurs.php?page=0&SellerID=" . 
+                    $eval_perso['sellerid'] . "\" >
+                    " . $eval_perso['pseudo_vendeur'] . "</a>" . "</td>" .
+
                     "<td>" . $eval_perso['Time'] . "</td>" . 
                     "<td>" . $eval_perso['Rate'] . "</td>" .
                     "<td>" . $eval_perso['Commentaire'] . "</td>" . "</tr>";
@@ -161,7 +167,11 @@
 
                 while ($obj = $req4->fetch()) {
                     // Lignes dans le tableau
-                    echo "<tr>"."<td>" . $obj['Titre'] . "</td>".
+                    // echo "<tr>"."<td>" . $obj['Titre'] . "</td>".
+                    echo "<tr>"."<td>" . "<a href=\"liste_objets.php?page=0&ItemID=" .
+                    $obj['ItemID'] . "\" >
+                    " . $obj['Titre'] . "</a>" . "</td>" .
+
                     "<td>" . $obj['PrixMin'] . " €" . "</td>" . "</tr>";
                 
                 }
@@ -173,7 +183,7 @@
             // ==================== PROPOSITIONS D'ACHAT QU'IL A FAIT =====================
 
             if (isset($_GET['opt']) && ($_GET['opt'] == "prop")) {
-                $req5 = $bdd->prepare('SELECT Titre, Time, price, accepted
+                $req5 = $bdd->prepare('SELECT Objet.ItemID, Titre, Time, price, accepted
                                         FROM PropositionAchat, Objet
                                         WHERE Objet.ItemID = PropositionAchat.ItemID
                                         AND Buyer = ?');
@@ -189,7 +199,11 @@
 
                 while ($prop = $req5->fetch()) {
                     // Lignes dans le tableau
-                    echo "<tr>"."<td>" . $prop['Titre'] ."</td>".
+                    // echo "<tr>"."<td>" . $prop['Titre'] ."</td>".
+                    echo "<tr>"."<td>" . "<a href=\"liste_objets.php?page=0&ItemID=" .
+                    $prop['ItemID'] . "\" >
+                    " . $prop['Titre'] . "</a>" . "</td>" .
+
                     "<td>" . $prop['Time'] . "</td>" . 
                     "<td>" . $prop['price'] . " €" . "</td>";
                     if (isset($prop['accepted'])) {

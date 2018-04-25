@@ -34,8 +34,8 @@
                   
                   while($donne = $liste->fetch()){
 
-                    echo "<li class = \"item\"><a href=\"liste_objets.php?page=1"
-                    . "&ItemID=" . $donne['ItemID'] . "&a=1". "\" >" . "<p class='rcorners corner2'>
+                    echo "<li class = \"item\"><a href=\"liste_objets.php?page=0"
+                    . "&ItemID=" . $donne['ItemID'] . "\" >" . "<p class='rcorners corner2'>
                     ".$donne['Titre'] ."<br>" . "PRIX: " . "<mark class=\"price\">". 
                     $donne['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
 
@@ -57,8 +57,8 @@
 
                   while($donne = $liste->fetch()){
 
-                    echo "<li class = \"item\"><a href=\"liste_objets.php?page=1"
-                    . "&ItemID=" . $donne['ItemID'] . "&a=1". "\" >" . "<p class='rcorners corner2'>
+                    echo "<li class = \"item\"><a href=\"liste_objets.php?page=0"
+                    . "&ItemID=" . $donne['ItemID'] . "\" >" . "<p class='rcorners corner2'>
                     ".$donne['Titre'] ."<br>" . "PRIX: " . "<mark class=\"price\">". 
                     $donne['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
 

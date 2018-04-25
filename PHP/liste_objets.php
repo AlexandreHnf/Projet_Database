@@ -23,7 +23,8 @@
             // on affiche l'objet
         
             $req2 = $bdd->prepare('SELECT Titre, Description_obj, DateMiseEnVente, 
-                                    PrixMin, DateVente, Acheteur, Categorie, Pseudo 
+                                    PrixMin, DateVente, Acheteur, Categorie,
+                                    Pseudo, Vendeur.SellerID
                                     FROM Objet, Utilisateur, Vendeur 
                                     WHERE Objet.ItemID = ? 
                                     AND Objet.SellerID = Vendeur.SellerID 
@@ -34,7 +35,7 @@
             $req2->closeCursor();
 
             // affiche du lien pour retour
-            if (isset($_GET['a'])) { // Si on vient d'un objet de l'accueil
+            if ($_GET['page'] == 0) { // Si on vient d'un objet de l'accueil
                 echo '<a href="accueil.php">
                 <button class="button button1">Retour</button></a> ' . '<br><br>';
             }
@@ -55,7 +56,11 @@
             echo "<tr>" . "<th>Prix minimum</th>" . "<td>" . $objet['PrixMin'] ." €"."</td>" . "</tr>";
             echo "<tr>" . "<th>Date de vente</th>" . "<td>" . $objet['DateVente'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Acheteur</th>" . "<td>" . $objet['Acheteur'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Vendeur</th>" . "<td>" . $objet['Pseudo'] . "</td>" . "</tr>";
+
+            echo "<tr>"."<th>Vendeur</th>" . "<td>". "<a href=\"profil_vendeurs.php?page=0&SellerID=" . 
+                $objet['SellerID'] . "\" >
+                " . $objet['Pseudo'] . "</a>" . "</td>" . "</tr>";
+
             echo "<tr>" . "<th>Catégorie</th>" . "<td>" . $objet['Categorie'] . "</td>" . "</tr>";
 
             echo "</table>";
