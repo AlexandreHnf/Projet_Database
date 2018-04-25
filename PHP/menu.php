@@ -7,7 +7,7 @@
         <?php
         if(isset($_SESSION['pseudo'])){
 				// PROFIL
-          echo "<li><a class='link_menu' href=\"profil.php\" >" . $_SESSION['pseudo'] . "</a></li>";  
+          echo "<li><a class='link_menu' href=\"profil.php\" >" . $_SESSION['pseudo'] . "</a></li>"; 
 				
 	   		// Liste des vendeurs et leurs profils
 					echo "<li><a class='link_menu' href=\"profil_vendeurs.php\" >Vendeurs</a></li>";
@@ -32,10 +32,18 @@
 
 				// deconnexion
           echo "<li><a class='link_menu' href=\"deconnexion.php\" >Se déconnecter</a></li>";
-		}
+			  }
 			  
         else{
-				// Si l'utilisateur n'est pas connecté
+        // Si l'utilisateur n'est pas connecté
+          echo "<li class='sub-menu-parent' tab-index='0'>";
+            echo"<a class='link_menu' href='#'>Menu Item 3</a>";
+            echo "<ul class='sub-menu'>";
+              echo "<li><a class='link_menu' href='#'>Sub Item 1</a></li>";
+              echo "<li><a class='link_menu' href='#'>Sub Item 2</a></li>";
+            echo "</ul>";
+          echo "</li>";
+
           echo "<li class><a class='link_menu' href=\"connexion.php \" >Se connecter</a></li>";
           echo "<li><a class='link_menu' href=\"inscription.php \" >S'inscrire</a></li>";
         }
@@ -53,4 +61,11 @@
 <?php include("researchTool.php"); ?>
 </nav>
 
-<a class='logow' href=accueil.php> <img src="png/logo_ebay.png" alt="Logo" id="logo"> </a>
+<!-- <a href=accueil.php> <img src="png/logo_ebay.png" alt="Logo" id="logo"> </a> -->
+
+<div class="dropdown">
+  <span><a href=accueil.php> <img src="png/logo_ebay.png" alt="Logo" id="logo"> </a></span>
+  <div class="dropdown-content">
+    <p>Accueil</p>
+  </div>
+</div>

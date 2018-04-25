@@ -1,6 +1,5 @@
 <?php 
-    session_start();  // On démarre la session
-    
+	session_start();  // On démarre la session
 ?> 
 
 <!DOCTYPE html>
