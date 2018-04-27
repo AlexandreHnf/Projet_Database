@@ -121,7 +121,7 @@
             echo "<form class='form' action='profil_vendeurs.php' method='post'>";
             echo "<p>";
                 echo "Nombre d'élements par page" . "<br>";
-                echo "<input type='number' name='quantity' min='20' max='100'>";
+                echo "<input type='number' name='quantity' min='20' max='100'>" . "<br>";
 				echo "<input type='submit' value='Valider' />";
 			echo "</p>";
 

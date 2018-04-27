@@ -13,6 +13,22 @@
               if (isset($_SESSION['isSeller']) && $_SESSION['isSeller']) {
                 echo "<li><a class='link_submenu' href='profil.php?opt=eval_r'>Evaluations reçues</a></li>";
                 echo "<li><a class='link_submenu' href='profil.php?opt=obj'>Vos objets</a></li>";
+
+                // $req = $bdd->prepare('SELECT ItemID 
+                //                     FROM PropositionAchat, Objet, Utilisateur
+                //                     WHERE accepted = NULL AND
+                //                     PropositionAchat.ItemID = Objet.ItemID
+                //                     AND Objet.SellerID = Utilisateur.UserID
+                //                     AND Utilisateur.Pseudo = ? ');
+
+                // $req->execute(array($_SESSION['pseudo']));
+                // $id = $req->fetch();
+
+                // if ($id) {
+                //   "<li><a class='link_submenu' href='profil.php?opt=obj'>Vos objets</a></li>";
+                // }
+
+
               }
 
               echo "<li><a class='link_submenu' href='profil.php?opt=prop'>Vos propositions d'achat</a></li>";
@@ -50,8 +66,20 @@
           echo "<li><a class='link_menu' href=\"inscription.php \" >S'inscrire</a></li>";
         }
 
+        echo "<li class='sub-menu-parent' tab-index='0'>";
+          echo"<a class='link_menu' href=# >" . 'Requêtes' . "</a>";
+          echo "<ul class='sub-menu'>";
+            echo "<li><a class='link_submenu' href='requetes.php?r=1'>R1</a></li>";
+            echo "<li><a class='link_submenu' href='requetes.php?r=2'>R2</a></li>";
+            echo "<li><a class='link_submenu' href='requetes.php?r=3'>R3</a></li>";
+            echo "<li><a class='link_submenu' href='requetes.php?r=4'>R4</a></li>";
+            echo "<li><a class='link_submenu' href='requetes.php?r=5'>R5</a></li>";
+            echo "<li><a class='link_submenu' href='requetes.php?r=6'>R6</a></li>";
+          echo "</ul>";
+        echo "</li>";
+
         ?>
-        <li><a class='link_menu' href=# class ="text_menu">Aide</a></li>
+        <!-- <li><a class='link_menu' href=# class ="text_menu">Aide</a></li> -->
       
     </ul>
   </div>

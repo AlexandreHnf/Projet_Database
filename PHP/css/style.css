@@ -70,6 +70,11 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 /* Pour la pagination */
 a.page {
   margin: 0 auto;
@@ -78,8 +83,6 @@ a.page {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
-  /* width: 50px;
-  height: 50px; */
   transition: background-color .3s;
   border-radius: 5px;
   border: 1px rgb(52, 172, 224);
@@ -171,20 +174,12 @@ nav {
   margin: 0 auto;
   transition: 0.5s;
   transition: all 300ms ease-in-out;
-  /* color: white
-  text-decoration: none;
-  text-align: left;
-  padding: 15px 40px; */
   padding-right: 40px;
   padding-top: 20px;
   color: white;
-  /* background-color: rgba(16, 13, 13, 0.193); */
 }
 
 .link_submenu:hover {
-  /* background-color: rgb(52, 172, 224); */
-  /* color: white;
-  padding: 20px 40px; */
   padding-right: 40px;
   padding-top: 20px;
   color: rgb(52, 172, 224);
@@ -214,13 +209,12 @@ nav {
   visibility: visible; /* shows sub-menu */
   opacity: 1;
   z-index: 1;
-  transform: translateY(10%);
+  transform: translateY(5%);
   transition-delay: 0.3s, 0.3s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
 .sub-menu {
   text-align: left;
-  /* background-color: rgb(16, 13, 13); */
   background-color: #57606f;
 }
 

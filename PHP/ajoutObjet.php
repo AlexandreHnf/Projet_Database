@@ -17,7 +17,7 @@
             <?php include("menu.php"); ?>
         </header>
         
-        <h2>Vendre !</h2>
+        <h1>Vendre</h1>
 
         <?php
         if (!ISSET($_POST['categorie'])) 

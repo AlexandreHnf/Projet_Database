@@ -207,7 +207,7 @@
                     "<td>" . $prop['Time'] . "</td>" . 
                     "<td>" . $prop['price'] . " €" . "</td>";
                     if (isset($prop['accepted'])) {
-                        if ($prop['accepted'] == True) {
+                        if ($prop['accepted'] == 'True') {
                             echo "<td>accepté </td>" . "</tr>";
                         }
                         else {
@@ -223,7 +223,7 @@
         } // fin else
 
         // affiche du lien pour retour
-        echo '<a href="accueil.php">
+        echo '<br>' . '<a href="accueil.php">
         <button class="button button1">Retour</button></a> ';
 
         ?>
