@@ -141,7 +141,8 @@ ul {
 }
 
 li {
-  display:inline;
+  display:inline-block;
+  text-align: left;
 }
 
 nav {
@@ -170,30 +171,41 @@ nav {
   margin: 0 auto;
   transition: 0.5s;
   transition: all 300ms ease-in-out;
-  color: white
+  /* color: white
   text-decoration: none;
   text-align: left;
-  padding: 15px 40px;
+  padding: 15px 40px; */
+  padding-right: 40px;
+  padding-top: 20px;
+  color: white;
+  /* background-color: rgba(16, 13, 13, 0.193); */
 }
 
 .link_submenu:hover {
-  background-color: rgb(52, 172, 224);
-  color: white;
-  padding: 20px 40px;
+  /* background-color: rgb(52, 172, 224); */
+  /* color: white;
+  padding: 20px 40px; */
+  padding-right: 40px;
+  padding-top: 20px;
+  color: rgb(52, 172, 224);
 }
 
 /* Menu déroulant */
 
-.sub-menu-parent { position: relative; }
+.sub-menu-parent { 
+  position: relative; 
+}
 
 .sub-menu { 
   visibility: hidden; /* hides sub-menu */
   opacity: 0;
   position: absolute;
+  text-align: left;
   left: 0;
-  transform: translateY(-2em);
+  transform: translateY(-3em);
   z-index: -1;
-  transition: all 0.3s ease-in-out 0.2s, visibility 0.3s linear 0.3s, z-index 0s linear 0.3s;
+  transition: all 0.3s ease-in-out 0.2s, 
+    visibility 0.3s linear 0.3s, z-index 0s linear 0.3s;
 }
 
 .sub-menu-parent:focus .sub-menu,
@@ -202,13 +214,14 @@ nav {
   visibility: visible; /* shows sub-menu */
   opacity: 1;
   z-index: 1;
-  transform: translateY(0%);
+  transform: translateY(10%);
   transition-delay: 0.3s, 0.3s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
 .sub-menu {
   text-align: left;
-  background: #008CBA;
+  /* background-color: rgb(16, 13, 13); */
+  background-color: #57606f;
 }
 
 
