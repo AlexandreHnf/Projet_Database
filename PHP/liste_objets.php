@@ -34,7 +34,7 @@
             $objet = $req2->fetch();
             $req2->closeCursor();
 
-            // affiche du lien pour retour
+            // affichage du lien pour retour
             if ($_GET['page'] == 0) { // Si on vient d'un objet de l'accueil
                 echo '<a href="accueil.php">
                 <button class="button button1">Retour</button></a> ' . '<br><br>';
@@ -71,12 +71,25 @@
 
 
             // LIEN VERS PROPOSITION D'ACHAT 
-            echo "<div class='cadre'>";
-            echo "<li class = \"item\"><a href=\"proposition_achat.php?page=" . 
-                $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" . "<p class='rcorners corner2'>
-                " . "<mark class=\"price\">" . "Faire une proposition d'achat pour cet objet"
-                ." </mark>" ."</p>" . "</a></li>";
-            echo "</div>";
+
+            $req4 = $bdd->prepare('SELECT accepted
+                        FROM PropositionAchat
+                        WHERE PropositionAchat.ItemID = ?
+                        AND accepted = "True"');
+            $req4->execute(array($_GET['ItemID']));
+            $prop2 = $req4->fetch();
+            $req4->closeCursor();
+
+            // Si il n'a pas encore fait de proposition pour cet objet
+
+            if (!$prop2) { 
+                echo "<div class='cadre'>";
+                echo "<li class = \"item\"><a href=\"proposition_achat.php?page=" . 
+                    $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" . "<p class='rcorners corner2'>
+                    " . "<mark class=\"price\">" . "Faire une proposition d'achat pour cet objet"
+                    ." </mark>" ."</p>" . "</a></li>";
+                echo "</div>";
+            }
 
 
             // ==================== PROPOSITION ACHAT ==============================

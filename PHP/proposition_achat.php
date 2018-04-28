@@ -28,8 +28,18 @@
 			$errors = array(); // liste d'erreurs (messages)
 			
 			if (empty($price)) {
-				$errors[] = "Vous n'avez pas complété tous les champs !";
-			}
+				$errors[] = "Vous n'avez pas entré de prix !";
+            }
+            
+            $req = $bdd->prepare('SELECT price FROM PropositionAchat 
+                					  WHERE ItemID =  ?');
+            $req->execute(array($_GET['ItemID']));
+            $price_min = $req->fetch();
+
+            if ($price > $price_min) {
+                $errors[] = "Veuillez entrer un prix supérieur ou égal au prix minimum
+                demandé par le vendeur (" . $price_min . " €)";
+            }
 
 			if (count($errors) > 0) { // Si erreurs
 				echo "Nous avons rencontré des problèmes avec vos informations :" . "<br>";
@@ -39,28 +49,29 @@
 
 			else {
                 // On récupère l'id de l'acheteur
-                $req = $bdd->prepare('SELECT UserID FROM Utilisateur 
+                $req1 = $bdd->prepare('SELECT UserID FROM Utilisateur 
                 					  WHERE Pseudo = ?');
-                $req->execute(array($_SESSION['pseudo']));
-                $id = $req->fetch();
-                
-                // insertion dans la table proposition d'achat
-                $req1 = $bdd->prepare('INSERT INTO PropositionAchat
+                $req1->execute(array($_SESSION['pseudo']));
+                $id = $req1->fetch();
+                // echo $id['UserID'];
+                //insertion dans la table proposition d'achat
+                $req2 = $bdd->prepare('INSERT INTO PropositionAchat
                     (ItemID, Time, Buyer, price, accepted)
-                    VALUES (:ItemID, :Time, :Buyer, :price, :accepted)')
+                    VALUES (:itemid, :DateProp, :Buyer, :price, :accepted)');
 
-                $Time = new DateTime();
-                $Time = $Time->format('Y-m-d');
+                $date = new DateTime();
+                $date = $date->format('Y-m-d');
 
-                $req1->execute(array(
-                    'ItemID' => $_POST['ItemID'],
-                    'Time' => $Time,
-                    'Buyer' => $id,
+                $req2->execute(array(
+                    'itemid' => $_GET['ItemID'],
+                    'DateProp' => $date,
+                    'Buyer' => $id['UserID'],
                     'price' => $price,
-                    'accepted' => NULL
+                    'accepted' => "Attente"
                 ));
 
                 $req1->closeCursor();
+                $req2->closeCursor();
 
 				header('location: accueil.php');
 				exit;
@@ -80,7 +91,7 @@
 
 		echo "</form>";
 
-		// Pour retourner a l'accueil 
+		// Retour
         echo "<br>";
         echo '<a href="liste_objets.php?page=' . $_GET['page'] . '&ItemID=' .
             $_GET['ItemID'] . '">

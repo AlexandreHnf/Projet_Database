@@ -194,13 +194,11 @@ DROP TABLE IF EXISTS PropositionAchat;
 
 CREATE TABLE PropositionAchat (
     
-    ItemID INT UNSIGNED NOT NULL, -- clé primaire
+    ItemID INT UNSIGNED NOT NULL,
     Time DATE,
     Buyer INT UNSIGNED NOT NULL, -- foreign key
     price DECIMAL(6,2) NOT NULL,
     accepted VARCHAR(10), -- True ou False
-
-    PRIMARY KEY (ItemID),
 
     CONSTRAINT fk_obj_prop          
         FOREIGN KEY (ItemID)         
