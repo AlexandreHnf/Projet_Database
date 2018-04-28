@@ -1,4 +1,4 @@
-<form action="recherche.php" method="post" id='search'>
+<form action="recherche.php" method="get" id='search'>
   <p>
     <input type="text" placeholder="Rechercher.." name="recherche" />
     <select name="categorie">
