@@ -28,15 +28,15 @@
                 <!-- <ul> -->
                 <?php
                   $liste = $bdd->query('SELECT Titre, ItemID, PrixMin
-                                        FROM Objet ORDER BY Objet.DateMiseEnVente 
+                                        FROM Objet ORDER BY Objet.DateMiseEnVente
                                         DESC LIMIT 0,10');
 
-                  
+
                   while($donne = $liste->fetch()){
 
                     echo "<li class = \"item\"><a href=\"liste_objets.php?page=0"
                     . "&ItemID=" . $donne['ItemID'] . "\" >" . "<p class='rcorners corner2'>
-                    ".$donne['Titre'] ."<br>" . "PRIX: " . "<mark class=\"price\">". 
+                    ".$donne['Titre'] ."<br>" . "PRIX: " . "<mark class=\"price\">".
                     $donne['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
 
                   }
@@ -44,26 +44,28 @@
                   ?>
               </ul>
             </div>
-            
+
 
             <div class="produits">
               <h2>De nos meilleurs vendeurs</h2>
               <ul class="cadre">
                 <?php
-                  $liste = $bdd->query('SELECT AVG(Rate) AS eval_moyen,Seller,
-                                        Titre, ItemID, PrixMin FROM Evaluation,Objet 
-                                        WHERE Evaluation.Seller = Objet.SellerID 
-                                        GROUP BY Seller ORDER BY eval_moyen DESC LIMIT 0,10');
+                  $liste = $bdd->query('SELECT * FROM Objet LEFT JOIN
+                                        (SELECT AVG(Rate)
+                                        AS Moyenne,Seller from Evaluation
+                                        GROUP BY Seller) n
+                                        ON n.Seller = Objet.SellerID
+                                        ORDER BY n.Moyenne DESC LIMIT 0,10');
 
                   while($donne = $liste->fetch()){
 
                     echo "<li class = \"item\"><a href=\"liste_objets.php?page=0"
                     . "&ItemID=" . $donne['ItemID'] . "\" >" . "<p class='rcorners corner2'>
-                    ".$donne['Titre'] ."<br>" . "PRIX: " . "<mark class=\"price\">". 
+                    ".$donne['Titre'] ."<br>" . "PRIX: " . "<mark class=\"price\">".
                     $donne['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
 
                   }
-                  
+
                   $liste->closeCursor();
                 ?>
             </ul>
