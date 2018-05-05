@@ -231,20 +231,20 @@
                                         AND CURDATE() < DATE_ADD(Time, INTERVAL 10000 DAY)'
                                         );
                 $req6->execute(array($id));  
+
+                echo "<br>" . "<h2> Evaluer les Vendeurs à qui vous avez fait des propositions d'achat </h2>" . "<br>";
+
+                echo "<ul class='cadre'>";
+                while ($eval_v = $req6->fetch()) {
+
+                    echo "<li class = \"item\"><a href=\"evaluer_vendeur.php?buyer=" . 
+                    $id . "&SellerID=" . $eval_v['UserID'] . "\" >" . "<p class='rcorners corner2'>
+                    ".$eval_v['Pseudo']. "</p>" . "</a></li>";
+                }
+                echo "</ul>";
+
+                $req6->closeCursor();
             }
-
-            echo "<br>" . "<h2> Evaluer les Vendeurs à qui vous avez fait des propositions d'achat </h2>" . "<br>";
-
-            echo "<ul class='cadre'>";
-            while ($eval_v = $req6->fetch()) {
-
-                echo "<li class = \"item\"><a href=\"evaluer_vendeur.php?buyer=" . 
-                $id . "&SellerID=" . $eval_v['UserID'] . "\" >" . "<p class='rcorners corner2'>
-                ".$eval_v['Pseudo']. "</p>" . "</a></li>";
-            }
-            echo "</ul>";
-
-            $req6->closeCursor();
 
         } // fin else
 

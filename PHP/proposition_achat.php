@@ -31,14 +31,16 @@
 				$errors[] = "Vous n'avez pas entré de prix !";
             }
             
-            $req = $bdd->prepare('SELECT price FROM PropositionAchat 
+            $req = $bdd->prepare('SELECT PrixMin FROM Objet 
                 					  WHERE ItemID =  ?');
             $req->execute(array($_GET['ItemID']));
             $price_min = $req->fetch();
 
+            echo $price_min['price'];
+
             if ($price > $price_min) {
                 $errors[] = "Veuillez entrer un prix supérieur ou égal au prix minimum
-                demandé par le vendeur (" . $price_min . " €)";
+                demandé par le vendeur (" . $price_min['price'] . " €)";
             }
 
 			if (count($errors) > 0) { // Si erreurs

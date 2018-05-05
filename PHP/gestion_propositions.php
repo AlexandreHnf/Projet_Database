@@ -58,35 +58,35 @@
                     $choice = 'False';
                 }
 
-                echo $choice;
                 $req2 = $bdd->prepare('UPDATE PropositionAchat
-                    SET accepted = :choix
-                    WHERE ItemID = :itemid, Buyer = :buyer');
-                $req2->execute(array(
-                    'choix' => $choice,
-                    'itemid' => $_GET['itemID'],
-                    'buyer' => $_GET['buyer']
+                    SET accepted = ?
+                    WHERE ItemID = ? AND Buyer = ?');
+                $req2->execute(array($choice, $_GET['itemID'], $_GET['buyer']
                     
                 ));
 
-                // if ($choice == "True") { // Update la table Objet
-                //     $req3 = $bdd->prepare('UPDATE Objet
-                //     SET Acheteur = :acheteur
-                //     WHERE ItemID = :itemid');
+                
 
-                //     $req3->execute(array(
-                //         'acheteur' => $_GET['buyer'],
-                //         'itemid' => $_GET['itemID']
-                //     ));
-                // }
+                if ($choice == "True") { // Update la table Objet
+                    $req3 = $bdd->prepare('UPDATE Objet
+                    SET Acheteur = :acheteur
+                    WHERE ItemID = :itemid');
 
-				// header('location: accueil.php');
-				// exit;
+                    $req3->execute(array(
+                        'acheteur' => $_GET['buyer'],
+                        'itemid' => $_GET['itemID']
+                    ));
+                }
+
+				header('location: accueil.php');
+				exit;
 			}
         }
         
         // Toutes les propositions d'achat qu'il a recu (On en prend une par une)
-        $req = $bdd->prepare('SELECT PropositionAchat.ItemID, Buyer
+        // Premier arrivé, premier servi
+        $req = $bdd->prepare('SELECT PropositionAchat.ItemID, Buyer,
+                            Titre, price
                             FROM PropositionAchat, Utilisateur, Objet
                             WHERE PropositionAchat.ItemID = Objet.ItemID
                             AND Objet.SellerID = Utilisateur.UserID
@@ -98,10 +98,19 @@
         $req->closeCursor();
 		
 		if ($prop) {
+
+            // echo "<h3>" . $prop['Titre'] . " | " . 
+            // "<mark class=\"price\">".  $prop['price'] ." €" ." </mark>" .  "</h3>";
+
             echo '<form class="form" action="gestion_propositions.php?itemID=' . $prop['ItemID'] . 
             '&buyer=' . $prop['Buyer'] . '" method="post">';
                 echo"<p>";
                     // echo
+
+                    echo "<h3>" . $prop['Titre'] . " | " . 
+            "<mark class=\"price\">".  $prop['price'] ." €" ." </mark>" .  "</h3>";
+
+
                     echo "Accepter:<br>";
                     echo "<input type='radio' name='choice' value='accepted' /><br />";
 
