@@ -232,7 +232,7 @@
                                         );
                 $req6->execute(array($id));  
 
-                echo "<br>" . "<h2> Evaluer les Vendeurs à qui vous avez fait des propositions d'achat </h2>" . "<br>";
+                echo "<br>" . "<h2> Evaluer les Vendeurs à qui vous avez fait des propositions d'achat récemment</h2>" . "<br>";
 
                 echo "<ul class='cadre'>";
                 while ($eval_v = $req6->fetch()) {
