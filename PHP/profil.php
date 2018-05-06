@@ -199,7 +199,6 @@
 
                 while ($prop = $req5->fetch()) {
                     // Lignes dans le tableau
-                    // echo "<tr>"."<td>" . $prop['Titre'] ."</td>".
                     echo "<tr>"."<td>" . "<a href=\"liste_objets.php?page=0&ItemID=" .
                     $prop['ItemID'] . "\" >
                     " . $prop['Titre'] . "</a>" . "</td>" .
@@ -207,11 +206,14 @@
                     "<td>" . $prop['Time'] . "</td>" . 
                     "<td>" . $prop['price'] . " €" . "</td>";
                     if (isset($prop['accepted'])) {
-                        if ($prop['accepted'] == True) {
+                        if ($prop['accepted'] == 'True') {
                             echo "<td>accepté </td>" . "</tr>";
                         }
-                        else {
+                        elseif ($prop['accepted'] == 'False') {
                             echo "<td>refusé</td>" . "</tr>";
+                        }
+                        else {
+                            echo "<td>Attente</td>" . "</tr>";
                         }
                     }
                 
@@ -220,10 +222,34 @@
                 echo "</table>";
             }
 
+            if (isset($_GET['opt']) && ($_GET['opt'] == "eval_v")) {
+                $req6 = $bdd->prepare('SELECT Utilisateur.UserID, Utilisateur.Pseudo
+                                        FROM PropositionAchat, Objet, Utilisateur
+                                        WHERE Objet.ItemID = PropositionAchat.ItemID
+                                        AND Objet.SellerID = Utilisateur.UserID
+                                        AND Buyer = ?
+                                        AND CURDATE() < DATE_ADD(Time, INTERVAL 10000 DAY)'
+                                        );
+                $req6->execute(array($id));  
+
+                echo "<br>" . "<h2> Evaluer les Vendeurs à qui vous avez fait des propositions d'achat </h2>" . "<br>";
+
+                echo "<ul class='cadre'>";
+                while ($eval_v = $req6->fetch()) {
+
+                    echo "<li class = \"item\"><a href=\"evaluer_vendeur.php?buyer=" . 
+                    $id . "&SellerID=" . $eval_v['UserID'] . "\" >" . "<p class='rcorners corner2'>
+                    ".$eval_v['Pseudo']. "</p>" . "</a></li>";
+                }
+                echo "</ul>";
+
+                $req6->closeCursor();
+            }
+
         } // fin else
 
         // affiche du lien pour retour
-        echo '<a href="accueil.php">
+        echo '<br>' . '<a href="accueil.php">
         <button class="button button1">Retour</button></a> ';
 
         ?>

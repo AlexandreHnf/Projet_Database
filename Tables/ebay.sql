@@ -21,6 +21,10 @@ CREATE TABLE Utilisateur (
     
 );
 
+INSERT INTO Utilisateur
+VALUES (@ignore, SHA1('master_admin'), 'Master', 'master0@hotmail.com',
+        'Administrateur suprême');
+
 -- =========================== USERS.TXT > UTILISATEUR ===================
 
 LOAD DATA LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/users.txt'
@@ -37,10 +41,6 @@ FIELDS TERMINATED BY ', '
 LINES TERMINATED BY '\n' 
 (UserID, @ignore, @ignore, Pseudo, MotDePasse, @ignore, @ignore, AdresseMail)
 set MotDePasse = SHA1(MotDePasse);
-
-INSERT INTO Utilisateur
-VALUES (@ignore, SHA1('master_admin'), 'Master', 'master0@hotmail.com',
-        'Administrateur suprême');
 
 -- ============================ TABLE ADMIN ============================
 DROP TABLE IF EXISTS Administrateur;
@@ -194,13 +194,11 @@ DROP TABLE IF EXISTS PropositionAchat;
 
 CREATE TABLE PropositionAchat (
     
-    ItemID INT UNSIGNED NOT NULL, -- clé primaire
+    ItemID INT UNSIGNED NOT NULL,
     Time DATE,
     Buyer INT UNSIGNED NOT NULL, -- foreign key
     price DECIMAL(6,2) NOT NULL,
-    accepted VARCHAR(10) NOT NULL, -- True ou False
-
-    PRIMARY KEY (ItemID),
+    accepted VARCHAR(10), -- True ou False
 
     CONSTRAINT fk_obj_prop          
         FOREIGN KEY (ItemID)         

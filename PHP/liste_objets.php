@@ -34,7 +34,7 @@
             $objet = $req2->fetch();
             $req2->closeCursor();
 
-            // affiche du lien pour retour
+            // affichage du lien pour retour
             if ($_GET['page'] == 0) { // Si on vient d'un objet de l'accueil
                 echo '<a href="accueil.php">
                 <button class="button button1">Retour</button></a> ' . '<br><br>';
@@ -43,6 +43,9 @@
                 echo '<a href="liste_objets.php?page=' . $_GET['page'] . '">
                 <button class="button button1">Retour</button></a> ' . '<br><br>';
             }
+
+
+            // ========================== CARACTERISTIQUES OBJET =========================
 
             echo "<h2> Caractéristiques de l'objet </h2>";
 
@@ -63,7 +66,33 @@
 
             echo "<tr>" . "<th>Catégorie</th>" . "<td>" . $objet['Categorie'] . "</td>" . "</tr>";
 
-            echo "</table>";
+            echo "</table>" . "<br><br>";
+
+
+
+            // LIEN VERS PROPOSITION D'ACHAT 
+
+            $req4 = $bdd->prepare('SELECT accepted
+                        FROM PropositionAchat
+                        WHERE PropositionAchat.ItemID = ?
+                        AND accepted = "True"');
+            $req4->execute(array($_GET['ItemID']));
+            $prop2 = $req4->fetch();
+            $req4->closeCursor();
+
+            // Si il n'a pas encore fait de proposition pour cet objet
+
+            if (!$prop2) { 
+                echo "<div class='cadre'>";
+                echo "<li class = \"item\"><a href=\"proposition_achat.php?page=" . 
+                    $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" . "<p class='rcorners corner2'>
+                    " . "<mark class=\"price\">" . "Faire une proposition d'achat pour cet objet"
+                    ." </mark>" ."</p>" . "</a></li>";
+                echo "</div>";
+            }
+
+
+            // ==================== PROPOSITION ACHAT ==============================
 
             echo "<br>" . "<h2> Les propositions d'achat </h2>";
             
@@ -84,7 +113,7 @@
                 "<td>" . $prop['price'] . "</td>";
 
             if (isset($prop['accepted'])) {
-                if ($prop['accepted'] == True) {
+                if ($prop['accepted'] == 'True') {
                     echo "<td>accepté </td>" . "</tr>";
                 }
                 else {
@@ -132,7 +161,7 @@
             echo "<form class='form' action='liste_objets.php' method='post'>";
             echo "<p>";
                 echo "Nombre d'élements par page" . "<br>";
-                echo "<input type='number' name='quantity' min='20' max='100'>";
+                echo "<input type='number' name='quantity' min='20' max='100'>" . "<br>";
 				echo "<input type='submit' value='Valider' />";
 			echo "</p>";
 
