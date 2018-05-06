@@ -228,7 +228,7 @@
                                         WHERE Objet.ItemID = PropositionAchat.ItemID
                                         AND Objet.SellerID = Utilisateur.UserID
                                         AND Buyer = ?
-                                        AND CURDATE() < DATE_ADD(Time, INTERVAL 10000 DAY)'
+                                        AND CURDATE() < DATE_ADD(Time, INTERVAL 10 DAY)'
                                         );
                 $req6->execute(array($id));  
 

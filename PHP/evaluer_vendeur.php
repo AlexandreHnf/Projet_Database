@@ -66,8 +66,8 @@
         echo '<form class="form" action="evaluer_vendeur.php?buyer=' . $_GET['buyer'] 
         . '&SellerID=' . $_GET['SellerID'] . '" method="post">';
 			echo"<p>";
-                echo "Note (de 1 à 10): <br />";
-                echo "<input type='number' name='note' min='1' max='10'><br/><br/>";
+                echo "Note (de 0 à 5): <br />";
+                echo "<input type='number' name='note' min='0' max='5'><br/><br/>";
                 echo "Commentaire: <br />";
                 echo "<textarea name='Description' rows='8' cols='45'> </textarea> <br /><br />";
 
