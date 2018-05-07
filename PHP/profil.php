@@ -227,19 +227,30 @@
                                         FROM PropositionAchat, Objet, Utilisateur
                                         WHERE Objet.ItemID = PropositionAchat.ItemID
                                         AND Objet.SellerID = Utilisateur.UserID
-                                        AND Buyer = ?
-                                        AND CURDATE() < DATE_ADD(Time, INTERVAL 10 DAY)'
+                                        AND PropositionAchat.Buyer = ?
+                                        AND CURDATE() < DATE_ADD(
+                                            PropositionAchat.Time, INTERVAL 10 DAY)'
                                         );
                 $req6->execute(array($id));  
 
-                echo "<br>" . "<h2> Evaluer les Vendeurs à qui vous avez fait des propositions d'achat récemment</h2>" . "<br>";
+                echo "<br>" . "<h1> Evaluer les Vendeurs </h1>" . "<br>";
 
                 echo "<ul class='cadre'>";
+                
                 while ($eval_v = $req6->fetch()) {
+                    //print_r($eval_v);
 
-                    echo "<li class = \"item\"><a href=\"evaluer_vendeur.php?buyer=" . 
-                    $id . "&SellerID=" . $eval_v['UserID'] . "\" >" . "<p class='rcorners corner2'>
-                    ".$eval_v['Pseudo']. "</p>" . "</a></li>";
+                    $req7 = $bdd->prepare('SELECT Rate
+                                          FROM Evaluation
+                                           WHERE Buyer = ?');
+                    $req7->execute(array($id)); 
+                    $check  = $req7->fetch();
+
+                    if (!$check) {
+                        echo "<li class = \"item\"><a href=\"evaluer_vendeur.php?buyer=" . 
+                        $id . "&SellerID=" . $eval_v['UserID'] . "\" >" . "<p class='rcorners corner2'>
+                        ".$eval_v['Pseudo']. "</p>" . "</a></li>";
+                    }
                 }
                 echo "</ul>";
 

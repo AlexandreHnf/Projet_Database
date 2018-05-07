@@ -29,7 +29,7 @@
 
             $errors = array(); // liste d'erreurs (messages)
             
-            if (empty($note) or empty($com)) {
+            if ((empty($note) and $note != 0 ) or empty($com)) {
                 $errors[] = "Vous n'avez pas complété tous les champs !";
             }
 

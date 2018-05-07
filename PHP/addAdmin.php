@@ -29,13 +29,13 @@
         if (!isset($_POST['newAdmin']) || $error)
         {
         ?>
-            <form action="addAdmin.php" method="post">
+            <form class='form' action="addAdmin.php" method="post">
                     <p>
                         Pseudo de l'utilisateur à ajouter:
-                        <input type="text" name="newAdmin" /> <br />
+                        <input type="text" name="newAdmin" /> <br /><br />
 
                         Entrez votre mot de passe pour confirmer l'ajout :
-                        <input type="password" name="password" /> <br />
+                        <input type="password" name="password" /> <br /><br />
                         <input type="submit" value="Ajouter" />
                     </p>
 
