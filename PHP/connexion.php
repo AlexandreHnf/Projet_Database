@@ -29,7 +29,7 @@
 				$errors[] = "Vous n'avez pas complété tous les champs !";
 			}
 
-            $req = $bdd->prepare('SELECT Pseudo, MotDePasse FROM Utilisateur 
+            $req = $bdd->prepare('SELECT Pseudo, MotDePasse, UserID FROM Utilisateur 
 								WHERE Pseudo = ? AND MotDePasse = ?');
             $req->execute(array($pseudo, $hashed_mdp)); // avec mdp hashé
             $donnees = $req->fetch();
@@ -50,6 +50,7 @@
 			else {
 				$_SESSION['pseudo'] = $pseudo; // variable de session
 														// donc accessible partout
+				$_SESSION['id'] = $donnees['UserID'];
 														
 				if (isSeller($pseudo)) {             // Variable de sess pour vendeurs
 					$_SESSION['isSeller'] = true;

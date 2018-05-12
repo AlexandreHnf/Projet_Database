@@ -30,7 +30,7 @@
             <input type="float" name="Prix" placeholder="Prix en €" /> <br /><br />
 
             Description de l'article : <br />
-            <textarea name="Description" rows="8" cols="45">
+            <textarea name="Description" rows="8" cols="30">
             </textarea> <br /><br />
 
             Catégorie : <br />

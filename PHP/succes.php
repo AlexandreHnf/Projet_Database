@@ -1,14 +1,28 @@
+<?php
+  session_start();  // On démarre la session
+  include('database.php');
+  include('function.php');
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Succès</title>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css">
+        <title>Accueil</title>
     </head>
 
     <body>
-        Votre article a été ajouté avec Succès
+
+        <div id="resize">
+          <header>
+            <?php include("menu.php"); ?>
+
+          </header>
+
+        <h2> Votre article a été ajouté avec Succès </h2>
         <br />
-        <a href="accueil.php"> Retour à l'accueil</a>
+        <br> <a href="accueil.php">
+        <button class="button button1">Retour</button></a>
 
     </body>
     

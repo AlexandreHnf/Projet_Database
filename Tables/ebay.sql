@@ -97,7 +97,6 @@ SET DateNaissance = STR_TO_DATE(@date, '%d-%m-%Y ');
 DROP TABLE IF EXISTS Categorie;
 
 CREATE TABLE Categorie (
-    
     Titre VARCHAR(100) NOT NULL, -- clé primaire
     Description_cat TEXT NOT NULL,
     AdminID INT UNSIGNED, -- foreign key
@@ -131,7 +130,7 @@ CREATE TABLE Objet (
     DateVente DATE,
     Acheteur VARCHAR(30),
     SellerID INT UNSIGNED NOT NULL, -- foreign key
-    Categorie VARCHAR(255) NOT NULL default 'Default',
+    Categorie VARCHAR(100) NOT NULL, -- foreign key
 
     -- CONTRAINTES D'INTEGRITE
     PRIMARY KEY (ItemID),
@@ -221,7 +220,7 @@ ROWS IDENTIFIED BY '<Proposition>';
 
 
 
-
+/*
 -- ============================ TABLE MODIFICATION ============================
 DROP TABLE IF EXISTS Modification; -- Un admin modifie (0,n) catégorie(s)
 
@@ -236,7 +235,7 @@ CREATE TABLE Modification (
 
     CONSTRAINT fk_titre_cat
         FOREIGN KEY (TitreCategorie)
-        REFERENCES Categorie(Titre),
+        REFERENCES Categorie(CatID),
 
     CONSTRAINT fk_admin_modif
         FOREIGN KEY (AdminID)
@@ -267,6 +266,7 @@ CREATE TABLE Suppression (
 
     
 );
-
+*/
 
 /* source insert_files_data.sql */
+

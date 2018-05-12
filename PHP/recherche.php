@@ -195,7 +195,7 @@
                 $pEnd =  20 * ((int)$_GET['pg']);
                 $limit = $limit . $pStart ."," . $pEnd;
                 $req =  $select . $from . $req . $groupBy . $having .$orderBy;
-                //si pas deja fait compter le nomber de requete et placer dans session
+                //si pas deja fait compter le nombre de requete et placer dans session
                 $nbRef = explode("&pg=",$_SERVER['REQUEST_URI']);
                 if(!isset($_SESSION["{$nbRef[0]}"])){
                   $nbQuery = "SELECT COUNT(*) FROM " . "( " . $req .") nbquery";

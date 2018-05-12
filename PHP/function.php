@@ -62,4 +62,18 @@ function checkPassword($pseudo, $hashed_password)
     return isset($donnees['Pseudo']);
 }
 
+function isCat($title){
+
+    include("database.php");
+
+    $reqCat = $bdd->prepare('SELECT Titre FROM Categorie 
+                        WHERE Titre = ?');
+    $reqCat->execute(array($title));
+    $donnees = $reqCat->fetch();
+
+    $reqCat->closeCursor(); // Termine le traitement de la requête
+
+    return !empty($donnees);
+}
+
 ?>
