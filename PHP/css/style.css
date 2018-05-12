@@ -9,32 +9,32 @@ body
 
 /* Gros titres */
 
-h1 { 
+h1 {
   /* color: rgb(52, 172, 224);  */
   color: white;
-  font-family: 'Raleway',sans-serif; 
-  font-size: 40px; 
-  font-weight: 800; 
-  line-height: 10px; 
+  font-family: 'Raleway',sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 10px;
   /* margin: 12px 0 12px;  */
   margin: 30 auto;
   padding: 30px;
-  text-align: center; 
+  text-align: center;
   display: block;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 
-h2 { 
+h2 {
   /* color: rgb(52, 172, 224);  */
   color: white;
-  font-family: 'Raleway',sans-serif; 
-  font-size: 40px; 
-  font-weight: 800; 
-  line-height: 72px; 
-  margin: 0 15% 24px; 
-  text-align: left; 
-  text-transform: uppercase; 
+  font-family: 'Raleway',sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 15% 24px;
+  text-align: left;
+  text-transform: uppercase;
 
 }
 
@@ -86,7 +86,7 @@ a.page {
   transition: background-color .3s;
   border-radius: 5px;
   border: 1px rgb(52, 172, 224);
-  
+
 }
 
 /* Quand on passe la souris sur un numéro de page */
@@ -186,11 +186,11 @@ nav {
 
 /* Menu déroulant */
 
-.sub-menu-parent { 
+.sub-menu-parent {
   position: relative;
 }
 
-.sub-menu { 
+.sub-menu {
   visibility: hidden; /* hides sub-menu */
   opacity: 0;
   position: absolute;
@@ -198,7 +198,7 @@ nav {
   left: 0;
   transform: translateY(-3em);
   z-index: -1;
-  transition: all 0.3s ease-in-out 0.2s, 
+  transition: all 0.3s ease-in-out 0.2s,
     visibility 0.3s linear 0.3s, z-index 0s linear 0.3s;
 }
 
@@ -232,7 +232,7 @@ li.item a:hover {
 }
 
 /* Box arrondi pour englober un texte */
-.rcorners { 
+.rcorners {
 
   /* display: flex; */
   border-radius: 15px;
@@ -240,7 +240,7 @@ li.item a:hover {
   /* background-color: rgb(52, 172, 224); */
   padding: 12px;
   /* text-align: left; */
-} 
+}
 
 .corner1 {
   width:530px;
@@ -272,8 +272,8 @@ li.item a:hover {
 .button1 {
   margin: 0 auto;
   border-radius: 10px;
-  background-color: rgb(72, 84, 96); 
-  color: white; 
+  background-color: rgb(72, 84, 96);
+  color: white;
   border: 2px solid #008CBA;
 }
 
@@ -287,7 +287,7 @@ li.item a:hover {
 {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .cadre {
@@ -298,6 +298,15 @@ li.item a:hover {
   padding: 10px 20px;
   width: 54%;
   border: 5px solid rgba(16, 13, 13, 0.193);
+}
+
+.tri {
+  border-radius: 12px;
+  display:block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  width: 54%;
 }
 
 /* Décalage vers la droite des listes */
@@ -317,7 +326,9 @@ li.item {
   border: 5px solid rgba(16, 13, 13, 0.193);
 }
 
-input[type=text], input[type="password"], input[type="email"], 
+
+
+input[type=text], input[type="password"], input[type="email"],
 input[type="float"], input[type="number"] {
   border-radius: 12px;
   padding: 5px 15px;
@@ -331,7 +342,7 @@ input[type="float"], input[type="number"] {
   -o-transition: all 0.30s ease-in-out;
 }
 
-input[type=text]:focus, input[type="password"]:focus, 
+input[type=text]:focus, input[type="password"]:focus,
 input[type="email"]:focus, input[type="float"]:focus,
 input[type="number"]:focus {
   width: 250px;
@@ -341,16 +352,16 @@ input[type="number"]:focus {
 /* Bouton pour valider le formulaire */
 input[type=submit] {
   color: black;
-  padding:5px 15px; 
-  background:white; 
+  padding:5px 15px;
+  background:white;
   border:0 none;
   cursor:pointer;
   -webkit-border-radius: 5px;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
-  border-radius: 5px; 
-  
+  border-radius: 5px;
+
 }
 
 input[type=submit]:hover{
@@ -365,7 +376,7 @@ select{
 }
 
 /* Tableaux */
-table, td, th {    
+table, td, th {
   border: 1px solid rgba(16, 13, 13, 0.193);
   text-align: left;
 }
@@ -373,7 +384,7 @@ table, td, th {
 table {
   margin: 0 auto;
   border-collapse: separate;
-  border-spacing: 0; 
+  border-spacing: 0;
   border: 4px solid rgba(16, 13, 13, 0.193);
   border-radius: 1em;
   overflow: hidden;
@@ -407,7 +418,10 @@ th {
   padding-left: 10px;
   border: 2px #f4b042;
   border-style: inset;
-  background-color: white;
+}
+.rechercheAvance
+{
+  padding-left: 30px;
 }
 
 /* Quand on passe sur le logo, affiche un texte*/
