@@ -95,8 +95,7 @@
 
 		// Retour
         echo "<br>";
-        echo '<a href="liste_objets.php?page=' . $_GET['page'] . '&ItemID=' .
-            $_GET['ItemID'] . '">
+        echo '<a href="accueil.php">
             <button class="button button1">Retour</button></a> ' . '<br><br>';
         ?>
 
