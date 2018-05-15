@@ -28,13 +28,13 @@
         if (!isset($_POST['pseudo']) || $error)
         {
         ?>
-            <form action="suppressAccount.php" method="post">
+            <form class = "form" action="suppressAccount.php" method="post">
                     <p>
                         Pseudo de l'utilisateur à supprimer:
-                        <input type="text" name="pseudo" /> <br />
+                        <input type="text" name="pseudo" /> <br /><br />
 
-                        Entrez votre mot de passe pour confirmer la suppression :
-                        <input type="password" name="password" /> <br />
+                        Entrez votre mot de passe pour confirmer :
+                        <input type="password" name="password" /> <br /><br />
                         <input type="submit" value="Confirmer" />
                     </p>
 

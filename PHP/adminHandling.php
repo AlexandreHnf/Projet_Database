@@ -16,11 +16,25 @@
           <?php include("menu.php"); ?>
         </header>
 
-        <?php
-            echo "<li><a href=addAdmin.php \" class = \"text_menu\">Ajouter un administrateur</a></li><br />";
-            echo "<li><a href=suppressAccount.php \" class = \"text_menu\">Supprimer un compte</a></li><br />";
-            echo "<li><a href=handleCategories.php \" class = \"text_menu\">Gestion des catégories</a></li><br />";
-            echo "<li><a href=# \" class = \"text_menu\">Gestion des articles</a></li><br />";
-        ?>
+            <h1> Droits Administrateurs </h1>
+
+            <div class="cadre">
+
+            <a href="addAdmin.php">
+            <button class = "button button1"> Ajouter un administrateur</button>
+            </a>
+            <br/>
+
+            <a href="suppressAccount.php">
+            <button class = "button button1"> Supprimer un compte</button>
+            </a>
+            <br/>
+
+            <a href="handleCategories.php">
+            <button class = "button button1"> Gestion des catégories</button>
+            </a>
+
+            </div>
+
     </body>
 </html>
