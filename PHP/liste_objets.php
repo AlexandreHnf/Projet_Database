@@ -1,14 +1,25 @@
-<?php 
+<?php
     session_start();  // On démarre la session
     include('database.php');
     include("function.php");
-?> 
+?>
 
 <!DOCTYPE html>
 <html>
    <head>
        <meta charset="utf-8" />
        <link rel="stylesheet" href="css/style.css">
+       <script language="javascript">
+         function redirectOnSelection(){
+           var currentUrl = "" + window.location;
+           var stripedUrl = currentUrl.split("&tri");
+           var stripedUrlQ = currentUrl.split(".php");
+           stripedUrl = stripedUrl[0];
+           if(stripedUrlQ[1].charAt(0) != "?"){stripedUrl += "?";}
+           var newLocation  = stripedUrl + "&tri="+document.getElementById("triPar").value+"&ordre="+document.getElementById('croissance').value;
+           window.location = newLocation;
+         }
+       </script>
        <title>Objets</title>
    </head>
 
@@ -16,18 +27,18 @@
         <header>
             <?php include("menu.php"); ?>
         </header>
-        
+
         <?php
 
-        if (isset($_GET['page']) and isset($_GET['ItemID'])) {    
+        if (isset($_GET['page']) and isset($_GET['ItemID'])) {
             // on affiche l'objet
-        
-            $req2 = $bdd->prepare('SELECT Titre, Description_obj, DateMiseEnVente, 
+
+            $req2 = $bdd->prepare('SELECT Titre, Description_obj, DateMiseEnVente,
                                     PrixMin, DateVente, Acheteur, Categorie,
                                     Pseudo, Vendeur.SellerID
-                                    FROM Objet, Utilisateur, Vendeur 
-                                    WHERE Objet.ItemID = ? 
-                                    AND Objet.SellerID = Vendeur.SellerID 
+                                    FROM Objet, Utilisateur, Vendeur
+                                    WHERE Objet.ItemID = ?
+                                    AND Objet.SellerID = Vendeur.SellerID
                                     AND Utilisateur.UserID = Vendeur.SellerID ');
 
             $req2->execute(array($_GET['ItemID']));
@@ -54,13 +65,13 @@
             // Lignes dans le tableau
             echo "<tr>" . "<th>Titre</th>" . "<td>" . $objet['Titre'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Description</th>" . "<td>" . $objet['Description_obj'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Date de mise en vente</th>" . "<td>" . $objet['DateMiseEnVente'] . 
+            echo "<tr>" . "<th>Date de mise en vente</th>" . "<td>" . $objet['DateMiseEnVente'] .
             "</td>" . "</tr>";
             echo "<tr>" . "<th>Prix minimum</th>" . "<td>" . $objet['PrixMin'] ." €"."</td>" . "</tr>";
             echo "<tr>" . "<th>Date de vente</th>" . "<td>" . $objet['DateVente'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Acheteur</th>" . "<td>" . $objet['Acheteur'] . "</td>" . "</tr>";
 
-            echo "<tr>"."<th>Vendeur</th>" . "<td>". "<a href=\"profil_vendeurs.php?page=0&SellerID=" . 
+            echo "<tr>"."<th>Vendeur</th>" . "<td>". "<a href=\"profil_vendeurs.php?page=0&SellerID=" .
                 $objet['SellerID'] . "\" >
                 " . $objet['Pseudo'] . "</a>" . "</td>" . "</tr>";
 
@@ -69,8 +80,47 @@
             echo "</table>" . "<br><br>";
 
 
+            if (!empty($_SESSION['pseudo'])){
+                //Suppression si administrateur ou le vendeur de l'objet
+                if ($_SESSION['isAdmin'] == true || ($_SESSION['SellerID'] == $_SESSION['UserID'])) {
+                    echo "<div class='cadre'>";
+                    echo "<a href=\"suppressObj.php?page=" .
+                        $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" 
+                        . "<button class='button button1'>
+                        " . "Supprimer cet objet" . "</button>" . "</a>";
+                    echo "</div>";    
+                }
+            }
 
-            // LIEN VERS PROPOSITION D'ACHAT 
+            //LOCALISATION
+            echo "<div class='cadre'>";
+            echo "<center><h3>Localisation</h3></center>";
+
+            $reqAdr = $bdd->prepare('SELECT Adresse FROM Vendeur
+            WHERE SellerID = ?');
+            $reqAdr->execute(array($objet['SellerID']));
+            $donnees = $reqAdr->fetch();
+            $reqAdr->closeCursor();
+
+            $adr = $donnees['Adresse'];
+
+            $adr = preg_replace('/\s/', '+', $adr);
+            $source = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBV490JeqrQVBHJFEqw8pCZdMawjP9gxjA&amp;q=" . $adr . ",Belgium";
+            ?>
+
+            <iframe
+            width="500"
+            height="450"
+            frameborder="0" style="border:0"
+            src="<?php echo $source ?>" allowfullscreen>
+            </iframe>
+            
+            <?php
+
+            echo "</div>";   
+
+
+            // LIEN VERS PROPOSITION D'ACHAT
 
             $req4 = $bdd->prepare('SELECT accepted
                         FROM PropositionAchat
@@ -82,12 +132,12 @@
 
             // Si il n'a pas encore fait de proposition pour cet objet
 
-            if (!$prop2) { 
+            if (!$prop2) {
                 echo "<div class='cadre'>";
-                echo "<li class = \"item\"><a href=\"proposition_achat.php?page=" . 
-                    $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" . "<p class='rcorners corner2'>
-                    " . "<mark class=\"price\">" . "Faire une proposition d'achat pour cet objet"
-                    ." </mark>" ."</p>" . "</a></li>";
+                echo "<a href=\"proposition_achat.php?page=" .
+                    $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" . "<button class='button button1'>"
+                    . "<mark class=\"price\">" . "Faire une proposition d'achat pour cet objet"
+                    ." </mark>" . "</button>" . "</a></li>";
                 echo "</div>";
             }
 
@@ -95,7 +145,7 @@
             // ==================== PROPOSITION ACHAT ==============================
 
             echo "<br>" . "<h2> Les propositions d'achat </h2>";
-            
+
             $req3 = $bdd->prepare('SELECT Pseudo, Time, price, accepted
                                     FROM Utilisateur, PropositionAchat
                                     WHERE PropositionAchat.ItemID = ?
@@ -109,7 +159,7 @@
             echo "<th>Prix proposé</th>" . "<th>Statut</th>" . "</tr>";
 
             echo "<tr>"."<td>" . $prop['Pseudo'] . "</td>".
-                "<td>" . $prop['Time'] . "</td>" . 
+                "<td>" . $prop['Time'] . "</td>" .
                 "<td>" . $prop['price'] . "</td>";
 
             if (isset($prop['accepted'])) {
@@ -120,26 +170,45 @@
                     echo "<td>refusé</td>" . "</tr>";
                 }
             }
-
+            
         }
 
         else{ // On affiche la liste des vendeurs
-
+            $select= 'SELECT *';
+            $from = ' FROM Objet ';
+            $orderBy = '';
             if (isset($_GET['page'])) {
                 $page = $_GET['page'];
             }
-            else { 
+            else {
                 $page = 1; // par défaut
             }
 
-            if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['quantity']))) {
-                $nb_mess_per_page = $_POST['quantity']; // Nombre d'éléments par page
+            if (($_SERVER['REQUEST_METHOD'] == 'GET') && (isset($_GET['quantity']))) {
+              if((int)$_GET['quantity'] <20){$_GET['quantity']= 20;}
+              elseif((int)$_GET['quantity']>100){$_GET['quantity']= 100;}
+              $nb_mess_per_page = $_GET['quantity']; // Nombre d'éléments par page
             }
-            
+
             else {
                 $nb_mess_per_page = 100; // Nombre d'éléments par page
             }
-            
+
+            if(isset($_GET['tri'])){
+              $arrayTri = array("PrixMin","","DateMiseEnVente","Titre","n.Moyenne");
+              if(!in_array($_GET['tri'],$arrayTri)){$_GET['tri'] = "";}
+              //tri
+              if($_GET['tri'] != ""){
+                if(isset($_GET['ordre']) && ($_GET['ordre'] == "ASC" || $_GET['ordre'] == "DESC")){$nothing = "";}
+                else{$_GET['ordre'] = "ASC";}
+                $orderBy = ' ORDER BY ' . $_GET['tri'] ." ". $_GET['ordre'];
+
+                if($_GET['tri'] == "n.Moyenne"){
+                  $from = $from ."LEFT JOIN (SELECT AVG(Rate) AS Moyenne,Seller from Evaluation GROUP BY Seller) n ON n.Seller = Objet.SellerID ";
+                }
+              }
+            }
+
             // On récupère le nombre total de messages
             $req = $bdd->query('SELECT COUNT(*) AS nb_messages FROM Objet');
             $donnees = $req->fetch();
@@ -150,7 +219,7 @@
             $next_page = ($page + 1) % $nombreDePages;
             $prev_page = ($page - 1) % $nombreDePages;
             if ($prev_page == 0) {$prev_page = $nombreDePages;}
-            
+
 
             echo "<br><br>";
             echo '<a href="accueil.php">
@@ -158,10 +227,10 @@
 
             // Pour choisir combien d'éléments à afficher par page
 
-            echo "<form class='form' action='liste_objets.php' method='post'>";
+            echo "<form class='form' action='liste_objets.php' method='get'>";
             echo "<p>";
                 echo "Nombre d'élements par page" . "<br>";
-                echo "<input type='number' name='quantity' min='20' max='100'>" . "<br>";
+                echo "<input type='number' name='quantity' min='20' max='100' value='{$nb_mess_per_page}'>" . "<br>";
 				echo "<input type='submit' value='Valider' />";
 			echo "</p>";
 
@@ -169,21 +238,34 @@
 
             // On calcule le numéro du premier message qu'on prend pour le LIMIT
             $premierMessageAafficher = ($page - 1) * $nb_mess_per_page;
-
-            $req1 = $bdd->query('SELECT ItemID, Titre, PrixMin FROM Objet             
-                    ORDER BY ItemID 
-                    DESC LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page . '');
+            $fullRequest = $select . $from . $orderBy . ' LIMIT ' . $premierMessageAafficher . ', ' . $nb_mess_per_page;
+            $req1 = $bdd->query($fullRequest);
 
             echo "<h1> Liste des objets mis en vente </h1>";
-
+            ?>
+            <div class="tri">
+              <h5>Trié par</h5>
+              <select name="tri" id ="triPar" onChange="redirectOnSelection()">
+                <option value="" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == ""){echo "selected";} ?>></option>
+                <option value="PrixMin" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "PrixMin"){echo "selected";} ?>>Prix</option>
+                <option value="DateMiseEnVente" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "DateMiseEnVente"){echo "selected";} ?>>Date</option>
+                <option value="Titre" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "Titre"){echo "selected";} ?>>Nom</option>
+                <option value="n.Moyenne" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "n.Moyenne"){echo "selected";} ?>>Note vendeurs</option>
+              </select>
+              <select name="ordre" id = "croissance" onChange="redirectOnSelection()">
+                <option value="ASC" <?php if(isset($_GET['ordre']) &&  $_GET['ordre'] == "ASC"){echo "selected";} ?>>Croissant</option>
+                <option value="DESC" <?php if(isset($_GET['ordre']) &&  $_GET['ordre'] == "DESC"){echo "selected";} ?>>Decroisant</option>
+              </select>
+            </div>
+            <?php
             echo "<ul class='cadre'>";
             while ($obj = $req1->fetch()) {
                 $id = $obj['ItemID'];
                 // print des liens
 
-                echo "<li class = \"item\"><a href=\"liste_objets.php?page=" . 
+                echo "<li class = \"item\"><a href=\"liste_objets.php?page=" .
                 $page . "&ItemID=" . $id . "\" >" . "<p class='rcorners corner2'>
-                ".$obj['Titre']. "<br>" . "PRIX: " . "<mark class=\"price\">". 
+                ".$obj['Titre']. "<br>" . "PRIX: " . "<mark class=\"price\">".
                 $obj['PrixMin'] ." €" ." </mark>" ."</p>" . "</a></li>";
             }
             $req1->closeCursor();
@@ -197,7 +279,17 @@
             // Puis on fait une boucle pour écrire les liens vers chacune des pages
 
             echo '<a class=\'page\' href="liste_objets.php?page='.$prev_page.'">'.'<<'.'</a>';
-            for ($i = 1 ; $i <= $nombreDePages ; $i++) {
+            $startP = $page < 7 ? 1:($page-5);
+            $startP = $page < ($nombreDePages -9) ? $startP:($nombreDePages -9);
+            $startP =  $startP < 1 ? 1:$startP;
+            if($nombreDePages <=10){
+              $endP = $nombreDePages;
+            }
+            elseif($startP >= ($nombreDePages -9)){
+              $endP = $nombreDePages;
+            }
+            else{$endP = $startP+9;}
+            for ($i = $startP ; $i <= $endP ; $i++) {
                 if ($i == $page) {
                     echo '<a class=\'active\' href="liste_objets.php?page='.$i.'">'.$i .'</a>';
                 }
@@ -214,6 +306,3 @@
 
    </body>
 </html>
-
-
-

@@ -18,16 +18,32 @@
               }
 
               echo "<li><a class='link_submenu' href='profil.php?opt=prop'>→Vos propositions d'achat</a></li>";
+              // Evaluer des vendeurs
+              echo "<li><a class='link_submenu' href='profil.php?opt=eval_v'>→Evaluer des vendeurs</a></li>";
+          
+              //Modifier infos personelles
+              echo "<li><a class='link_submenu' href='modProfile.php'>→Modifier informations personnelles</a></li>";
+
               echo "<li><a class='link_submenu' href=\"deconnexion.php\" >→Se déconnecter</a></li>";
             echo "</ul>";
           echo "</li>";
+
+          if(isset($_SESSION['isAdmin']) && $_SESSION['isAdmin']) {
+            // Modifier les informations en étant admin
+            echo "<li class='sub-menu-parent' tab-index='0'>";
+              echo "<a class='link_menu' href=\"adminHandling.php\" >Droits administrateur</a>";
+              echo "<ul class='sub-menu'>";
+                echo "<li><a class='link_submenu' href=addAdmin.php \" class = \"text_menu\">→  Ajouter un administrateur</a></li><br />";
+                echo "<li><a class='link_submenu' href=suppressAccount.php \" class = \"text_menu\">→ Supprimer un compte</a></li><br />";
+                echo "<li><a class='link_submenu' href=handleCategories.php \" class = \"text_menu\">→ Gestion des catégories</a></li><br />";
+              echo "</ul>";
+            echo "</li>";
+          }
 				
 	   		  // Liste des vendeurs et leurs profils
 					echo "<li><a class='link_menu' href=\"profil_vendeurs.php\" >Vendeurs</a></li>";
         
-          // Evaluer des vendeurs
-          echo "<li><a class='link_menu' href='profil.php?opt=eval_v'>Evaluer des vendeurs</a></li>";
-				  // Liste des objets mis en vente + leurs caractéristiques
+          // Liste des objets mis en vente + leurs caractéristiques
           echo "<li><a class='link_menu' href=\"liste_objets.php\" >Objets</a></li>";
  
           if (isset($_SESSION['isSeller']) && $_SESSION['isSeller']) {          
@@ -39,11 +55,6 @@
 					  // Devenir un vendeur => formulaire
             echo "<li><a class='link_menu' href=\"inscription_vendeur.php\" >Devenir vendeur</a></li>";
             }
-
-          if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin']) {
-				    // Modifier les informations en étant admin
-            echo "<li><a class='link_menu' href=\"adminHandling.php\" >Droits administrateur</a></li>";  
-          }
 
           echo "<li class='sub-menu-parent' tab-index='0'>";
             echo"<a class='link_menu' href=# >" . 'Requêtes' . "</a>";

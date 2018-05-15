@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title><?php echo "recherche \"" . htmlspecialchars($_GET['recherche']) ."\""; ?></title>
     <script language="javascript">
-      function redirectOnSelection(id){
+      function redirectOnSelection(){
         var currentUrl = "" + window.location;
         var stripedUrl = currentUrl.split("&tri");
         stripedUrl = stripedUrl[0];
         var newLocation  = stripedUrl +"&tri="+document.getElementById("triPar").value+"&ordre="+document.getElementById('croissance').value;
         window.location = newLocation;
-        //alert(document.getElementById("croissance").value);
       }
     </script>
   </head>
@@ -102,14 +101,14 @@
       <div class="resulatDeRecherche">
         <div class="tri">
           <h5>Trié par</h5>
-          <select name="tri" id ="triPar" onChange="redirectOnSelection('triPar')">
+          <select name="tri" id ="triPar" onChange="redirectOnSelection()">
             <option value="" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == ""){echo "selected";} ?>></option>
             <option value="PrixMin" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "PrixMin"){echo "selected";} ?>>Prix</option>
             <option value="DateMiseEnVente" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "DateMiseEnVente"){echo "selected";} ?>>Date</option>
             <option value="Titre" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "Titre"){echo "selected";} ?>>Nom</option>
             <option value="n.Moyenne" <?php if(isset($_GET['tri']) &&  $_GET['tri'] == "n.Moyenne"){echo "selected";} ?>>Note vendeurs</option>
           </select>
-          <select name="ordre" id = "croissance" onChange="redirectOnSelection('croissance')">
+          <select name="ordre" id = "croissance" onChange="redirectOnSelection()">
             <option value="ASC" <?php if(isset($_GET['ordre']) &&  $_GET['ordre'] == "ASC"){echo "selected";} ?>>Croissant</option>
             <option value="DESC" <?php if(isset($_GET['ordre']) &&  $_GET['ordre'] == "DESC"){echo "selected";} ?>>Decroisant</option>
           </select>
@@ -159,6 +158,8 @@
               $req = $req . " AND Categorie = '{$_GET['categorie']}' ";
 
               if(isset($_GET['tri']) || isset($_GET['min'])){
+                $arrayTri = array("PrixMin","","DateMiseEnVente","Titre","n.Moyenne");
+                if(!in_array($_GET['tri'],$arrayTri)){$_GET['tri'] = "";}
                 //tri
                 if(isset($_GET['tri']) && $_GET['tri'] != ""){
                   if(isset($_GET['ordre']) && ($_GET['ordre'] == "ASC" || $_GET['ordre'] == "DESC")){$nothing = "";}
@@ -191,24 +192,19 @@
                 /*Query*/
                 //requete complete
               }
+                //Comptage pour pagination
                 $pStart = 20 * ((int)$_GET['pg']-1);
                 $pEnd =  20 * ((int)$_GET['pg']);
                 $limit = $limit . $pStart ."," . $pEnd;
                 $req =  $select . $from . $req . $groupBy . $having .$orderBy;
-                //si pas deja fait compter le nomber de requete et placer dans session
+                //si pas deja fait compter le nombre de requete et placer dans session
                 $nbRef = explode("&pg=",$_SERVER['REQUEST_URI']);
-                if(!isset($_SESSION["{$nbRef[0]}"])){
-                  $nbQuery = "SELECT COUNT(*) FROM " . "( " . $req .") nbquery";
-                  $totalQuery = $bdd->prepare($nbQuery);
-                  $totalQuery->execute($keyWords);
-                  $nbQuery = $totalQuery->fetch();
-                  $nbQuery = $nbQuery[0];
-                  $totalQuery->closeCursor();
-                  $_SESSION["{$nbRef[0]}"] = $nbQuery;
-                }
-                else{
-                  $nbQuery = $_SESSION["{$nbRef[0]}"];
-                }
+                $nbQuery = "SELECT COUNT(*) FROM " . "( " . $req .") nbquery";
+                $totalQuery = $bdd->prepare($nbQuery);
+                $totalQuery->execute($keyWords);
+                $nbQuery = $totalQuery->fetch();
+                $nbQuery = $nbQuery[0];
+                $totalQuery->closeCursor();
                 $nbPage = ceil($nbQuery/20);
 
                 if((int)$_GET['pg'] == 0 || (int)$_GET['pg'] > $nbPage){
@@ -218,7 +214,7 @@
                 $req = $req . $limit;
                 $recherche = $bdd->prepare($req);
                 $recherche->execute($keyWords);
-                
+
                 while ($result = $recherche->fetch()){
                   echo "<li class = \"item\"><a href=\"liste_objets.php?page=1"
                   . "&ItemID=" . $result['ItemID'] . "&a=1". "\" >" . "<p class='rcorners corner2'>
@@ -246,7 +242,7 @@
                 else{$endP = $startP+9;}
               for($i = $startP; $i <= $endP; $i++){
                 if($i != $_GET['pg']){
-                  echo "<li><a href='recherche.php{$param[1]}&pg={$i}'> {$i} </a></li>";
+                  echo "<li><a class='page' href='recherche.php{$param[1]}&pg={$i}'> {$i} </a></li>";
                 }
                 else{
                   echo "<li> {$i} </li>";
