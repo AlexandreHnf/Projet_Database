@@ -23,6 +23,12 @@
 
         if (isset($_GET['r']) && $_GET['r'] == 1) {
             echo "Les vendeurs qui sont appréciés par les utilisateurs ayant les même goûts que l'utilisateur 'Jules' <br>";
+
+            $req1 = $bdd->prepare('SELECT u.Pseudo FROM Utilisateur u, Vendeur v, Evaluation e
+                                    WHERE u.UserID = v.SellerID AND e');
+            $req1->execute(array($_SESSION['pseudo']));
+            $id = $req1->fetch();
+
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 2) {

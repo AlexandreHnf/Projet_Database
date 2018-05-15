@@ -79,24 +79,31 @@
 				exit;
 			}
 		}
+        
+        if (isset($_SESSION['pseudo'])) {
 		
-		
-        echo '<form class="form" action="proposition_achat.php?page=' . $_GET['page'] . '&ItemID=' .
-        $_GET['ItemID'] . '" method="post">';
-			echo"<p>";
-                echo "Prix proposé:<br>";
-                echo "<input type='number' step='any' placeholder='prix' name='price' /> <br /><br/>";
+            echo '<form class="form" action="proposition_achat.php?page=' . $_GET['page'] . '&ItemID=' .
+            $_GET['ItemID'] . '" method="post">';
+                echo"<p>";
+                    echo "Prix proposé:<br>";
+                    echo "<input type='number' step='any' placeholder='prix' name='price' /> <br /><br/>";
 
-				echo "<br />";
-				echo "<input type='submit' value='Valider' />";
-			echo "</p>";
+                    echo "<br />";
+                    echo "<input type='submit' value='Valider' />";
+                echo "</p>";
 
-		echo "</form>";
+            echo "</form>";
 
-		// Retour
-        echo "<br>";
-        echo '<a href="accueil.php">
-            <button class="button button1">Retour</button></a> ' . '<br><br>';
+            // Retour
+            echo "<br>";
+            echo '<a href="accueil.php">
+                <button class="button button1">Retour</button></a> ' . '<br><br>';
+        }
+
+        else {
+            echo "Veuillez vous connecter pour faire une Proposition d'achat !";
+        }
+        
         ?>
 
    </body>
