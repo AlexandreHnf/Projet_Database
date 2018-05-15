@@ -50,7 +50,10 @@
 
         if (isset($_SESSION['pseudo']) && !isset($_GET['opt'])) {
 
-            echo "<h1> Votre profil</h1>" . "<br>";
+            echo "<h1> Votre profil</h1>";
+
+            echo '<a href="modProfile.php">
+            <button class="button button1">Modifier les informations personnelles</button></a>' . '<br>';
 
             // rôle= Utilisateur, vendeur, admin
             echo "<table>";
@@ -60,6 +63,9 @@
             if ($isAdmin) {echo "<tr>" . "<td>Administrateur</td>" . "</tr>";}
             echo "</table>" . "<br>";
 
+            echo "<center>";
+            echo "<h3> Informations personnelles </h3>";
+            echo "</center>";
 
             echo "<table>"; // Tableau
 
