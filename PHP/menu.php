@@ -20,7 +20,10 @@
               echo "<li><a class='link_submenu' href='profil.php?opt=prop'>→Vos propositions d'achat</a></li>";
               // Evaluer des vendeurs
               echo "<li><a class='link_submenu' href='profil.php?opt=eval_v'>→Evaluer des vendeurs</a></li>";
-				  
+          
+              //Modifier infos personelles
+              echo "<li><a class='link_submenu' href='modProfile.php'>→Modifier informations personnelles</a></li>";
+
               echo "<li><a class='link_submenu' href=\"deconnexion.php\" >→Se déconnecter</a></li>";
             echo "</ul>";
           echo "</li>";
@@ -33,7 +36,6 @@
                 echo "<li><a class='link_submenu' href=addAdmin.php \" class = \"text_menu\">→  Ajouter un administrateur</a></li><br />";
                 echo "<li><a class='link_submenu' href=suppressAccount.php \" class = \"text_menu\">→ Supprimer un compte</a></li><br />";
                 echo "<li><a class='link_submenu' href=handleCategories.php \" class = \"text_menu\">→ Gestion des catégories</a></li><br />";
-                echo "<li><a class='link_submenu' href=# \" class = \"text_menu\">→ Gestion des articles</a></li><br />";
               echo "</ul>";
             echo "</li>";
           }

@@ -80,6 +80,45 @@
             echo "</table>" . "<br><br>";
 
 
+            if (!empty($_SESSION['pseudo'])){
+                //Suppression si administrateur ou le vendeur de l'objet
+                if ($_SESSION['isAdmin'] == true || ($_SESSION['SellerID'] == $_SESSION['UserID'])) {
+                    echo "<div class='cadre'>";
+                    echo "<a href=\"suppressObj.php?page=" .
+                        $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" 
+                        . "<button class='button button1'>
+                        " . "Supprimer cet objet" . "</button>" . "</a>";
+                    echo "</div>";    
+                }
+            }
+
+            //LOCALISATION
+            echo "<div class='cadre'>";
+            echo "<center><h3>Localisation</h3></center>";
+
+            $reqAdr = $bdd->prepare('SELECT Adresse FROM Vendeur
+            WHERE SellerID = ?');
+            $reqAdr->execute(array($objet['SellerID']));
+            $donnees = $reqAdr->fetch();
+            $reqAdr->closeCursor();
+
+            $adr = $donnees['Adresse'];
+
+            $adr = preg_replace('/\s/', '+', $adr);
+            $source = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBV490JeqrQVBHJFEqw8pCZdMawjP9gxjA&amp;q=" . $adr . ",Belgium";
+            ?>
+
+            <iframe
+            width="500"
+            height="450"
+            frameborder="0" style="border:0"
+            src="<?php echo $source ?>" allowfullscreen>
+            </iframe>
+            
+            <?php
+
+            echo "</div>";   
+
 
             // LIEN VERS PROPOSITION D'ACHAT
 
@@ -95,10 +134,10 @@
 
             if (!$prop2) {
                 echo "<div class='cadre'>";
-                echo "<li class = \"item\"><a href=\"proposition_achat.php?page=" .
-                    $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" . "<p class='rcorners corner2'>
-                    " . "<mark class=\"price\">" . "Faire une proposition d'achat pour cet objet"
-                    ." </mark>" ."</p>" . "</a></li>";
+                echo "<a href=\"proposition_achat.php?page=" .
+                    $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" . "<button class='button button1'>"
+                    . "<mark class=\"price\">" . "Faire une proposition d'achat pour cet objet"
+                    ." </mark>" . "</button>" . "</a></li>";
                 echo "</div>";
             }
 
@@ -131,7 +170,7 @@
                     echo "<td>refusé</td>" . "</tr>";
                 }
             }
-
+            
         }
 
         else{ // On affiche la liste des vendeurs
