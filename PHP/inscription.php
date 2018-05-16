@@ -24,10 +24,12 @@
             $password = $_POST['motdepasse'];
             $hashed = SHA1($password);
             $email = $_POST['email'];
+            $desc = $_POST['description'];
 
             $errors = array(); // liste d'erreurs (messages)
             
-            if (empty($pseudo) or empty($password) or empty($email)) {
+            if (empty($pseudo) or empty($password) or empty($email)
+                or empty($desc)) {
                 $errors[] = "Vous n'avez pas complété tous les champs !";
             }
 
@@ -52,12 +54,14 @@
                 $_SESSION['pseudo'] = $pseudo; // variable de session
                                                // donc accessible partout
 
-                $req2 = $bdd->prepare('INSERT INTO Utilisateur(Pseudo, MotDePasse, AdresseMail) 
-                    VALUES(:pseudo, :mdp, :email)');
+                $req2 = $bdd->prepare('INSERT INTO Utilisateur(Pseudo, MotDePasse, 
+                                                    AdresseMail, Description_user) 
+                    VALUES(:pseudo, :mdp, :email, :desc)');
                 $req2->execute(array(    
                     'pseudo' => $pseudo,
                     'mdp' => $hashed,
-                    'email' => $email
+                    'email' => $email,
+                    'desc' => $desc
                 ));
                 $req2->closeCursor();
 
@@ -88,6 +92,9 @@
                 <input type="password" placeholder="mot de passe" name="motdepasse" /> <br /><br />
                 Adresse E-mail: <br />
                 <input type="email" placeholder="exemple@a.be" name="email" /> <br /><br /><br />
+                Votre description éventuelle : <br />
+                <textarea name="description" rows="8" cols="45">
+                </textarea> <br /><br />
 				<input type="submit" value="S'inscrire" />
 			</p>
 
