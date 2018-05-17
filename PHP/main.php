@@ -15,7 +15,7 @@
 
         <?php
             // Si cet objet n'a pas deja été acheté 
-            $req = $bdd->query('SELECT u.Pseudo, ItemID
+            $req = $bdd->query('SELECT u.UserID, ItemID
             FROM PropositionAchat, Utilisateur u
             WHERE PropositionAchat.accepted = "True"
             AND u.UserID = PropositionAchat.Buyer');
@@ -26,7 +26,7 @@
                 WHERE ItemID = :itemid');
 
                 $req2->execute(array(
-                'acheteur' => $buyers['Pseudo'],
+                'acheteur' => $buyers['UserID'],
                 'itemid' => $buyers['ItemID']
 
                 ));
