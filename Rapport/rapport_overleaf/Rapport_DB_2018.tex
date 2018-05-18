@@ -178,7 +178,8 @@ WHERE e1.Seller = v1.SellerID AND u1.UserID = e1.Buyer AND e1.Rate >= 3 AND u1.U
 \indent \indent \indent \indent WHERE e3.Seller = v3.SellerID AND e3.Buyer = u3.UserID\\
 \indent \indent \indent \indent AND u3.UserID = 41 AND e3.Rate > 3))
 
-\subsubsection{Algèbre relationnelle}
+\subsubsection{Algèbre relationnel}
+
 $JulesID \leftarrow \pi_{SellerID} ( \sigma_{Prenom=``Jules''} (Vendeur)) $ \\
 $SellerIDLikedByJules \leftarrow \pi_{SellerID}(\sigma_{Buyer=JulesID \wedge Rate \geq 3} (Evaluation))$\\
 $BuyerWhoLikeAsJules \leftarrow \pi_{Buyer}(\sigma_{Rate \geq 3}(Evaluation *_{Seller=SellerID} LikedByJules))$\\
@@ -186,8 +187,16 @@ $R1 \leftarrow \pi_{SellerID}(\sigma_{Rate \geq 3}(LikeAsJules*Evaluation))$
 
 \subsubsection{Calcul tuple}
 
-\subsection{R2}
+v2.SellerID | Vendeur(v2) $\land$ Evaluation(e3) $\land$\\
+$\forall$u $\forall$v [Utilisateur(u) $\land$ Vendeur(v) $\land$ v.Prenom = "Jules" $\land$ \\
+$\exists$e1 $\exists$e2 $\exists$v1 (Evaluation(e1) $\land$ Evaluation(e2) $\land$ Vendeur(v1) \\
+$\land$ v1.SellerID = e1.Seller $\land$ v1.SellerID = e2.Seller $\land$ \\
+e1.Buyer = u.UserID $\land$ e2.Buyer = v.SellerID \\
+$\land$ e1.Rate >= 3 $\land$ e2.Rate >= 3) \\
+$\rightarrow$ e3.Buyer = u.UserID $\land$ e3.Seller = v2.SellerID ]
 
+
+\subsection{R2}
 $\rightarrow$ Les vendeurs ayant vendu et acheté à la meme personne
 
 
@@ -201,12 +210,15 @@ WHERE v.SellerID = o1.SellerID AND o1.Acheteur IN\\
 \indent \indent FROM Vendeur v2, Objet o2\\
 \indent \indent WHERE v2.SellerID = o2.SellerID AND v.SellerID = o2.Acheteur)
     
-\subsubsection{Algèbre relationnelle}
+\subsubsection{Algèbre relationnel}
+
 $R2 \leftarrow \pi_{ItemID}((Objet \bowtie_{Buyer=Seller} \pi_{Seller,Buyer}(Objet)) 
 			    \cap (Objet \bowtie_{Seller=Buyer} \pi_{Seller,Buyer}(Objet)))$
 
-			    
 \subsubsection{Calcul tuple}
+
+v.SellerID | Vendeur(v) $\land$ Objet(o1) $\land$ v.SellerID = o1.SellerID $\land$ $\exists$ v2 $\exists$ o2 (Vendeur(v2) $\land$ Objet(o2) $\land$ v2.SellerID = o2.SellerID $\land$ v.SellerID = o2.Acheteur $\land$ o1.Acheteur = v2.SellerID)
+
 
 \subsection{R3}
 
@@ -221,7 +233,7 @@ WHERE o.ItemID = p.ItemID AND p.accepted = 'True' AND\\
 \indent \indent FROM PropositionAchat p1\\
 \indent \indent WHERE p1.ItemID = p.ItemID AND p1.price > p.price AND p1.accepted = 'False')
         
-\subsubsection{Algèbre relationnelle}
+\subsubsection{Algèbre relationnel}
 
 $Vendus \leftarrow \pi_{ItemID, price}(\sigma_{accepted='True'}(PropositionAchat))$\\
 $\alpha_{price:PrixVendu}(Vendus)$\\
@@ -230,12 +242,12 @@ $R3 \leftarrow \pi_{ItemID}(\sigma_{price \ln PrixVendu}(Vendus*_{ItemVenduID=It
 
 \subsubsection{Calcul tuple}
 
+o.ItemID | Objet(o) $\land$ PropositionAchat(p) $\land$ o.ItemID = p.ItemID $\land$ p.accepted = "True" $\land$ $\exists$p1 (PropositionAchat(p1) $\land$ p1.ItemID = p.ItemID $\land$ p1.price > p.price $\land$ p1.accepted = "False")
 \subsection{R4}
 
 $\rightarrow$ Le/Les vendeurs ayant vendu le plus d'objets dans la meme catégorie
 
 \subsubsection{SQL}
-
 
 \subsection{R5}
 
@@ -248,7 +260,6 @@ FROM PropositionAchat p\\
 WHERE p.accepted = "False"\\
 GROUP BY p.ItemID\\
 HAVING COUNT(*) >= 10
-
 
 \subsection{R6}
 
@@ -264,6 +275,7 @@ Explications et justifications des choix et hypothèses qu'on a pris
 \begin{itemize}
 	\item Pour la requête 1, on part du principe que si il y a ne serait ce qu'un meme élément en commun (vendeur apprécié), alors les 2 utilisateurs ont les memes gouts.
     \item Dans la table Administrateur, nous avons inséré un administrateur par défaut "Master" qui se chargera de créer les autres administrateurs.
+    \item Nous avons décidé de ne pas stocker les suppressions et modifications faites par les administrateurs dans des tables dédiées.
    
     
 \end{itemize}
