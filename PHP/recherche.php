@@ -149,7 +149,7 @@
               }
               echo "<ul>";
               //split de la requete en variables
-              $select= 'SELECT *';
+              $select= 'SELECT Objet.ItemID,Objet.Titre,Objet.PrixMin,Objet.DateMiseEnVente ';
               $from = ' FROM Objet ';
               $orderBy = '';
               $groupBy = '';
@@ -173,8 +173,8 @@
                 //Recherche avancé
                 if(isset($_GET['min']) && isset($_GET['prenom']) && isset($_GET['nom']) ){
                   if(!($_GET['prenom'] == "" && $_GET['nom'] == "")){
-                    $select = $select . ',Nom,Prenom ';
-                    $from = $from . ',Vendeur ';
+                    $select = $select . ',Vendeur.Nom,Vendeur.Prenom ';
+                    $from = substr_replace($from, ' Vendeur,', 5, 0);
                     $req = $req . ' AND Objet.SellerID = Vendeur.SellerID AND Nom LIKE ? AND Prenom LIKE ? ';
                     $keyWords[] = "%{$_GET['nom']}%";
                     $keyWords[] = "%{$_GET['prenom']}%";
@@ -200,6 +200,8 @@
                 //si pas deja fait compter le nombre de requete et placer dans session
                 $nbRef = explode("&pg=",$_SERVER['REQUEST_URI']);
                 $nbQuery = "SELECT COUNT(*) FROM " . "( " . $req .") nbquery";
+                
+
                 $totalQuery = $bdd->prepare($nbQuery);
                 $totalQuery->execute($keyWords);
                 $nbQuery = $totalQuery->fetch();
@@ -210,8 +212,10 @@
                 if((int)$_GET['pg'] == 0 || (int)$_GET['pg'] > $nbPage){
                   http_response_code(404);
                 }
+
                 // query affichage item
                 $req = $req . $limit;
+
                 $recherche = $bdd->prepare($req);
                 $recherche->execute($keyWords);
 
