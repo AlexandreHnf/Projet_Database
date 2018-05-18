@@ -66,7 +66,22 @@
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 4) {
-            echo "<h2>REQUETE 4: Le/les vendeurs ayant vendu le plus d'objets dans la même catégorie</h2>";
+            echo "<h3>REQUETE 4: Le/les vendeurs ayant vendu le plus d'objets dans la même catégorie</h3>";
+
+            $req = $bdd->query('SELECT v.SellerID AS ID
+                                FROM Vendeur v, Categorie c 
+                                WHERE ( SELECT COUNT(*)
+                                FROM Objet o
+                                WHERE v.SellerID = o.SellerID AND o.Categorie = c.Titre)
+
+                                >=
+    
+                                (SELECT MAX(tot_count.sold)
+                                FROM (SELECT COUNT(*) as sold, c1.Titre as cat 
+                                      FROM Objet o1, Vendeur v1, Categorie c1 
+                                      WHERE v1.SellerID = o1.SellerID AND o1.Categorie = c1.Titre 
+                                      GROUP BY v1.SellerID ORDER BY COUNT(*) DESC) tot_count 
+                                      WHERE cat = c.Titre)');
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 5) {
