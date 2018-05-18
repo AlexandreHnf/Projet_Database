@@ -179,6 +179,10 @@ WHERE e1.Seller = v1.SellerID AND u1.UserID = e1.Buyer AND e1.Rate >= 3 AND u1.U
 \indent \indent \indent \indent AND u3.UserID = 41 AND e3.Rate > 3))
 
 \subsubsection{Algèbre relationnel}
+$JulesID \leftarrow \pi_{SellerID} ( \sigma_{Prenom=``Jules''} (Vendeur)) $ \\
+$SellerIDLikedByJules \leftarrow \pi_{SellerID}(\sigma_{Buyer=JulesID \wedge Rate \geq 3} (Evaluation))$\\
+$BuyerWhoLikeAsJules \leftarrow \pi_{Buyer}(\sigma_{Rate \geq 3}(Evaluation *_{Seller=SellerID} LikedByJules))$\\
+$R1 \leftarrow \pi_{SellerID}(\sigma_{Rate \geq 3}(LikeAsJules*Evaluation))$
 
 \subsubsection{Calcul tuple}
 
@@ -198,7 +202,10 @@ WHERE v.SellerID = o1.SellerID AND o1.Acheteur IN\\
 \indent \indent WHERE v2.SellerID = o2.SellerID AND v.SellerID = o2.Acheteur)
     
 \subsubsection{Algèbre relationnel}
+$R2 \leftarrow \pi_{ItemID}((Objet \bowtie_{Buyer=Seller} \pi_{Seller,Buyer}(Objet)) 
+			    \cap (Objet \bowtie_{Seller=Buyer} \pi_{Seller,Buyer}(Objet)))$
 
+			    
 \subsubsection{Calcul tuple}
 
 \subsection{R3}
@@ -216,6 +223,11 @@ WHERE o.ItemID = p.ItemID AND p.accepted = 'True' AND\\
         
 \subsubsection{Algèbre relationnel}
 
+$Vendus \leftarrow \pi_{ItemID, price}(\sigma_{accepted='True'}(PropositionAchat))$\\
+$\alpha_{price:PrixVendu}(Vendus)$\\
+$\alpha_{ItemID:ItemVenduID}(Vendus)$\\
+$R3 \leftarrow \pi_{ItemID}(\sigma_{price \ln PrixVendu}(Vendus*_{ItemVenduID=ItemID}PropositionAchat)) $
+
 \subsubsection{Calcul tuple}
 
 \subsection{R4}
@@ -224,9 +236,6 @@ $\rightarrow$ Le/Les vendeurs ayant vendu le plus d'objets dans la meme catégor
 
 \subsubsection{SQL}
 
-\subsubsection{Algèbre relationnel}
-
-\subsubsection{Calcul tuple}
 
 \subsection{R5}
 
@@ -240,19 +249,12 @@ WHERE p.accepted = "False"\\
 GROUP BY p.ItemID\\
 HAVING COUNT(*) >= 10
 
-\subsubsection{Algèbre relationnel}
-
-\subsubsection{Calcul tuple}
 
 \subsection{R6}
 
 $\rightarrow$ Les vendeurs avec le nombres moyen d'objets vendus, le nombre moyen d'objet achetés, la note qu'ils ont reçue, et la moyenne des notes qu'ils ont donné, et ce pour tous les vendeurs ayant vendu et acheté au moins 10 objets.
 
 \subsubsection{SQL}
-
-\subsubsection{Algèbre relationnel}
-
-\subsubsection{Calcul tuple}
 
 
 \section{Choix et hypothèses}
