@@ -1,6 +1,7 @@
 DROP DATABASE IF EXISTS Ebay;
 
-CREATE DATABASE Ebay CHARACTER SET utf8; -- création de la base de données
+CREATE DATABASE Ebay CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- création de la base de données
 
 USE Ebay;
 
@@ -128,12 +129,16 @@ CREATE TABLE Objet (
     DateMiseEnVente DATE,
     PrixMin DECIMAL(6,2) NOT NULL,
     DateVente DATE,
-    Acheteur VARCHAR(30),
+    Acheteur INT UNSIGNED, -- foreign key
     SellerID INT UNSIGNED NOT NULL, -- foreign key
     Categorie VARCHAR(100) NOT NULL, -- foreign key
 
     -- CONTRAINTES D'INTEGRITE
     PRIMARY KEY (ItemID),
+
+    CONSTRAINT fk_obj_acheteur
+        FOREIGN KEY (Acheteur)
+        REFERENCES Utilisateur(UserID),
     
     CONSTRAINT fk_obj_vendeur             -- On donne un nom à notre clé
         FOREIGN KEY (SellerID)       -- Colonne sur laquelle on crée la clé
@@ -160,14 +165,14 @@ IGNORE 1 LINES
 DROP TABLE IF EXISTS Evaluation;
 
 CREATE TABLE Evaluation (
-    
+
+    Numero INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, /*clé primaire*/  
     Buyer INT UNSIGNED NOT NULL, /*foreign key*/
     Seller INT UNSIGNED NOT NULL,   /*foreign key*/
     Time DATE,
     Rate SMALLINT NOT NULL, 
     Commentaire TEXT default '',
-    Numero INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, /*clé primaire*/  
- 
+
     -- CONTRAINTES D'INTEGRITE
     
     CONSTRAINT fk_buyer          
@@ -186,7 +191,6 @@ CREATE TABLE Evaluation (
 LOAD XML LOCAL INFILE '/opt/lampp/phpmyadmin/data/dataset_ebay_v2/reviews.xml' 
 INTO TABLE Evaluation
 ROWS IDENTIFIED BY '<Review>';
-
 
 -- ============================ TABLE PROP ACHAT ============================
 DROP TABLE IF EXISTS PropositionAchat;

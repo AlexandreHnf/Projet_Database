@@ -22,7 +22,7 @@
         if (isset($_GET['page']) and isset($_GET['SellerID'])) { 
             // on affiche le profil
             
-            $req2 = $bdd->prepare('SELECT * FROM Vendeur, Utilisateur
+            $req2 = $bdd->prepare('SELECT Pseudo, Description_user FROM Vendeur, Utilisateur
                                     WHERE Vendeur.SellerID = Utilisateur.UserID
                                     AND Vendeur.SellerID = ?');
             $req2->execute(array($_GET['SellerID']));
@@ -34,13 +34,13 @@
             echo "<table>"; // Tableau
 
             // Lignes dans le tableau
-            echo "<tr>" . "<th>ID</th>" . "<td>" . $profil['SellerID'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Nom</th>" . "<td>" . $profil['Nom'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Prénom</th>" . "<td>" . $profil['Prenom'] . "</td>" . "</tr>";
+            //echo "<tr>" . "<th>ID</th>" . "<td>" . $profil['SellerID'] . "</td>" . "</tr>";
+            //echo "<tr>" . "<th>Nom</th>" . "<td>" . $profil['Nom'] . "</td>" . "</tr>";
+            //echo "<tr>" . "<th>Prénom</th>" . "<td>" . $profil['Prenom'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Pseudo</th>" . "<td>" . $profil['Pseudo'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Date de naissance</th>" . "<td>" . $profil['DateNaissance'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Adresse</th>" . "<td>" . $profil['Adresse'] . "</td>" . "</tr>";
-            echo "<tr>" . "<th>Adresse mail</th>" . "<td>" . $profil['AdresseMail'] . "</td>" . "</tr>";
+            //echo "<tr>" . "<th>Date de naissance</th>" . "<td>" . $profil['DateNaissance'] . "</td>" . "</tr>";
+            //echo "<tr>" . "<th>Adresse</th>" . "<td>" . $profil['Adresse'] . "</td>" . "</tr>";
+            //echo "<tr>" . "<th>Adresse mail</th>" . "<td>" . $profil['AdresseMail'] . "</td>" . "</tr>";
             echo "<tr>" . "<th>Description</th>" . "<td>" . $profil['Description_user'] . "</td>" . "</tr>";
 
             echo "</table>";
