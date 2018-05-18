@@ -22,9 +22,9 @@
         <?php
 
         if (isset($_GET['r']) && $_GET['r'] == 1) {
-            echo "Les vendeurs qui sont appréciés par les utilisateurs ayant les même goûts que l'utilisateur 'Jules' <br>";
+            echo "<h3>REQUETE 1: Les vendeurs qui sont appréciés par les utilisateurs ayant les même goûts que l'utilisateur 'Jules'</h3> <br>";
 
-            $req1 = $bdd->query('SELECT DISTINCT v1.SellerID
+            $req = $bdd->query('SELECT DISTINCT v1.SellerID AS ID
                                    FROM Vendeur v1, Evaluation e1, Utilisateur u1
                                    WHERE e1.Seller = v1.SellerID AND u1.UserID = e1.Buyer AND e1.Rate >= 3 AND u1.UserID in 
                                         (SELECT u2.UserID
@@ -34,16 +34,15 @@
                                             (SELECT v3.SellerID
                                              FROM Vendeur v3, Utilisateur u3, Evaluation e3
                                              WHERE e3.Seller = v3.SellerID AND e3.Buyer = u3.UserID
-                                             AND u3.UserID = 41 AND e3.Rate > 3))');
-                                             
-            $r1 = $req1->fetch();
+                                             AND u3.Pseudo = "theJules" AND e3.Rate > 3))');
+                                  
 
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 2) {
-            echo "<h2>Les vendeurs ayant vendu et acheté à la même personne</h2>";
+            echo "<h3>REQUETE 2: Les vendeurs ayant vendu et acheté à la même personne</h3>";
 
-            $req2 = $bdd->query('SELECT DISTINCT v.SellerID
+            $req = $bdd->query('SELECT DISTINCT v.SellerID AS ID
                                  FROM Vendeur v, Objet o1
                                  WHERE v.SellerID = o1.SellerID AND o1.Acheteur IN
                                      (SELECT DISTINCT v2.SellerID
@@ -51,44 +50,97 @@
                                       WHERE v2.SellerID = o2.SellerID AND v.SellerID = o2.Acheteur
                                       )');
 
-            $r2 = $req2->fetch();
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 3) {
-            echo "<h2>Les objets vendus à un prix inférieur au montant d'une proposition d'achat de cet objet</h2>";
+            echo "<h3>REQUETE 3: Les objets vendus à un prix inférieur au montant d'une proposition d'achat de cet objet</h3>";
 
-            $req3 = $bdd->query('SELECT DISTINCT o.ItemID
+            $req = $bdd->query('SELECT DISTINCT o.ItemID AS ID
                                  FROM Objet o, PropositionAchat p
-                                 WHERE o.ItemID = p.ItemID AND p.accepted = 'True' AND
+                                 WHERE o.ItemID = p.ItemID AND p.accepted = "True" AND
                                     EXISTS (SELECT *
                                     FROM PropositionAchat p1
-                                    WHERE p1.ItemID = p.ItemID AND p1.price > p.price AND p1.accepted = 'False'
+                                    WHERE p1.ItemID = p.ItemID AND p1.price > p.price AND p1.accepted = "False"
                                     )');
 
-            $r3 = $req3->fetch();
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 4) {
-            echo "<h2>Le/les vendeurs ayant vendu le plus d'objets dans la même catégorie</h2>";
+            echo "<h2>REQUETE 4: Le/les vendeurs ayant vendu le plus d'objets dans la même catégorie</h2>";
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 5) {
-            echo "<h2>Les objets pour lesquels au moins dix propositions d'achats ont été refusées</h2>";
+            echo "<h3>REQUETE 5: Les objets pour lesquels au moins dix propositions d'achats ont été refusées</h3>";
 
-            $req5 = $bdd->query('SELECT p.ItemID
+            $req = $bdd->query('SELECT p.ItemID AS ID
                                  FROM PropositionAchat p
                                  WHERE p.accepted = "False"
                                  GROUP BY p.ItemID
                                  HAVING COUNT(*) >= 10');
 
-            $r5 = $req5-fetch();
         }
 
         if (isset($_GET['r']) && $_GET['r'] == 6) {
-            echo "<h2>Les vendeurs avec le nombre moyen d'objets vendus, le nombre moyen d'objet achetés, la note qu'ils ont
+            echo "<h3>REQUETE 6: Les vendeurs avec le nombre moyen d'objets vendus, le nombre moyen d'objet achetés, la note qu'ils ont
             reçue, et la moyenne des notes qu'ils ont donné, et ce pour tout les vendeurs ayant vendu et acheté au moins
-            10 objets</h2>";
+            10 objets</h3>";
+
+
+
+
+
+
+
+
+            echo "<table>"; // Tableau
+
+            echo "<tr>" . "<th>Vendeurs </th>" . "<th>Moy_Nb_obj_vendus</th>";
+            echo "<th>nb_moy_obj_achetés</th>" . "<th>notes_recues</th>" .
+            "<th>moy_notes_données</th>" . "</tr>";
         }
+
+        
+        echo "<ul class='cadre'>";
+
+        $count = 0;
+        while ($requete = $req->fetch()) {
+            $id = $requete['ID'];
+            // print des liens
+
+            if (isset($_GET['r'])) {
+                if ($_GET['r'] == 1 or $_GET['r'] == 2
+                    or $_GET['r'] == 4) {
+
+                    echo "<li class = \"item\"><a href=\"profil_vendeurs.php?page=0&SellerID=" . 
+                    $id . "\" >" . "<p class='rcorners corner2'>
+                    ".$id. "</p>" . "</a></li>";
+                }
+
+                elseif ($_GET['r'] == 3 or $_GET['r'] == 5) {
+                    echo "<li class = \"item\"><a href=\"liste_objets.php?page=0&ItemID=" . 
+                    $id . "\" >" . "<p class='rcorners corner2'>
+                    ".$id. "</p>" . "</a></li>";
+                }
+
+                else {
+                    // Lignes dans le tableau
+                    echo "<tr>"."<td>" . "<a href=\"profil_vendeurs.php?page=0&SellerID=" . 
+                    $id . "\" > " . $id . "</a>" . "</td>" .
+
+                    "<td>" . $requete['Moy_Nb_obj_vendus'] . "</td>" . 
+                    "<td>" . $requete['nb_moy_obj_achetés'] . "</td>" .
+                    "<td>" . $requete['notes_recues'] . "</td>" . "</tr>" .
+                    "<td>" . $requete['moy_notes_données'] . "</td>" . "</tr>";
+                    
+                }       
+            }
+            $count++;
+        }
+
+        if (isset($_GET['r']) && $_GET['r'] == 6) { echo "</table>";}
+        
+        echo "<h3> Nombre de résultats: " . $count . "</h3>";
+        $req->closeCursor();
 
         ?>
 

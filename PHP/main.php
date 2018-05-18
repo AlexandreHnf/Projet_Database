@@ -15,28 +15,27 @@
 
         <?php
 
-            // $req = $bdd->query('UPDATE Objet inner join PropositionAchat 
-            // on Objet.ItemID = PropositionAchat.ItemID
-            // inner join Utilisateur on PropositionAchat.Buyer = Utilisateur.UserID
-            // SET Objet.Acheteur = Utilisateur.Pseudo
-            // where PropositionAchat.accepted = "True"');
+            $req = $bdd->query('UPDATE Objet inner join PropositionAchat 
+            on Objet.ItemID = PropositionAchat.ItemID
+            SET Objet.Acheteur = PropositionAchat.Buyer
+            where PropositionAchat.accepted = "True"');
 
-            $req = $bdd->query('SELECT u.UserID, ItemID
-            FROM PropositionAchat, Utilisateur u
-            WHERE PropositionAchat.accepted = "True"
-            AND u.UserID = PropositionAchat.Buyer');
+            // $req = $bdd->query('SELECT u.UserID, ItemID
+            // FROM PropositionAchat, Utilisateur u
+            // WHERE PropositionAchat.accepted = "True"
+            // AND u.UserID = PropositionAchat.Buyer');
 
-            while ($buyers = $req->fetch()) {
-                $req2 = $bdd->prepare('UPDATE Objet
-                SET Acheteur = :acheteur
-                WHERE ItemID = :itemid');
+            // while ($buyers = $req->fetch()) {
+            //     $req2 = $bdd->prepare('UPDATE Objet
+            //     SET Acheteur = :acheteur
+            //     WHERE ItemID = :itemid');
 
-                $req2->execute(array(
-                'acheteur' => $buyers['UserID'],
-                'itemid' => $buyers['ItemID']
+            //     $req2->execute(array(
+            //     'acheteur' => $buyers['UserID'],
+            //     'itemid' => $buyers['ItemID']
 
-                ));
-            }
+            //     ));
+            // }
 
             $req->closeCursor();      
             

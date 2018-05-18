@@ -66,8 +66,6 @@
 				}
 				else {$_SESSION['isAdmin'] = false; }
 
-				//include('update_acheteurs.php');
-
 				header('location: accueil.php');
 				exit;
 			}

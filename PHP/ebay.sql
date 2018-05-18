@@ -227,55 +227,6 @@ UPDATE Objet inner join PropositionAchat
 on Objet.ItemID = PropositionAchat.ItemID
 SET Objet.Acheteur = PropositionAchat.Buyer
 where PropositionAchat.accepted = "True";
-
-
-/*
--- ============================ TABLE MODIFICATION ============================
-DROP TABLE IF EXISTS Modification; -- Un admin modifie (0,n) catégorie(s)
-
-CREATE TABLE Modification (
-
-    TitreCategorie VARCHAR(30) NOT NULL default '', 
-    AdminID INT UNSIGNED NOT NULL,
-    -- 2 foreign keys qui forment la clé primaire
-    DateModif DATETIME NOT NULL,
-
-    PRIMARY KEY(TitreCategorie, AdminID),
-
-    CONSTRAINT fk_titre_cat
-        FOREIGN KEY (TitreCategorie)
-        REFERENCES Categorie(CatID),
-
-    CONSTRAINT fk_admin_modif
-        FOREIGN KEY (AdminID)
-        REFERENCES Administrateur(AdminID)
-
     
 );
-
-
--- ============================ TABLE SUPPRESSION ============================
-DROP TABLE IF EXISTS Suppression; -- Un objet appartient a (1,n) catégorie(s)
-
-CREATE TABLE Suppression (
-    
-    AdminID INT UNSIGNED NOT NULL,
-    UserID INT UNSIGNED NOT NULL, -- 2 foreign keys qui forment la clé primaire
-    DateSup DATETIME NOT NULL,
-
-    PRIMARY KEY(AdminID, UserID),
-
-    CONSTRAINT fk_admin_suppr
-        FOREIGN KEY (AdminID)
-        REFERENCES Administrateur(AdminID),
-
-    CONSTRAINT fk_suppr_user
-        FOREIGN KEY (UserID)
-        REFERENCES Utilisateur(UserID)
-
-    
-);
-*/
-
-/* source insert_files_data.sql */
 

@@ -82,7 +82,7 @@
 
             if (!empty($_SESSION['pseudo'])){
                 //Suppression si administrateur ou le vendeur de l'objet
-                if ($_SESSION['isAdmin'] == true || ($_SESSION['SellerID'] == $_SESSION['UserID'])) {
+                if ($_SESSION['isAdmin'] == true || ($objet['SellerID'] == $_SESSION['id'])) {
                     echo "<div class='cadre'>";
                     echo "<a href=\"suppressObj.php?page=" .
                         $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" 
