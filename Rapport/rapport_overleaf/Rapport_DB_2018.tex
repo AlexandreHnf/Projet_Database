@@ -247,6 +247,21 @@ $\rightarrow$ Le/Les vendeurs ayant vendu le plus d'objets dans la meme catégor
 
 \subsubsection{SQL}
 
+SELECT v.SellerID AS ID\\
+FROM Vendeur v, Categorie c \\
+WHERE ( SELECT COUNT(*)\\
+\indent \indent FROM Objet o\\
+\indent \indent WHERE v.SellerID = o.SellerID AND o.Categorie = c.Titre)\\
+
+\indent \indent >=\\
+
+\indent \indent (SELECT MAX(tot\_count.sold)\\
+\indent \indent FROM (SELECT COUNT(*) as sold, c1.Titre as cat \\
+\indent \indent \indent \indent FROM Objet o1, Vendeur v1, Categorie c1 \\
+\indent \indent \indent \indent WHERE v1.SellerID = o1.SellerID AND o1.Categorie = c1.Titre \\
+\indent \indent GROUP BY v1.SellerID ORDER BY COUNT(*) DESC) tot\_count \\
+\indent \indent WHERE cat = c.Titre)
+
 
 \subsection{R5}
 
@@ -265,6 +280,28 @@ HAVING COUNT(*) >= 10
 $\rightarrow$ Les vendeurs avec le nombres moyen d'objets vendus, le nombre moyen d'objet achetés, la note qu'ils ont reçue, et la moyenne des notes qu'ils ont donné, et ce pour tous les vendeurs ayant vendu et acheté au moins 10 objets.
 
 \subsubsection{SQL}
+
+SELECT v.SellerID AS ID, \\
+(SELECT COUNT(o1.Titre)\\
+FROM Objet o1 \\
+WHERE o1.SellerID = v.SellerID) AS Moy\_Nb\_obj\_vendus,\\
+
+(SELECT AVG(o2.Titre) \\
+FROM Objet o2\\
+WHERE o2.Acheteur = u.Pseudo) AS nb\_moy\_obj\_achetés,\\
+
+(SELECT MAX(e.rate) \\
+FROM Evaluation e\\
+WHERE e.Seller = v.SellerID) AS notes\_recues,\\
+
+(SELECT AVG(e1.rate) \\
+FROM Evaluation e1\\
+WHERE e1.Buyer = v.SellerID) AS moy\_notes\_données\\
+
+FROM Vendeur v, Objet o, Utilisateur u\\
+WHERE v.SellerID = o.SellerID\\
+AND u.UserID = v.SellerID\\
+HAVING COUNT(distinct o.Titre) >= 10
 
 
 \section{Choix et hypothèses}

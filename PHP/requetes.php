@@ -100,7 +100,27 @@
             reçue, et la moyenne des notes qu'ils ont donné, et ce pour tout les vendeurs ayant vendu et acheté au moins
             10 objets</h3>";
 
-
+            $req = $bdd->query('SELECT v.SellerID AS ID, 
+                                (SELECT COUNT(o1.Titre)
+                                FROM Objet o1
+                                WHERE o1.SellerID = v.SellerID) AS Moy_Nb_obj_vendus,
+                        
+                                (SELECT AVG(o2.Titre) 
+                                FROM Objet o2
+                                WHERE o2.Acheteur = u.Pseudo) AS nb_moy_obj_achetés,
+                        
+                                (SELECT MAX(e.rate) 
+                                FROM Evaluation e
+                                WHERE e.Seller = v.SellerID) AS notes_recues,
+                        
+                                (SELECT AVG(e1.rate) 
+                                FROM Evaluation e1
+                                WHERE e1.Buyer = v.SellerID) AS moy_notes_données
+                        
+                        FROM Vendeur v, Objet o, Utilisateur u
+                        WHERE v.SellerID = o.SellerID
+                        AND u.UserID = v.SellerID
+                        HAVING COUNT(distinct o.Titre) >= 10');
 
 
 
