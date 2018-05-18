@@ -130,9 +130,8 @@
             }
 
             //LOCALISATION
+            echo "<center><h1>Localisation</h1></center>";
             echo "<div class='cadre'>";
-            echo "<center><h3>Localisation</h3></center>";
-
             $reqAdr = $bdd->prepare('SELECT Adresse FROM Vendeur
             WHERE SellerID = ?');
             $reqAdr->execute(array($objet['SellerID']));
