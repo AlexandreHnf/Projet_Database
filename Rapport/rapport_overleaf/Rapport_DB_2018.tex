@@ -183,23 +183,21 @@ WHERE e1.Seller = v1.SellerID AND u1.UserID = e1.Buyer AND e1.Rate >= 3 AND u1.U
 $JulesID \leftarrow \pi_{SellerID} ( \sigma_{Prenom=``Jules''} (Vendeur)) $ \\
 $SellerIDLikedByJules \leftarrow \pi_{SellerID}(\sigma_{Buyer=JulesID \wedge Rate \geq 3} (Evaluation))$\\
 $BuyerWhoLikeAsJules \leftarrow \pi_{Buyer}(\sigma_{Rate \geq 3}(Evaluation *_{Seller=SellerID} LikedByJules))$\\
-$R1 \leftarrow \pi_{SellerID}(\sigma_{Rate \geq 3}(LikeAsJules*Evaluation))$
+$R1 \leftarrow \pi_{SellerID}(\sigma_{Rate \geq 3}(BuyerWhoLikeAsJules*Evaluation))$
 
 \subsubsection{Calcul tuple}
 
-v2.SellerID | Vendeur(v2) $\land$ Evaluation(e3) $\land$\\
-$\forall$u $\forall$v [Utilisateur(u) $\land$ Vendeur(v) $\land$ v.Prenom = "Jules" $\land$ \\
-$\exists$e1 $\exists$e2 $\exists$v1 (Evaluation(e1) $\land$ Evaluation(e2) $\land$ Vendeur(v1) \\
-$\land$ v1.SellerID = e1.Seller $\land$ v1.SellerID = e2.Seller $\land$ \\
-e1.Buyer = u.UserID $\land$ e2.Buyer = v.SellerID \\
-$\land$ e1.Rate >= 3 $\land$ e2.Rate >= 3) \\
-$\rightarrow$ e3.Buyer = u.UserID $\land$ e3.Seller = v2.SellerID ]
+\{v2.SellerID | Vendeur(v2) $\land$ Evaluation(e3) $\land$ Vendeur(v) $\land$ v.Prenom = "Jules" $\land$\\
+$\forall$u (Utilisateur(u) $\land$ \\
+$\exists$e1 $\exists$e2 $\exists$v1 (Evaluation(e1) $\land$ Evaluation(e2) $\land$ Vendeur(v1)
+$\land$ v1.SellerID = e1.Seller $\land$ \\v1.SellerID = e2.Seller $\land$
+e1.Buyer = u.UserID $\land$ e2.Buyer = v.SellerID
+$\land$ e1.Rate >= 3 $\land$ \\ e2.Rate >= 3)
+$\rightarrow$ e3.Buyer = u.UserID $\land$ e3.Seller = v2.SellerID) \}
 
 
 \subsection{R2}
 $\rightarrow$ Les vendeurs ayant vendu et acheté à la meme personne
-
-
 
 \subsubsection{SQL}
 
@@ -217,7 +215,7 @@ $R2 \leftarrow \pi_{ItemID}((Objet \bowtie_{Buyer=Seller} \pi_{Seller,Buyer}(Obj
 
 \subsubsection{Calcul tuple}
 
-v.SellerID | Vendeur(v) $\land$ Objet(o1) $\land$ v.SellerID = o1.SellerID $\land$ $\exists$ v2 $\exists$ o2 (Vendeur(v2) $\land$ Objet(o2) $\land$ v2.SellerID = o2.SellerID $\land$ v.SellerID = o2.Acheteur $\land$ o1.Acheteur = v2.SellerID)
+\{v.SellerID | Vendeur(v) $\land$ Objet(o1) $\land$ v.SellerID = o1.SellerID $\land$ $\exists$ v2 $\exists$ o2 (Vendeur(v2) $\land$ Objet(o2) $\land$ v2.SellerID = o2.SellerID $\land$ v.SellerID = o2.Acheteur $\land$ o1.Acheteur = v2.SellerID)\}
 
 
 \subsection{R3}
@@ -242,12 +240,13 @@ $R3 \leftarrow \pi_{ItemID}(\sigma_{price \ln PrixVendu}(Vendus*_{ItemVenduID=It
 
 \subsubsection{Calcul tuple}
 
-o.ItemID | Objet(o) $\land$ PropositionAchat(p) $\land$ o.ItemID = p.ItemID $\land$ p.accepted = "True" $\land$ $\exists$p1 (PropositionAchat(p1) $\land$ p1.ItemID = p.ItemID $\land$ p1.price > p.price $\land$ p1.accepted = "False")
+\{o.ItemID | Objet(o) $\land$ PropositionAchat(p) $\land$ o.ItemID = p.ItemID $\land$ p.accepted = "True" $\land$ $\exists$p1 (PropositionAchat(p1) $\land$ p1.ItemID = p.ItemID $\land$ p1.price > p.price $\land$ p1.accepted = "False")\}
 \subsection{R4}
 
 $\rightarrow$ Le/Les vendeurs ayant vendu le plus d'objets dans la meme catégorie
 
 \subsubsection{SQL}
+
 
 \subsection{R5}
 
