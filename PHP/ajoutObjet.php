@@ -1,8 +1,8 @@
-<?php 
+<?php
     session_start();  // On démarre la session
     include("database.php");
     include("function.php");
-?> 
+?>
 
 <!DOCTYPE html>
 <html>
@@ -16,19 +16,45 @@
         <header>
             <?php include("menu.php"); ?>
         </header>
-        
+
         <h1>Vendre</h1>
 
         <?php
-        if (!ISSET($_POST['categorie'])) 
+        $valide = true;
+        $fileU = true;
+        if(isset($_FILES['fichier']['name'])){
+          if($_FILES['fichier']['name'][0] == ""){
+            $fileU = false;
+          }
+          else{
+            $ok = array('png','jpeg','jpg');
+            $total = count($_FILES['fichier']['name']);
+
+            for( $i=0 ; $i < $total ; $i++ ) {
+              $fileExtention = explode('.',$_FILES['fichier']['name'][$i]);
+              $fileExtention = $fileExtention[1];
+              if(!in_array($fileExtention,$ok)){
+                $valide = false;
+                break;
+              }
+            }
+          }
+        }
+        if (!ISSET($_POST['categorie']) || !$valide)
         {
         ?>
-        <form class='form' method="post" action="ajoutObjet.php">
+        <form class='form' method="post" action="ajoutObjet.php" enctype="multipart/form-data">
             Titre de l'article : <br />
             <input type="text" name="Titre" placeholder="Titre" /> <br /><br />
             Prix minimal demandé : <br />
             <input type="float" name="Prix" placeholder="Prix en €" /> <br /><br />
-
+            Image(s) (png,pnj,jpeg max 8 mo) : </br>
+            <?php
+            if(!$valide){
+              echo "<P id='fileError'> Fichier Invalide !</P></br>";
+            }
+            ?>
+            <input name="fichier[]" type="file" multiple="multiple" /></br></br>
             Description de l'article : <br />
             <textarea name="Description" rows="8" cols="30">
             </textarea> <br /><br />
@@ -49,10 +75,10 @@
 
             <input type="submit" value="Valider">
         </form>
-        
+
         <?php
         }
-        else 
+        else
         {
             // include("database.php");
             $pseudo = $_SESSION['pseudo'];
@@ -66,10 +92,10 @@
 
             $req = $bdd->prepare('INSERT INTO Objet(Titre, Description_obj, DateMiseEnVente, PrixMin, SellerID, Categorie)
             VALUES(:Titre, :Description_obj, :DateMiseEnVente, :PrixMin, :SellerID, :Categorie)');
-            
+
             echo '<br />' . $_POST['categorie'];
 
-            
+
             $date = new DateTime();
             $date = $date->format('Y-m-d');
 
@@ -84,10 +110,24 @@
 
             $seller->closeCursor();
             $req->closeCursor();
-            
+
+            $id = $bdd->prepare('SELECT ItemID from Objet where Titre = ?');
+            $id->execute(array($_POST['Titre']));
+            $dir = $id->fetch();
+            $dir = $dir['ItemID'];
+            $id->closeCursor();
+            mkdir('png/'.$dir,true);
+            if($fileU){
+              for( $i=0 ; $i < $total ; $i++ ) {
+              $tmp_name = $_FILES["fichier"]["tmp_name"][$i];
+              $name = basename($_FILES["fichier"]["name"][$i]);
+              move_uploaded_file ($tmp_name,'png/'.$dir.'/'.$name);
+              }
+            }
+            echo "{$dir}";
             header('location: succes.php');
             exit;
-            
+
         }
         ?>
 
@@ -96,6 +136,6 @@
             <button class="button button1">Retour</button></a> ' . '<br><br>'; ?>
 
     </body>
-    
+
 
 </html>

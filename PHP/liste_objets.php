@@ -9,7 +9,19 @@
    <head>
        <meta charset="utf-8" />
        <link rel="stylesheet" href="css/style.css">
+       <!--script language="javascript" type="text/javascript" src="galerie.js">
+       </script-->
        <script language="javascript">
+        var id = 0;
+         function next(images,itemID){
+           id = (id+1)%images.length;
+           document.getElementById("source").src = "png/"+ itemID+"/" +images[id];
+         }
+         function previous(images,itemID){
+           if(id== 0) id= images.length;
+           --id;
+           document.getElementById("source").src = "png/"+ itemID+"/" +images[id];
+         }
          function redirectOnSelection(){
            var currentUrl = "" + window.location;
            var stripedUrl = currentUrl.split("&tri");
@@ -78,17 +90,42 @@
             echo "<tr>" . "<th>Catégorie</th>" . "<td>" . $objet['Categorie'] . "</td>" . "</tr>";
 
             echo "</table>" . "<br><br>";
-
-
+            ?>
+            <!--// ========================== GALERIE OBJET =========================-->
+            <div class="Galerie" align='center'>
+              <h1>Galerie</h1>
+              <?php
+              $dossier = "png/". $_GET['ItemID'];
+              if(is_dir($dossier)){
+                $img = scandir($dossier);
+                $jsImg = array();
+                $ko = array("",".","..");
+                for($i = 0;$i<count($img);++$i){
+                  if(!in_array($img[$i],$ko)){
+                    $jsImg[] =$img[$i];
+                  }
+                }
+                $var = json_encode($jsImg);
+                $firstImg = "png/{$_GET['ItemID']}/{$jsImg[0]}";
+                ?>
+                <img src="png/left.png" alt="LEFT" width="52" height="52" onclick='previous(<?php echo $var ?>,<?php echo $_GET["ItemID"] ?>)'>
+                <img src="<?php echo $firstImg; ?>" alt="IMAGES" width="975" height="570" id = "source">
+                <img src="png/right.png" alt="RIGHT" width="52" height="52" onclick='next(<?php echo $var ?>,<?php echo $_GET["ItemID"] ?>)'>
+              <?php }
+              else{echo "Pas d'image dans la galerie";}
+              ?>
+            </div>
+          </br>
+            <?php
             if (!empty($_SESSION['pseudo'])){
                 //Suppression si administrateur ou le vendeur de l'objet
-                if ($_SESSION['isAdmin'] == true || ($objet['SellerID'] == $_SESSION['id'])) {
+                if (isAdmin($_SESSION['pseudo'])  || isItemSeller($_SESSION['pseudo'],$_GET["ItemID"])) {
                     echo "<div class='cadre'>";
                     echo "<a href=\"suppressObj.php?page=" .
-                        $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >" 
+                        $_GET['page'] . "&ItemID=" . $_GET['ItemID'] . "\" >"
                         . "<button class='button button1'>
                         " . "Supprimer cet objet" . "</button>" . "</a>";
-                    echo "</div>";    
+                    echo "</div>";
                 }
             }
 
@@ -114,10 +151,10 @@
             frameborder="0" style="border:0"
             src="<?php echo $source ?>" allowfullscreen>
             </iframe>
-            
+
             <?php
 
-            echo "</div>";   
+            echo "</div>";
 
 
             // LIEN VERS PROPOSITION D'ACHAT
@@ -170,7 +207,7 @@
                     echo "<td>refusé</td>" . "</tr>";
                 }
             }
-            
+
         }
 
         else{ // On affiche la liste des vendeurs
