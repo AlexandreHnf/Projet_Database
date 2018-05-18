@@ -159,7 +159,7 @@
 
               if(isset($_GET['tri']) || isset($_GET['min'])){
                 $arrayTri = array("PrixMin","","DateMiseEnVente","Titre","n.Moyenne");
-                if(!in_array($_GET['tri'],$arrayTri)){$_GET['tri'] = "";}
+                if(isset($_GET['tri']) && !in_array($_GET['tri'],$arrayTri)){$_GET['tri'] = "";}
                 //tri
                 if(isset($_GET['tri']) && $_GET['tri'] != ""){
                   if(isset($_GET['ordre']) && ($_GET['ordre'] == "ASC" || $_GET['ordre'] == "DESC")){$nothing = "";}
