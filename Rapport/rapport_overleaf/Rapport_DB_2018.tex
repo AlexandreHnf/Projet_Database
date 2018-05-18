@@ -178,7 +178,7 @@ WHERE e1.Seller = v1.SellerID AND u1.UserID = e1.Buyer AND e1.Rate >= 3 AND u1.U
 \indent \indent \indent \indent WHERE e3.Seller = v3.SellerID AND e3.Buyer = u3.UserID\\
 \indent \indent \indent \indent AND u3.UserID = 41 AND e3.Rate > 3))
 
-\subsubsection{Algèbre relationnel}
+\subsubsection{Algèbre relationnelle}
 $JulesID \leftarrow \pi_{SellerID} ( \sigma_{Prenom=``Jules''} (Vendeur)) $ \\
 $SellerIDLikedByJules \leftarrow \pi_{SellerID}(\sigma_{Buyer=JulesID \wedge Rate \geq 3} (Evaluation))$\\
 $BuyerWhoLikeAsJules \leftarrow \pi_{Buyer}(\sigma_{Rate \geq 3}(Evaluation *_{Seller=SellerID} LikedByJules))$\\
@@ -201,7 +201,7 @@ WHERE v.SellerID = o1.SellerID AND o1.Acheteur IN\\
 \indent \indent FROM Vendeur v2, Objet o2\\
 \indent \indent WHERE v2.SellerID = o2.SellerID AND v.SellerID = o2.Acheteur)
     
-\subsubsection{Algèbre relationnel}
+\subsubsection{Algèbre relationnelle}
 $R2 \leftarrow \pi_{ItemID}((Objet \bowtie_{Buyer=Seller} \pi_{Seller,Buyer}(Objet)) 
 			    \cap (Objet \bowtie_{Seller=Buyer} \pi_{Seller,Buyer}(Objet)))$
 
@@ -221,7 +221,7 @@ WHERE o.ItemID = p.ItemID AND p.accepted = 'True' AND\\
 \indent \indent FROM PropositionAchat p1\\
 \indent \indent WHERE p1.ItemID = p.ItemID AND p1.price > p.price AND p1.accepted = 'False')
         
-\subsubsection{Algèbre relationnel}
+\subsubsection{Algèbre relationnelle}
 
 $Vendus \leftarrow \pi_{ItemID, price}(\sigma_{accepted='True'}(PropositionAchat))$\\
 $\alpha_{price:PrixVendu}(Vendus)$\\
