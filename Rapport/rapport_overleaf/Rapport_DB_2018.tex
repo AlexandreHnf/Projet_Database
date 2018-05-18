@@ -298,10 +298,10 @@ WHERE e.Seller = v.SellerID) AS notes\_recues,\\
 FROM Evaluation e1\\
 WHERE e1.Buyer = v.SellerID) AS moy\_notes\_données\\
 
-FROM Vendeur v, Objet o, Utilisateur u\\
-WHERE v.SellerID = o.SellerID\\
-AND u.UserID = v.SellerID\\
-HAVING COUNT(distinct o.Titre) >= 10
+FROM Vendeur v WHERE (SELECT COUNT(*) \\
+FROM Objet o WHERE v.SellerID = o.Acheteur) >= 10  \\
+AND (SELECT COUNT(*) \\
+FROM Objet o WHERE v.SellerID = o.SellerID) >= 10 \\
 
 
 \section{Choix et hypothèses}
